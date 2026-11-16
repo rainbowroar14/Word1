@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AP Human Geography Unit 2 Vocab</title>
+<style>body{max-width:800px;margin:auto;font-family:sans-serif}.d{color:red}.e{color:blue}.right{color:green}.wrong{color:maroon}</style>
+</head>
+<body>
+<p><a href="index.html">Back to all units</a></p>
+<h1>AP Human Geography</h1>
+<h2>Unit 2: Population and Migration Patterns and Processes Vocabulary</h2>
+<p>Term list is a best guess, not the official handout.</p>
+<p>Definitions:
+<label><input type="radio" name="d" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="d" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="d" value="s" onchange="render()"> Short</label></p>
+<p>Examples:
+<label><input type="radio" name="e" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="e" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="e" value="s" onchange="render()"> Short</label></p>
+<ol id="list"></ol>
+<script>
+var V=[
+ {
+  "t": "Aging population",
+  "ds": "A population with a rising share of older people, because birth rates are low and people live longer.",
+  "dm": "A population with a rising share of older people, usually because birth rates are low and life expectancy is high.",
+  "dl": "An aging population is a population in which the share of older people is growing. It usually results from low fertility and longer life expectancy, a pattern common in later stages of the demographic transition. Aging can raise the dependency ratio and create pressure on pensions, health care, and the labor force.",
+  "es": "Japan's very high share of elderly",
+  "em": "Japan has a very high share of elderly people, a clear aging population.",
+  "el": "Japan has one of the world's oldest populations, with a large share of people over 65 and a very low birth rate. That is an aging population. The pattern has led to labor shortages and high costs for pensions and health care."
+ },
+ {
+  "t": "Agricultural density",
+  "ds": "The number of farmers divided by the amount of arable land.",
+  "dm": "The number of farmers divided by the amount of arable land, used to show how labor-intensive farming is.",
+  "dl": "Agricultural density is the number of farmers per unit of arable land. It helps show how labor-intensive a country's agriculture is. High agricultural density can mean many people are still farming with limited technology, while low agricultural density often appears in countries with mechanized farms.",
+  "es": "Few farmers per acre in the U.S.",
+  "em": "The United States has a low agricultural density because farming is highly mechanized.",
+  "el": "The United States has relatively few farmers compared with its amount of farmland, so its agricultural density is low. Machines do much of the work that large numbers of farm laborers do in some less developed countries. That contrast is why agricultural density is a useful measure of farming systems."
+ },
+ {
+  "t": "Antinatalist policies",
+  "ds": "Government policies designed to lower the birth rate.",
+  "dm": "Government policies designed to lower the birth rate, through laws, education, or incentives.",
+  "dl": "Antinatalist policies are government programs designed to reduce fertility and slow population growth. They may include access to contraception, education, or, in some cases, strict limits on family size. China's former one-child policy is the best-known example, though many countries have used milder approaches.",
+  "es": "China's former one-child policy",
+  "em": "China's former one-child policy was a strict antinatalist policy.",
+  "el": "China's one-child policy, in force for decades, tried to limit most families to one child in order to slow population growth. That is an antinatalist policy. It lowered fertility but also contributed to an aging population and a skewed sex ratio."
+ },
+ {
+  "t": "Arithmetic density",
+  "ds": "The total population divided by total land area.",
+  "dm": "The total population divided by total land area, giving an average number of people per unit of land.",
+  "dl": "Arithmetic density is the total number of people divided by total land area. It is the most general measure of population density. It can hide the fact that people are clustered in some areas and nearly absent in others, such as deserts or mountains.",
+  "es": "Egypt's average density hides desert emptiness",
+  "em": "Egypt's arithmetic density looks moderate, even though almost everyone lives along the Nile.",
+  "el": "Egypt's arithmetic density is a simple people-per-square-mile average for the whole country. That average hides the fact that almost all Egyptians live along the Nile, while most of the land is empty desert. Arithmetic density is useful, but it does not show distribution."
+ },
+ {
+  "t": "Asylum seekers",
+  "ds": "People who flee their country and ask another country for protection as refugees.",
+  "dm": "People who flee their country and formally ask another country for protection, but whose refugee status has not yet been decided.",
+  "dl": "Asylum seekers are people who have left their country and applied for protection as refugees in another country, but whose claims have not yet been legally decided. If the claim is approved, they are recognized as refugees. The distinction matters in migration policy and in AP definitions of forced migration.",
+  "es": "A family applying for asylum after fleeing war",
+  "em": "A family fleeing war and applying for protection abroad is a group of asylum seekers.",
+  "el": "A family that flees a war, arrives in another country, and files a legal request for protection is made up of asylum seekers. They are asking to be recognized as refugees, but that status is not final until the case is decided. This is a form of forced migration."
+ },
+ {
+  "t": "Brain drain",
+  "ds": "The departure of many skilled or educated people to work in another country.",
+  "dm": "The emigration of many skilled or educated people, leaving their home country short of talent.",
+  "dl": "Brain drain is the large-scale emigration of talented or highly educated people from a country. It can benefit the destination and the migrants, but it may weaken health care, education, or innovation in the country of origin. Remittances and return migration can offset some of the loss.",
+  "es": "Doctors leaving a poorer country for jobs abroad",
+  "em": "Doctors leaving a poorer country for better jobs abroad is a brain drain.",
+  "el": "When many doctors and engineers leave a less developed country for better pay in Europe or North America, the origin country experiences brain drain. The destination gains skilled workers, but the home country can be left short of professionals. That uneven effect is a key consequence of migration."
+ },
+ {
+  "t": "Carrying capacity",
+  "ds": "The number of people an environment can support at a given standard of living.",
+  "dm": "The number of people an environment can support at a given standard of living without lasting damage.",
+  "dl": "Carrying capacity is the maximum population an environment can support at a given standard of living without long-term damage to the resource base. It depends on technology, consumption, and how resources are managed, not only on raw land area. If population or consumption exceeds carrying capacity, overpopulation or environmental stress can result.",
+  "es": "A dry region that cannot feed more people",
+  "em": "A dry region may have a low carrying capacity if it cannot grow enough food.",
+  "el": "A dry region with little water and poor soil may be able to support only a small population without imported food or new technology. That limit is its carrying capacity. Irrigation or trade can raise the number of people the area can support."
+ },
+ {
+  "t": "Census",
+  "ds": "An official government count of a population and its characteristics.",
+  "dm": "An official government count of a population, often taken every ten years, that also collects information about residents.",
+  "dl": "A census is an official count of a population, usually carried out by a government at regular intervals. It often collects information about age, sex, housing, and other characteristics. Census results are used to plan services, study population change, and, in the United States, reapportion the House of Representatives.",
+  "es": "The U.S. Census every ten years",
+  "em": "The United States takes a census of the population every ten years.",
+  "el": "Every ten years, the U.S. Census Bureau tries to count every resident and gather basic information about households. That official count is a census. The results affect congressional seats, federal funding, and a great deal of geographic research."
+ },
+ {
+  "t": "Chain migration",
+  "ds": "Migration to a place because relatives or others from the same community already live there.",
+  "dm": "Migration to a place because relatives or others from the same community have already settled there and can help newcomers.",
+  "dl": "Chain migration is the movement of people to a location because relatives, friends, or members of the same community have already migrated there. Earlier migrants provide information, housing, and jobs that make later moves easier. Over time, chain migration can create ethnic neighborhoods and ongoing migration streams.",
+  "es": "Family members following relatives to a U.S. city",
+  "em": "Family members following relatives to the same U.S. city are an example of chain migration.",
+  "el": "If one person from a town in Mexico settles in Los Angeles and later siblings and neighbors follow, that is chain migration. The first migrant lowers the cost and risk of moving for the others. Many immigrant communities have grown in this way."
+ },
+ {
+  "t": "Crude birth rate (CBR)",
+  "ds": "The number of live births in a year per 1,000 people.",
+  "dm": "The number of live births in a year measured per 1,000 people in a population.",
+  "dl": "The crude birth rate is the number of live births in a year for every 1,000 people in a population. It is called crude because it does not consider the age or sex structure of the population. CBR is a basic measure of fertility used with the crude death rate to find the rate of natural increase.",
+  "es": "A CBR of 20 births per 1,000",
+  "em": "A country with 20 births per 1,000 people has a CBR of 20.",
+  "el": "If a country of 10 million people has 200,000 births in a year, its crude birth rate is 20 per 1,000. That single number does not show whether the population is young or old. Still, it is a standard way to compare birth levels among countries."
+ },
+ {
+  "t": "Crude death rate (CDR)",
+  "ds": "The number of deaths in a year per 1,000 people.",
+  "dm": "The number of deaths in a year measured per 1,000 people in a population.",
+  "dl": "The crude death rate is the number of deaths in a year for every 1,000 people in a population. Like the crude birth rate, it does not adjust for age structure, so a country with many elderly people can have a relatively high CDR even if health care is good. CDR and CBR together are used to calculate natural increase.",
+  "es": "A CDR of 8 deaths per 1,000",
+  "em": "A country with 8 deaths per 1,000 people has a CDR of 8.",
+  "el": "A country that records 8 deaths per 1,000 people in a year has a crude death rate of 8. That rate can be high in a very old population even when people live a long time. Geographers read the CDR with the age structure in mind."
+ },
+ {
+  "t": "Demographic momentum",
+  "ds": "Continued population growth for a time after fertility falls, because many people are in childbearing years.",
+  "dm": "Continued population growth even after fertility declines, because a large share of people are still in their childbearing years.",
+  "dl": "Demographic momentum is the tendency for a population to continue growing even after fertility rates fall, because a large number of people are already in or entering childbearing years. It is common after a period of high fertility. Countries with very young populations may keep growing for decades after the total fertility rate drops.",
+  "es": "Growth continues after TFR falls in a young country",
+  "em": "A young country can keep growing after fertility falls because of demographic momentum.",
+  "el": "A country that recently had a high birth rate still has a huge number of children who will soon have children of their own. Even if families become smaller, the population can keep rising. That continued growth is demographic momentum."
+ },
+ {
+  "t": "Demographic transition model (DTM)",
+  "ds": "A model of how death rates and then birth rates fall as a country develops.",
+  "dm": "A model of stages in which death rates fall first and birth rates later, so growth rises and then slows as a country develops.",
+  "dl": "The demographic transition model describes how birth rates, death rates, and natural increase change as a society develops. In Stage 1 both rates are high; in Stage 2 death rates fall and growth is rapid; in Stage 3 birth rates fall; in Stage 4 both rates are low. Some geographers add a Stage 5 in which births fall below deaths and population declines.",
+  "es": "Stage 2: death rates drop, population booms",
+  "em": "In Stage 2 of the DTM, death rates drop and the population grows rapidly.",
+  "el": "When a country enters Stage 2 of the demographic transition, death rates fall because of better food, sanitation, or medicine, but birth rates stay high. The population then grows quickly. Later stages show falling birth rates and slower growth, as in much of Europe today."
+ },
+ {
+  "t": "Dependency ratio",
+  "ds": "The number of children and older people compared with the number of working-age people.",
+  "dm": "The number of dependents, usually children and older people, compared with the number of working-age people who can support them.",
+  "dl": "The dependency ratio is the number of people who are too young or too old to work, compared with the number of people in working ages, often 15 to 64. A high ratio means each worker supports more dependents. Aging countries and very youthful countries can both have high, but differently structured, dependency ratios.",
+  "es": "Many retirees per worker in Japan",
+  "em": "Japan has a high elderly dependency ratio, with many retirees per worker.",
+  "el": "Japan has many retirees compared with the number of working-age adults, so its elderly dependency ratio is high. Each worker must help support more older people through taxes and families. A country with a very large child population would also have a high dependency ratio, but for a different reason."
+ },
+ {
+  "t": "Doubling time",
+  "ds": "The number of years it would take a population to double at its current growth rate.",
+  "dm": "An estimate of how many years it would take a population to double if it kept growing at its current rate.",
+  "dl": "Doubling time is the number of years needed for a population to double, assuming a constant rate of natural increase. A rough rule is to divide 70 by the annual growth rate in percent. Fast-growing populations have short doubling times; slow-growing ones have long doubling times.",
+  "es": "A 2% growth rate doubles in about 35 years",
+  "em": "A population growing at 2 percent a year has a doubling time of about 35 years.",
+  "el": "If a country's population is growing at about 2 percent a year, the rule of 70 suggests it would double in roughly 35 years. That period is its doubling time. The estimate holds only if the growth rate stays the same."
+ },
+ {
+  "t": "Ecumene",
+  "ds": "The part of Earth's surface that is permanently inhabited by people.",
+  "dm": "The part of Earth's surface considered permanently inhabited, as opposed to areas that are empty or only used seasonally.",
+  "dl": "The ecumene is the portion of Earth's surface occupied by permanent human settlement. Harsh climates, dry lands, high mountains, and ice caps have historically been less part of the ecumene. Over time, technology has allowed people to live in more places, expanding the ecumene.",
+  "es": "Most Canadians live in the southern ecumene",
+  "em": "Most Canadians live in a southern strip of ecumene, not in the far north.",
+  "el": "Most of Canada's population lives in a relatively narrow band near the U.S. border, which is part of the country's ecumene. The far northern Arctic has very few permanent residents. The contrast shows that not all land is equally part of the inhabited world."
+ },
+ {
+  "t": "Emigration",
+  "ds": "Movement out of a country or area to live somewhere else.",
+  "dm": "Movement out of a country or area to live somewhere else, so the origin loses population through migration.",
+  "dl": "Emigration is migration from a location, that is, leaving a country or area to live elsewhere. It is the counterpart of immigration, which is migration to a location. Net migration is immigration minus emigration.",
+  "es": "Leaving Ireland during the 1840s famine",
+  "em": "Many people emigrated from Ireland during the 1840s famine.",
+  "el": "During the 1840s famine, large numbers of people left Ireland for North America and other places. That movement out of Ireland was emigration. The same people were immigrants when they arrived in their destination countries."
+ },
+ {
+  "t": "Epidemiological transition",
+  "ds": "A shift in the main causes of death, from infectious disease to chronic disease, as a country develops.",
+  "dm": "A shift in the main causes of death over time, usually from infectious disease and famine to chronic diseases as a country develops.",
+  "dl": "The epidemiological transition describes distinctive causes of death in each stage of the demographic transition. In earlier stages, infectious disease, famine, and high infant mortality are common; in later stages, chronic diseases such as heart disease and cancer become leading causes of death. The model helps explain why death rates and life expectancy change with development.",
+  "es": "Heart disease replacing infectious disease",
+  "em": "In later stages, heart disease and cancer replace infectious disease as leading killers.",
+  "el": "In many wealthy countries, heart disease and cancer have become leading causes of death, while deaths from infectious disease have fallen. That shift is the epidemiological transition. It usually accompanies later stages of the demographic transition and higher life expectancy."
+ },
+ {
+  "t": "Forced migration",
+  "ds": "Movement that people make against their will, because of conflict, disaster, or persecution.",
+  "dm": "Movement that people must make against their will, because of conflict, persecution, disaster, or other compulsion, rather than by choice.",
+  "dl": "Forced migration occurs when people have little or no choice but to leave their home, often because of conflict, persecution, slavery, or disaster. Refugees, internally displaced persons, and asylum seekers are major categories in the AP course. Forced migration is contrasted with voluntary migration, though some moves have mixed motives.",
+  "es": "Syrians fleeing civil war as refugees",
+  "em": "Syrians fleeing civil war as refugees are an example of forced migration.",
+  "el": "Millions of Syrians who fled civil war as refugees or became displaced inside Syria are examples of forced migration. They did not move mainly for a new job; they were driven out by violence and danger. Forced migration also includes historical slavery and some disaster-driven moves."
+ },
+ {
+  "t": "Guest workers",
+  "ds": "People who temporarily move to another country for jobs, often with limited rights to stay.",
+  "dm": "People who temporarily migrate to another country for work, often under programs that limit how long they can stay.",
+  "dl": "Guest workers are migrants who move to another country for temporary work, often in jobs that local workers are less willing to take. Programs may restrict their rights, family reunification, or length of stay. Guest-worker systems have been important in Europe, the Gulf states, and other labor-importing regions.",
+  "es": "Temporary labor in Gulf states or postwar Europe",
+  "em": "Temporary labor programs in the Gulf states are a common guest-worker system.",
+  "el": "Many oil-rich Gulf states employ large numbers of temporary foreign laborers in construction and services. Those workers are guest workers if they are admitted for employment but not as permanent immigrants. Similar programs existed in postwar Europe, such as Germany's guest-worker recruitment."
+ },
+ {
+  "t": "Immigration",
+  "ds": "Movement into a country or area to live there.",
+  "dm": "Movement into a country or area to live there, so the destination gains population through migration.",
+  "dl": "Immigration is migration to a location, that is, entering a country or area to live there. It is the counterpart of emigration. Countries often have laws that regulate who may immigrate and under what conditions.",
+  "es": "Arriving in the U.S. as a new resident",
+  "em": "People arriving in the United States to live there are immigrants.",
+  "el": "People who move to the United States to settle are immigrants, and the United States is their destination. The same move is emigration from their country of origin. Immigration is one of the two directions that make up international migration."
+ },
+ {
+  "t": "Infant mortality rate (IMR)",
+  "ds": "The number of deaths of babies under age one per 1,000 live births.",
+  "dm": "The number of deaths of infants under one year of age measured per 1,000 live births in a year.",
+  "dl": "The infant mortality rate is the number of deaths of infants under one year of age per 1,000 live births in a year. It is a sensitive indicator of health care, nutrition, and living conditions. High IMRs are more common in poorer countries; low IMRs are typical of more developed countries.",
+  "es": "A low IMR in Japan; higher in some poorer states",
+  "em": "Japan's very low infant mortality rate reflects strong health care and nutrition.",
+  "el": "Japan has one of the world's lowest infant mortality rates, meaning very few babies die in the first year of life. That low IMR reflects strong health care and living standards. Countries with weaker health systems usually have much higher IMRs."
+ },
+ {
+  "t": "Internal migration",
+  "ds": "A permanent move to a new home inside the same country.",
+  "dm": "A permanent move to a new home inside the same country, rather than across an international border.",
+  "dl": "Internal migration is a permanent move within the same country. It includes interregional moves, such as from one state to another, and intraregional moves, such as from city to suburb. Rural-to-urban migration is a major form of internal migration in many countries.",
+  "es": "Moving from the U.S. Midwest to the Sun Belt",
+  "em": "Moving from the Midwest to the Sun Belt is internal migration in the United States.",
+  "el": "A family that leaves Ohio to settle in Texas is taking part in internal migration, because both places are in the same country. In the United States, moves toward the South and West have been a major interregional pattern. The move would be international only if they crossed a national border."
+ },
+ {
+  "t": "Internally displaced persons (IDPs)",
+  "ds": "People forced from their homes who stay inside their own country.",
+  "dm": "People forced from their homes who remain inside their own country, so they are not classified as refugees.",
+  "dl": "Internally displaced persons, or IDPs, are people who have been forced to flee their homes but have not crossed an international border. They may be escaping conflict, persecution, or disaster. Unlike refugees, IDPs remain under the legal authority of their own state, which can make protection more difficult.",
+  "es": "People fleeing violence but staying in their country",
+  "em": "People who flee violence but stay inside their country are internally displaced persons.",
+  "el": "During a civil war, families may flee a combat zone but remain in another part of the same country. They are internally displaced persons, not refugees, because they have not crossed a border. They often need aid but may be harder to protect under international refugee law."
+ },
+ {
+  "t": "International migration",
+  "ds": "A permanent move from one country to another.",
+  "dm": "A permanent move from one country to another, crossing an international border.",
+  "dl": "International migration is a permanent move from one country to another. It includes both immigration to the destination and emigration from the origin. International migrants may move voluntarily, for work or family, or be forced, as in the case of refugees.",
+  "es": "Moving from Mexico to the United States",
+  "em": "Moving from Mexico to the United States is international migration.",
+  "el": "A person who leaves Mexico and settles in the United States is an international migrant. The move crosses a national border, so it is not internal migration. The same person is an emigrant from Mexico and an immigrant to the United States."
+ },
+ {
+  "t": "Intervening obstacles",
+  "ds": "A barrier that stands in the way of a migration and makes the journey harder or stops it.",
+  "dm": "An environmental, political, or other barrier that stands in the way of a migration and makes the journey harder or stops it.",
+  "dl": "An intervening obstacle is a barrier that hinders or blocks migration. Obstacles can be physical, such as mountains or oceans, or political and economic, such as borders, visas, or the cost of travel. In the modern world, political obstacles are often more important than physical ones.",
+  "es": "A border wall, visa, or mountain range",
+  "em": "A strict visa requirement can be an intervening obstacle to migration.",
+  "el": "A strict visa requirement or a militarized border can stop or delay people who want to migrate. That barrier is an intervening obstacle. In the past, oceans and deserts played a similar role; today, laws and cost often matter more."
+ },
+ {
+  "t": "Intervening opportunities",
+  "ds": "A closer or better option that appears during a move and can change the destination.",
+  "dm": "A closer or more attractive option that appears during a move and can pull a migrant away from the original destination.",
+  "dl": "An intervening opportunity is a closer or more attractive option that arises along the way and may change a migrant's destination. A job, cheaper housing, or family nearby can stop people before they reach the place they first planned to go. These opportunities help explain why not all migrants complete their original intended journey.",
+  "es": "A job found in a city along the way",
+  "em": "Taking a job in a city along the way is an intervening opportunity.",
+  "el": "A worker heading from a small town to a distant capital might accept a good job in a city along the route and stay there. That new option is an intervening opportunity. It changed the destination even though the original plan was to go farther."
+ },
+ {
+  "t": "Life expectancy",
+  "ds": "The average number of years a newborn can be expected to live.",
+  "dm": "The average number of years a newborn can be expected to live, based on current death rates.",
+  "dl": "Life expectancy is the average number of years a person is expected to live, usually measured from birth using current mortality rates. It is a basic indicator of health and development. Life expectancy is generally higher in more developed countries and has risen in many places as medicine, nutrition, and sanitation have improved.",
+  "es": "High life expectancy in Japan",
+  "em": "Japan's high life expectancy means a newborn there can expect to live a long life.",
+  "el": "A newborn in Japan can expect to live well into the eighties, one of the highest life expectancies in the world. That figure reflects strong health care and living standards. Countries with weaker health systems usually have much lower life expectancy."
+ },
+ {
+  "t": "Malthusian theory",
+  "ds": "The idea that population will grow faster than the food supply, leading to crisis.",
+  "dm": "The idea, from Thomas Malthus, that population will grow faster than the food supply and lead to famine or other checks.",
+  "dl": "Malthusian theory, named for Thomas Malthus, argues that population tends to grow geometrically while food production grows more slowly, or arithmetically. He predicted that unless people limited births, famine, disease, or war would check population. Later increases in food production from new technology have led many scholars to criticize a strict Malthusian view, but the theory is still a core AP topic.",
+  "es": "Malthus warned that food would run short",
+  "em": "Malthus warned that population would outgrow food unless growth was checked.",
+  "el": "In 1798, Thomas Malthus argued that population would grow faster than food production, leading to hardship. That argument is Malthusian theory. The Green Revolution later increased food supplies, which is one reason critics say he underestimated human innovation."
+ },
+ {
+  "t": "Natural increase rate (NIR)",
+  "ds": "The percentage by which a population grows each year from births minus deaths.",
+  "dm": "The percentage by which a population grows each year as a result of births minus deaths, not counting migration.",
+  "dl": "The natural increase rate is the percentage growth of a population in a year, not counting migration. It is roughly the crude birth rate minus the crude death rate, expressed as a percentage. A high NIR means rapid natural growth; a negative NIR means deaths outnumber births.",
+  "es": "CBR minus CDR, ignoring migration",
+  "em": "If births exceed deaths, the natural increase rate is positive, even before migration is counted.",
+  "el": "If a country has a crude birth rate of 20 and a crude death rate of 8, the natural increase rate is about 1.2 percent. That growth comes from births and deaths only. Migration can still raise or lower the actual change in population."
+ },
+ {
+  "t": "Neo-Malthusians",
+  "ds": "People who update Malthus's warning and worry that population will strain resources and the environment.",
+  "dm": "People who update Malthus's warning and argue that rapid population growth will strain food, water, energy, and the environment.",
+  "dl": "Neo-Malthusians are scholars and activists who revive Malthus's concern that population can outrun resources. They often stress not only food but also water, energy, and environmental limits. Critics argue that technology, trade, and falling fertility reduce the risk, but the debate remains important in population geography.",
+  "es": "Warnings about overusing water and farmland",
+  "em": "Neo-Malthusians warn that population growth can overuse water, farmland, and energy.",
+  "el": "Some modern writers argue that a growing population will put unsustainable pressure on water, farmland, and the climate. Those arguments are neo-Malthusian because they update Malthus's scarcity warning. Others reply that innovation and lower fertility have already eased many of those pressures."
+ },
+ {
+  "t": "Overpopulation",
+  "ds": "A situation in which there are more people than the environment can support at a decent standard of living.",
+  "dm": "A situation in which the number of people exceeds what the environment can support at a decent standard of living.",
+  "dl": "Overpopulation occurs when the number of people in an area exceeds the environment's ability to support them at an acceptable standard of living. It is related to carrying capacity, technology, and consumption, not only to raw population size. A densely settled place is not automatically overpopulated if resources and infrastructure are adequate.",
+  "es": "Too many people for local food and water",
+  "em": "A region is overpopulated if it cannot support its people at a decent standard of living.",
+  "el": "A region may be called overpopulated if farms, water, and jobs cannot support the people who live there at a decent standard of living. High density alone does not prove overpopulation. The key is whether the environment and economy can sustain the population."
+ },
+ {
+  "t": "Physiological density",
+  "ds": "The number of people divided by the amount of arable land.",
+  "dm": "The number of people divided by the amount of arable land, used to show pressure on farmland.",
+  "dl": "Physiological density is the number of people per unit of arable land. It is a better measure of population pressure on food-producing land than arithmetic density. A country with a large desert, such as Egypt, can have a moderate arithmetic density but a very high physiological density.",
+  "es": "Egypt's high density on Nile farmland",
+  "em": "Egypt has a high physiological density because almost everyone depends on a narrow strip of farmland.",
+  "el": "Egypt's population is packed onto the arable land of the Nile Valley, so its physiological density is very high. Arithmetic density looks lower because the empty desert is included in the land area. Physiological density therefore better shows pressure on farmland."
+ },
+ {
+  "t": "Population density",
+  "ds": "The number of people living in a given unit of area.",
+  "dm": "The number of people living in a given unit of area, measured in several ways, including arithmetic density.",
+  "dl": "Population density is the number of people per unit of area. Geographers use arithmetic, physiological, and agricultural densities to describe it in different ways. Density helps explain pressure on land, services, and the environment, but it must be read with distribution and resources in mind.",
+  "es": "People per square mile in a country",
+  "em": "People per square mile is a basic measure of population density.",
+  "el": "Saying that a country has 90 people per square mile is a statement of population density, specifically arithmetic density. Other density measures compare people or farmers only with arable land. Together they give a clearer picture than one number alone."
+ },
+ {
+  "t": "Population distribution",
+  "ds": "The way people are spread across Earth's surface or across a country.",
+  "dm": "The way people are spread across Earth's surface or across a country, including where they cluster and where few people live.",
+  "dl": "Population distribution is the pattern of where people live. It can be clustered along coasts and rivers or sparse in deserts, mountains, and high latitudes. Distribution is shaped by physical factors such as climate and by human factors such as jobs, history, and government policy.",
+  "es": "Most Australians live near the coast",
+  "em": "Most Australians live near the coast, an uneven population distribution.",
+  "el": "Most Australians live in cities along the coast, while the interior is sparsely settled. That is an uneven population distribution. Physical conditions and economic opportunity both help explain the pattern."
+ },
+ {
+  "t": "Population pyramid",
+  "ds": "A bar graph that shows the age and sex structure of a population.",
+  "dm": "A bar graph that shows how many males and females are in each age group of a population.",
+  "dl": "A population pyramid is a bar graph that displays a population's age and sex structure. A wide base suggests high fertility and a youthful population; a more rectangular or top-heavy shape suggests lower fertility and aging. Pyramids are used to infer stage of the demographic transition and future needs for schools, jobs, and elder care.",
+  "es": "A wide-base pyramid in a high-fertility country",
+  "em": "A wide-base pyramid shows a youthful, high-fertility population.",
+  "el": "A population pyramid with a very wide base, such as Nigeria's, shows many children and a high birth rate. A pyramid like Japan's, narrower at the bottom and fuller at older ages, shows an aging population. The shape is a quick visual of population composition."
+ },
+ {
+  "t": "Pronatalist policies",
+  "ds": "Government policies designed to raise the birth rate.",
+  "dm": "Government policies designed to raise the birth rate, often through money, leave, or other incentives for having children.",
+  "dl": "Pronatalist policies are government programs meant to increase fertility. They may include cash payments, parental leave, child care support, or official campaigns encouraging larger families. Countries with very low birth rates, such as some in Europe and East Asia, have used these policies to try to slow population decline.",
+  "es": "Payments or leave to encourage births",
+  "em": "Paid parental leave and child allowances are common pronatalist policies.",
+  "el": "France and several other countries have offered family allowances, child care, and parental leave to encourage births. Those are pronatalist policies. They try to raise fertility when a government worries about aging and population decline."
+ },
+ {
+  "t": "Pull factors",
+  "ds": "Conditions that attract people to a new place.",
+  "dm": "Conditions in a destination, such as jobs, safety, or family, that attract people to move there.",
+  "dl": "Pull factors are positive conditions that attract people to a new location. Common pull factors include jobs, higher wages, political freedom, safety, education, and family already living in the destination. They work together with push factors to explain why people migrate.",
+  "es": "Jobs and safety that attract migrants",
+  "em": "Jobs, higher wages, and safety are common pull factors that attract migrants.",
+  "el": "A growing city with factory jobs and relative safety can pull workers from poorer or more dangerous regions. Those attractions are pull factors. The same people may also be leaving because of push factors at home, such as unemployment or conflict."
+ },
+ {
+  "t": "Push factors",
+  "ds": "Conditions that drive people to leave their home.",
+  "dm": "Conditions at home, such as unemployment, conflict, or disaster, that drive people to leave.",
+  "dl": "Push factors are negative conditions that encourage people to leave their current home. They can be economic, political, environmental, or social, such as job loss, persecution, war, drought, or famine. Push and pull factors are often studied together as causes of migration.",
+  "es": "War or unemployment driving people out",
+  "em": "War, persecution, or unemployment can be push factors that drive people out.",
+  "el": "A drought that ruins crops, or a war that makes a town unsafe, can push people to leave. Those hardships are push factors. The migrants may then be pulled toward a place with work or safety."
+ },
+ {
+  "t": "Ravenstein's laws of migration",
+  "ds": "A set of ideas about typical migration patterns, such as short-distance and stepwise moves.",
+  "dm": "A set of generalizations, from Ernst Ravenstein, about typical migration patterns, such as short-distance, stepwise, and rural-to-urban moves.",
+  "dl": "Ravenstein's laws of migration are a set of generalizations written in the nineteenth century about how people usually move. They include the ideas that most migrants travel short distances, that long-distance migrants often go to major cities, that migration occurs in steps, and that rural people are more likely to migrate than urban people. Later research has modified some of the 'laws,' but they remain a foundation for migration study.",
+  "es": "Most people move only a short distance",
+  "em": "One of Ravenstein's laws is that most people move only a short distance.",
+  "el": "Ernst Ravenstein observed that most migrants move only a short distance and that longer moves often head toward large cities. Those statements are among Ravenstein's laws of migration. Modern geographers still use them as a starting point, even though exceptions are common."
+ },
+ {
+  "t": "Refugees",
+  "ds": "People forced to flee their country because of persecution, war, or violence.",
+  "dm": "People forced to flee their country because of persecution, war, or violence, and who cannot safely return home.",
+  "dl": "Refugees are people who have been forced to leave their country because of persecution, war, or violence and who cannot safely return. Unlike internally displaced persons, refugees have crossed an international border. International law gives refugees a special status and a claim to protection.",
+  "es": "People fleeing Syria across a border",
+  "em": "People who fled Syria across a border because of war are refugees.",
+  "el": "People who fled Syria into Turkey, Lebanon, or Europe because of war, and who cannot safely return, are refugees. They have crossed an international border, which distinguishes them from internally displaced persons. Their movement is a major example of forced migration."
+ },
+ {
+  "t": "Remittances",
+  "ds": "Money that migrants send back to family in their home country.",
+  "dm": "Money that migrants send back to family or communities in their home country.",
+  "dl": "Remittances are money or goods that migrants send back to family or communities in their country of origin. They can be a major source of income for households and even for national economies. Remittances are one of the most important economic effects of migration on sending countries.",
+  "es": "Wages sent home to family abroad",
+  "em": "Wages a worker abroad sends home to family are remittances.",
+  "el": "A worker in the United States who sends part of each paycheck to relatives in El Salvador is sending remittances. That money can pay for food, school, or housing at home. For some countries, remittances are a large share of national income."
+ },
+ {
+  "t": "Rural-to-urban migration",
+  "ds": "The movement of people from the countryside into cities.",
+  "dm": "The movement of people from the countryside into cities, often in search of jobs and services.",
+  "dl": "Rural-to-urban migration is the movement of people from rural areas to cities. It has been a major cause of urbanization, especially in developing countries. People often move for jobs, education, and services, though the shift can also strain housing and infrastructure.",
+  "es": "Farm workers moving to a capital city",
+  "em": "Farm workers moving to a capital city are taking part in rural-to-urban migration.",
+  "el": "In many countries, people leave farms and small villages to look for work in the capital or other large cities. That move is rural-to-urban migration. It has helped cities grow quickly, sometimes faster than housing and jobs can keep up."
+ },
+ {
+  "t": "Sex ratio",
+  "ds": "The number of males compared with the number of females in a population.",
+  "dm": "The number of males compared with the number of females in a population, often expressed as males per 100 females.",
+  "dl": "The sex ratio is the number of males per 100 females in a population, or a similar comparison of males and females. At birth the ratio is usually slightly above 100, but it can be skewed by culture, migration, or war. Highly skewed sex ratios can have social and economic consequences.",
+  "es": "More males than females after a one-child policy",
+  "em": "A culture that prefers sons can produce a sex ratio with more males than females.",
+  "el": "In some places, a preference for sons and the use of sex-selective practices have produced more male children than female children. That imbalance is a skewed sex ratio. Migration can also change the sex ratio if many men or many women move for work."
+ },
+ {
+  "t": "Step migration",
+  "ds": "A long move completed in a series of shorter moves.",
+  "dm": "A long move completed in a series of shorter moves, such as village to town to city.",
+  "dl": "Step migration is a process in which a person reaches a final destination through a series of smaller moves. A migrant might go from a village to a nearby town, then to a larger city, and later to another country. Ravenstein noted this stepwise pattern, and it still describes many migration journeys.",
+  "es": "Village to town to city, then abroad",
+  "em": "Moving from a village to a town and later to a city is step migration.",
+  "el": "A person who leaves a village for a regional town, later moves to the capital, and years later emigrates has taken part in step migration. The long journey is broken into stages. Many international moves follow a similar stepwise path."
+ },
+ {
+  "t": "Total fertility rate (TFR)",
+  "ds": "The average number of children a woman is expected to have in her lifetime.",
+  "dm": "The average number of children a woman is expected to have in her lifetime, based on current birth rates.",
+  "dl": "The total fertility rate is the average number of children a woman would have if current age-specific birth rates stayed the same throughout her childbearing years. A TFR of about 2.1 is often called replacement level in more developed countries. TFR is a better measure of fertility than the crude birth rate because it is less affected by the age structure of the population.",
+  "es": "A TFR of 2.1 is about replacement level",
+  "em": "A total fertility rate of about 2.1 is often called replacement level.",
+  "el": "If a country has a total fertility rate of 1.3, women are having, on average, well below two children, and the population may eventually decline without immigration. A TFR near 2.1 is roughly replacement level in many developed countries. That single number is a key measure of fertility."
+ },
+ {
+  "t": "Transhumance",
+  "ds": "The seasonal movement of livestock between mountain pastures and lowland areas.",
+  "dm": "The seasonal movement of livestock, and often herders, between mountain pastures and lowland areas.",
+  "dl": "Transhumance is a form of pastoralism in which livestock are moved seasonally between highland and lowland pastures. Herders may take animals up into the mountains in summer and down to valleys in winter. It is a type of cyclic or periodic movement and is often listed among forms of voluntary migration in the AP course.",
+  "es": "Sheep moved to mountain pastures in summer",
+  "em": "Herders who take sheep to mountain pastures in summer are practicing transhumance.",
+  "el": "In parts of the Alps and the Sahel, herders move animals to highland pastures in the warm season and return to lower land later in the year. That seasonal pattern is transhumance. It is a traditional way of using different elevations at different times."
+ },
+ {
+  "t": "Transnational migration",
+  "ds": "Migration in which people keep strong ties and regular movement between two countries.",
+  "dm": "Migration in which people settle or work in another country but keep strong social, economic, or political ties to their home country.",
+  "dl": "Transnational migration occurs when migrants live and work across international borders and maintain strong connections to more than one country. They may send remittances, visit often, or participate in politics and family life at home as well as in the destination. The idea emphasizes ongoing ties rather than a one-way, permanent break with the origin.",
+  "es": "Working abroad but keeping close ties at home",
+  "em": "A worker abroad who sends money home and visits often is a transnational migrant.",
+  "el": "A person who works in the United States, sends remittances, votes or visits often in Mexico, and keeps family in both places is a transnational migrant. The move is not a complete break with the home country. Those cross-border ties are the heart of transnational migration."
+ },
+ {
+  "t": "Voluntary migration",
+  "ds": "A move people make by choice, often for work, family, or opportunity.",
+  "dm": "A move people make by choice, often for work, family, or opportunity, rather than because they were forced out.",
+  "dl": "Voluntary migration is movement that people undertake by choice, usually for economic opportunity, family reunification, or other personal reasons. It is contrasted with forced migration, though some moves have mixed motives. Chain migration, guest-worker moves, and much rural-to-urban migration are typically treated as voluntary.",
+  "es": "Moving for a job or to join family",
+  "em": "Moving to another country for a job or to join family is often voluntary migration.",
+  "el": "A nurse who leaves the Philippines to take a hospital job in Canada is making a voluntary migration, assuming the move is chosen rather than forced. The pull of work and wages is the main cause. Voluntary migration is still shaped by laws, money, and family ties."
+ },
+ {
+  "t": "Women and demographic change",
+  "ds": "The way changes in women's education, work, and rights affect birth and death rates.",
+  "dm": "The way changes in women's education, work, and rights affect fertility, mortality, and migration in a population.",
+  "dl": "The changing status of women is a major cause of demographic change. Higher education, later marriage, work outside the home, and access to health care and contraception are closely tied to lower fertility and often to lower infant mortality. AP Human Geography emphasizes these links in the study of population and development.",
+  "es": "More schooling for girls, lower fertility",
+  "em": "As more girls stay in school, fertility rates often fall over time.",
+  "el": "In many countries, as more girls stay in school and women enter the paid workforce, the total fertility rate falls. That link is a key part of how women's changing roles shape population. Health care access for women also helps lower infant and maternal deaths."
+ },
+ {
+  "t": "Zero population growth",
+  "ds": "A situation in which births plus immigration roughly equal deaths plus emigration, so the population stays about the same size.",
+  "dm": "A situation in which a population stays about the same size because births and immigration are roughly balanced by deaths and emigration.",
+  "dl": "Zero population growth, or ZPG, occurs when a population is not growing or shrinking, because births and deaths (and usually migration) roughly balance. It is often associated with Stage 4 of the demographic transition, when fertility is near replacement and the natural increase rate is close to zero. Some countries with fertility below replacement are already shrinking rather than staying at zero growth.",
+  "es": "Births and deaths nearly balance",
+  "em": "If births and deaths nearly balance, a country may have zero population growth.",
+  "el": "If a country's birth rate and death rate are almost equal and net migration is small, its population stays about the same size. That condition is zero population growth. It is typical of some highly developed countries in the later stages of the demographic transition."
+ }
+];
+
+function render(){
+  var dm=document.querySelector('input[name=d]:checked').value,em=document.querySelector('input[name=e]:checked').value,h='';
+  for(var i=0;i<V.length;i++){
+    var x=V[i], d=x['d'+dm], e=x['e'+em];
+    h+='<li><b>'+x.t+'</b><br><span class="d">'+d+'</span><br><span class="e">Example: '+e+'</span><br><br></li>';
+  }
+  document.getElementById('list').innerHTML=h;
+}
+render();
+</script>
+
+<hr>
+<h2>Unit 2 Quiz</h2>
+<p>Choose one answer for each question, then check your work. Questions are mixed: AP-style items, vocabulary, and situations.</p>
+<ol id="quiz"></ol>
+<p>
+<button type="button" onclick="checkQuiz()">Check answers</button>
+<button type="button" onclick="resetQuiz()">Reset</button>
+<span id="qscore"></span>
+</p>
+<script>
+var QBANK=[
+ {
+  "t": "exam",
+  "q": "Which density measure is calculated by dividing total population by total land area?",
+  "c": [
+   "physiological density",
+   "agricultural density",
+   "arithmetic density",
+   "carrying capacity"
+  ],
+  "a": "arithmetic density",
+  "x": "Arithmetic density is people divided by total land area, the most general density measure."
+ },
+ {
+  "t": "exam",
+  "q": "Egypt has a moderate arithmetic density but a very high number of people per unit of farmland. The second measure is",
+  "c": [
+   "agricultural density",
+   "physiological density",
+   "doubling time",
+   "dependency ratio"
+  ],
+  "a": "physiological density",
+  "x": "Physiological density is people divided by arable land, so it is high where most people depend on a small amount of farmland, as in Egypt."
+ },
+ {
+  "t": "exam",
+  "q": "In Stage 2 of the demographic transition model, a population usually grows rapidly because",
+  "c": [
+   "birth rates and death rates are both very low",
+   "death rates have fallen while birth rates remain high",
+   "birth rates have fallen while death rates remain high",
+   "immigration stops completely"
+  ],
+  "a": "death rates have fallen while birth rates remain high",
+  "x": "In Stage 2, better food, sanitation, or medicine lowers the death rate first, so natural increase rises."
+ },
+ {
+  "t": "exam",
+  "q": "A total fertility rate of about 2.1 in a more developed country is often called",
+  "c": [
+   "crude birth rate",
+   "replacement-level fertility",
+   "zero infant mortality",
+   "Stage 1 of the DTM"
+  ],
+  "a": "replacement-level fertility",
+  "x": "A TFR near 2.1 is often called replacement level, the fertility needed to keep a population stable without migration."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following is the best example of forced migration?",
+  "c": [
+   "a nurse taking a hospital job in another country",
+   "a family moving to the suburbs for a larger house",
+   "people fleeing a civil war as refugees",
+   "herders moving livestock to summer pastures"
+  ],
+  "a": "people fleeing a civil war as refugees",
+  "x": "Refugees flee conflict or persecution and have little real choice, so their movement is forced migration."
+ },
+ {
+  "t": "exam",
+  "q": "Which statement best distinguishes a refugee from an internally displaced person?",
+  "c": [
+   "Refugees have crossed an international border; IDPs have not.",
+   "IDPs have crossed an international border; refugees have not.",
+   "Refugees move only for jobs; IDPs move only for school.",
+   "There is no legal difference between the two."
+  ],
+  "a": "Refugees have crossed an international border; IDPs have not.",
+  "x": "Refugees have left their country; internally displaced persons have been forced from home but remain inside their own country."
+ },
+ {
+  "t": "exam",
+  "q": "Thomas Malthus argued that",
+  "c": [
+   "food production would always grow faster than population",
+   "population would tend to grow faster than the food supply",
+   "migration, not births, is the only cause of growth",
+   "every country is already in Stage 5 of the DTM"
+  ],
+  "a": "population would tend to grow faster than the food supply",
+  "x": "Malthus claimed population grows geometrically while food grows more slowly, so famine or other checks would result unless fertility fell."
+ },
+ {
+  "t": "exam",
+  "q": "A population pyramid with a very wide base and a narrow top most likely indicates",
+  "c": [
+   "an aging population with very low fertility",
+   "a youthful population with high fertility",
+   "zero population growth for many decades",
+   "more elderly people than children"
+  ],
+  "a": "a youthful population with high fertility",
+  "x": "A wide base means many children, which is typical of high fertility and a youthful population."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following is a pronatalist policy?",
+  "c": [
+   "a one-child limit",
+   "paid parental leave and child allowances meant to raise the birth rate",
+   "a ban on contraception",
+   "a guest-worker program"
+  ],
+  "a": "paid parental leave and child allowances meant to raise the birth rate",
+  "x": "Pronatalist policies try to increase fertility, often with money, leave, or child-care support."
+ },
+ {
+  "t": "exam",
+  "q": "The natural increase rate does not include",
+  "c": [
+   "births",
+   "deaths",
+   "the difference between births and deaths",
+   "migration"
+  ],
+  "a": "migration",
+  "x": "NIR is based on births minus deaths; it leaves immigration and emigration out of the calculation."
+ },
+ {
+  "t": "exam",
+  "q": "Brain drain refers to",
+  "c": [
+   "money migrants send home",
+   "the emigration of many skilled or educated people",
+   "seasonal movement of livestock",
+   "a high infant mortality rate"
+  ],
+  "a": "the emigration of many skilled or educated people",
+  "x": "Brain drain is the loss of talent when many skilled people leave a country."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following is the best example of a pull factor?",
+  "c": [
+   "a drought that ruins crops at home",
+   "a civil war in the home country",
+   "factory jobs and higher wages in a destination city",
+   "a strict visa that blocks entry"
+  ],
+  "a": "factory jobs and higher wages in a destination city",
+  "x": "Pull factors are attractions in the destination, such as jobs, wages, or safety."
+ },
+ {
+  "t": "exam",
+  "q": "Ravenstein's laws of migration include the idea that",
+  "c": [
+   "almost all migrants travel very long distances only",
+   "most migrants travel only a short distance",
+   "people never move in steps",
+   "urban residents migrate more often than rural residents"
+  ],
+  "a": "most migrants travel only a short distance",
+  "x": "Ravenstein argued that most people move short distances and that long-distance moves often head toward major cities."
+ },
+ {
+  "t": "exam",
+  "q": "Money that migrants send back to family in their home country is called",
+  "c": [
+   "a remittance",
+   "a pull factor",
+   "brain drain",
+   "carrying capacity"
+  ],
+  "a": "a remittance",
+  "x": "Remittances are funds migrants send home, and they can be a major source of income for origin countries."
+ },
+ {
+  "t": "exam",
+  "q": "China's former one-child policy is the best example of",
+  "c": [
+   "a pronatalist policy",
+   "an antinatalist policy",
+   "transhumance",
+   "step migration"
+  ],
+  "a": "an antinatalist policy",
+  "x": "Antinatalist policies try to lower the birth rate; China's one-child policy was a strict example."
+ },
+ {
+  "t": "exam",
+  "q": "The dependency ratio is most useful for showing",
+  "c": [
+   "the number of people per square mile",
+   "how many dependents must be supported by working-age people",
+   "the exact doubling time of a population",
+   "whether a move is forced or voluntary"
+  ],
+  "a": "how many dependents must be supported by working-age people",
+  "x": "The dependency ratio compares children and older people with the working-age population that supports them."
+ },
+ {
+  "t": "exam",
+  "q": "In later stages of the epidemiological transition, a larger share of deaths is usually caused by",
+  "c": [
+   "famine and infectious disease",
+   "chronic diseases such as heart disease and cancer",
+   "infant deaths from poor sanitation only",
+   "warfare alone"
+  ],
+  "a": "chronic diseases such as heart disease and cancer",
+  "x": "As countries develop, infectious disease declines and chronic diseases become leading causes of death."
+ },
+ {
+  "t": "vocab",
+  "q": "The number of farmers per unit of arable land is",
+  "c": [
+   "arithmetic density",
+   "physiological density",
+   "agricultural density",
+   "life expectancy"
+  ],
+  "a": "agricultural density",
+  "x": "Agricultural density measures farmers against farmland and helps show how labor-intensive agriculture is."
+ },
+ {
+  "t": "vocab",
+  "q": "People who have left their country and applied for protection, but whose claims have not yet been decided, are",
+  "c": [
+   "internally displaced persons",
+   "guest workers",
+   "asylum seekers",
+   "step migrants"
+  ],
+  "a": "asylum seekers",
+  "x": "Asylum seekers have asked for refugee protection, but their legal status is not final until the claim is decided."
+ },
+ {
+  "t": "vocab",
+  "q": "The official government count of a population is a",
+  "c": [
+   "population pyramid",
+   "census",
+   "remittance",
+   "sex ratio"
+  ],
+  "a": "census",
+  "x": "A census is an official count, often taken at regular intervals, and it collects information about residents."
+ },
+ {
+  "t": "vocab",
+  "q": "Migration to a place because relatives or community members already live there is called",
+  "c": [
+   "step migration",
+   "chain migration",
+   "transhumance",
+   "forced migration"
+  ],
+  "a": "chain migration",
+  "x": "Chain migration occurs when later migrants follow earlier ones from the same family or community."
+ },
+ {
+  "t": "vocab",
+  "q": "The number of live births in a year per 1,000 people is the",
+  "c": [
+   "total fertility rate",
+   "crude birth rate",
+   "infant mortality rate",
+   "natural increase rate"
+  ],
+  "a": "crude birth rate",
+  "x": "The crude birth rate counts births per 1,000 people and does not adjust for age structure."
+ },
+ {
+  "t": "vocab",
+  "q": "The average number of children a woman is expected to have in her lifetime is the",
+  "c": [
+   "crude birth rate",
+   "total fertility rate",
+   "dependency ratio",
+   "doubling time"
+  ],
+  "a": "total fertility rate",
+  "x": "TFR estimates lifetime births per woman and is a better fertility measure than the crude birth rate."
+ },
+ {
+  "t": "vocab",
+  "q": "The number of deaths of infants under age one per 1,000 live births is the",
+  "c": [
+   "crude death rate",
+   "infant mortality rate",
+   "life expectancy",
+   "sex ratio"
+  ],
+  "a": "infant mortality rate",
+  "x": "IMR is a sensitive indicator of health care, nutrition, and living conditions."
+ },
+ {
+  "t": "vocab",
+  "q": "The portion of Earth's surface occupied by permanent human settlement is the",
+  "c": [
+   "carrying capacity",
+   "ecumene",
+   "population pyramid",
+   "intervening obstacle"
+  ],
+  "a": "ecumene",
+  "x": "The ecumene is the inhabited part of the earth, as opposed to empty or barely settled areas."
+ },
+ {
+  "t": "vocab",
+  "q": "A barrier that hinders or blocks migration, such as a visa or a mountain range, is an",
+  "c": [
+   "intervening opportunity",
+   "intervening obstacle",
+   "pull factor",
+   "remittance"
+  ],
+  "a": "intervening obstacle",
+  "x": "An intervening obstacle stands in the way of a move and makes the journey harder or stops it."
+ },
+ {
+  "t": "vocab",
+  "q": "A closer or better option that appears during a move and may change the destination is an",
+  "c": [
+   "intervening obstacle",
+   "intervening opportunity",
+   "push factor",
+   "antinatalist policy"
+  ],
+  "a": "intervening opportunity",
+  "x": "An intervening opportunity can pull a migrant toward a new, often closer, destination."
+ },
+ {
+  "t": "vocab",
+  "q": "The seasonal movement of livestock between mountain pastures and lowland areas is",
+  "c": [
+   "transhumance",
+   "brain drain",
+   "step migration",
+   "zero population growth"
+  ],
+  "a": "transhumance",
+  "x": "Transhumance is the seasonal herding of animals between highland and lowland pastures."
+ },
+ {
+  "t": "vocab",
+  "q": "A long move completed in a series of shorter moves, such as village to town to city, is",
+  "c": [
+   "chain migration",
+   "step migration",
+   "forced migration",
+   "transhumance"
+  ],
+  "a": "step migration",
+  "x": "Step migration reaches a final destination through a series of smaller moves."
+ },
+ {
+  "t": "vocab",
+  "q": "The average number of years a newborn can be expected to live is",
+  "c": [
+   "doubling time",
+   "life expectancy",
+   "dependency ratio",
+   "crude death rate"
+  ],
+  "a": "life expectancy",
+  "x": "Life expectancy is estimated from current mortality rates and is a basic health indicator."
+ },
+ {
+  "t": "vocab",
+  "q": "People forced from their homes who remain inside their own country are",
+  "c": [
+   "refugees",
+   "asylum seekers",
+   "internally displaced persons",
+   "guest workers"
+  ],
+  "a": "internally displaced persons",
+  "x": "IDPs have been forced to flee but have not crossed an international border."
+ },
+ {
+  "t": "vocab",
+  "q": "The idea that a population keeps growing for a time after fertility falls, because so many people are in childbearing years, is",
+  "c": [
+   "demographic momentum",
+   "zero population growth",
+   "carrying capacity",
+   "epidemiological transition"
+  ],
+  "a": "demographic momentum",
+  "x": "Demographic momentum is continued growth after fertility declines, caused by a large young population."
+ },
+ {
+  "t": "vocab",
+  "q": "Conditions that drive people to leave their home, such as war or unemployment, are",
+  "c": [
+   "pull factors",
+   "push factors",
+   "remittances",
+   "pronatalist policies"
+  ],
+  "a": "push factors",
+  "x": "Push factors are negative conditions at the origin that encourage people to leave."
+ },
+ {
+  "t": "vocab",
+  "q": "A situation in which births and deaths roughly balance, so the population stays about the same size, is",
+  "c": [
+   "Stage 1 of the DTM",
+   "zero population growth",
+   "overpopulation",
+   "brain drain"
+  ],
+  "a": "zero population growth",
+  "x": "Zero population growth means the population is neither growing nor shrinking in any significant way."
+ },
+ {
+  "t": "scenario",
+  "q": "A family leaves a war zone, arrives in another country, and files a legal request for protection. Until the case is decided, they are",
+  "c": [
+   "guest workers",
+   "asylum seekers",
+   "internally displaced persons only",
+   "voluntary labor migrants"
+  ],
+  "a": "asylum seekers",
+  "x": "They have asked another country for refugee protection, so they are asylum seekers until a decision is made."
+ },
+ {
+  "t": "scenario",
+  "q": "Doctors and engineers leave a less developed country for better-paying jobs in Europe, leaving the home country short of professionals. This is",
+  "c": [
+   "a remittance stream",
+   "brain drain",
+   "transhumance",
+   "an antinatalist policy"
+  ],
+  "a": "brain drain",
+  "x": "The departure of many skilled people is brain drain."
+ },
+ {
+  "t": "scenario",
+  "q": "One person from a town settles in Los Angeles, and later siblings and neighbors follow because family is already there. This is",
+  "c": [
+   "forced migration",
+   "chain migration",
+   "transhumance",
+   "zero population growth"
+  ],
+  "a": "chain migration",
+  "x": "Later migrants are following earlier ones from the same community, which is chain migration."
+ },
+ {
+  "t": "scenario",
+  "q": "A country's population is still rising even after the total fertility rate has fallen, because a huge number of young people are entering childbearing years. This is",
+  "c": [
+   "zero population growth",
+   "demographic momentum",
+   "arithmetic density",
+   "an intervening obstacle"
+  ],
+  "a": "demographic momentum",
+  "x": "A youthful age structure can keep a population growing after fertility drops, which is demographic momentum."
+ },
+ {
+  "t": "scenario",
+  "q": "A worker heading to a distant capital takes a good job in a city along the route and stays there instead. The job is an",
+  "c": [
+   "intervening obstacle",
+   "intervening opportunity",
+   "push factor",
+   "antinatalist policy"
+  ],
+  "a": "intervening opportunity",
+  "x": "A closer or better option that changes the destination is an intervening opportunity."
+ },
+ {
+  "t": "scenario",
+  "q": "Herders take sheep to mountain pastures in summer and return to lower valleys in winter. This practice is",
+  "c": [
+   "brain drain",
+   "transhumance",
+   "step migration",
+   "forced migration"
+  ],
+  "a": "transhumance",
+  "x": "Seasonal movement of livestock between highland and lowland pastures is transhumance."
+ },
+ {
+  "t": "scenario",
+  "q": "A person moves from a village to a regional town, later to the capital, and years later to another country. This path is",
+  "c": [
+   "step migration",
+   "transhumance",
+   "a census",
+   "physiological density"
+  ],
+  "a": "step migration",
+  "x": "Reaching a destination through a series of shorter moves is step migration."
+ },
+ {
+  "t": "scenario",
+  "q": "A worker in the United States sends part of each paycheck to relatives in El Salvador. The money is a",
+  "c": [
+   "pull factor",
+   "remittance",
+   "sex ratio",
+   "carrying capacity"
+  ],
+  "a": "remittance",
+  "x": "Money migrants send home is a remittance."
+ },
+ {
+  "t": "scenario",
+  "q": "Farm workers leave the countryside to look for jobs in the capital, and the city grows quickly. This movement is",
+  "c": [
+   "rural-to-urban migration",
+   "transhumance",
+   "internally displaced flight only",
+   "zero population growth"
+  ],
+  "a": "rural-to-urban migration",
+  "x": "Moving from the countryside into cities is rural-to-urban migration."
+ },
+ {
+  "t": "scenario",
+  "q": "Japan has a large share of people over 65, a very low birth rate, and rising costs for pensions and health care. Japan has",
+  "c": [
+   "a youthful population",
+   "an aging population",
+   "Stage 1 of the DTM",
+   "a wide-base population pyramid"
+  ],
+  "a": "an aging population",
+  "x": "A rising share of older people, caused by low fertility and long life expectancy, is an aging population."
+ },
+ {
+  "t": "scenario",
+  "q": "France offers family allowances, child care, and parental leave in an effort to encourage more births. These are",
+  "c": [
+   "antinatalist policies",
+   "pronatalist policies",
+   "guest-worker laws",
+   "Ravenstein's laws"
+  ],
+  "a": "pronatalist policies",
+  "x": "Policies designed to raise the birth rate are pronatalist."
+ },
+ {
+  "t": "scenario",
+  "q": "Families flee a combat zone but remain in another part of the same country and do not cross a border. They are",
+  "c": [
+   "refugees",
+   "internally displaced persons",
+   "asylum seekers who already have status",
+   "guest workers"
+  ],
+  "a": "internally displaced persons",
+  "x": "IDPs have been forced from home but have not left their country."
+ },
+ {
+  "t": "scenario",
+  "q": "A three-mile-wide strip of farmland along a river supports almost an entire country's population, while the desert beyond is nearly empty. The number of people per unit of farmland is",
+  "c": [
+   "arithmetic density only",
+   "physiological density",
+   "doubling time",
+   "life expectancy"
+  ],
+  "a": "physiological density",
+  "x": "People divided by arable land is physiological density, which is high when almost everyone depends on a small farm area."
+ },
+ {
+  "t": "scenario",
+  "q": "A nurse leaves the Philippines to take a hospital job in Canada, a move made by choice for work. This is best classified as",
+  "c": [
+   "forced migration",
+   "voluntary migration",
+   "transhumance",
+   "an intervening obstacle"
+  ],
+  "a": "voluntary migration",
+  "x": "A move made by choice, often for work or family, is voluntary migration."
+ },
+ {
+  "t": "scenario",
+  "q": "A country has a crude birth rate of 20 and a crude death rate of 8. Its natural increase rate is about",
+  "c": [
+   "28 percent",
+   "1.2 percent",
+   "zero, because migration is not listed",
+   "20 per 1,000 immigrants"
+  ],
+  "a": "1.2 percent",
+  "x": "NIR is roughly CBR minus CDR, expressed as a percent, so 20 minus 8 is 12 per 1,000, or about 1.2 percent."
+ },
+ {
+  "t": "scenario",
+  "q": "As more girls stay in school and women enter paid work, the total fertility rate in a country falls over time. This pattern is an example of",
+  "c": [
+   "Malthusian theory only",
+   "how women's changing roles affect demographic change",
+   "forced migration",
+   "agricultural density"
+  ],
+  "a": "how women's changing roles affect demographic change",
+  "x": "Greater education and work for women is closely tied to lower fertility, a key link in demographic change."
+ }
+];
+var QCUR=[];
+
+function qesc(s){
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function qshuffle(a){
+  for(var i=a.length-1;i>0;i--){
+    var j=Math.floor(Math.random()*(i+1));
+    var t=a[i]; a[i]=a[j]; a[j]=t;
+  }
+  return a;
+}
+function showQuiz(){
+  QCUR=QBANK.map(function(x){return {q:x.q,c:x.c.slice(),a:x.a,x:x.x};});
+  qshuffle(QCUR);
+  for(var i=0;i<QCUR.length;i++) qshuffle(QCUR[i].c);
+  var h="";
+  for(var i=0;i<QCUR.length;i++){
+    h+="<li><div>"+qesc(QCUR[i].q)+"</div>";
+    for(var j=0;j<QCUR[i].c.length;j++){
+      h+="<label><input type=\"radio\" name=\"qz"+i+"\" value=\""+j+"\"> "+qesc(QCUR[i].c[j])+"</label><br>";
+    }
+    h+="<div id=\"qx"+i+"\"></div><br></li>";
+  }
+  document.getElementById("quiz").innerHTML=h;
+  document.getElementById("qscore").textContent="";
+}
+function checkQuiz(){
+  var right=0;
+  for(var i=0;i<QCUR.length;i++){
+    var sel=document.querySelector("input[name=qz"+i+"]:checked");
+    var box=document.getElementById("qx"+i);
+    var ok=sel && QCUR[i].c[Number(sel.value)]===QCUR[i].a;
+    if(ok) right++;
+    box.className=ok?"right":"wrong";
+    box.textContent=(ok?"Correct. ":"Incorrect. The correct answer is "+QCUR[i].a+". ")+QCUR[i].x;
+  }
+  document.getElementById("qscore").textContent=" Score: "+right+" / "+QCUR.length;
+}
+function resetQuiz(){
+  showQuiz();
+}
+showQuiz();
+
+</script>
+</body>
+</html>

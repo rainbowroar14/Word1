@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AP Human Geography Unit 1 Vocab</title>
+<style>body{max-width:800px;margin:auto;font-family:sans-serif}.d{color:red}.e{color:blue}.right{color:green}.wrong{color:maroon}</style>
+</head>
+<body>
+<p><a href="index.html">Back to all units</a></p>
+<h1>AP Human Geography</h1>
+<h2>Unit 1: Thinking Geographically Vocabulary</h2>
+<p>Term list is a best guess, not the official handout.</p>
+<p>Definitions:
+<label><input type="radio" name="d" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="d" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="d" value="s" onchange="render()"> Short</label></p>
+<p>Examples:
+<label><input type="radio" name="e" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="e" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="e" value="s" onchange="render()"> Short</label></p>
+<ol id="list"></ol>
+<script>
+var V=[
+ {
+  "t": "Absolute direction",
+  "ds": "A compass direction such as north or east.",
+  "dm": "A compass direction such as north, south, east, or west, rather than a direction relative to a person.",
+  "dl": "Absolute direction is a compass direction such as north, south, east, or west. It does not depend on a person's point of view. Geographers use absolute direction, along with absolute distance and absolute location, to describe position in a precise, standardized way.",
+  "es": "Go north on I-95",
+  "em": "A sign that says to travel north on Interstate 95 uses absolute direction.",
+  "el": "A highway sign that tells drivers to travel north on Interstate 95 is using absolute direction. North is a compass bearing, so the instruction is the same no matter which way a person is facing. That is why it is absolute rather than relative direction."
+ },
+ {
+  "t": "Absolute distance",
+  "ds": "The space between places measured in exact units, such as miles.",
+  "dm": "The space between two places measured in exact units, such as miles or kilometers, not in travel time.",
+  "dl": "Absolute distance is the measurable physical separation between two places, usually expressed in miles or kilometers. It does not change with traffic, cost, or perception. Geographers contrast it with relative distance, which may be measured in time, cost, or effort.",
+  "es": "Atlanta is 245 miles from Savannah",
+  "em": "Atlanta is about 245 miles from Savannah, a measured physical distance.",
+  "el": "The driving distance from Atlanta to Savannah is about 245 miles. That figure is an absolute distance because it measures physical space in standard units. Travel time on the same route can change with traffic, so time would be a relative measure instead."
+ },
+ {
+  "t": "Absolute location",
+  "ds": "The precise position of a place, often given as coordinates.",
+  "dm": "The precise position of a place on Earth, often given as latitude and longitude.",
+  "dl": "Absolute location is the exact position of a place on Earth's surface. It is often given as latitude and longitude or as a street address. Unlike relative location, it does not depend on the position of other places.",
+  "es": "The White House at 38.90°N, 77.04°W",
+  "em": "The White House stands near 38.90°N, 77.04°W, its coordinates.",
+  "el": "The White House can be located at about 38.90°N, 77.04°W. Those coordinates are an absolute location because they pinpoint one spot on the globe. Saying it is 'near the National Mall' would instead be a relative location."
+ },
+ {
+  "t": "Built environment",
+  "ds": "The human-made surroundings of a place, such as buildings and roads.",
+  "dm": "The human-made parts of a place, such as buildings, roads, and parks, that make up its physical surroundings.",
+  "dl": "The built environment is the human-made physical surroundings of a place, including buildings, roads, bridges, and parks. It is a visible part of the cultural landscape. Geographers study how the built environment reflects culture, technology, and land-use decisions.",
+  "es": "Manhattan skyscrapers and subway",
+  "em": "Manhattan's skyscrapers, streets, and subway are a built environment.",
+  "el": "Manhattan's skyscrapers, grid of streets, and subway system are part of its built environment. These features were constructed by people rather than formed by nature. They show how human decisions have shaped the landscape of New York City."
+ },
+ {
+  "t": "Cartogram",
+  "ds": "A map that resizes areas to show the value of a data set.",
+  "dm": "A map that resizes places according to a data value, such as population, instead of true land area.",
+  "dl": "A cartogram is a thematic map in which the size of a country or region is scaled to represent a data value, such as population or income, rather than actual land area. Places with larger values appear bigger on the map. Cartograms can make patterns in the data easier to see, but they distort shape and area.",
+  "es": "World map sized by population",
+  "em": "A world map that enlarges China and India by population is a cartogram.",
+  "el": "A world population cartogram makes China and India look very large and makes sparsely populated countries look small. The map is not showing true land area. It is a cartogram because area has been resized to represent the data."
+ },
+ {
+  "t": "Census data",
+  "ds": "Official counts and surveys that describe a population's size and traits.",
+  "dm": "Official government counts and surveys that describe a population's size, age, and other traits.",
+  "dl": "Census data are official counts and surveys of a population, often collected by a government at regular intervals. They can include age, sex, race, housing, and income, and they are usually tied to specific geographic units. Geographers and governments use census data to plan services, draw voting districts, and study spatial patterns.",
+  "es": "U.S. Census every 10 years",
+  "em": "The U.S. Census, taken every ten years, is a major source of census data.",
+  "el": "The United States conducts a census every ten years to count residents and collect information about age, housing, and other characteristics. Those results are census data, and they are used to reapportion the House of Representatives and to plan schools, roads, and other services."
+ },
+ {
+  "t": "Choropleth map",
+  "ds": "A map that shades areas to show the value of a variable.",
+  "dm": "A map that shades or colors areas to show how a variable, such as income, differs from place to place.",
+  "dl": "A choropleth map is a thematic map that uses shading or color in predefined areas, such as states or counties, to show the value of a variable. Darker or different colors usually mean a higher or different value. Choropleth maps are common in human geography, but they can hide variation inside each area.",
+  "es": "U.S. map shaded by income",
+  "em": "A U.S. map shaded by median income in each state is a choropleth map.",
+  "el": "A map of the United States that shades each state by median household income is a choropleth map. The color of the whole state stands for one summary value. That makes state-to-state patterns easy to see, but it can hide differences among counties inside the state."
+ },
+ {
+  "t": "Clustering",
+  "ds": "A pattern in which objects or people are packed closely together.",
+  "dm": "A pattern in which objects, people, or activities are packed closely together in space rather than spread out.",
+  "dl": "Clustering, or a clustered pattern, is a spatial arrangement in which objects or people are grouped closely together. It is the opposite of dispersal. Clustering can result from resources, transportation, culture, or economic benefits of being near related activities.",
+  "es": "Restaurants packed in a downtown",
+  "em": "Many restaurants packed along one downtown street show clustering.",
+  "el": "A downtown street lined with many restaurants close together shows clustering. The businesses are packed into a small area instead of being spread evenly across the city. Geographers would describe that arrangement as a clustered spatial pattern."
+ },
+ {
+  "t": "Cultural landscape",
+  "ds": "The visible features of a place that show the imprint of human culture.",
+  "dm": "The visible features of a place, such as buildings, fields, and sacred sites, that show the imprint of human culture.",
+  "dl": "The cultural landscape is the visible imprint of human activity and culture on the environment. It includes buildings, fields, roads, religious sites, and other features people have created or modified. Carl Sauer and later geographers used the idea to show that landscapes are cultural as well as physical.",
+  "es": "Rice terraces in the Philippines",
+  "em": "Rice terraces in the Philippines are a cultural landscape shaped by farming.",
+  "el": "The rice terraces of the Philippine Cordillera are a cultural landscape because generations of farmers reshaped the hillsides to grow food. The terraces, paths, and villages show human culture written on the land. A visitor can read those features as evidence of long-term agricultural practice."
+ },
+ {
+  "t": "Dispersal",
+  "ds": "A pattern in which objects or people are spread out across an area.",
+  "dm": "A pattern in which objects, people, or activities are spread out across space rather than packed closely together.",
+  "dl": "Dispersal, or a dispersed pattern, is a spatial arrangement in which objects or people are spread over a wide area. It is the opposite of clustering. Dispersed settlement is common in some rural regions where farms are scattered across the countryside.",
+  "es": "Scattered farmhouses on the plains",
+  "em": "Scattered farmhouses across the Great Plains show a dispersed pattern.",
+  "el": "Farmhouses spread far apart across parts of the Great Plains show dispersal. Each farm sits on a large plot, so houses are not grouped into a tight village. That spread-out arrangement is a dispersed spatial pattern."
+ },
+ {
+  "t": "Distance decay",
+  "ds": "The weakening of interaction between places as they get farther apart.",
+  "dm": "The drop in contact and interaction between places as the distance between them increases.",
+  "dl": "Distance decay is the idea that interaction between two places declines as the distance between them increases. Farther places are usually harder, slower, or more costly to reach, so contact drops off. Time-space compression from better transportation and communication can weaken distance decay, but it does not erase it completely.",
+  "es": "Fewer trips to a faraway store",
+  "em": "People usually shop at nearby stores more than at distant ones, showing distance decay.",
+  "el": "People are more likely to visit a grocery store a mile away than one an hour away. That drop in interaction with greater distance is distance decay. Online shopping and highways can reduce the effect, but distance still shapes many daily choices."
+ },
+ {
+  "t": "Dot distribution map",
+  "ds": "A map in which each dot stands for a certain number of things.",
+  "dm": "A map that uses dots, each standing for a set number of people or events, to show where they are located.",
+  "dl": "A dot distribution map, or dot map, uses dots to show the location and quantity of a phenomenon. Each dot usually represents a set number of people, farms, or events. The pattern of dots can reveal clustering or dispersal, but overlapping dots in dense areas can be hard to read.",
+  "es": "Dots for each 1,000 people",
+  "em": "A map with one dot for every 1,000 people is a dot distribution map.",
+  "el": "A map of the United States that places one dot for every 1,000 people is a dot distribution map. Dots pile up in large metro areas and thin out in rural regions. That pattern shows both population concentration and areas of dispersal."
+ },
+ {
+  "t": "Elevation",
+  "ds": "The height of a place above sea level.",
+  "dm": "The height of a place above sea level, often shown on a topographic or isoline map.",
+  "dl": "Elevation is the height of a place above a reference level, usually sea level. It can be shown on topographic maps, isoline maps, or digital elevation models. Elevation affects climate, agriculture, settlement, and the ease of transportation.",
+  "es": "Denver about 5,280 feet",
+  "em": "Denver sits about 5,280 feet above sea level, a measure of elevation.",
+  "el": "Denver is often called the Mile High City because its elevation is about 5,280 feet above sea level. That measurement is elevation, not a cultural trait. High elevation helps explain the city's thinner air and cooler climate."
+ },
+ {
+  "t": "Environmental determinism",
+  "ds": "The claim that the physical environment controls human culture and behavior.",
+  "dm": "The claim that the physical environment largely controls how human culture and society develop.",
+  "dl": "Environmental determinism is the theory that the physical environment, especially climate and landforms, is the main force shaping human culture and development. It was influential in early geography but has been widely criticized as too rigid and, at times, as supporting racist or colonial ideas. Most geographers today prefer possibilism, which leaves more room for human choice.",
+  "es": "Old claim that climate decides culture",
+  "em": "The old claim that climate alone decides a society's success is environmental determinism.",
+  "el": "In the early 1900s, some geographers argued that tropical climates made societies less industrious than temperate ones. That argument is environmental determinism because it treats the environment as the controlling cause of culture. Modern geography rejects that idea as overly simple and often biased."
+ },
+ {
+  "t": "Field observation",
+  "ds": "Gathering data by visiting a place and observing it firsthand.",
+  "dm": "Gathering geographic information by visiting a place and observing the landscape or people firsthand.",
+  "dl": "Field observation is the collection of geographic data by visiting a place and observing it directly. It can include notes, sketches, interviews, and counts made on site. Fieldwork helps geographers check maps and remote data against what is actually on the ground.",
+  "es": "Walking a neighborhood to note land use",
+  "em": "A student walking a neighborhood to note land use is doing field observation.",
+  "el": "A geography class that walks a downtown district and records store types, building heights, and street life is doing field observation. The students are gathering data in person rather than only from a map or satellite image. Those notes can later be compared with census or GIS layers."
+ },
+ {
+  "t": "Flows",
+  "ds": "The movement of people, goods, information, or money from place to place.",
+  "dm": "The movement of people, goods, information, or money between places, creating connections across space.",
+  "dl": "Flows are the movements of people, goods, information, capital, or ideas from one place to another. They are a key spatial concept in the AP course because they show how places are connected. Flows can be mapped as routes, networks, or streams of migration and trade.",
+  "es": "Goods moving through the Suez Canal",
+  "em": "Container ships moving goods through the Suez Canal are a flow of trade.",
+  "el": "Container ships carrying goods through the Suez Canal are an example of economic flows. People, products, and information are moving between places along a route. Mapping those movements helps geographers see how distant regions are tied together."
+ },
+ {
+  "t": "Formal region",
+  "ds": "An area defined by one or more shared, measurable traits.",
+  "dm": "An area defined by one or more shared, measurable traits, such as language, climate, or a political border.",
+  "dl": "A formal region, also called a uniform or homogeneous region, is an area in which everyone shares one or more distinctive characteristics. The trait can be cultural, such as a language, economic, or physical, such as a climate zone, or it can be a political unit like a state. The characteristic is present throughout the area, though it may be stronger in some parts than in others.",
+  "es": "Montana as a state; the Corn Belt",
+  "em": "Montana is a formal region because it has legally defined state borders.",
+  "el": "The state of Montana is a formal region because it has officially defined political boundaries. The Corn Belt is also a formal region, defined by a shared agricultural characteristic rather than by a legal border. In both cases, a common trait is used to group the area."
+ },
+ {
+  "t": "Functional region",
+  "ds": "An area organized around a central node and the links to it.",
+  "dm": "An area organized around a central node, such as a city or TV station, and the links that connect out from it.",
+  "dl": "A functional region, or nodal region, is an area organized around a central point, or node, and the connections that tie surrounding places to it. The influence of the node usually declines with distance. Examples include a metro area, a radio station's listening area, or a pizza delivery zone.",
+  "es": "A metro area around a city",
+  "em": "A metropolitan area organized around a central city is a functional region.",
+  "el": "The Atlanta metropolitan area is a functional region because surrounding suburbs and counties are tied to the central city by commuting, media, and business. The node is Atlanta, and its influence fades farther out. That nodal pattern, not a single uniform trait, defines the region."
+ },
+ {
+  "t": "Geographic Information Systems (GIS)",
+  "ds": "A computer system that stores, layers, and analyzes spatial data on maps.",
+  "dm": "A computer system that stores, displays, and analyzes layers of spatial data to show patterns on maps.",
+  "dl": "A Geographic Information System, or GIS, is a computer system that captures, stores, analyzes, and displays geographic data in layers. Users can combine layers such as roads, census tracts, flood zones, and land use to see spatial relationships. GIS is one of the most important geospatial technologies in modern geography.",
+  "es": "Layers of roads and flood zones",
+  "em": "A city using GIS layers of roads and flood zones to plan housing is using GIS.",
+  "el": "A planning office might use GIS to stack layers of streets, parcel maps, and floodplains before approving a new housing project. The software lets staff see where development would sit in a flood zone. That layered spatial analysis is what GIS is designed to do."
+ },
+ {
+  "t": "Global Positioning System (GPS)",
+  "ds": "A satellite system used to find a precise location on Earth.",
+  "dm": "A satellite-based system used to determine a precise location on Earth, often for navigation.",
+  "dl": "The Global Positioning System, or GPS, is a satellite-based navigation system that can determine a receiver's absolute location. It is one type of satellite navigation system used for mapping, surveying, and everyday wayfinding. GPS data are often combined with GIS and online maps.",
+  "es": "Phone maps showing your location",
+  "em": "A phone map that shows your exact position is using GPS.",
+  "el": "A smartphone map that places a dot on your exact street corner is using GPS. Satellites send signals that the phone turns into an absolute location. That is why GPS is a core satellite navigation tool in daily life and in fieldwork."
+ },
+ {
+  "t": "Graduated symbol map",
+  "ds": "A map on which symbols change size to show a quantity.",
+  "dm": "A map on which symbols, such as circles, change size to show how large a value is at each place.",
+  "dl": "A graduated symbol map, also called a proportional symbol map, uses symbols of different sizes to represent different values at locations. Larger symbols usually mean larger quantities. These maps are useful for showing amounts at points or areas, but very large symbols can overlap and hide the base map.",
+  "es": "Circles sized by city population",
+  "em": "A map of cities with circles sized by population is a graduated symbol map.",
+  "el": "A map that places a circle on each U.S. city and sizes the circle by population is a graduated symbol map. New York and Los Angeles appear as very large circles, while small towns appear as tiny ones. The changing symbol size is what carries the data."
+ },
+ {
+  "t": "Isoline map",
+  "ds": "A map that uses lines to connect points with the same value.",
+  "dm": "A map that uses lines to connect points of equal value, such as temperature or elevation, to show gradients.",
+  "dl": "An isoline map uses lines to connect points that have the same value of a continuous variable, such as temperature, rainfall, or elevation. Areas between lines can be shaded to show ranges. Topographic maps are a familiar type of isoline map that show elevation.",
+  "es": "Weather map of temperature lines",
+  "em": "A weather map with lines of equal temperature is an isoline map.",
+  "el": "A television weather map that draws lines through places with the same temperature is an isoline map. Each line is an isotherm, connecting equal values. The pattern of lines shows how temperature changes gradually across the region."
+ },
+ {
+  "t": "Land use",
+  "ds": "The way people decide to use a piece of land, such as for farms or cities.",
+  "dm": "The way people use land, such as for farming, housing, industry, or conservation.",
+  "dl": "Land use is the way people occupy and modify Earth's surface for particular purposes, such as agriculture, residence, industry, transportation, or conservation. Land-use patterns can be mapped and compared across scales. Changes in land use often have environmental and social consequences.",
+  "es": "Zoning a parcel as residential",
+  "em": "A city zoning a parcel for housing rather than factories is a land-use decision.",
+  "el": "A city council that zones a parcel for single-family housing instead of a factory is making a land-use decision. The choice shapes how that land will look and function. Over time, many such decisions create the land-use pattern of the whole city."
+ },
+ {
+  "t": "Landscape analysis",
+  "ds": "The study of a landscape in order to describe and explain what is there.",
+  "dm": "The study of a landscape, using observation and other data, to describe and explain its features.",
+  "dl": "Landscape analysis is the process of studying and describing a landscape to understand how it is formed and used. It can involve field observation, photographs, maps, and spatial data. The goal is to identify patterns, human-environment interaction, and the meaning of visible features.",
+  "es": "Studying photos of a changing downtown",
+  "em": "Studying photos and field notes of a changing downtown is landscape analysis.",
+  "el": "A researcher who compares old photographs, satellite images, and walking notes of a downtown to explain how it has changed is doing landscape analysis. The work describes the visible scene and asks why it looks that way. That combination of observation and interpretation is the method."
+ },
+ {
+  "t": "Map projection",
+  "ds": "A way of drawing the curved Earth on a flat map, which always causes some distortion.",
+  "dm": "A way of drawing the curved Earth on a flat map, which always distorts some mix of shape, area, distance, or direction.",
+  "dl": "A map projection is a method of representing Earth's curved surface on a flat map. Every projection distorts some combination of shape, area, distance, and direction. Common examples include the Mercator projection, which preserves direction but enlarges high latitudes, and the Robinson projection, which compromises among several properties.",
+  "es": "Mercator vs Robinson world maps",
+  "em": "A Mercator world map enlarges Greenland, a distortion from that map projection.",
+  "el": "On a Mercator world map, Greenland looks nearly as large as Africa, even though Africa is far bigger. That stretch is a distortion created by the projection used to flatten the globe. Comparing it with an equal-area projection shows why the choice of map projection matters."
+ },
+ {
+  "t": "Natural resources",
+  "ds": "Materials from nature, such as water, forests, or minerals, that people can use.",
+  "dm": "Materials that occur in nature, such as water, forests, minerals, or fertile soil, that people can use.",
+  "dl": "Natural resources are materials or capacities that occur in nature and that people can use, such as water, forests, minerals, fossil fuels, and fertile soil. They may be renewable, like timber if it is managed carefully, or nonrenewable, like oil. Access to resources and decisions about how to use them are central to human-environment interaction.",
+  "es": "Oil in Saudi Arabia; timber in Canada",
+  "em": "Oil in Saudi Arabia and timber in Canada are natural resources people use.",
+  "el": "Saudi Arabia's oil reserves and Canada's timber are natural resources because they come from the environment and have economic value. How countries extract and manage those materials shapes both development and environmental impact. Geographers study the location of resources and the consequences of using them."
+ },
+ {
+  "t": "Online mapping",
+  "ds": "Maps that are created, viewed, or shared on the internet.",
+  "dm": "Maps created, viewed, or shared on the internet, often with satellite or user data added.",
+  "dl": "Online mapping is the use of internet-based tools to create, view, and share maps. Platforms can combine satellite imagery, GPS, and user-generated information and can be updated quickly. Online maps have made geospatial data widely available, though quality and bias still need to be checked.",
+  "es": "Google Maps or ArcGIS Online",
+  "em": "Google Maps is a widely used form of online mapping.",
+  "el": "Google Maps and similar sites let people search locations, get directions, and view satellite imagery in a browser or app. That is online mapping because the map is delivered and updated over the internet. Users can also add reviews or photos, which become part of the spatial information."
+ },
+ {
+  "t": "Pattern",
+  "ds": "The noticeable arrangement of geographic features, such as clustered or linear.",
+  "dm": "The noticeable arrangement of geographic features across space, such as clustered, dispersed, or linear.",
+  "dl": "A pattern is the arrangement of objects, people, or activities across space. Common patterns include clustered, dispersed, linear, and random arrangements. Identifying patterns is a basic geographic skill and often the first step in explaining why a distribution looks the way it does.",
+  "es": "Houses lined along a river",
+  "em": "Houses lined along a river form a linear pattern on the landscape.",
+  "el": "Houses built in a row along a river form a linear pattern. The arrangement is not random; it follows the water and the road beside it. A geographer would describe that layout as a spatial pattern and then ask what caused it."
+ },
+ {
+  "t": "Perceptual (vernacular) region",
+  "ds": "An area that exists because people believe it exists and give it a name.",
+  "dm": "An area defined by people's shared ideas and feelings about a place, rather than by official borders.",
+  "dl": "A perceptual region, also called a vernacular region, is an area that exists because people believe it exists and share a sense of its identity. Its borders are fuzzy and can differ from person to person. Examples include 'the South' in the United States or 'the Midwest.'",
+  "es": "The American 'South' or 'Midwest'",
+  "em": "People disagree on where 'the South' begins, a perceptual region.",
+  "el": "Americans often talk about 'the South' as a distinct region of food, accent, and history, but they do not all agree on its borders. That is a perceptual, or vernacular, region because it is based on shared ideas rather than a single official line. Different people would draw the region differently on a map."
+ },
+ {
+  "t": "Photographic interpretation",
+  "ds": "The study of photos, including aerial images, to identify landscape features.",
+  "dm": "The study of photographs, including aerial or satellite images, to identify and explain features of a landscape.",
+  "dl": "Photographic interpretation is the use of photographs, especially aerial or satellite images, to identify, describe, and analyze features on Earth's surface. It is an important method for gathering spatial information. Interpreters look for land use, infrastructure, vegetation, and change over time.",
+  "es": "Reading land use from aerial photos",
+  "em": "A planner reading land use from aerial photos is using photographic interpretation.",
+  "el": "A city planner who studies aerial photographs to pick out new housing tracts, parking lots, and remaining farmland is using photographic interpretation. The photos are a source of spatial data. Comparing images from different years can also show how the landscape has changed."
+ },
+ {
+  "t": "Place",
+  "ds": "A location with distinctive physical and human characteristics that give it meaning.",
+  "dm": "A location described by the distinctive physical and human characteristics that make it different from other locations.",
+  "dl": "Place refers to the distinctive physical and human characteristics of a location, and to the meaning people attach to it. Physical traits include climate and landforms; human traits include language, religion, architecture, and economy. A sense of place develops when people have a strong attachment to those characteristics.",
+  "es": "New Orleans: jazz, food, river site",
+  "em": "New Orleans is a unique place because of its music, food, and river site.",
+  "el": "New Orleans is a distinctive place because of its river site, historic architecture, food, and music. Those physical and cultural traits set it apart from other cities. Geographers use the concept of place to describe that uniqueness and the meaning it has for residents."
+ },
+ {
+  "t": "Possibilism",
+  "ds": "The idea that the environment sets limits, but culture and technology still leave many choices.",
+  "dm": "The idea that the physical environment sets limits, but people can still make many choices through culture and technology.",
+  "dl": "Possibilism is the theory that the physical environment sets constraints on human activity, but that people can adapt and make many choices through culture, technology, and innovation. It developed as a response to environmental determinism. Most modern human geographers work within a possibilist view of human-environment interaction.",
+  "es": "Farming deserts with irrigation",
+  "em": "Farming dry land with irrigation shows possibilism, because technology widens choices.",
+  "el": "Farmers in dry regions who use irrigation, greenhouses, or drought-resistant crops are practicing possibilism. The climate limits what will grow naturally, but technology and knowledge expand the options. The environment matters, but it does not dictate a single outcome."
+ },
+ {
+  "t": "Qualitative data",
+  "ds": "Descriptive information, such as interviews, photos, or field notes, rather than counts.",
+  "dm": "Descriptive information, such as interviews, photographs, or field notes, rather than information based on numbers.",
+  "dl": "Qualitative data are descriptive, non-numerical information, such as interviews, field notes, photographs, travel narratives, and media reports. They help geographers understand meaning, perception, and experience. Qualitative sources are often combined with quantitative data to give a fuller picture of a place.",
+  "es": "Interviews about why people moved",
+  "em": "Interviews about why people moved to a city are qualitative data.",
+  "el": "A researcher who interviews residents about why they moved to a neighborhood is collecting qualitative data. The answers are stories and reasons, not just counts. Those descriptions can explain patterns that a census table alone might not reveal."
+ },
+ {
+  "t": "Quantitative data",
+  "ds": "Numerical information, such as counts, rates, or measurements.",
+  "dm": "Numerical information, such as counts, rates, or measurements that can be mapped or graphed.",
+  "dl": "Quantitative data are numerical information, such as counts, percentages, rates, and measurements. Census figures, income statistics, and temperature readings are common examples. Geographers use quantitative data to measure patterns, test relationships, and make maps such as choropleth or graduated symbol maps.",
+  "es": "City population counts and density",
+  "em": "A table of city populations and densities is quantitative data.",
+  "el": "A table listing the population and population density of each U.S. city is quantitative data because the information is numerical. Those numbers can be mapped or compared statistically. They do not by themselves explain why a city grew, but they measure the pattern."
+ },
+ {
+  "t": "Reference map",
+  "ds": "A map made to show general features such as boundaries, roads, or landforms.",
+  "dm": "A map made to show general features of a place, such as boundaries, roads, cities, or landforms, rather than one data theme.",
+  "dl": "A reference map is designed to show the general location of features such as political boundaries, roads, cities, rivers, and landforms. Political maps, physical maps, road maps, and plat maps are types of reference maps. They contrast with thematic maps, which focus on a particular topic or data set.",
+  "es": "A road atlas or political wall map",
+  "em": "A road atlas or a political wall map of countries is a reference map.",
+  "el": "A road atlas and a classroom wall map of countries are reference maps because they show where general features are located. They are meant for finding places and seeing basic geography. A map of income by county would instead be a thematic map."
+ },
+ {
+  "t": "Relative direction",
+  "ds": "A direction described in relation to a person, such as left or right.",
+  "dm": "A direction described in relation to a person's position, such as left, right, or 'toward the coast,' rather than by compass.",
+  "dl": "Relative direction is a direction described from a person's point of view or in relation to another place, such as left, right, forward, or 'toward the lake.' It can change if the person turns or if the reference point changes. It is less standardized than absolute direction.",
+  "es": "Turn left after the school",
+  "em": "Directions that say to turn left after the school use relative direction.",
+  "el": "If someone says, 'Turn left after the school and go toward the river,' those instructions use relative direction. Left depends on which way the traveler is facing. A compass direction such as 'go west' would be absolute instead."
+ },
+ {
+  "t": "Relative distance",
+  "ds": "The separation between places measured in time, cost, or effort, not just miles.",
+  "dm": "The separation between places measured in time, cost, or effort, rather than only in miles or kilometers.",
+  "dl": "Relative distance is a measure of the separation between places that includes time, cost, or the effort needed to travel, not just physical mileage. Two places can be few miles apart but far in relative distance if a mountain, border, or poor road lies between them. Improvements in transportation can shrink relative distance.",
+  "es": "A 3-mile trip that takes an hour",
+  "em": "A three-mile trip that takes an hour in traffic is a long relative distance.",
+  "el": "A three-mile trip across a congested city might take an hour, while a three-mile trip on an empty highway takes minutes. The absolute distance is the same, but the relative distance is very different. Geographers use relative distance to capture that practical separation."
+ },
+ {
+  "t": "Relative location",
+  "ds": "The position of a place in relation to other places.",
+  "dm": "The position of a place in relation to other places, such as 'south of Chicago' or 'near the port.'",
+  "dl": "Relative location is the position of a place in relation to other places or features. It can be described with landmarks, direction, or connectivity, such as 'northeast of Atlanta' or 'at the mouth of the river.' Relative location can change in importance as transportation and trade networks change.",
+  "es": "Louisville is southwest of Cincinnati",
+  "em": "Louisville's location southwest of Cincinnati is a relative location.",
+  "el": "Saying that Louisville is southwest of Cincinnati and on the Ohio River is a statement of relative location. The description depends on other places and features. The same city also has an absolute location in latitude and longitude."
+ },
+ {
+  "t": "Remote sensing",
+  "ds": "Information about Earth gathered from aircraft or satellites, not by standing on the site.",
+  "dm": "Information about Earth's surface gathered from a distance, usually by aircraft or satellites.",
+  "dl": "Remote sensing is the collection of information about Earth's surface from a distance, typically using aircraft or satellites. It includes aerial photography, satellite imagery, and other sensors that record energy reflected or emitted from the ground. Remote sensing lets geographers study large areas and change over time without visiting every site.",
+  "es": "Satellites tracking deforestation",
+  "em": "Satellites tracking Amazon deforestation are using remote sensing.",
+  "el": "Satellites that photograph the Amazon rainforest to measure how much forest has been cleared are using remote sensing. The sensors collect data from space rather than from someone standing in the forest. Those images can be compared year after year to map change."
+ },
+ {
+  "t": "Satellite imagery",
+  "ds": "Pictures of Earth's surface taken from satellites in orbit.",
+  "dm": "Pictures or sensor images of Earth's surface taken from satellites in orbit and used to study places.",
+  "dl": "Satellite imagery consists of pictures or digital images of Earth's surface taken by satellites. It is a major product of remote sensing and is used in weather, agriculture, disaster response, and land-use study. The resolution and timing of the images affect what can be seen.",
+  "es": "After-hurricane satellite photos of a coast",
+  "em": "After a hurricane, satellite photos of a damaged coast are satellite imagery.",
+  "el": "After a hurricane, emergency teams often study satellite images of a coastline to see which neighborhoods are flooded. Those pictures were taken from orbit, so they are satellite imagery. The images provide a quick, wide view that would be hard to get from the ground alone."
+ },
+ {
+  "t": "Scale of analysis",
+  "ds": "The level at which a geographic issue is studied, such as local or global.",
+  "dm": "The level at which a geographic issue is studied, such as local, regional, national, or global, which can change what patterns appear.",
+  "dl": "Scale of analysis is the level at which geographic data are grouped and examined, such as local, regional, national, or global. Changing the scale can change the patterns and conclusions a person sees. It is different from cartographic scale, which is the relationship between map distance and real distance.",
+  "es": "Income patterns at county vs state level",
+  "em": "Income inequality can look different at the county scale than at the state scale.",
+  "el": "A map of average income by U.S. state may hide poor counties inside a wealthy state. When the same data are shown by county, a different pattern appears. That is why scale of analysis matters: the level at which data are grouped can change the conclusion."
+ },
+ {
+  "t": "Site",
+  "ds": "The physical characteristics of a place, such as landforms, climate, or water.",
+  "dm": "The physical characteristics of a place's location, such as landforms, climate, water, and soil.",
+  "dl": "Site refers to the physical characteristics of a place, including landforms, climate, water sources, soil, and vegetation. A good site might offer a harbor, fresh water, or a defensive hill. Site is often contrasted with situation, which is a place's location relative to other places.",
+  "es": "Boston's harbor and peninsula",
+  "em": "Boston's original site was a harbor and a defensible peninsula.",
+  "el": "Boston was founded on a hilly peninsula with a deep harbor. Those physical features are its site, and they helped the settlement grow as a port. Its later importance also depended on situation, such as its position relative to trade routes and other cities."
+ },
+ {
+  "t": "Situation",
+  "ds": "The location of a place relative to other places and routes.",
+  "dm": "The location of a place relative to other places, resources, and transportation routes.",
+  "dl": "Situation is the location of a place relative to other places, resources, and transportation routes. A favorable situation might include access to markets, ports, or a river network. Situation can improve or decline as trade routes and technology change, even if the site stays the same.",
+  "es": "Singapore on major shipping lanes",
+  "em": "Singapore's situation on major shipping lanes helps explain its port's success.",
+  "el": "Singapore sits at a key point along shipping lanes between the Indian and Pacific Oceans. That relative position is its situation, and it helps explain why the port became a global hub. The city's site on an island matters too, but its connections to world trade are a situation advantage."
+ },
+ {
+  "t": "Space",
+  "ds": "The area or gap in which people and things are arranged.",
+  "dm": "The area or gap in which people, objects, and activities are arranged and move.",
+  "dl": "In geography, space is the area or physical extent in which phenomena are arranged and interact. Spatial thinking asks how things are distributed across space and how they are connected. Concepts such as density, pattern, and flow are ways of describing space.",
+  "es": "The layout of stores in a mall",
+  "em": "The layout of stores across a mall is an arrangement in space.",
+  "el": "The way stores are arranged across a shopping mall, with some clustered and some farther apart, is a question of space. Geographers look at that arrangement and at how people move through it. Space is the setting in which those patterns exist."
+ },
+ {
+  "t": "Spatial association",
+  "ds": "The tendency of two or more things to occur in the same places, suggesting a connection.",
+  "dm": "The tendency of two or more phenomena to occur in the same places, which may suggest that they are related.",
+  "dl": "Spatial association is the degree to which two or more phenomena are similarly arranged in space. If they occur together often, there may be a relationship to investigate, though correlation is not the same as proof of cause. Maps that can be compared at the same scale are a common tool for seeing spatial association.",
+  "es": "Lung disease and factory towns",
+  "em": "High disease rates in the same towns as heavy industry show spatial association.",
+  "el": "If maps show high rates of a lung disease in the same towns as heavy industry, the two patterns have a spatial association. That overlap suggests a possible link worth studying. It does not by itself prove that the factories caused the illness, but it is an important geographic clue."
+ },
+ {
+  "t": "Sustainability",
+  "ds": "The use of resources in a way that can last for future generations.",
+  "dm": "The use of resources in a way that meets today's needs without destroying the ability of future generations to meet theirs.",
+  "dl": "Sustainability is the use of Earth's resources in ways that meet present needs without compromising the ability of future generations to meet their needs. It involves environmental, economic, and social concerns. In AP Human Geography, sustainability is a key idea in the study of land use and human-environment interaction.",
+  "es": "Cutting trees only as fast as they regrow",
+  "em": "Cutting trees only as fast as they can regrow is a sustainability practice.",
+  "el": "A timber company that harvests trees no faster than the forest can regrow is trying to practice sustainability. Present demand is met without permanently destroying the resource. If the forest is cleared faster than it can recover, the use is not sustainable."
+ },
+ {
+  "t": "Thematic map",
+  "ds": "A map made to show one topic or data set, such as population or climate.",
+  "dm": "A map made to show a particular topic or data set, such as population, income, or climate, rather than general features.",
+  "dl": "A thematic map focuses on a particular topic or data set rather than on general reference features. Choropleth, dot distribution, graduated symbol, isoline, and cartogram maps are common types. Thematic maps help geographers see spatial patterns in a variable.",
+  "es": "A map of rainfall or election results",
+  "em": "A map of rainfall totals or election results is a thematic map.",
+  "el": "A map that shows rainfall totals or presidential election results by county is a thematic map. It is built to display one kind of information, not to serve as a general road or political atlas. Different thematic techniques, such as shading or dots, can be used to show the data."
+ },
+ {
+  "t": "Time-space compression",
+  "ds": "The way better transport and communication make distant places feel closer.",
+  "dm": "The way improvements in transportation and communication make distant places feel closer and easier to reach.",
+  "dl": "Time-space compression is the shrinking of the relative distance between places because of improvements in transportation and communication. Distant places can be reached more quickly, so the world feels smaller. The concept helps explain globalization and the weakening, but not disappearance, of distance decay.",
+  "es": "A flight that used to take weeks by ship",
+  "em": "A flight that covers in hours a trip that once took weeks shows time-space compression.",
+  "el": "A flight from New York to London now takes about seven hours, a trip that once took more than a week by ship. That reduction in travel time is time-space compression. Video calls have a similar effect for communication, making distant partners feel closer."
+ },
+ {
+  "t": "Toponym",
+  "ds": "The name given to a place, which often reflects culture or history.",
+  "dm": "The name given to a place, which often reflects language, culture, history, or the people who named it.",
+  "dl": "A toponym is the name given to a place on Earth. Place names often reflect language, religion, history, or the people who settled or claimed the area. Studying toponyms can reveal cultural origins, colonial influence, or later efforts to rename places.",
+  "es": "San Francisco; New York",
+  "em": "San Francisco is a toponym that reflects Spanish colonial and religious naming.",
+  "el": "San Francisco is a toponym that reflects Spanish colonial and Catholic naming, while New York reflects later English influence. The names are not random; they carry cultural history. Changing a place name, such as renaming a street, can also be a political act."
+ },
+ {
+  "t": "Travel narratives",
+  "ds": "Written accounts of journeys used as sources of geographic information.",
+  "dm": "Written accounts of journeys used as sources of geographic information about places and people.",
+  "dl": "Travel narratives are written accounts of journeys, and they are one of the qualitative sources geographers can use to learn about places. They may include descriptions of landscapes, cultures, and routes. Like all sources, they must be read carefully for bias, limited viewpoint, and the time in which they were written.",
+  "es": "A diary of a 1800s journey west",
+  "em": "A diary of a nineteenth-century journey west is a travel narrative source.",
+  "el": "A diary written by someone traveling west on the Oregon Trail is a travel narrative. Geographers can use it as a qualitative source about the landscape, settlements, and people of that time. The account is useful, but it also reflects the writer's point of view and should be checked against other evidence."
+ }
+];
+
+function render(){
+  var dm=document.querySelector('input[name=d]:checked').value,em=document.querySelector('input[name=e]:checked').value,h='';
+  for(var i=0;i<V.length;i++){
+    var x=V[i], d=x['d'+dm], e=x['e'+em];
+    h+='<li><b>'+x.t+'</b><br><span class="d">'+d+'</span><br><span class="e">Example: '+e+'</span><br><br></li>';
+  }
+  document.getElementById('list').innerHTML=h;
+}
+render();
+</script>
+
+<hr>
+<h2>Unit 1 Quiz</h2>
+<p>Choose one answer for each question, then check your work. Questions are mixed: AP-style items, vocabulary, and situations.</p>
+<ol id="quiz"></ol>
+<p>
+<button type="button" onclick="checkQuiz()">Check answers</button>
+<button type="button" onclick="resetQuiz()">Reset</button>
+<span id="qscore"></span>
+</p>
+<script>
+var QBANK=[
+ {
+  "t": "exam",
+  "q": "Which of the following best distinguishes site from situation?",
+  "c": [
+   "Site is a place's location relative to other places; situation is its physical characteristics.",
+   "Site is the physical character of a place; situation is its location relative to other places and routes.",
+   "Site and situation are both measured only in latitude and longitude.",
+   "Situation never changes, but site changes whenever a new road is built."
+  ],
+  "a": "Site is the physical character of a place; situation is its location relative to other places and routes.",
+  "x": "Site refers to physical features such as a harbor or hill; situation refers to relative location and connections."
+ },
+ {
+  "t": "exam",
+  "q": "A map of the United States that shades each state by median income is best classified as a",
+  "c": [
+   "reference map",
+   "choropleth map",
+   "dot distribution map",
+   "graduated symbol map"
+  ],
+  "a": "choropleth map",
+  "x": "A choropleth map uses shading of predefined areas, such as states, to show the value of a variable."
+ },
+ {
+  "t": "exam",
+  "q": "Which statement about map projections is most accurate?",
+  "c": [
+   "A good projection can show Earth's surface on a flat map with no distortion.",
+   "The Mercator projection is the only projection that distorts area.",
+   "Every flat map projection distorts some combination of shape, area, distance, or direction.",
+   "Isoline maps are the one type of map that avoids projection distortion."
+  ],
+  "a": "Every flat map projection distorts some combination of shape, area, distance, or direction.",
+  "x": "Because Earth is curved and a map is flat, every projection must distort at least one of shape, area, distance, or direction."
+ },
+ {
+  "t": "exam",
+  "q": "Which technology is best described as a computer system that layers and analyzes spatial data?",
+  "c": [
+   "GPS",
+   "GIS",
+   "a choropleth map",
+   "a census"
+  ],
+  "a": "GIS",
+  "x": "A Geographic Information System stores, displays, and analyzes geographic data in layers that can be combined on a map."
+ },
+ {
+  "t": "exam",
+  "q": "If average income is mapped by U.S. state, poor counties inside a wealthy state may be hidden. This problem is mainly about",
+  "c": [
+   "map projection",
+   "absolute direction",
+   "scale of analysis",
+   "environmental determinism"
+  ],
+  "a": "scale of analysis",
+  "x": "Changing the scale at which data are grouped, such as from county to state, can change the patterns and conclusions that appear."
+ },
+ {
+  "t": "exam",
+  "q": "'The American South' has no single official border, and people disagree about where it begins. It is best classified as a",
+  "c": [
+   "formal region",
+   "functional region",
+   "perceptual (vernacular) region",
+   "geometric region"
+  ],
+  "a": "perceptual (vernacular) region",
+  "x": "A perceptual, or vernacular, region is based on people's shared ideas about a place, so its boundaries are often fuzzy and contested."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following is the best example of a functional region?",
+  "c": [
+   "the state of Utah, with legally defined borders",
+   "a metropolitan area organized around a central city by commuting and media",
+   "the Corn Belt, defined by a shared crop",
+   "'the Midwest,' as people imagine it"
+  ],
+  "a": "a metropolitan area organized around a central city by commuting and media",
+  "x": "A functional, or nodal, region is organized around a central point and the links that connect surrounding places to it."
+ },
+ {
+  "t": "exam",
+  "q": "Distance decay is most clearly illustrated by which situation?",
+  "c": [
+   "People interact less with a store as it gets farther away.",
+   "A flight makes a once-long journey take only a few hours.",
+   "A map shades countries by population.",
+   "A place is named after a saint."
+  ],
+  "a": "People interact less with a store as it gets farther away.",
+  "x": "Distance decay is the decline in interaction as distance increases, such as shopping closer to home more often than at a distant store."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following best describes time-space compression?",
+  "c": [
+   "The physical mileage between two cities increases over time.",
+   "Improvements in transportation and communication make distant places feel closer and easier to reach.",
+   "Every map projection shrinks the poles.",
+   "Interaction always increases steadily with distance."
+  ],
+  "a": "Improvements in transportation and communication make distant places feel closer and easier to reach.",
+  "x": "Time-space compression is the shrinking of relative distance as travel and communication become faster."
+ },
+ {
+  "t": "exam",
+  "q": "Environmental determinism differs from possibilism mainly because environmental determinism claims that",
+  "c": [
+   "people can overcome environmental limits through technology",
+   "the physical environment largely controls human culture and development",
+   "culture has no relationship to the environment",
+   "only renewable resources matter"
+  ],
+  "a": "the physical environment largely controls human culture and development",
+  "x": "Environmental determinism treats the environment as the main control on society; possibilism says the environment sets limits but people still have choices."
+ },
+ {
+  "t": "exam",
+  "q": "Latitude and longitude are used to express",
+  "c": [
+   "relative location",
+   "absolute location",
+   "relative direction",
+   "perceptual region"
+  ],
+  "a": "absolute location",
+  "x": "Absolute location is a precise position on Earth, often given as coordinates of latitude and longitude."
+ },
+ {
+  "t": "exam",
+  "q": "Which source is the best example of qualitative data?",
+  "c": [
+   "a table of city populations",
+   "median income by county",
+   "interviews with residents about why they moved",
+   "a count of houses in each census tract"
+  ],
+  "a": "interviews with residents about why they moved",
+  "x": "Qualitative data are descriptive rather than numerical, such as interviews, photographs, or field notes."
+ },
+ {
+  "t": "exam",
+  "q": "Satellites used to photograph deforestation in the Amazon are an example of",
+  "c": [
+   "field observation only",
+   "remote sensing",
+   "a formal region",
+   "possibilism"
+  ],
+  "a": "remote sensing",
+  "x": "Remote sensing gathers information about Earth's surface from a distance, usually with aircraft or satellites."
+ },
+ {
+  "t": "exam",
+  "q": "A world map that resizes countries according to population, making China and India appear very large, is a",
+  "c": [
+   "reference map",
+   "cartogram",
+   "isolines map of elevation",
+   "plat map"
+  ],
+  "a": "cartogram",
+  "x": "A cartogram scales the size of areas to a data value, such as population, rather than to actual land area."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following is a reference map rather than a thematic map?",
+  "c": [
+   "a map of rainfall totals",
+   "a choropleth map of income",
+   "a political wall map of countries and borders",
+   "a cartogram of energy use"
+  ],
+  "a": "a political wall map of countries and borders",
+  "x": "Reference maps show general features such as boundaries and cities; thematic maps focus on a particular data topic."
+ },
+ {
+  "t": "exam",
+  "q": "Farmhouses spread far apart across the Great Plains, rather than grouped in a tight village, illustrate",
+  "c": [
+   "clustering",
+   "dispersal",
+   "time-space compression",
+   "a formal political region"
+  ],
+  "a": "dispersal",
+  "x": "Dispersal is a spread-out spatial pattern, the opposite of clustering."
+ },
+ {
+  "t": "exam",
+  "q": "Sustainability is best defined as",
+  "c": [
+   "using resources as quickly as possible to raise GDP",
+   "meeting present needs without destroying the ability of future generations to meet theirs",
+   "the idea that climate determines culture",
+   "the use of only nonrenewable resources"
+  ],
+  "a": "meeting present needs without destroying the ability of future generations to meet theirs",
+  "x": "Sustainability means using Earth's resources in ways that can continue over the long term, not only for the present."
+ },
+ {
+  "t": "vocab",
+  "q": "The exact position of a place on Earth, often given as latitude and longitude, is its",
+  "c": [
+   "relative location",
+   "absolute location",
+   "situation",
+   "perceptual region"
+  ],
+  "a": "absolute location",
+  "x": "Absolute location is a precise position, while relative location describes a place in relation to other places."
+ },
+ {
+  "t": "vocab",
+  "q": "A compass direction such as north or west is an example of",
+  "c": [
+   "relative direction",
+   "absolute direction",
+   "relative distance",
+   "situation"
+  ],
+  "a": "absolute direction",
+  "x": "Absolute direction uses compass bearings and does not depend on which way a person is facing."
+ },
+ {
+  "t": "vocab",
+  "q": "Which term refers to the visible imprint of human activity on the environment, including buildings, fields, and roads?",
+  "c": [
+   "natural resources",
+   "cultural landscape",
+   "map projection",
+   "distance decay"
+  ],
+  "a": "cultural landscape",
+  "x": "The cultural landscape is the visible human imprint on the land, from farms and sacred sites to streets and houses."
+ },
+ {
+  "t": "vocab",
+  "q": "A computer system that captures, stores, analyzes, and displays geographic data in layers is",
+  "c": [
+   "GPS",
+   "GIS",
+   "a toponym",
+   "a census"
+  ],
+  "a": "GIS",
+  "x": "GIS stands for Geographic Information Systems, which layer and analyze spatial data."
+ },
+ {
+  "t": "vocab",
+  "q": "A satellite-based system used to determine a precise location on Earth is",
+  "c": [
+   "GIS",
+   "GPS",
+   "a choropleth map",
+   "a formal region"
+  ],
+  "a": "GPS",
+  "x": "The Global Positioning System uses satellites to find a receiver's absolute location."
+ },
+ {
+  "t": "vocab",
+  "q": "An area in which everyone shares one or more distinctive, measurable characteristics is a",
+  "c": [
+   "functional region",
+   "formal region",
+   "perceptual region",
+   "map projection"
+  ],
+  "a": "formal region",
+  "x": "A formal, or uniform, region is defined by a shared trait, such as a language, climate, or political border."
+ },
+ {
+  "t": "vocab",
+  "q": "The idea that interaction between places declines as the distance between them increases is called",
+  "c": [
+   "time-space compression",
+   "distance decay",
+   "possibilism",
+   "spatial association"
+  ],
+  "a": "distance decay",
+  "x": "Distance decay means that farther places generally have less contact because they are harder or costlier to reach."
+ },
+ {
+  "t": "vocab",
+  "q": "The name given to a place on Earth is a",
+  "c": [
+   "toponym",
+   "site",
+   "projection",
+   "flow"
+  ],
+  "a": "toponym",
+  "x": "A toponym is a place name, and it often reflects language, culture, or history."
+ },
+ {
+  "t": "vocab",
+  "q": "Descriptive, non-numerical information such as interviews, photos, or field notes is",
+  "c": [
+   "quantitative data",
+   "qualitative data",
+   "absolute distance",
+   "census density"
+  ],
+  "a": "qualitative data",
+  "x": "Qualitative data describe meaning and experience; quantitative data are numerical."
+ },
+ {
+  "t": "vocab",
+  "q": "Numerical information such as counts, rates, and measurements is",
+  "c": [
+   "qualitative data",
+   "quantitative data",
+   "a travel narrative",
+   "relative direction"
+  ],
+  "a": "quantitative data",
+  "x": "Quantitative data are numbers that can be mapped or graphed, such as population or income."
+ },
+ {
+  "t": "vocab",
+  "q": "The theory that the physical environment sets limits but people can still make many choices through culture and technology is",
+  "c": [
+   "environmental determinism",
+   "possibilism",
+   "distance decay",
+   "clustering"
+  ],
+  "a": "possibilism",
+  "x": "Possibilism holds that the environment constrains people but does not dictate a single outcome."
+ },
+ {
+  "t": "vocab",
+  "q": "The height of a place above sea level is its",
+  "c": [
+   "situation",
+   "elevation",
+   "relative distance",
+   "pattern"
+  ],
+  "a": "elevation",
+  "x": "Elevation is height above a reference level, usually sea level, and can be shown on topographic or isoline maps."
+ },
+ {
+  "t": "vocab",
+  "q": "Lines on a map that connect points of equal value, such as temperature or elevation, are used on an",
+  "c": [
+   "choropleth map",
+   "dot distribution map",
+   "isoline map",
+   "cartogram"
+  ],
+  "a": "isoline map",
+  "x": "An isoline map connects equal values with lines; a weather map of temperature lines is a common example."
+ },
+ {
+  "t": "vocab",
+  "q": "The movement of people, goods, information, or money between places is referred to as",
+  "c": [
+   "flows",
+   "site",
+   "clustering",
+   "projection"
+  ],
+  "a": "flows",
+  "x": "Flows are movements that connect places, such as migration streams or shipments of goods."
+ },
+ {
+  "t": "vocab",
+  "q": "The degree to which two phenomena are similarly arranged in space is called",
+  "c": [
+   "map projection",
+   "spatial association",
+   "absolute direction",
+   "online mapping"
+  ],
+  "a": "spatial association",
+  "x": "Spatial association is the overlap or similar arrangement of two patterns, which may suggest a relationship to study."
+ },
+ {
+  "t": "vocab",
+  "q": "Gathering geographic information by visiting a place and observing it firsthand is",
+  "c": [
+   "remote sensing",
+   "field observation",
+   "map projection",
+   "a cartogram"
+  ],
+  "a": "field observation",
+  "x": "Field observation is on-the-ground data collection, in contrast to remote sensing from aircraft or satellites."
+ },
+ {
+  "t": "vocab",
+  "q": "The level at which geographic data are grouped and examined, such as local, regional, national, or global, is the",
+  "c": [
+   "cartographic scale only",
+   "scale of analysis",
+   "absolute distance",
+   "built environment"
+  ],
+  "a": "scale of analysis",
+  "x": "Scale of analysis is the level of grouping for data and questions; it is not the same as a map's cartographic scale."
+ },
+ {
+  "t": "scenario",
+  "q": "A highway sign tells drivers to travel north on Interstate 95. The word 'north' is an example of",
+  "c": [
+   "relative direction",
+   "absolute direction",
+   "relative location",
+   "a vernacular region"
+  ],
+  "a": "absolute direction",
+  "x": "North is a compass bearing, so the instruction is absolute direction rather than a person-centered cue such as 'left.'"
+ },
+ {
+  "t": "scenario",
+  "q": "A three-mile trip across a congested city takes an hour, while three miles on an empty highway take minutes. The difference is mainly in",
+  "c": [
+   "absolute distance",
+   "relative distance",
+   "absolute location",
+   "elevation"
+  ],
+  "a": "relative distance",
+  "x": "Absolute mileage is the same, but time and effort differ, so the trips have different relative distances."
+ },
+ {
+  "t": "scenario",
+  "q": "The White House can be pinpointed at about 38.90°N, 77.04°W. Those coordinates are its",
+  "c": [
+   "relative location",
+   "absolute location",
+   "situation",
+   "perceptual region"
+  ],
+  "a": "absolute location",
+  "x": "Latitude and longitude give a precise position, which is absolute location."
+ },
+ {
+  "t": "scenario",
+  "q": "A city planning office stacks digital layers of streets, parcels, and floodplains before approving a housing project. The staff are using",
+  "c": [
+   "only a paper reference atlas",
+   "GIS",
+   "environmental determinism",
+   "a toponym"
+  ],
+  "a": "GIS",
+  "x": "GIS is designed to store and analyze stacked layers of spatial data such as roads and flood zones."
+ },
+ {
+  "t": "scenario",
+  "q": "A smartphone map places a dot on your exact street corner as you walk. The device is mainly using",
+  "c": [
+   "a choropleth map",
+   "GPS",
+   "possibilism",
+   "a formal region"
+  ],
+  "a": "GPS",
+  "x": "GPS uses satellite signals to determine a receiver's precise location, which the phone then shows on a map."
+ },
+ {
+  "t": "scenario",
+  "q": "People in the United States talk about 'the Midwest' but do not all agree on which states belong in it. 'The Midwest' is a",
+  "c": [
+   "formal political region",
+   "functional region",
+   "perceptual (vernacular) region",
+   "map projection"
+  ],
+  "a": "perceptual (vernacular) region",
+  "x": "The Midwest is a perceptual region because it is based on shared ideas, not on one official border."
+ },
+ {
+  "t": "scenario",
+  "q": "The Atlanta metropolitan area is tied together by commuting, television markets, and business links to the central city. This is a",
+  "c": [
+   "formal region defined only by climate",
+   "functional region",
+   "perceptual region with no node",
+   "cartogram"
+  ],
+  "a": "functional region",
+  "x": "A metro area organized around a central city and its connections is a classic functional, or nodal, region."
+ },
+ {
+  "t": "scenario",
+  "q": "The state of Montana has legally defined borders that are recognized on official maps. Montana is best classified as a",
+  "c": [
+   "functional region",
+   "perceptual region",
+   "formal region",
+   "graduated symbol"
+  ],
+  "a": "formal region",
+  "x": "A state is a formal region because it is defined by an official, shared political boundary."
+ },
+ {
+  "t": "scenario",
+  "q": "Farmers in a dry region use irrigation and drought-resistant crops to grow food that would not thrive on rainfall alone. This is an example of",
+  "c": [
+   "environmental determinism",
+   "possibilism",
+   "distance decay",
+   "a cartogram"
+  ],
+  "a": "possibilism",
+  "x": "Possibilism says the environment sets limits, but people can still expand their choices through technology and knowledge."
+ },
+ {
+  "t": "scenario",
+  "q": "A researcher interviews residents about why they moved to a neighborhood and records their stories rather than only counting people. Those interviews are",
+  "c": [
+   "quantitative data",
+   "qualitative data",
+   "absolute direction",
+   "satellite imagery"
+  ],
+  "a": "qualitative data",
+  "x": "Interviews are descriptive sources, so they are qualitative data."
+ },
+ {
+  "t": "scenario",
+  "q": "Satellites take pictures of a coastline after a hurricane so emergency teams can see which areas are flooded. The pictures are",
+  "c": [
+   "field notes only",
+   "satellite imagery from remote sensing",
+   "a formal region",
+   "relative direction"
+  ],
+  "a": "satellite imagery from remote sensing",
+  "x": "Images taken from orbit are satellite imagery, a product of remote sensing."
+ },
+ {
+  "t": "scenario",
+  "q": "A timber company harvests trees no faster than the forest can regrow so that future harvests remain possible. This practice is an attempt at",
+  "c": [
+   "environmental determinism",
+   "sustainability",
+   "time-space compression",
+   "clustering"
+  ],
+  "a": "sustainability",
+  "x": "Sustainability means meeting present needs without destroying the resource base for future generations."
+ },
+ {
+  "t": "scenario",
+  "q": "A flight from New York to London now takes about seven hours, a trip that once took more than a week by ship. This change illustrates",
+  "c": [
+   "distance decay increasing",
+   "time-space compression",
+   "environmental determinism",
+   "a formal region"
+  ],
+  "a": "time-space compression",
+  "x": "Faster travel shrinks relative distance, which is time-space compression."
+ },
+ {
+  "t": "scenario",
+  "q": "San Francisco is a place name that reflects Spanish colonial and Catholic influence. The name itself is a",
+  "c": [
+   "site factor",
+   "toponym",
+   "map projection",
+   "functional node"
+  ],
+  "a": "toponym",
+  "x": "A toponym is a place name, and many names reveal cultural or historical influence."
+ },
+ {
+  "t": "scenario",
+  "q": "A map places a circle on each city and sizes the circle by population, so New York appears much larger than a small town. This is a",
+  "c": [
+   "choropleth map",
+   "dot distribution map",
+   "graduated symbol map",
+   "reference plat map"
+  ],
+  "a": "graduated symbol map",
+  "x": "A graduated, or proportional, symbol map uses symbol size to show quantity at a location."
+ },
+ {
+  "t": "scenario",
+  "q": "A student walks a downtown district and records store types, building heights, and street life in a notebook. This method is",
+  "c": [
+   "remote sensing",
+   "field observation",
+   "map projection",
+   "online-only census analysis"
+  ],
+  "a": "field observation",
+  "x": "Field observation is firsthand data collection on the ground, such as walking a place and taking notes."
+ }
+];
+var QCUR=[];
+
+function qesc(s){
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function qshuffle(a){
+  for(var i=a.length-1;i>0;i--){
+    var j=Math.floor(Math.random()*(i+1));
+    var t=a[i]; a[i]=a[j]; a[j]=t;
+  }
+  return a;
+}
+function showQuiz(){
+  QCUR=QBANK.map(function(x){return {q:x.q,c:x.c.slice(),a:x.a,x:x.x};});
+  qshuffle(QCUR);
+  for(var i=0;i<QCUR.length;i++) qshuffle(QCUR[i].c);
+  var h="";
+  for(var i=0;i<QCUR.length;i++){
+    h+="<li><div>"+qesc(QCUR[i].q)+"</div>";
+    for(var j=0;j<QCUR[i].c.length;j++){
+      h+="<label><input type=\"radio\" name=\"qz"+i+"\" value=\""+j+"\"> "+qesc(QCUR[i].c[j])+"</label><br>";
+    }
+    h+="<div id=\"qx"+i+"\"></div><br></li>";
+  }
+  document.getElementById("quiz").innerHTML=h;
+  document.getElementById("qscore").textContent="";
+}
+function checkQuiz(){
+  var right=0;
+  for(var i=0;i<QCUR.length;i++){
+    var sel=document.querySelector("input[name=qz"+i+"]:checked");
+    var box=document.getElementById("qx"+i);
+    var ok=sel && QCUR[i].c[Number(sel.value)]===QCUR[i].a;
+    if(ok) right++;
+    box.className=ok?"right":"wrong";
+    box.textContent=(ok?"Correct. ":"Incorrect. The correct answer is "+QCUR[i].a+". ")+QCUR[i].x;
+  }
+  document.getElementById("qscore").textContent=" Score: "+right+" / "+QCUR.length;
+}
+function resetQuiz(){
+  showQuiz();
+}
+showQuiz();
+
+</script>
+</body>
+</html>

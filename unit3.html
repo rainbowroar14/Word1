@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AP Human Geography Unit 3 Vocab</title>
+<style>body{max-width:800px;margin:auto;font-family:sans-serif}.d{color:red}.e{color:blue}.right{color:green}.wrong{color:maroon}</style>
+</head>
+<body>
+<p><a href="index.html">Back to all units</a></p>
+<h1>AP Human Geography</h1>
+<h2>Unit 3: Cultural Patterns and Processes Vocabulary</h2>
+<p>Definitions:
+<label><input type="radio" name="d" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="d" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="d" value="s" onchange="render()"> Short</label></p>
+<p>Examples:
+<label><input type="radio" name="e" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="e" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="e" value="s" onchange="render()"> Short</label></p>
+<ol id="list"></ol>
+<script>
+var V=[
+ {
+  "t": "Acculturation",
+  "ds": "The process of adopting some traits of another culture while keeping parts of the original culture.",
+  "dm": "The process of adopting some traits of another culture, such as language or food, while still keeping parts of the original culture.",
+  "dl": "Acculturation occurs when a group or individual adopts some traits of another culture but retains important parts of the original culture. It is often described as a two-way or partial change, not a complete replacement. Geographers contrast it with assimilation, in which original cultural traits are more fully lost.",
+  "es": "Immigrants using English at work, home language at home",
+  "em": "Immigrants who use English at work but speak their home language at home show acculturation.",
+  "el": "An immigrant family may use English at school and work while continuing to speak their first language and cook traditional foods at home. That mix is acculturation. They have adopted some host-culture traits without giving up their original culture entirely."
+ },
+ {
+  "t": "Assimilation",
+  "ds": "The process of a minority culture becoming more like the dominant culture, often losing original traits.",
+  "dm": "The process in which a minority culture becomes more like the dominant culture and may lose many of its original traits.",
+  "dl": "Assimilation is the process by which a minority group takes on the cultural traits of a dominant group to the point that original traits fade or disappear. It can be voluntary or pressured by government and social expectations. Historically, some states tried to force assimilation of immigrants or indigenous peoples.",
+  "es": "Pressure to drop a home language",
+  "em": "Pressure on immigrants to drop a home language is a push toward assimilation.",
+  "el": "In some periods of U.S. history, immigrant children were expected to speak only English and leave behind home-country customs. That pressure is toward assimilation. Compared with acculturation, assimilation involves a more complete blending into the dominant culture."
+ },
+ {
+  "t": "Buddhism",
+  "ds": "A universalizing religion that began in South Asia and is based on the teachings of the Buddha.",
+  "dm": "A universalizing religion that began in South Asia with the teachings of the Buddha and later spread across Asia and beyond.",
+  "dl": "Buddhism is a universalizing religion that originated in South Asia with Siddhartha Gautama, the Buddha. Core ideas include the Four Noble Truths and the Eightfold Path, which aim to end suffering. It spread through relocation and expansion diffusion into East and Southeast Asia and now has many branches, including Theravada and Mahayana.",
+  "es": "Temples and practice across East and Southeast Asia",
+  "em": "Buddhism spread from South Asia into East and Southeast Asia, where many temples still stand.",
+  "el": "Buddhism began in what is now India and Nepal and later became widely practiced in countries such as Thailand, Sri Lanka, China, and Japan. Missionaries and trade helped it spread, which is why it is classified as a universalizing religion. Today its cultural landscape includes temples, stupas, and monasteries."
+ },
+ {
+  "t": "Centrifugal forces",
+  "ds": "Forces that divide a group or a state and pull it apart.",
+  "dm": "Forces, such as ethnic conflict or language differences, that divide a group or a state and pull it apart.",
+  "dl": "Centrifugal forces divide people and weaken a state's or culture's unity. In cultural geography they can include language, religion, ethnicity, or uneven development that creates conflict. The same term is used in political geography for forces that threaten a state's cohesion.",
+  "es": "Language conflict that splits a country",
+  "em": "Language or religious conflict that splits a country is a centrifugal force.",
+  "el": "In Belgium, tensions between Dutch-speaking Flanders and French-speaking Wallonia have acted as centrifugal forces. The language divide can pull the country apart politically. Cultural differences do not always cause breakup, but they can weaken unity."
+ },
+ {
+  "t": "Centripetal forces",
+  "ds": "Forces that unite a group or a state and hold it together.",
+  "dm": "Forces, such as a shared language, religion, or national identity, that unite a group or a state and hold it together.",
+  "dl": "Centripetal forces unify people and strengthen a state's or culture's cohesion. A shared language, religion, national symbols, or a common history can all act as centripetal forces. Governments often promote such symbols to build a sense of belonging.",
+  "es": "A shared language or national holiday",
+  "em": "A shared language, flag, or national holiday can be a centripetal force.",
+  "el": "A widely shared language and national holidays can pull citizens together and support a common identity. Those are centripetal forces. Japan, with a strong shared language and cultural traditions, is often cited as a place where such forces are powerful."
+ },
+ {
+  "t": "Christianity",
+  "ds": "A universalizing religion based on the life and teachings of Jesus, and the world's largest religion.",
+  "dm": "A universalizing religion based on the life and teachings of Jesus, now the world's largest religion, with many branches.",
+  "dl": "Christianity is a universalizing religion that began in Southwest Asia and is based on the life and teachings of Jesus. Its major branches include Roman Catholicism, Protestantism, and Eastern Orthodoxy. It spread first through relocation and then through expansion, including hierarchical and contagious diffusion, and is now the world's largest religion.",
+  "es": "Churches in Europe and the Americas",
+  "em": "Christianity spread from Southwest Asia and is now widely practiced in Europe and the Americas.",
+  "el": "Christianity began in the eastern Mediterranean and later became dominant in Europe, the Americas, and many other regions. Missionaries, colonization, and conversion all helped it spread. Churches, crosses, and calendars of Christian holidays are part of its cultural landscape."
+ },
+ {
+  "t": "Colonialism",
+  "ds": "The practice of a country taking control of another territory, often settling it and ruling it directly.",
+  "dm": "The practice of a country taking control of another territory, often settling it, ruling it directly, and using its resources.",
+  "dl": "Colonialism is the policy of taking political control of another territory, settling it, and exploiting it. European colonialism spread languages, religions, and political systems and redrew maps in the Americas, Africa, and Asia. In cultural geography, colonialism is a major cause of diffusion, language change, and religious patterns.",
+  "es": "Britain ruling India until 1947",
+  "em": "Britain's long rule of India is a classic example of colonialism.",
+  "el": "Britain's rule of India until 1947 is a classic case of colonialism: a foreign power governed the territory and reshaped its economy and institutions. English and some legal and educational practices remain as cultural traces. Colonialism is closely related to, but not identical with, imperialism."
+ },
+ {
+  "t": "Contagious diffusion",
+  "ds": "The rapid, widespread spread of a trait through a population, like a wave.",
+  "dm": "The rapid, widespread spread of a cultural trait through a population, person to person, like a wave.",
+  "dl": "Contagious diffusion is a form of expansion diffusion in which a trait spreads widely and rapidly through a population, often from person to person. It does not jump first to the most important people or places, as hierarchical diffusion does. Viral trends, some diseases, and popular slang can spread this way.",
+  "es": "A dance trend spreading on social media",
+  "em": "A dance trend that spreads person to person on social media is contagious diffusion.",
+  "el": "A dance or meme that spreads quickly from person to person on social media is an example of contagious diffusion. Almost anyone in the network can adopt it, not only elites. The trait expands outward through the population while remaining strong at its origin."
+ },
+ {
+  "t": "Creole language",
+  "ds": "A stable language that develops from a mix of languages and becomes a community's native language.",
+  "dm": "A stable language that develops from a mix of languages, often a pidgin, and becomes a community's native language.",
+  "dl": "A creole language develops when a simplified mix of languages, often a pidgin, becomes the first language of a community and grows more complex. Creoles often arose in colonial settings where people of different languages had to communicate. Haitian Creole, based largely on French with West African influences, is a well-known example.",
+  "es": "Haitian Creole, from French and African languages",
+  "em": "Haitian Creole, which grew from French and African languages, is a creole language.",
+  "el": "Haitian Creole developed from contact between French and West African languages and is now a native language for millions of Haitians. That makes it a creole, not just a temporary pidgin. Creoles show how new languages can form through cultural contact."
+ },
+ {
+  "t": "Creolization",
+  "ds": "The blending of cultures, especially languages, to form something new.",
+  "dm": "The blending of cultures, especially languages, to form something new, such as a creole language or mixed traditions.",
+  "dl": "Creolization is the process of cultural blending that produces new, stable cultural forms, especially in language, food, religion, or music. It often occurs where colonial, African, Indigenous, and other traditions met. The result is not a simple copy of one culture but a new mix.",
+  "es": "Caribbean food, music, and language mixes",
+  "em": "Caribbean mixes of language, food, and music are examples of creolization.",
+  "el": "In the Caribbean, African, European, and Indigenous traditions mixed to produce new languages, religions, and music. That process is creolization. The new forms, such as Haitian Creole or certain Caribbean musical styles, are more than a simple copy of any one source culture."
+ },
+ {
+  "t": "Cultural convergence",
+  "ds": "The process of cultures becoming more alike through contact.",
+  "dm": "The process of cultures becoming more alike as they interact through trade, media, or migration.",
+  "dl": "Cultural convergence is the tendency of cultures to become more similar as they interact. Globalization, media, trade, and travel can spread common brands, languages, and practices. Convergence does not always erase local culture, but it can reduce some differences.",
+  "es": "Global brands and English spreading worldwide",
+  "em": "The worldwide spread of English and global brands is cultural convergence.",
+  "el": "The worldwide use of English in business and the presence of the same fast-food chains in many cities are signs of cultural convergence. Contact and media have made some cultural practices more alike. Local traditions may still continue alongside those shared traits."
+ },
+ {
+  "t": "Cultural divergence",
+  "ds": "The process of cultures becoming more different over time.",
+  "dm": "The process of cultures becoming more different over time, often as groups protect or emphasize their own traditions.",
+  "dl": "Cultural divergence is the process by which cultures become more different, or by which a group resists outside influence and emphasizes its own traditions. Isolation, government policy, or a desire to preserve identity can all cause divergence. It is the counterpart of cultural convergence.",
+  "es": "A group limiting outside media to protect traditions",
+  "em": "A community that limits outside media to protect its traditions is showing cultural divergence.",
+  "el": "A community that limits outside media or tourism in order to protect language and customs is encouraging cultural divergence. The group is becoming or remaining more distinct from others. Amish communities in North America are often cited as an example of maintaining distinctive traditions."
+ },
+ {
+  "t": "Cultural landscape",
+  "ds": "The visible human imprint on the land, including buildings, fields, and sacred sites.",
+  "dm": "The visible human imprint on the land, including buildings, fields, roads, and sacred sites that reflect culture.",
+  "dl": "The cultural landscape is the visible imprint of human activity and culture on the environment. It includes architecture, land use, religious sites, signs, and other features people have created or modified. Geographers read the landscape to understand culture, history, and identity.",
+  "es": "Temples, terraces, or a historic downtown",
+  "em": "Rice terraces, temples, or a historic downtown are parts of a cultural landscape.",
+  "el": "Rice terraces, a mosque's minaret, or a historic downtown of churches and shops are all parts of a cultural landscape. They show how people have shaped the land. Sequent occupancy can leave several layers of such features in one place."
+ },
+ {
+  "t": "Cultural relativism",
+  "ds": "The practice of judging a culture by its own standards, not by the standards of another culture.",
+  "dm": "The practice of trying to understand and judge a culture by its own standards, rather than by the standards of another culture.",
+  "dl": "Cultural relativism is the idea that a culture should be understood in its own terms, not measured only against another group's values. It is often taught as an alternative to ethnocentrism. It does not mean every practice must be approved, but it asks students to avoid assuming their own culture is the only standard.",
+  "es": "Studying a custom in its own cultural context",
+  "em": "Studying a custom in its own cultural context, rather than calling it strange, is cultural relativism.",
+  "el": "A student who tries to understand a food taboo or dress code in its own cultural context, rather than simply calling it strange, is practicing cultural relativism. The approach reduces snap judgments. It is the opposite habit of ethnocentrism."
+ },
+ {
+  "t": "Culture",
+  "ds": "The shared beliefs, practices, arts, and material things that make up a group's way of life.",
+  "dm": "The shared beliefs, practices, arts, institutions, and material things that make up a group's way of life and are learned, not inherited biologically.",
+  "dl": "Culture is the shared system of beliefs, values, practices, arts, institutions, and material objects that make up a group's way of life. It is learned and passed on, not inherited biologically. Culture includes language, religion, food, dress, and many everyday habits.",
+  "es": "Language, food, faith, and traditions of a group",
+  "em": "A group's language, food, faith, and traditions together make up its culture.",
+  "el": "A group's language, food, religion, and everyday customs together make up its culture. These traits are taught and learned, not carried in DNA. Geographers study how culture varies across space and how it changes through diffusion and contact."
+ },
+ {
+  "t": "Daoism (Taoism)",
+  "ds": "A Chinese philosophical and religious tradition that emphasizes living in harmony with the Dao, or the way.",
+  "dm": "A Chinese philosophical and religious tradition that emphasizes living in harmony with the Dao, or the way of nature.",
+  "dl": "Daoism, also spelled Taoism, is a philosophical and religious tradition that developed in China and emphasizes living in harmony with the Dao, or the way. It has shaped Chinese art, medicine, and attitudes toward nature. Along with Confucianism and Buddhism, it is a major influence on East Asian cultural landscapes and beliefs.",
+  "es": "Temples and nature-focused practice in China",
+  "em": "Daoism, with its emphasis on harmony with nature, has long influenced Chinese culture.",
+  "el": "Daoism developed in China and is associated with texts such as the Tao Te Ching and with practices aimed at harmony with nature. Temples, pilgrimage sites, and certain landscape ideals reflect its influence. It is an important part of East Asian religious and cultural history."
+ },
+ {
+  "t": "Dialects",
+  "ds": "Regional or social varieties of a language, with differences in pronunciation, vocabulary, or grammar.",
+  "dm": "Regional or social varieties of a language, with differences in pronunciation, vocabulary, or grammar, that are still usually mutually understandable.",
+  "dl": "A dialect is a regional or social variety of a language, with distinctive pronunciation, vocabulary, or grammar. Dialects of the same language are usually mutually understandable, though the line between dialect and language can be political as well as linguistic. English, for example, has many dialects in the United States, Britain, and elsewhere.",
+  "es": "Southern U.S. English vs. British English",
+  "em": "Southern U.S. English and British English are dialects of the same language.",
+  "el": "Southern American English and British English differ in pronunciation and some vocabulary, but they are dialects of English, not completely separate languages. A dialect marks place and sometimes social group. Maps of word choice, such as soda versus pop, show dialect regions."
+ },
+ {
+  "t": "Diffusion",
+  "ds": "The spread of a cultural trait, idea, or innovation from one place to another.",
+  "dm": "The spread of a cultural trait, idea, or innovation from one place to another over time.",
+  "dl": "Diffusion is the spread of a phenomenon, such as a cultural trait, idea, or innovation, from one place to another. The two broad types in AP Human Geography are relocation diffusion and expansion diffusion. Expansion diffusion includes contagious, hierarchical, and stimulus diffusion.",
+  "es": "A religion or language spreading to new areas",
+  "em": "A religion or language spreading to new areas is an example of diffusion.",
+  "el": "The spread of a religion, a language, or a new technology from one region to another is diffusion. How it spreads matters: migrants can carry it with them, or it can expand through a population in place. Those paths are studied as different types of diffusion."
+ },
+ {
+  "t": "Ethnic cultures",
+  "ds": "Cultural groups defined by a shared ancestry, history, and traditions.",
+  "dm": "Cultural groups defined by a shared ancestry, history, language, or traditions that set them apart as a people.",
+  "dl": "Ethnic cultures are groups that share a sense of common ancestry, history, and cultural traditions, often including language, religion, or customs. Ethnicity is cultural, not the same thing as race. Ethnic cultures may be majorities in a nation-state or minorities that maintain distinct practices.",
+  "es": "The Kurdish or Amish cultural traditions",
+  "em": "The Kurds and the Amish are examples of groups with distinct ethnic cultures.",
+  "el": "The Kurds, with a shared language and identity, and the Amish, with distinctive traditions and dress, are examples of ethnic cultures. Their identity is based on shared heritage and practices. Such groups may or may not have their own state."
+ },
+ {
+  "t": "Ethnic neighborhoods",
+  "ds": "Areas in a city where a particular ethnic group is concentrated and keeps cultural practices.",
+  "dm": "Areas in a city where a particular ethnic group is concentrated and maintains businesses, language, and other cultural practices.",
+  "dl": "An ethnic neighborhood is a district in a city where a particular ethnic group is concentrated and maintains distinctive cultural practices. It may form through chain migration and can offer familiar language, food, and institutions. Chinatowns, Little Italys, and similar districts are common examples.",
+  "es": "A Chinatown or Little Italy in a large city",
+  "em": "A Chinatown or Little Italy is a well-known type of ethnic neighborhood.",
+  "el": "New York's Chinatown and many Little Italy districts are ethnic neighborhoods where immigrants and their descendants have clustered. Shops, signs, and places of worship often reflect the group's culture. These areas can change over time as new groups move in or earlier residents leave."
+ },
+ {
+  "t": "Ethnic religions",
+  "ds": "Religions closely tied to a particular ethnic group and usually not seeking converts worldwide.",
+  "dm": "Religions closely tied to a particular ethnic group or place, which usually do not seek converts worldwide.",
+  "dl": "Ethnic religions are faiths closely associated with a particular ethnic group or region and generally do not seek to convert people worldwide. Judaism, Hinduism, and Shinto are commonly cited examples. They contrast with universalizing religions, which try to appeal to people across cultures.",
+  "es": "Judaism or Hinduism, tied to a people or place",
+  "em": "Judaism and Hinduism are often classed as ethnic religions, tied to a people or place.",
+  "el": "Judaism is closely tied to Jewish people and history, and Hinduism is closely tied to the Indian subcontinent. Both are typically classified as ethnic religions. They spread mainly through relocation of members rather than through worldwide missionary work."
+ },
+ {
+  "t": "Ethnicity",
+  "ds": "A shared identity based on ancestry, language, religion, or cultural traditions.",
+  "dm": "A shared identity based on ancestry, language, religion, or cultural traditions, not on biological race alone.",
+  "dl": "Ethnicity is a sense of belonging to a group that shares ancestry, history, language, religion, or other cultural traits. It is a cultural identity, and it is not the same as race, which is a socially constructed physical classification. Ethnicity can shape neighborhoods, politics, and conflict.",
+  "es": "Identifying as Irish American or as Kurdish",
+  "em": "Identifying as Irish American or as Kurdish is a statement of ethnicity.",
+  "el": "A person who identifies as Irish American, or as Kurdish, is expressing ethnicity, a cultural and ancestral identity. That identity may include language, traditions, or a sense of shared history. It should not be confused with race, though the two can overlap in everyday talk."
+ },
+ {
+  "t": "Ethnocentrism",
+  "ds": "The habit of judging another culture by the standards of one's own, often seeing one's own as superior.",
+  "dm": "The habit of judging another culture by the standards of one's own and often seeing one's own culture as superior.",
+  "dl": "Ethnocentrism is the tendency to judge other cultures by the standards of one's own, and often to believe that one's own culture is superior. It can lead to misunderstanding, prejudice, or conflict. Cultural relativism is taught as a way to counter automatic ethnocentric judgments.",
+  "es": "Calling another culture's food 'wrong' or 'primitive'",
+  "em": "Calling another culture's food 'wrong' just because it is unfamiliar is ethnocentrism.",
+  "el": "Someone who calls another group's food or dress 'wrong' or 'primitive' simply because it is unfamiliar is showing ethnocentrism. The judgment uses the person's own culture as the only standard. Cultural relativism asks for a more careful, context-based understanding."
+ },
+ {
+  "t": "Expansion diffusion",
+  "ds": "The spread of a trait through a population so that it remains strong in its place of origin and also grows outward.",
+  "dm": "The spread of a trait through a population so that the number of people with the trait grows, and it remains strong in its place of origin.",
+  "dl": "Expansion diffusion is the spread of a cultural trait or idea through a population in such a way that it stays strong at the origin and also grows outward. It includes hierarchical, contagious, and stimulus diffusion. It is contrasted with relocation diffusion, in which people move and carry the trait with them.",
+  "es": "Islam spreading through a region while remaining strong in Arabia",
+  "em": "A religion that spreads to new areas while remaining strong at its origin shows expansion diffusion.",
+  "el": "Islam spread across North Africa and beyond while remaining strong in the Arabian Peninsula. That is expansion diffusion, because the trait grew in number of adherents and still stayed important at its hearth. Hierarchical, contagious, and stimulus paths are subtypes of this process."
+ },
+ {
+  "t": "Gender",
+  "ds": "The social and cultural roles, identities, and expectations attached to being male, female, or another gender, rather than biological sex alone.",
+  "dm": "The social and cultural roles, identities, and expectations attached to being male, female, or another gender, as opposed to biological sex alone.",
+  "dl": "Gender refers to the socially constructed roles, identities, and expectations that a culture attaches to being male, female, or another gender. It is not the same as biological sex. Gender shapes work, power, space, and cultural practices, and it varies across places and over time.",
+  "es": "Ideas about 'men's work' and 'women's work'",
+  "em": "Ideas about 'men's work' and 'women's work' are cultural gender expectations.",
+  "el": "In some societies, certain jobs or public spaces have been treated as 'men's' or 'women's' work. Those expectations are about gender, a cultural system, not only about biology. Geographers study how such roles vary from place to place."
+ },
+ {
+  "t": "Gender roles",
+  "ds": "The expected behaviors and jobs a culture assigns to people based on gender.",
+  "dm": "The expected behaviors, responsibilities, and jobs a culture assigns to people based on gender.",
+  "dl": "Gender roles are the tasks, behaviors, and responsibilities a society expects of people based on gender. They influence work, family life, education, and use of space. Gender roles change over time and differ among cultures, and they are an important AP topic in both cultural and economic geography.",
+  "es": "Women as primary caregivers in some societies",
+  "em": "In some societies, women are expected to be the primary caregivers, a gender role.",
+  "el": "In some rural areas, women do much of the farm work and child care, while other jobs are reserved for men. Those expectations are gender roles. They can change with education, law, and economic development."
+ },
+ {
+  "t": "Globalization",
+  "ds": "The increasing connectedness of places through trade, media, migration, and ideas.",
+  "dm": "The increasing connectedness of places through trade, communication, migration, and the spread of ideas and products.",
+  "dl": "Globalization is the process by which places become more interconnected through trade, communication, migration, and the movement of ideas and products. It can speed cultural convergence, spread a lingua franca, and change local economies. It can also produce backlash and efforts to protect local culture.",
+  "es": "Global news, trade, and pop culture ties",
+  "em": "Global trade, news, and pop culture ties are everyday signs of globalization.",
+  "el": "A song recorded in one country can be streaming worldwide the same day, and goods move through long supply chains. Those connections are globalization. The process links cultures and economies, but it does not affect every place in the same way."
+ },
+ {
+  "t": "Hearth",
+  "ds": "The place where a cultural trait, idea, or innovation begins.",
+  "dm": "The place where a cultural trait, idea, or innovation begins and from which it later spreads.",
+  "dl": "A hearth, or cultural hearth, is the place of origin of a cultural trait, idea, or innovation. Major language families and religions have hearths from which they diffused. Identifying a hearth is the first step in tracing a diffusion path.",
+  "es": "Mecca as a hearth of Islam",
+  "em": "Mecca and the Arabian Peninsula are the hearth of Islam.",
+  "el": "Islam began in the Arabian Peninsula, so that region is its hearth. From there the religion spread by expansion and relocation diffusion. Other hearths include the Indus and Ganges region for Hinduism and the eastern Mediterranean for Christianity and Judaism."
+ },
+ {
+  "t": "Hierarchical diffusion",
+  "ds": "The spread of a trait from important people or places to others, often from large cities downward.",
+  "dm": "The spread of a trait from important people or places to others, often from large cities or elites down to smaller places.",
+  "dl": "Hierarchical diffusion is a form of expansion diffusion in which a trait spreads from people or places of power or influence to others, often from large cities to smaller ones. Fashion, new technology, and some government policies spread this way. It contrasts with contagious diffusion, which spreads more evenly through a population.",
+  "es": "A fashion trend starting in major cities",
+  "em": "A fashion trend that starts in major cities and later reaches small towns is hierarchical diffusion.",
+  "el": "A new clothing style that appears first in New York or Paris and later shows up in smaller towns is hierarchical diffusion. The trait jumps to important nodes before it becomes common everywhere. Pop music and some technologies follow a similar path."
+ },
+ {
+  "t": "Hinduism",
+  "ds": "An ethnic religion that began in South Asia and is the majority faith in India and Nepal.",
+  "dm": "An ethnic religion that began in South Asia, with a variety of beliefs and practices, and is the majority faith in India and Nepal.",
+  "dl": "Hinduism is an ethnic religion that originated in South Asia and is the majority religion in India and Nepal. It includes a wide range of beliefs and practices, with sacred texts such as the Vedas and ideas such as dharma and karma. Its cultural landscape includes temples, the Ganges as a sacred river, and pilgrimage sites.",
+  "es": "Temples and pilgrimage along the Ganges",
+  "em": "Hinduism, concentrated in India and Nepal, is often classified as an ethnic religion.",
+  "el": "Hinduism developed in South Asia and remains closely tied to that region, which is why it is usually classified as an ethnic religion. The Ganges River, temples, and festivals are important parts of its cultural landscape. It has also traveled with the Indian diaspora through relocation diffusion."
+ },
+ {
+  "t": "Imperialism",
+  "ds": "A state's extension of power over other lands, through political, economic, or military control.",
+  "dm": "A state's extension of power over other lands through political, economic, or military control, not always by settling them.",
+  "dl": "Imperialism is the extension of a state's power over other territories through political, economic, or military means. It may include colonialism, but it can also work through indirect control. In cultural geography, imperialism helps explain the spread of languages, religions, and political systems.",
+  "es": "European empires in Africa and Asia",
+  "em": "European empires in Africa and Asia are examples of imperialism.",
+  "el": "In the late 1800s, European powers claimed large parts of Africa and Asia and imposed political and economic control. That process is imperialism. It spread European languages and Christianity in many places and left lasting cultural and political effects."
+ },
+ {
+  "t": "Indigenous communities",
+  "ds": "Groups of people native to a place, with distinct cultures, often living as minorities in a later-settled state.",
+  "dm": "Groups of people native to a place, with distinct cultures and histories, often living as minorities in a later-settled or colonized state.",
+  "dl": "Indigenous communities are peoples who are native to a region and who maintain distinct cultural identities, often after colonization or the arrival of later settlers. They may have unique languages, land-use practices, and spiritual traditions. Many indigenous groups have faced displacement, forced assimilation, or struggles for land and rights.",
+  "es": "Native American or Aboriginal Australian communities",
+  "em": "Native American nations and Aboriginal Australian communities are indigenous communities.",
+  "el": "Native American nations in the United States and Aboriginal and Torres Strait Islander peoples in Australia are indigenous communities. They were living in those lands before later colonial settlement. Many continue to maintain distinctive languages and cultural practices."
+ },
+ {
+  "t": "Indo-European",
+  "ds": "The world's largest language family, including English, Spanish, Hindi, and many others.",
+  "dm": "The world's largest language family, including English, Spanish, Hindi, Russian, and many other languages that share a common ancient origin.",
+  "dl": "Indo-European is the world's largest language family, including most languages of Europe, Iran, and northern India, as well as widely spread languages such as English and Spanish. Scholars believe these languages share a common ancestral origin. The family's wide distribution is a major result of historical migration, conquest, and later colonialism.",
+  "es": "English, Spanish, and Hindi in one family",
+  "em": "English, Spanish, and Hindi all belong to the Indo-European language family.",
+  "el": "English, Spanish, Hindi, and Russian all belong to the Indo-European language family, even though they are not mutually understandable today. Their related vocabulary and grammar point to a shared ancient origin. Colonialism later spread English and Spanish far beyond their European hearths."
+ },
+ {
+  "t": "Islam",
+  "ds": "A universalizing religion based on the teachings of the Prophet Muhammad and the Qur'an.",
+  "dm": "A universalizing religion based on the teachings of the Prophet Muhammad and the Qur'an, with major branches including Sunni and Shia.",
+  "dl": "Islam is a universalizing religion that began in the Arabian Peninsula in the seventh century with the Prophet Muhammad and the Qur'an. Its two largest branches are Sunni and Shia. It spread through expansion and relocation diffusion across North Africa, the Middle East, South and Southeast Asia, and beyond, and its landscape includes mosques and pilgrimage to Mecca.",
+  "es": "Mosques and pilgrimage to Mecca",
+  "em": "Islam began in the Arabian Peninsula and spread widely as a universalizing religion.",
+  "el": "Islam began in Mecca and Medina and later spread across North Africa, the Middle East, and much of Asia. That wide appeal is why it is classified as a universalizing religion. Mosques, calligraphy, and the hajj pilgrimage are important cultural features."
+ },
+ {
+  "t": "Judaism",
+  "ds": "An ethnic religion that began in Southwest Asia and is the first of the major monotheistic faiths.",
+  "dm": "An ethnic religion that began in Southwest Asia, is the first of the major monotheistic faiths, and is closely tied to the Jewish people.",
+  "dl": "Judaism is an ethnic religion that originated in Southwest Asia and is the oldest of the major monotheistic religions. It is closely tied to Jewish people, history, and sacred texts such as the Torah. Its hearth is in the eastern Mediterranean, and its cultural landscape includes synagogues and sacred sites in Jerusalem.",
+  "es": "Synagogues and sacred sites in Jerusalem",
+  "em": "Judaism, closely tied to the Jewish people, is usually classified as an ethnic religion.",
+  "el": "Judaism began in the eastern Mediterranean and remains closely associated with Jewish identity, so it is usually classified as an ethnic religion. The diaspora spread Jewish communities to many countries. Synagogues and sites such as Jerusalem's Western Wall are part of its cultural landscape."
+ },
+ {
+  "t": "Land use patterns",
+  "ds": "The typical ways people use land in a place, such as for farming, housing, or worship.",
+  "dm": "The typical ways people use land in a place, such as for farming, housing, industry, or worship, which often reflect culture.",
+  "dl": "Land use patterns are the typical arrangements of how people use land in an area, such as for agriculture, housing, industry, or religious sites. Culture, economy, and environment all shape these patterns. In cultural geography, land use is part of the cultural landscape and can show values, technology, and history.",
+  "es": "Terraced fields or a town around a church",
+  "em": "Terraced fields or a town built around a church are land use patterns shaped by culture.",
+  "el": "Terraced rice fields, a village clustered around a church or mosque, or a grid of suburban lots are land use patterns. They show how culture and economy organize space. Comparing those patterns helps geographers read the cultural landscape."
+ },
+ {
+  "t": "Language",
+  "ds": "A system of spoken or written communication used by a group of people.",
+  "dm": "A system of spoken or written communication used by a group of people and passed from one generation to the next.",
+  "dl": "Language is a system of spoken, and often written, communication used by a group of people. It is one of the most important cultural traits and a major way culture is transmitted. Languages are grouped into families, and they change through isolation, contact, and diffusion.",
+  "es": "English, Mandarin, or Arabic as group communication",
+  "em": "English, Mandarin, and Arabic are languages used by large groups of people.",
+  "el": "English, Mandarin, and Arabic are languages, each with many speakers and regional varieties. Language organizes thought and identity as well as everyday talk. The distribution of languages is a core topic in cultural geography."
+ },
+ {
+  "t": "Language families",
+  "ds": "Groups of languages that share a distant common origin.",
+  "dm": "Groups of related languages that share a distant common origin, such as Indo-European or Sino-Tibetan.",
+  "dl": "A language family is a group of languages related by descent from a common ancestral language. Indo-European and Sino-Tibetan are two of the largest families. Mapping language families shows deep historical connections and later patterns of migration and conquest.",
+  "es": "Indo-European or Sino-Tibetan",
+  "em": "Indo-European and Sino-Tibetan are two of the world's largest language families.",
+  "el": "Indo-European includes English and Hindi; Sino-Tibetan includes Mandarin Chinese. Each family groups languages that share a distant common origin. Language-family maps are a basic tool for studying cultural history."
+ },
+ {
+  "t": "Lingua franca",
+  "ds": "A common language used for trade and communication between people who speak different native languages.",
+  "dm": "A common language used for trade, government, or communication between people who speak different native languages.",
+  "dl": "A lingua franca is a language used for communication between people who do not share the same native language, often for trade, government, or international business. English is today's leading global lingua franca, and Swahili has long served that role in parts of East Africa. Lingua francas can spread through commerce, colonialism, or media.",
+  "es": "English in international business",
+  "em": "English used in international business is a modern lingua franca.",
+  "el": "English is widely used in international business, aviation, and science by people who may speak other languages at home. In that role it is a lingua franca. Historically, other languages, such as Swahili in East African trade, have played a similar part."
+ },
+ {
+  "t": "Multiculturalism",
+  "ds": "The presence of, and often official support for, several cultural groups living together in one society.",
+  "dm": "The presence of several cultural groups in one society, and often a policy of recognizing and supporting that diversity.",
+  "dl": "Multiculturalism is both the fact of cultural diversity in a society and, in many cases, a policy that recognizes and supports multiple cultures rather than demanding full assimilation. Countries such as Canada have official multicultural policies. Critics and supporters debate how well such policies maintain unity and equality.",
+  "es": "A country officially supporting many cultures",
+  "em": "A country that officially recognizes and supports many cultures is practicing multiculturalism.",
+  "el": "Canada has an official policy of multiculturalism, meaning the state recognizes and supports cultural diversity rather than requiring all groups to assimilate. Many societies are multicultural in practice even without a formal policy. The idea is often contrasted with forced assimilation."
+ },
+ {
+  "t": "Pidgin language",
+  "ds": "A simplified language created so that people who do not share a native language can communicate, usually not anyone's first language.",
+  "dm": "A simplified mix of languages created so that people who do not share a native language can communicate, usually not anyone's first language.",
+  "dl": "A pidgin language is a simplified form of speech created for communication between people who do not share a common language, often in trade or colonial settings. It usually has a limited vocabulary and is not anyone's native language. If a pidgin becomes a community's first language and grows more complex, it may develop into a creole.",
+  "es": "A simplified trade language in a port",
+  "em": "A simplified trade language in a colonial port is often a pidgin language.",
+  "el": "In some colonial ports, traders invented a simplified mix of languages so they could do business. That mix is a pidgin if it is nobody's native language. If later generations grow up speaking it as a first language, it may become a creole."
+ },
+ {
+  "t": "Postmodern architecture",
+  "ds": "A later building style that uses varied shapes, color, and historical references, in reaction to plain modern design.",
+  "dm": "A later building style that reacts against plain modern design by using varied shapes, color, decoration, and historical references.",
+  "dl": "Postmodern architecture is a style that developed in reaction to the boxy, functional look of modern architecture. It often uses playful shapes, color, ornament, and references to older styles. In AP Human Geography it is one way the cultural landscape of cities has changed in recent decades.",
+  "es": "Colorful or playful buildings after mid-century modernism",
+  "em": "A colorful building that quotes older styles, unlike a plain glass box, is postmodern architecture.",
+  "el": "A building that mixes bright color, unusual shapes, or historical details, in contrast to a plain glass tower, is often an example of postmodern architecture. The style became visible in late-twentieth-century cities. It is one of the architectural layers students may see on a cultural landscape."
+ },
+ {
+  "t": "Religion",
+  "ds": "A system of beliefs and practices about the sacred, often including worship, moral rules, and community.",
+  "dm": "A system of beliefs and practices about the sacred, often including worship, moral rules, and a community of followers.",
+  "dl": "Religion is a system of beliefs and practices concerning the sacred, often involving worship, moral codes, and a community of followers. It is a major cultural trait that shapes landscapes, calendars, diet, and identity. Geographers classify many religions as universalizing or ethnic and study how they diffuse.",
+  "es": "Christianity, Islam, Hinduism, and other faiths",
+  "em": "Christianity, Islam, and Hinduism are major world religions.",
+  "el": "Christianity, Islam, Hinduism, and Buddhism are among the world's major religions. Each has beliefs, practices, and a cultural landscape, such as churches, mosques, or temples. Religion is one of the strongest forces in cultural geography."
+ },
+ {
+  "t": "Relocation diffusion",
+  "ds": "The spread of a trait when people move and take it with them.",
+  "dm": "The spread of a trait when people move to a new place and take the trait with them.",
+  "dl": "Relocation diffusion is the spread of a cultural trait through the physical movement of people. Migrants carry language, religion, food, and other practices to a new place. Unlike expansion diffusion, the trait may weaken or disappear at the origin if most of the group leaves.",
+  "es": "A language carried by immigrants to a new country",
+  "em": "A language carried by immigrants to a new country spreads by relocation diffusion.",
+  "el": "When European settlers carried English, Spanish, or French to the Americas, those languages spread by relocation diffusion. The people moved, and the trait moved with them. Ethnic religions often spread mainly this way as well."
+ },
+ {
+  "t": "Sequent occupancy",
+  "ds": "The idea that different groups leave their mark on a place over time, creating layers on the landscape.",
+  "dm": "The idea that different groups occupy a place over time and each leaves its mark, creating layers on the cultural landscape.",
+  "dl": "Sequent occupancy, sometimes spelled sequent occupance, is the idea that successive groups occupy a place and each leaves a lasting imprint on the cultural landscape. Later groups do not completely erase earlier ones, so a place can show layers of architecture, names, and land use. The term was used by geographer Derwent Whittlesey.",
+  "es": "Roman, medieval, and modern layers in a European city",
+  "em": "Roman ruins beside later churches and modern buildings show sequent occupancy.",
+  "el": "A European city with Roman ruins, medieval churches, and modern office buildings shows sequent occupancy. Each period left features that later groups did not completely erase. The landscape is a stack of cultural layers."
+ },
+ {
+  "t": "Shintoism",
+  "ds": "An ethnic religion of Japan that focuses on kami, or spirits, and sacred places in nature.",
+  "dm": "An ethnic religion of Japan that focuses on kami, or spirits, and on rituals and sacred places in nature and in shrines.",
+  "dl": "Shinto, or Shintoism, is an ethnic religion closely tied to Japan. It emphasizes kami, or spirits, associated with nature, ancestors, and sacred places, and its landscape includes shrines, often marked by torii gates. Many people in Japan practice Shinto rituals alongside Buddhist ones.",
+  "es": "Japanese shrines with torii gates",
+  "em": "Japanese shrines marked by torii gates are part of Shintoism's cultural landscape.",
+  "el": "Shinto shrines in Japan, often set in groves and entered through a torii gate, are part of this ethnic religion's cultural landscape. Shinto is closely tied to Japanese identity and place. It is a clear example of a religion that has not sought to become a worldwide missionary faith."
+ },
+ {
+  "t": "Sikhism",
+  "ds": "A universalizing religion that began in the Punjab region and is based on the teachings of the Gurus.",
+  "dm": "A universalizing religion that began in the Punjab region, is based on the teachings of the Gurus, and emphasizes one God and equality.",
+  "dl": "Sikhism is a universalizing religion founded in the Punjab region in the late fifteenth century by Guru Nanak and later Gurus. It emphasizes belief in one God, equality, and service, and its sacred text is the Guru Granth Sahib. The Golden Temple in Amritsar is a major pilgrimage site, and Sikh communities have also spread through relocation diffusion.",
+  "es": "The Golden Temple in Amritsar",
+  "em": "Sikhism began in the Punjab and is centered in part at the Golden Temple in Amritsar.",
+  "el": "Sikhism began in the Punjab and is closely associated with the Golden Temple in Amritsar, a major pilgrimage site. Although many Sikhs still live in that region, the religion is classified as universalizing because it is open to people of any background. Migration has also created large Sikh communities abroad."
+ },
+ {
+  "t": "Stimulus diffusion",
+  "ds": "The spread of an idea in which the main idea moves, but some details change to fit a new culture.",
+  "dm": "The spread of an underlying idea in which the main idea is adopted, but some details change to fit a new culture.",
+  "dl": "Stimulus diffusion is a form of expansion diffusion in which the underlying idea spreads, but specific traits are changed or rejected to fit the new culture. The receiving group invents a local version rather than copying the original exactly. Examples include McDonald's changing menus by country, or the spread of writing systems that are adapted to a new language.",
+  "es": "A global chain changing its menu by country",
+  "em": "A global restaurant chain that changes its menu by country is showing stimulus diffusion.",
+  "el": "McDonald's restaurants in India have offered vegetarian or chicken options instead of beef in many locations, adapting a global idea to local culture. That is stimulus diffusion: the underlying idea of the restaurant spreads, but details change. The trait is not copied exactly."
+ }
+];
+
+function render(){
+  var dm=document.querySelector('input[name=d]:checked').value,em=document.querySelector('input[name=e]:checked').value,h='';
+  for(var i=0;i<V.length;i++){
+    var x=V[i], d=x['d'+dm], e=x['e'+em];
+    h+='<li><b>'+x.t+'</b><br><span class="d">'+d+'</span><br><span class="e">Example: '+e+'</span><br><br></li>';
+  }
+  document.getElementById('list').innerHTML=h;
+}
+render();
+</script>
+
+<hr>
+<h2>Unit 3 Quiz</h2>
+<p>Choose one answer for each question, then check your work. Questions are mixed: AP-style items, vocabulary, and situations.</p>
+<ol id="quiz"></ol>
+<p>
+<button type="button" onclick="checkQuiz()">Check answers</button>
+<button type="button" onclick="resetQuiz()">Reset</button>
+<span id="qscore"></span>
+</p>
+<script>
+var QBANK=[
+ {
+  "t": "exam",
+  "q": "Which process involves adopting some traits of another culture while still keeping important parts of the original culture?",
+  "c": [
+   "assimilation",
+   "acculturation",
+   "ethnocentrism",
+   "stimulus diffusion"
+  ],
+  "a": "acculturation",
+  "x": "Acculturation is partial cultural change; assimilation is a more complete loss of original traits."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following is usually classified as an ethnic religion?",
+  "c": [
+   "Christianity",
+   "Islam",
+   "Buddhism",
+   "Hinduism"
+  ],
+  "a": "Hinduism",
+  "x": "Hinduism is closely tied to South Asia and generally does not seek worldwide converts, so it is classified as an ethnic religion."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following is usually classified as a universalizing religion?",
+  "c": [
+   "Judaism",
+   "Shintoism",
+   "Islam",
+   "Hinduism"
+  ],
+  "a": "Islam",
+  "x": "Islam seeks adherents across cultures and spread widely from its Arabian hearth, so it is a universalizing religion."
+ },
+ {
+  "t": "exam",
+  "q": "A dance trend that spreads rapidly from person to person on social media is the best example of",
+  "c": [
+   "hierarchical diffusion",
+   "contagious diffusion",
+   "relocation diffusion",
+   "a lingua franca"
+  ],
+  "a": "contagious diffusion",
+  "x": "Contagious diffusion spreads widely and quickly through a population, often person to person, rather than only through elites."
+ },
+ {
+  "t": "exam",
+  "q": "A fashion trend that appears first in global cities and later in small towns is the best example of",
+  "c": [
+   "contagious diffusion",
+   "hierarchical diffusion",
+   "relocation diffusion",
+   "an ethnic religion"
+  ],
+  "a": "hierarchical diffusion",
+  "x": "Hierarchical diffusion spreads from important people or places, such as major cities, to others."
+ },
+ {
+  "t": "exam",
+  "q": "When European settlers carried English and Spanish to the Americas, those languages spread mainly by",
+  "c": [
+   "contagious diffusion only",
+   "relocation diffusion",
+   "stimulus diffusion only",
+   "cultural relativism"
+  ],
+  "a": "relocation diffusion",
+  "x": "Relocation diffusion occurs when people move and take a cultural trait with them."
+ },
+ {
+  "t": "exam",
+  "q": "McDonald's changing its menu in India to offer more vegetarian options is the best example of",
+  "c": [
+   "relocation diffusion",
+   "stimulus diffusion",
+   "ethnocentrism",
+   "a pidgin language"
+  ],
+  "a": "stimulus diffusion",
+  "x": "Stimulus diffusion is the spread of an underlying idea whose details are changed to fit a new culture."
+ },
+ {
+  "t": "exam",
+  "q": "English used in international business by people who speak other languages at home is acting as a",
+  "c": [
+   "dialect",
+   "language family",
+   "lingua franca",
+   "creole only"
+  ],
+  "a": "lingua franca",
+  "x": "A lingua franca is a common language used for communication between people who do not share a native language."
+ },
+ {
+  "t": "exam",
+  "q": "Which statement best describes a creole language?",
+  "c": [
+   "It is always a temporary trade talk that no one speaks as a first language.",
+   "It develops from a language mix, often a pidgin, and becomes a community's native language.",
+   "It is simply a dialect of English.",
+   "It cannot arise in colonial settings."
+  ],
+  "a": "It develops from a language mix, often a pidgin, and becomes a community's native language.",
+  "x": "A creole is a stable native language that grew from contact between languages, often from a pidgin."
+ },
+ {
+  "t": "exam",
+  "q": "Judging another culture only by the standards of one's own, and seeing one's own as superior, is",
+  "c": [
+   "cultural relativism",
+   "ethnocentrism",
+   "multiculturalism",
+   "sequent occupancy"
+  ],
+  "a": "ethnocentrism",
+  "x": "Ethnocentrism judges other cultures by one's own standards; cultural relativism tries to understand a culture in its own terms."
+ },
+ {
+  "t": "exam",
+  "q": "The world's largest language family, which includes English, Spanish, and Hindi, is",
+  "c": [
+   "Sino-Tibetan",
+   "Afro-Asiatic",
+   "Indo-European",
+   "Niger-Congo"
+  ],
+  "a": "Indo-European",
+  "x": "Indo-European is the largest language family and includes most European languages as well as Hindi and others."
+ },
+ {
+  "t": "exam",
+  "q": "A city district where one ethnic group is concentrated and keeps distinctive shops, language, and places of worship is an",
+  "c": [
+   "isogloss",
+   "ethnic neighborhood",
+   "official lingua franca",
+   "universalizing hearth only"
+  ],
+  "a": "ethnic neighborhood",
+  "x": "An ethnic neighborhood is a city area where a particular ethnic group is clustered and maintains cultural practices."
+ },
+ {
+  "t": "exam",
+  "q": "Cultures becoming more alike through trade, media, and migration is called",
+  "c": [
+   "cultural divergence",
+   "cultural convergence",
+   "ethnocentrism",
+   "sequent occupancy"
+  ],
+  "a": "cultural convergence",
+  "x": "Cultural convergence is the process of cultures becoming more similar through contact."
+ },
+ {
+  "t": "exam",
+  "q": "The place where a religion or other cultural trait begins is its",
+  "c": [
+   "dialect",
+   "hearth",
+   "lingua franca",
+   "gender role"
+  ],
+  "a": "hearth",
+  "x": "A hearth is the origin place of a cultural trait, idea, or innovation."
+ },
+ {
+  "t": "exam",
+  "q": "Roman ruins, medieval churches, and modern office buildings in the same city illustrate",
+  "c": [
+   "hierarchical diffusion only",
+   "sequent occupancy",
+   "a pidgin language",
+   "ethnocentrism"
+  ],
+  "a": "sequent occupancy",
+  "x": "Sequent occupancy is the idea that successive groups leave layers of imprint on a cultural landscape."
+ },
+ {
+  "t": "exam",
+  "q": "Which religion is closely tied to Japan and is usually classified as ethnic?",
+  "c": [
+   "Sikhism",
+   "Islam",
+   "Shintoism",
+   "Christianity"
+  ],
+  "a": "Shintoism",
+  "x": "Shinto, or Shintoism, is an ethnic religion closely associated with Japan and its shrines and kami."
+ },
+ {
+  "t": "exam",
+  "q": "Sikhism began in the Punjab and is generally classified as",
+  "c": [
+   "an ethnic religion that does not accept new members",
+   "a universalizing religion",
+   "only a dialect of Hinduism",
+   "a pidgin faith"
+  ],
+  "a": "a universalizing religion",
+  "x": "Sikhism is a universalizing religion founded in the Punjab, even though many Sikhs still live in that region."
+ },
+ {
+  "t": "vocab",
+  "q": "The process in which a minority culture becomes more like the dominant culture and may lose original traits is",
+  "c": [
+   "acculturation",
+   "assimilation",
+   "creolization",
+   "stimulus diffusion"
+  ],
+  "a": "assimilation",
+  "x": "Assimilation is a more complete blending into a dominant culture than acculturation."
+ },
+ {
+  "t": "vocab",
+  "q": "The visible human imprint on the land, including buildings, fields, and sacred sites, is the",
+  "c": [
+   "hearth",
+   "cultural landscape",
+   "lingua franca",
+   "dialect"
+  ],
+  "a": "cultural landscape",
+  "x": "The cultural landscape is the visible imprint of human activity and culture on the environment."
+ },
+ {
+  "t": "vocab",
+  "q": "Understanding and judging a culture by its own standards, rather than by another culture's standards, is",
+  "c": [
+   "ethnocentrism",
+   "cultural relativism",
+   "imperialism",
+   "hierarchical diffusion"
+  ],
+  "a": "cultural relativism",
+  "x": "Cultural relativism asks that a culture be understood in its own terms, in contrast to ethnocentrism."
+ },
+ {
+  "t": "vocab",
+  "q": "Regional varieties of a language that differ in pronunciation, vocabulary, or grammar are",
+  "c": [
+   "language families",
+   "dialects",
+   "lingua francas",
+   "hearths"
+  ],
+  "a": "dialects",
+  "x": "Dialects are regional or social varieties of a language and are usually still mutually understandable."
+ },
+ {
+  "t": "vocab",
+  "q": "The spread of a cultural trait from one place to another is called",
+  "c": [
+   "gender",
+   "diffusion",
+   "ethnicity",
+   "a census"
+  ],
+  "a": "diffusion",
+  "x": "Diffusion is the spread of a trait, idea, or innovation across space."
+ },
+ {
+  "t": "vocab",
+  "q": "A shared identity based on ancestry, language, religion, or cultural traditions is",
+  "c": [
+   "race only",
+   "ethnicity",
+   "a map projection",
+   "postmodern architecture"
+  ],
+  "a": "ethnicity",
+  "x": "Ethnicity is a cultural and ancestral identity, not the same thing as biological race."
+ },
+ {
+  "t": "vocab",
+  "q": "The expected behaviors and jobs a culture assigns to people based on gender are",
+  "c": [
+   "dialects",
+   "gender roles",
+   "language families",
+   "ethnic religions"
+  ],
+  "a": "gender roles",
+  "x": "Gender roles are culturally expected behaviors and responsibilities linked to gender."
+ },
+ {
+  "t": "vocab",
+  "q": "The increasing connectedness of places through trade, media, and migration is",
+  "c": [
+   "isolation",
+   "globalization",
+   "sequent occupancy",
+   "ethnocentrism"
+  ],
+  "a": "globalization",
+  "x": "Globalization is the tightening of connections among places through communication, trade, and movement."
+ },
+ {
+  "t": "vocab",
+  "q": "A simplified language created so that people who do not share a native language can communicate, and that is usually no one's first language, is a",
+  "c": [
+   "creole language",
+   "pidgin language",
+   "dialect",
+   "language family"
+  ],
+  "a": "pidgin language",
+  "x": "A pidgin is a simplified contact language, usually not spoken as a mother tongue; a creole is a later native language that can grow from a pidgin."
+ },
+ {
+  "t": "vocab",
+  "q": "The blending of cultures, especially languages, to form something new is called",
+  "c": [
+   "ethnocentrism",
+   "creolization",
+   "hierarchical diffusion",
+   "a hearth"
+  ],
+  "a": "creolization",
+  "x": "Creolization is cultural mixing that produces new, stable forms, such as a creole language."
+ },
+ {
+  "t": "vocab",
+  "q": "A later building style that uses varied shapes, color, and historical references in reaction to plain modern design is",
+  "c": [
+   "sequent occupancy",
+   "postmodern architecture",
+   "a lingua franca",
+   "an ethnic religion"
+  ],
+  "a": "postmodern architecture",
+  "x": "Postmodern architecture reacted against boxy modernism with ornament, color, and historical quotes."
+ },
+ {
+  "t": "vocab",
+  "q": "Groups of related languages that share a distant common origin are",
+  "c": [
+   "dialects",
+   "language families",
+   "pidgins",
+   "gender roles"
+  ],
+  "a": "language families",
+  "x": "A language family groups languages descended from a common ancestral language, such as Indo-European."
+ },
+ {
+  "t": "vocab",
+  "q": "The social and cultural roles and identities attached to being male, female, or another gender, rather than biological sex alone, are called",
+  "c": [
+   "ethnicity",
+   "gender",
+   "a dialect",
+   "relocation diffusion"
+  ],
+  "a": "gender",
+  "x": "Gender refers to socially constructed roles and identities, which are not the same as biological sex."
+ },
+ {
+  "t": "vocab",
+  "q": "People native to a place, with distinct cultures, often living as minorities after later settlement or colonization, are",
+  "c": [
+   "a lingua franca community only",
+   "indigenous communities",
+   "universalizing missionaries",
+   "a formal region of language"
+  ],
+  "a": "indigenous communities",
+  "x": "Indigenous communities are native peoples who maintain distinct cultural identities, often after colonization."
+ },
+ {
+  "t": "vocab",
+  "q": "The presence of, and often official support for, several cultural groups living together in one society is",
+  "c": [
+   "forced assimilation",
+   "multiculturalism",
+   "ethnocentrism",
+   "stimulus diffusion"
+  ],
+  "a": "multiculturalism",
+  "x": "Multiculturalism is cultural diversity in a society, and sometimes a policy of recognizing that diversity."
+ },
+ {
+  "t": "vocab",
+  "q": "The typical ways people use land in a place, such as for farming, housing, or worship, are",
+  "c": [
+   "land use patterns",
+   "pidgin forms",
+   "absolute locations",
+   "dot distributions"
+  ],
+  "a": "land use patterns",
+  "x": "Land use patterns are the usual arrangements of how people use land, and they often reflect culture."
+ },
+ {
+  "t": "vocab",
+  "q": "A system of beliefs and practices about the sacred, often including worship and a community of followers, is a",
+  "c": [
+   "dialect",
+   "religion",
+   "cartogram",
+   "pull factor"
+  ],
+  "a": "religion",
+  "x": "Religion is a belief-and-practice system concerning the sacred and is a major cultural trait."
+ },
+ {
+  "t": "scenario",
+  "q": "An immigrant family uses English at school and work but still speaks its first language and cooks traditional foods at home. This is",
+  "c": [
+   "complete assimilation",
+   "acculturation",
+   "ethnocentrism",
+   "a formal language family split"
+  ],
+  "a": "acculturation",
+  "x": "They have adopted some host-culture traits while keeping parts of the original culture, which is acculturation."
+ },
+ {
+  "t": "scenario",
+  "q": "Haitian Creole developed from contact between French and West African languages and is now a native language for millions of people. It is a",
+  "c": [
+   "pidgin language only",
+   "creole language",
+   "dialect of English",
+   "language isolate with no history of contact"
+  ],
+  "a": "creole language",
+  "x": "A creole is a stable native language that grew from a mixed contact language."
+ },
+ {
+  "t": "scenario",
+  "q": "A community limits outside media and tourism in order to protect its language and customs. This is an example of",
+  "c": [
+   "cultural convergence",
+   "cultural divergence",
+   "hierarchical diffusion",
+   "a lingua franca"
+  ],
+  "a": "cultural divergence",
+  "x": "Cultural divergence occurs when a group becomes or remains more distinct and protects its own traditions."
+ },
+ {
+  "t": "scenario",
+  "q": "A student tries to understand a food taboo in its own cultural context instead of simply calling it strange. The student is practicing",
+  "c": [
+   "ethnocentrism",
+   "cultural relativism",
+   "forced assimilation",
+   "stimulus diffusion"
+  ],
+  "a": "cultural relativism",
+  "x": "Cultural relativism means trying to understand a culture by its own standards."
+ },
+ {
+  "t": "scenario",
+  "q": "Someone calls another group's dress 'wrong' or 'primitive' just because it is unfamiliar. This attitude is",
+  "c": [
+   "cultural relativism",
+   "ethnocentrism",
+   "multiculturalism",
+   "sequent occupancy"
+  ],
+  "a": "ethnocentrism",
+  "x": "Judging another culture only by one's own standards is ethnocentrism."
+ },
+ {
+  "t": "scenario",
+  "q": "New York's Chinatown has shops, signs, and places of worship that reflect a concentrated ethnic group. This area is an",
+  "c": [
+   "official language family",
+   "ethnic neighborhood",
+   "isogloss only",
+   "antinatalist zone"
+  ],
+  "a": "ethnic neighborhood",
+  "x": "An ethnic neighborhood is a city district where a particular ethnic group is concentrated and maintains cultural practices."
+ },
+ {
+  "t": "scenario",
+  "q": "Mecca and the Arabian Peninsula are the place of origin of Islam, from which the religion later spread. That origin area is Islam's",
+  "c": [
+   "dialect",
+   "hearth",
+   "pidgin",
+   "postmodern landscape"
+  ],
+  "a": "hearth",
+  "x": "A hearth is the place where a cultural trait or religion begins."
+ },
+ {
+  "t": "scenario",
+  "q": "Canada has an official policy of recognizing and supporting cultural diversity rather than requiring all groups to assimilate. This policy is",
+  "c": [
+   "ethnocentrism",
+   "multiculturalism",
+   "forced assimilation",
+   "hierarchical diffusion"
+  ],
+  "a": "multiculturalism",
+  "x": "Official support for several cultures living together is multiculturalism."
+ },
+ {
+  "t": "scenario",
+  "q": "In a colonial port, traders invent a simplified mix of languages so they can do business, and it is nobody's native language. That mix is a",
+  "c": [
+   "creole language",
+   "pidgin language",
+   "language family",
+   "universalizing religion"
+  ],
+  "a": "pidgin language",
+  "x": "A pidgin is a simplified contact language that is usually not anyone's first language."
+ },
+ {
+  "t": "scenario",
+  "q": "English, Spanish, and Hindi are not mutually understandable today, but they belong to the same broad group of related languages. That group is",
+  "c": [
+   "a single dialect",
+   "the Indo-European language family",
+   "a pidgin only",
+   "an ethnic neighborhood"
+  ],
+  "a": "the Indo-European language family",
+  "x": "English, Spanish, and Hindi are all Indo-European languages, descended from a common ancestral family."
+ },
+ {
+  "t": "scenario",
+  "q": "Islam spread across North Africa while remaining strong in the Arabian Peninsula, and the number of adherents grew. This is mainly",
+  "c": [
+   "relocation diffusion only, with the origin emptied",
+   "expansion diffusion",
+   "a pidgin process",
+   "cultural relativism"
+  ],
+  "a": "expansion diffusion",
+  "x": "Expansion diffusion is spread that remains strong at the origin while also growing outward."
+ },
+ {
+  "t": "scenario",
+  "q": "The Golden Temple in Amritsar is a major pilgrimage site for a faith that began in the Punjab and is open to people of any background. The faith is",
+  "c": [
+   "Shintoism",
+   "Sikhism",
+   "Daoism",
+   "Judaism"
+  ],
+  "a": "Sikhism",
+  "x": "Sikhism began in the Punjab, is centered in part at the Golden Temple, and is a universalizing religion."
+ },
+ {
+  "t": "scenario",
+  "q": "Japanese shrines entered through torii gates, often set among trees, belong to a religion closely tied to Japan. That religion is",
+  "c": [
+   "Sikhism",
+   "Islam",
+   "Shintoism",
+   "Christianity"
+  ],
+  "a": "Shintoism",
+  "x": "Shinto, or Shintoism, is an ethnic religion of Japan, and torii gates mark many of its shrines."
+ },
+ {
+  "t": "scenario",
+  "q": "A song recorded in one country is streaming worldwide the same day, and the same brands appear in many cities. This pattern is a sign of",
+  "c": [
+   "complete cultural isolation",
+   "globalization",
+   "sequent occupancy only",
+   "an ethnic religion hearth remaining local"
+  ],
+  "a": "globalization",
+  "x": "Globalization is the increasing connectedness of places through media, trade, and other links."
+ },
+ {
+  "t": "scenario",
+  "q": "In some rural areas, women do most of the farm work and child care, while other jobs are reserved for men. Those expectations are",
+  "c": [
+   "language families",
+   "gender roles",
+   "pidgin rules",
+   "map projections"
+  ],
+  "a": "gender roles",
+  "x": "Gender roles are the behaviors and jobs a culture expects of people based on gender."
+ },
+ {
+  "t": "scenario",
+  "q": "A building mixes bright color, unusual shapes, or historical details, in contrast to a plain glass tower. The style is often",
+  "c": [
+   "only mid-century modern",
+   "postmodern architecture",
+   "a lingua franca",
+   "contagious diffusion"
+  ],
+  "a": "postmodern architecture",
+  "x": "Postmodern architecture reacted against plain modern design with color, ornament, and historical references."
+ }
+];
+var QCUR=[];
+
+function qesc(s){
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function qshuffle(a){
+  for(var i=a.length-1;i>0;i--){
+    var j=Math.floor(Math.random()*(i+1));
+    var t=a[i]; a[i]=a[j]; a[j]=t;
+  }
+  return a;
+}
+function showQuiz(){
+  QCUR=QBANK.map(function(x){return {q:x.q,c:x.c.slice(),a:x.a,x:x.x};});
+  qshuffle(QCUR);
+  for(var i=0;i<QCUR.length;i++) qshuffle(QCUR[i].c);
+  var h="";
+  for(var i=0;i<QCUR.length;i++){
+    h+="<li><div>"+qesc(QCUR[i].q)+"</div>";
+    for(var j=0;j<QCUR[i].c.length;j++){
+      h+="<label><input type=\"radio\" name=\"qz"+i+"\" value=\""+j+"\"> "+qesc(QCUR[i].c[j])+"</label><br>";
+    }
+    h+="<div id=\"qx"+i+"\"></div><br></li>";
+  }
+  document.getElementById("quiz").innerHTML=h;
+  document.getElementById("qscore").textContent="";
+}
+function checkQuiz(){
+  var right=0;
+  for(var i=0;i<QCUR.length;i++){
+    var sel=document.querySelector("input[name=qz"+i+"]:checked");
+    var box=document.getElementById("qx"+i);
+    var ok=sel && QCUR[i].c[Number(sel.value)]===QCUR[i].a;
+    if(ok) right++;
+    box.className=ok?"right":"wrong";
+    box.textContent=(ok?"Correct. ":"Incorrect. The correct answer is "+QCUR[i].a+". ")+QCUR[i].x;
+  }
+  document.getElementById("qscore").textContent=" Score: "+right+" / "+QCUR.length;
+}
+function resetQuiz(){
+  showQuiz();
+}
+showQuiz();
+
+</script>
+</body>
+</html>

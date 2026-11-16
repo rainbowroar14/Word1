@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AP Human Geography Unit 5 Vocab</title>
+<style>body{max-width:800px;margin:auto;font-family:sans-serif}.d{color:red}.e{color:blue}.right{color:green}.wrong{color:maroon}#warn{position:fixed;top:0;left:0;right:0;bottom:0;background:#00000080}#warn .box{background:#fff;max-width:32em;margin:4em auto;padding:1em;border:1px solid #000}</style>
+</head>
+<body>
+<div id="warn"><div class="box"><p>Warning: This unit is experimental. The term list might not be the real one from class. The terms, definitions, examples, and quiz may not match your class exactly. Double-check with your teacher's materials.</p><p><button type="button" onclick="document.getElementById('warn').style.display='none'">Close</button></p></div></div>
+<p><a href="index.html">Back to all units</a></p>
+<h1>AP Human Geography</h1>
+<h2>Unit 5: Agriculture and Rural Land-Use Patterns and Processes Vocabulary</h2>
+<p>This unit is experimental. The term list might not be the real one from class.</p>
+<p>Term list is a best guess, not the official handout.</p>
+<p>Definitions:
+<label><input type="radio" name="d" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="d" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="d" value="s" onchange="render()"> Short</label></p>
+<p>Examples:
+<label><input type="radio" name="e" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="e" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="e" value="s" onchange="render()"> Short</label></p>
+<ol id="list"></ol>
+<script>
+var V=[
+ {
+  "t": "Agribusiness",
+  "ds": "Large-scale, commercial farming and the businesses that supply, process, and sell farm products.",
+  "dm": "Large-scale, commercial farming plus the businesses that supply, process, market, and sell farm products, often as a chain.",
+  "dl": "Agribusiness is large-scale, industrialized food production and the firms that supply seeds and equipment, process crops, and market food. It links farms to global commodity chains. A few large companies often have a major role in what is grown and how it is sold.",
+  "es": "Cargill or Tyson in the food chain",
+  "em": "Large firms that process and market grain or meat are part of agribusiness.",
+  "el": "A company that sells seed and fertilizer, contracts with farmers, and then processes and packages the crop is part of agribusiness. The farm is one step in a larger commercial system. This pattern is typical of much commercial agriculture in the United States."
+ },
+ {
+  "t": "Agricultural density",
+  "ds": "The number of farmers per unit of arable land.",
+  "dm": "The number of farmers per unit of arable land, used to show how labor-intensive farming is.",
+  "dl": "Agricultural density is the number of farmers divided by the amount of arable land. High agricultural density often means many people still farm with limited machinery. Low agricultural density is common where farms are large and highly mechanized.",
+  "es": "Few U.S. farmers per acre of farmland",
+  "em": "The United States has a low agricultural density because farming is highly mechanized.",
+  "el": "The United States has relatively few farmers compared with its farmland, so agricultural density is low. Machines do work that many laborers still do in some less developed countries. That contrast helps geographers compare farming systems."
+ },
+ {
+  "t": "Agriculture",
+  "ds": "The deliberate raising of plants and animals for food and other products.",
+  "dm": "The deliberate raising of plants and animals for food, fiber, and other products, including both subsistence and commercial farming.",
+  "dl": "Agriculture is the deliberate modification of Earth's surface through the raising of plants and animals for food and other products. It includes subsistence and commercial systems and a wide range of intensive and extensive practices. Agriculture is the core subject of AP Human Geography Unit 5.",
+  "es": "Growing wheat or raising cattle for food",
+  "em": "Growing wheat or raising cattle for food is agriculture.",
+  "el": "Growing wheat on the Great Plains or raising cattle for beef is agriculture, because people are deliberately producing food from plants and animals. The term covers everything from small household plots to huge commercial farms. It is the foundation of rural land use."
+ },
+ {
+  "t": "Aquaculture",
+  "ds": "The farming of fish, shellfish, or other water plants and animals.",
+  "dm": "The farming of fish, shellfish, or aquatic plants, in ponds, tanks, or coastal waters.",
+  "dl": "Aquaculture is the cultivation of fish, shellfish, or aquatic plants for food. It has grown rapidly as a way to increase protein supplies, especially in Asia. It can reduce pressure on wild fisheries, but poorly managed farms may pollute water or spread disease.",
+  "es": "Shrimp or salmon farms",
+  "em": "Shrimp ponds and salmon farms are examples of aquaculture.",
+  "el": "Salmon farms in coastal waters and shrimp ponds in parts of Southeast Asia are aquaculture. People raise the animals instead of only catching them in the wild. The practice has increased seafood supply, with both economic benefits and environmental risks."
+ },
+ {
+  "t": "Bid-rent theory",
+  "ds": "The idea that land costs more closer to a market or city center, so land use changes with distance.",
+  "dm": "The idea that land costs more closer to a market or city center, so different farm or urban uses outbid each other with distance.",
+  "dl": "Bid-rent theory says that the price and demand for land fall as distance from a market or city center increases. Activities that can pay more, or that need to be close to customers, locate nearer the center. The idea helps explain both von Thünen's agricultural rings and urban land-use patterns.",
+  "es": "Higher land prices near a city market",
+  "em": "Vegetable farms may sit near a city because they can bid more for close, expensive land.",
+  "el": "Land right next to a city is expensive, so only uses that earn a lot per acre, such as dairying or market gardening, may be able to afford it. Farther out, cheaper land can support grain or ranching. That bidding for location is bid-rent theory."
+ },
+ {
+  "t": "Biotechnology",
+  "ds": "The use of scientific techniques, including genetic tools, to change living things for human use.",
+  "dm": "The use of scientific techniques, including genetic modification, to change plants and animals for food and other human uses.",
+  "dl": "Biotechnology is the use of scientific methods to change living organisms for human purposes, including new crop varieties and livestock traits. In agriculture it includes hybridization and genetically modified organisms. Supporters emphasize higher yields and pest resistance; critics raise concerns about environment, corporations, and food safety.",
+  "es": "Lab-developed pest-resistant crops",
+  "em": "Lab-developed pest-resistant crops are a use of biotechnology in farming.",
+  "el": "Scientists have developed crop varieties that resist insects or tolerate drought by using biotechnology. Those plants are then grown on farms. The Green Revolution and later GMO crops both depend on this kind of scientific breeding and genetic work."
+ },
+ {
+  "t": "Clustered settlements",
+  "ds": "Rural homes and buildings grouped close together, often in a village.",
+  "dm": "Rural homes and farm buildings grouped close together, often in a village, with fields around them.",
+  "dl": "A clustered, or nucleated, rural settlement is one in which houses and farm buildings are grouped close together, often around a church, well, or crossroads, with fields surrounding the village. This pattern is common in parts of Europe and in some agricultural villages worldwide. Clustering can support community life and defense, but daily trips to fields may be longer.",
+  "es": "A European farm village with houses grouped together",
+  "em": "A farm village with houses tightly grouped and fields around it is a clustered settlement.",
+  "el": "In many parts of rural Europe, farm families live in a compact village and walk or ride out to surrounding fields. That is a clustered settlement. The pattern contrasts with the scattered farmsteads of a dispersed settlement."
+ },
+ {
+  "t": "Columbian Exchange",
+  "ds": "The movement of plants, animals, people, and diseases between the Americas and the rest of the world after 1492.",
+  "dm": "The widespread movement of plants, animals, people, and diseases between the Americas and Afro-Eurasia after 1492.",
+  "dl": "The Columbian Exchange was the transfer of plants, animals, people, and diseases between the Americas and the rest of the world after European contact in 1492. Crops such as maize, potatoes, and tomatoes spread to Europe, Africa, and Asia, while wheat, livestock, and smallpox came to the Americas. It transformed diets, populations, and agriculture worldwide.",
+  "es": "Potatoes to Europe; horses and wheat to the Americas",
+  "em": "Potatoes reaching Europe and horses reaching the Americas were part of the Columbian Exchange.",
+  "el": "After 1492, potatoes and maize from the Americas became staple crops in Europe, Africa, and Asia, while wheat, cattle, and horses were brought to the Americas. Disease also traveled, with devastating effects on Indigenous peoples. That two-way transfer is the Columbian Exchange."
+ },
+ {
+  "t": "Commercial agriculture",
+  "ds": "Farming mainly to sell products for profit, rather than only to feed the farm family.",
+  "dm": "Farming mainly to sell products for profit in a market, rather than only to feed the farm household.",
+  "dl": "Commercial agriculture is the production of food and other farm goods primarily for sale in a market. It is often large-scale, mechanized, and linked to agribusiness and global supply chains. It contrasts with subsistence agriculture, which is mainly for the farmer's own consumption.",
+  "es": "Midwest grain farms selling to markets",
+  "em": "A Midwest grain farm that sells almost all of its harvest is commercial agriculture.",
+  "el": "A wheat farm in Kansas that sells nearly its entire harvest to grain companies is practicing commercial agriculture. The goal is profit in a market, not just feeding the household. Much of the farmland in more developed countries is used this way."
+ },
+ {
+  "t": "Commodity chains",
+  "ds": "The linked steps that take a product from farm or mine to the final consumer.",
+  "dm": "The linked steps that take a product from production, such as a farm, through processing and shipping to the final consumer.",
+  "dl": "A commodity chain is the series of steps that transform a raw product into a finished good and deliver it to consumers, including growing, processing, shipping, and retailing. In agriculture, a chain might run from a coffee farm to a roaster to a café. These chains are often global and are a key part of agribusiness.",
+  "es": "Coffee from farm to cup",
+  "em": "Coffee moving from farm to roaster to café is a commodity chain.",
+  "el": "Coffee grown in Brazil or Ethiopia may be shipped, roasted, packaged, and sold in a café thousands of miles away. Each step is a link in a commodity chain. The farmer is only one part of a longer commercial system."
+ },
+ {
+  "t": "Community-supported agriculture (CSA)",
+  "ds": "A system in which people buy shares of a local farm's harvest in advance.",
+  "dm": "A system in which people pay a local farm in advance for a share of the harvest during the growing season.",
+  "dl": "Community-supported agriculture, or CSA, is an arrangement in which consumers buy shares of a farm's harvest in advance and receive regular deliveries of produce. It links eaters directly to a local farm and can reduce risk for the farmer. CSAs are part of local food movements.",
+  "es": "Families paying a farm for weekly produce boxes",
+  "em": "Families that pay a nearby farm for weekly produce boxes are in a CSA.",
+  "el": "A family pays a nearby farm at the start of the season and receives a box of vegetables each week. That arrangement is community-supported agriculture. It gives the farmer income up front and gives members local food."
+ },
+ {
+  "t": "Conservation efforts",
+  "ds": "Actions taken to protect soil, water, habitats, or other natural resources.",
+  "dm": "Actions taken to protect soil, water, habitats, or other natural resources used in or affected by farming.",
+  "dl": "Conservation efforts are practices and policies meant to protect soil, water, wildlife, and other resources. In agriculture they include contour plowing, crop rotation, reduced tillage, buffer strips, and protected areas. The goal is to keep land productive and reduce environmental damage.",
+  "es": "Contour plowing or soil conservation programs",
+  "em": "Contour plowing and soil-conservation programs are conservation efforts in farming.",
+  "el": "Farmers who use contour plowing, cover crops, or set-aside programs to protect soil and streams are making conservation efforts. The aim is to reduce erosion and keep the land usable. Such practices are part of more sustainable agriculture."
+ },
+ {
+  "t": "Crop rotation",
+  "ds": "The practice of growing different crops on the same land in a planned sequence.",
+  "dm": "The practice of growing different crops on the same field in a planned sequence to protect soil and manage pests.",
+  "dl": "Crop rotation is the planned planting of different crops on the same field in successive seasons or years. It can restore nutrients, break pest cycles, and reduce the need for some chemicals. It was an important improvement in the Second Agricultural Revolution and is still used in sustainable farming.",
+  "es": "Alternating wheat with nitrogen-fixing legumes",
+  "em": "Alternating wheat with nitrogen-fixing legumes is a simple crop rotation.",
+  "el": "A farmer who plants wheat one year and a nitrogen-fixing bean crop the next is using crop rotation. The change of crops can improve soil and reduce pests. The practice is older than modern fertilizers and remains useful today."
+ },
+ {
+  "t": "Deforestation",
+  "ds": "The clearing of forest over a wide area, often for farming or timber.",
+  "dm": "The clearing of forest over a wide area, often to make room for farming, ranching, or timber.",
+  "dl": "Deforestation is the large-scale removal of forest. In agricultural regions it is often done to create cropland or pasture, or to harvest timber. It can cause loss of biodiversity, carbon release, and soil problems, and it is a major issue in parts of the Amazon and Southeast Asia.",
+  "es": "Amazon forest cleared for cattle or soy",
+  "em": "Amazon forest cleared for cattle pasture or soy fields is deforestation.",
+  "el": "Large areas of Amazon rainforest have been cleared for cattle pasture and soy fields. That forest loss is deforestation. It is one of the most visible environmental effects of expanding commercial agriculture."
+ },
+ {
+  "t": "Desertification",
+  "ds": "The process by which land becomes more desert-like, often from drought and overuse.",
+  "dm": "The process by which reasonably dry land becomes more desert-like, often from drought, overgrazing, or poor farming.",
+  "dl": "Desertification is the degradation of land in dry areas so that it becomes more desert-like and less able to support crops or grazing. Causes can include drought, overgrazing, overcultivation, and deforestation. The Sahel in Africa is a frequently cited region of concern.",
+  "es": "Overgrazed land in the Sahel turning barren",
+  "em": "Overgrazed land in the Sahel becoming barren is an example of desertification.",
+  "el": "In parts of the Sahel, overgrazing and drought have stripped vegetation and left soil more barren. That change is desertification. Once the land degrades, it is harder to farm or graze without careful restoration."
+ },
+ {
+  "t": "Dispersed settlements",
+  "ds": "Rural homes spread out across the countryside, rather than grouped in a village.",
+  "dm": "Rural homes and farms spread out across the countryside, rather than grouped tightly in a village.",
+  "dl": "A dispersed rural settlement is one in which farmhouses and buildings are scattered across the land, each typically on its own farm. This pattern is common in parts of the Midwestern United States and in some other areas of individual landholding. Daily work may be close to the house, but neighbors are farther away.",
+  "es": "Scattered farmsteads on the U.S. plains",
+  "em": "Scattered farmsteads across the Great Plains form a dispersed settlement pattern.",
+  "el": "On much of the U.S. Great Plains, each family lives on its own farm, with houses spread far apart. That is a dispersed settlement. It contrasts with compact agricultural villages found in many other regions."
+ },
+ {
+  "t": "Double cropping",
+  "ds": "The practice of growing two crops on the same field in one year.",
+  "dm": "The practice of growing two harvests on the same field in a single year, common in intensive farming regions.",
+  "dl": "Double cropping is harvesting two crops from the same field in one year. It is a form of intensive agriculture and is common in parts of Asia with long growing seasons and irrigation, such as wheat followed by rice in some areas of China and India. It raises output from limited land but needs enough water, labor, and nutrients.",
+  "es": "Wheat then rice on the same field in one year",
+  "em": "Growing wheat and then rice on the same field in one year is double cropping.",
+  "el": "In some parts of China and India, a farmer may harvest winter wheat and then plant rice on the same land in the same year. That practice is double cropping. It is intensive because it uses the field more than once a year."
+ },
+ {
+  "t": "Economies of scale",
+  "ds": "The cost savings that come from producing on a larger scale.",
+  "dm": "The cost savings that come from producing on a larger scale, so that the cost per unit falls as output grows.",
+  "dl": "Economies of scale occur when the cost per unit of output falls as production increases. In agriculture, large farms can often buy equipment, seed, and fertilizer more cheaply and spread those costs over more bushels or animals. This advantage helps explain the growth of large commercial farms and agribusiness.",
+  "es": "Big farms paying less per unit of grain",
+  "em": "A large farm pays less per bushel because it produces so much, an economy of scale.",
+  "el": "A large grain farm can use one combine over thousands of acres, so the machine cost per bushel is low. A small farm cannot spread costs as easily. That difference is an economy of scale, and it encourages farm consolidation."
+ },
+ {
+  "t": "Export commodities",
+  "ds": "Goods, often farm products, grown mainly to sell to other countries.",
+  "dm": "Goods, often farm products, that a country grows or produces mainly to sell to other countries.",
+  "dl": "Export commodities are goods produced mainly for sale abroad. In agriculture they may include coffee, cocoa, bananas, cotton, or soy. Countries that depend heavily on a few farm exports can face price swings and may put less land into food for local use.",
+  "es": "Coffee or cocoa grown mainly for sale abroad",
+  "em": "Coffee or cocoa grown mainly to sell abroad is an export commodity.",
+  "el": "Coffee grown in Brazil or Ethiopia and cocoa grown in West Africa are often export commodities, produced mainly for overseas markets. Farmers and governments can depend on those sales. A drop in world prices can therefore hurt the whole rural economy."
+ },
+ {
+  "t": "Extensive farming practices",
+  "ds": "Farming that uses large amounts of land and relatively little labor or capital per acre.",
+  "dm": "Farming that uses large amounts of land and relatively little labor or capital per acre, such as ranching or shifting cultivation.",
+  "dl": "Extensive farming uses large areas of land and relatively little labor or capital on each acre. Ranching, some grain farming in semi-arid areas, and shifting cultivation are often extensive. Yields per acre are usually lower than in intensive systems, but output per worker may be high where machines are used.",
+  "es": "Cattle ranching on large, dry pastures",
+  "em": "Cattle ranching on large, dry pastures is an extensive farming practice.",
+  "el": "Cattle ranching on the large, dry ranges of the American West uses a lot of land and relatively few workers per acre. That is extensive agriculture. Shifting cultivation in forested areas is also extensive, though it uses more labor and less machinery."
+ },
+ {
+  "t": "Fair trade",
+  "ds": "A system that tries to give producers, often small farmers, a more reliable and better price.",
+  "dm": "A system that tries to give producers, often small farmers in less developed countries, a more reliable and better price and better working conditions.",
+  "dl": "Fair trade is a certification and trading approach that aims to pay producers, especially small farmers, a more stable and higher price and to set standards for labor and environment. Coffee, cocoa, and bananas are common fair-trade products. It is often presented as an alternative to purely price-driven global commodity chains.",
+  "es": "Certified fair-trade coffee from small farms",
+  "em": "Certified fair-trade coffee is meant to pay small farmers a more stable, better price.",
+  "el": "A bag of coffee labeled fair trade is supposed to come from farms that received a minimum price and met certain labor standards. The idea is to give small producers a better deal in global markets. Consumers pay a premium to support that system."
+ },
+ {
+  "t": "Food deserts",
+  "ds": "Areas where people have limited access to affordable, nutritious food.",
+  "dm": "Areas, often low-income, where people have limited access to affordable, nutritious food, such as fresh fruits and vegetables.",
+  "dl": "A food desert is an area where residents have limited access to affordable, healthy food, especially fresh produce. Food deserts are often found in low-income urban neighborhoods or remote rural places that lack full grocery stores. They are a concern in studies of food insecurity and urban land use as well as agriculture.",
+  "es": "A neighborhood far from a full grocery store",
+  "em": "A low-income neighborhood far from a full grocery store may be a food desert.",
+  "el": "A low-income neighborhood where the only nearby food shops are convenience stores, and the nearest supermarket is miles away, may be called a food desert. Residents can have a hard time buying fresh, affordable food. The term links agriculture and food supply to everyday access."
+ },
+ {
+  "t": "Food insecurity",
+  "ds": "The lack of reliable access to enough safe, nutritious food.",
+  "dm": "The lack of reliable access to enough safe, nutritious food to live an active, healthy life.",
+  "dl": "Food insecurity is the condition of not having reliable access to sufficient, safe, and nutritious food. It can result from poverty, conflict, poor harvests, or weak distribution, not only from a lack of food in the world as a whole. It is a major development and agricultural issue.",
+  "es": "Households that sometimes skip meals for lack of money",
+  "em": "Households that sometimes skip meals because food is unaffordable are food insecure.",
+  "el": "A family that sometimes skips meals or relies on emergency food aid because it cannot afford a steady diet is experiencing food insecurity. The problem can exist even in countries that grow plenty of food overall. Access, income, and distribution matter as much as total production."
+ },
+ {
+  "t": "First Agricultural Revolution",
+  "ds": "The Neolithic shift from hunting and gathering to the domestication of plants and animals.",
+  "dm": "The Neolithic shift from hunting and gathering to farming, when people first domesticated plants and animals.",
+  "dl": "The First Agricultural Revolution, also called the Neolithic Revolution, was the beginning of farming, when people domesticated plants and animals. It began in several hearths, including the Fertile Crescent, beginning about 10,000 years ago. Agriculture allowed more settled life, higher population densities, and eventually cities.",
+  "es": "Early domestication in the Fertile Crescent",
+  "em": "Domestication of wheat in the Fertile Crescent was part of the First Agricultural Revolution.",
+  "el": "In the Fertile Crescent, people began growing wheat and barley and herding sheep and goats thousands of years ago. That shift from hunting and gathering is the First Agricultural Revolution. Similar domestication happened independently in other hearths, such as parts of China and the Americas."
+ },
+ {
+  "t": "Genetically modified organisms (GMOs)",
+  "ds": "Plants or animals whose genetic material has been changed in a laboratory to give them new traits.",
+  "dm": "Plants or animals whose genetic material has been changed in a laboratory to give them traits such as pest resistance or higher yield.",
+  "dl": "Genetically modified organisms, or GMOs, are living things whose DNA has been altered in a lab to introduce desired traits, such as pest resistance or herbicide tolerance. Many commercial soy, corn, and cotton crops are genetically modified. Debate continues over environmental effects, corporate control of seed, and labeling.",
+  "es": "Bt corn or herbicide-tolerant soy",
+  "em": "Bt corn, altered to resist certain insects, is a genetically modified organism.",
+  "el": "Much of the corn and soy grown in the United States has been genetically modified to resist insects or herbicides. Those crops are GMOs. They are a major, and sometimes controversial, part of modern commercial agriculture."
+ },
+ {
+  "t": "Global supply chains",
+  "ds": "Worldwide networks that move a product from production to the consumer.",
+  "dm": "Worldwide networks of farms, factories, shippers, and sellers that move a product from production to the consumer.",
+  "dl": "Global supply chains are international networks that produce, process, and deliver goods, including food, to consumers. A fruit may be grown in one country, packed in another, and sold in a third. These chains make year-round food more available but can also create dependence and environmental costs from transport.",
+  "es": "Fruit grown in one country and sold in another",
+  "em": "Fruit grown in one country, shipped, and sold in another moves through a global supply chain.",
+  "el": "Bananas grown in Ecuador may be shipped and sold in a European grocery store. That path is a global supply chain. Many supermarket foods now depend on such long-distance networks."
+ },
+ {
+  "t": "Green Revolution",
+  "ds": "The mid-twentieth-century spread of high-yield seeds, fertilizer, and irrigation that raised grain production.",
+  "dm": "The mid-twentieth-century spread of high-yield seeds, chemical fertilizer, and irrigation that sharply raised grain production in many developing countries.",
+  "dl": "The Green Revolution was a mid-twentieth-century campaign to raise food production, especially of wheat and rice, through high-yield varieties, irrigation, and chemical fertilizers and pesticides. It is sometimes called the Third Agricultural Revolution. It increased harvests in places such as India and Mexico, but it also raised concerns about cost, inequality, water use, and the environment.",
+  "es": "High-yield wheat in India and Mexico",
+  "em": "High-yield wheat varieties in India and Mexico were central to the Green Revolution.",
+  "el": "In the 1960s and after, new high-yield wheat and rice, along with fertilizer and irrigation, greatly increased harvests in India, Mexico, and other countries. That package of changes is the Green Revolution. It helped avert famine in some regions but did not benefit all farmers equally."
+ },
+ {
+  "t": "Intensive farming practices",
+  "ds": "Farming that uses a lot of labor or capital on a relatively small amount of land.",
+  "dm": "Farming that uses a lot of labor or capital on a relatively small amount of land, in order to get high output per acre.",
+  "dl": "Intensive farming uses large amounts of labor, capital, or both on a relatively small land area to get high yields per acre. Market gardening, wet-rice farming, and some dairy operations are intensive. It contrasts with extensive practices, which use more land and less input per acre.",
+  "es": "Wet-rice paddies or market gardens",
+  "em": "Wet-rice paddies and market gardens are intensive farming practices.",
+  "el": "Wet-rice farming in much of East and Southeast Asia uses large amounts of labor and water on small plots to get high yields. That is intensive agriculture. Market gardens near cities are intensive in a different way, using capital, fertilizer, and frequent harvesting."
+ },
+ {
+  "t": "Irrigation",
+  "ds": "The artificial watering of crops, using canals, ditches, pipes, or sprinklers.",
+  "dm": "The artificial watering of crops, using canals, ditches, pipes, or sprinklers, rather than rainfall alone.",
+  "dl": "Irrigation is the controlled supply of water to crops. It can turn dry land into farmland and raise yields, and it was essential to the Green Revolution in many regions. Poor irrigation can cause salinization, water shortages, or disputes over rivers.",
+  "es": "Canals watering fields in a dry region",
+  "em": "Canals that water fields in a dry region are a form of irrigation.",
+  "el": "Farmers in dry parts of California or the Indus Valley water crops with canals and pipes rather than depending on rain alone. That is irrigation. It has made those areas highly productive, but it also uses large amounts of water."
+ },
+ {
+  "t": "Linear settlements",
+  "ds": "Settlements arranged in a line, often along a road, river, or dike.",
+  "dm": "Settlements arranged in a line, often along a road, river, valley, or dike, rather than in a tight cluster or scattered pattern.",
+  "dl": "A linear settlement is a rural or small-town pattern in which buildings are arranged in a line, often along a road, river, or canal. Long-lot farms along the St. Lawrence or houses along a levee often form linear patterns. The line follows a transportation route or a physical feature.",
+  "es": "Houses lined along a river or road",
+  "em": "Houses lined along a river or a main road form a linear settlement.",
+  "el": "Houses and barns stretched along a river road in a long-lot area form a linear settlement. The pattern follows the water and the route beside it. It is one of the three rural settlement patterns commonly taught in AP Human Geography, along with clustered and dispersed."
+ },
+ {
+  "t": "Local food movements",
+  "ds": "Efforts to grow and eat food close to where it is produced.",
+  "dm": "Efforts to grow, sell, and eat food close to where it is produced, such as farmers' markets and CSAs.",
+  "dl": "Local food movements encourage people to buy and eat food grown nearby, through farmers' markets, CSAs, and farm-to-table restaurants. Supporters emphasize freshness, community ties, and a smaller transport footprint. The movement is a response to long global supply chains.",
+  "es": "Farmers' markets and farm-to-table meals",
+  "em": "Farmers' markets and farm-to-table restaurants are part of local food movements.",
+  "el": "Shoppers who buy vegetables at a weekend farmers' market, or restaurants that source from nearby farms, are taking part in a local food movement. The idea is to shorten the distance between grower and eater. CSAs are another common form."
+ },
+ {
+  "t": "Long-lot survey system",
+  "ds": "A land-division system of long, narrow lots, usually stretching back from a river or road.",
+  "dm": "A land-division system, used in some French-settled areas, of long, narrow lots stretching back from a river or road.",
+  "dl": "The long-lot survey system divides land into long, narrow parcels that typically extend back from a river, road, or canal. It was used in French-settled areas, including parts of Quebec, Louisiana, and the Great Lakes region. Each lot had access to the water or road, and settlements often formed a linear pattern.",
+  "es": "Narrow lots along the St. Lawrence River",
+  "em": "Narrow farm lots along the St. Lawrence River follow the long-lot survey system.",
+  "el": "Along the St. Lawrence River in Quebec, farms were laid out as long, thin lots with a short side on the river. That is the long-lot survey system. It gave each family water access and produced a linear rural landscape."
+ },
+ {
+  "t": "Market gardening",
+  "ds": "The intensive growing of fruits, vegetables, and flowers, often near a city market.",
+  "dm": "The intensive growing of fruits, vegetables, and flowers for sale, often on small farms near a city market.",
+  "dl": "Market gardening, sometimes called fruit-and-vegetable or truck farming, is the intensive commercial production of fruits, vegetables, and flowers. It is often located near cities or in specialized regions with good climate and transport. In the von Thünen model, this kind of perishable production is close to the market.",
+  "es": "Vegetable farms near a city",
+  "em": "Small vegetable farms that sell fresh produce to a nearby city are market gardening.",
+  "el": "Farms that grow lettuce, berries, or tomatoes for a nearby city's grocery stores and restaurants are practicing market gardening. The crops are perishable and need quick access to market. The work is intensive and often uses a lot of labor or greenhouse investment."
+ },
+ {
+  "t": "Mechanization",
+  "ds": "The use of machines, such as tractors and combines, to do farm work.",
+  "dm": "The use of machines, such as tractors, combines, and milking equipment, to do work that people or animals once did by hand.",
+  "dl": "Mechanization is the replacement of human or animal labor with machines. In agriculture it includes tractors, combines, and milking systems, and it was a key part of the Second Agricultural Revolution and later commercial farming. Mechanization raises output per worker and helps explain low agricultural density in countries such as the United States.",
+  "es": "Combines harvesting huge grain fields",
+  "em": "Combines that harvest huge grain fields are an example of farm mechanization.",
+  "el": "A combine that can harvest hundreds of acres of wheat in a short time is farm mechanization. Far fewer workers are needed than in hand-harvested fields. This change helped commercial grain farming expand and reduced the share of people working in agriculture."
+ },
+ {
+  "t": "Metes and bounds",
+  "ds": "A land-survey system that uses natural landmarks and distances to describe property lines.",
+  "dm": "A land-survey system, with English origins, that uses distances, directions, and natural landmarks to describe property lines.",
+  "dl": "Metes and bounds is a survey system that describes property by distances, directions, and physical features such as streams, trees, or rocks. It was used in the original English colonies of the eastern United States. The resulting property map is often irregular, unlike the later township-and-range grid.",
+  "es": "Colonial farm lines following a creek or tree line",
+  "em": "Irregular colonial farm lines that follow a creek use the metes and bounds system.",
+  "el": "In the eastern United States, many older property lines follow a creek, a stone wall, or a stated number of paces from a tree. That description is metes and bounds. The landscape of fields can look piecemeal and irregular as a result."
+ },
+ {
+  "t": "Mixed crop and livestock systems",
+  "ds": "Farms that grow crops and raise animals, often using the crops to feed the livestock.",
+  "dm": "Farms that grow crops and raise animals together, often using the crops to feed the livestock and using manure to fertilize fields.",
+  "dl": "Mixed crop and livestock farming integrates the growing of crops with the raising of animals on the same farm or in the same region. Corn or other feed crops often support cattle or hogs, and manure can return nutrients to the fields. It is a common commercial system in the U.S. Midwest and in parts of Europe.",
+  "es": "Midwest farms growing corn and raising hogs",
+  "em": "Midwest farms that grow corn and also raise hogs are mixed crop and livestock systems.",
+  "el": "A Midwestern farm that grows corn and soybeans and also raises hogs or cattle is a mixed crop and livestock system. Much of the grain may be used as feed. The two activities support each other on the same farm."
+ },
+ {
+  "t": "Monocropping",
+  "ds": "The practice of growing the same single crop on the same land year after year.",
+  "dm": "The practice of growing the same single crop on the same land year after year, common in large commercial agriculture.",
+  "dl": "Monocropping is the repeated planting of the same crop on the same land, year after year, without rotation. It is common in large-scale commercial production of corn, soy, wheat, or cotton. It can be efficient but may deplete soil, increase pest risk, and reduce biodiversity.",
+  "es": "Corn planted on the same fields every year",
+  "em": "Planting corn on the same fields every year is monocropping.",
+  "el": "A commercial farm that plants corn on the same fields every year, without rotating other crops, is monocropping. The practice can simplify machinery and marketing. It can also wear out soil and make pest outbreaks more likely."
+ },
+ {
+  "t": "Monoculture",
+  "ds": "The growing of a single crop over a large area, especially at one time.",
+  "dm": "The growing of a single crop species over a large area, especially at one time, rather than a mix of crops.",
+  "dl": "Monoculture is the agricultural practice of growing one crop species over a wide area, especially in a single season. Plantations and large grain fields are often monocultures. The term is related to monocropping, which stresses growing that same crop year after year.",
+  "es": "A huge field planted only in soybeans",
+  "em": "A huge field planted only in soybeans is a monoculture.",
+  "el": "A thousand-acre field planted entirely in soybeans is a monoculture, because only one crop is grown there. Many commercial farms and plantations use this pattern. It is efficient for machines and markets but can be risky if that crop fails or prices drop."
+ },
+ {
+  "t": "Organic farming",
+  "ds": "Farming that avoids most synthetic fertilizers and pesticides and follows certified natural methods.",
+  "dm": "Farming that avoids most synthetic fertilizers, pesticides, and GMOs and follows certified rules for more natural production.",
+  "dl": "Organic farming produces food without most synthetic fertilizers, pesticides, or genetically modified seeds, following certified standards. It often uses compost, crop rotation, and biological pest control. Organic products usually sell at a higher price, and the sector has grown with consumer demand.",
+  "es": "Certified organic vegetable farms",
+  "em": "A certified farm that uses compost instead of synthetic fertilizer is practicing organic farming.",
+  "el": "A vegetable farm that is certified organic uses compost and crop rotation instead of most synthetic chemicals. Shoppers often pay more for that label. Organic farming is one response to concerns about conventional industrial agriculture."
+ },
+ {
+  "t": "Pastoral nomadism",
+  "ds": "A subsistence system in which herders move with their animals across dry or cold lands.",
+  "dm": "A subsistence system in which herders move with their animals across dry or cold lands in search of pasture.",
+  "dl": "Pastoral nomadism is a form of subsistence agriculture in which people depend on herding animals and move with them to find pasture. It is typical of dry or cold regions where crop farming is difficult. The practice is declining in some areas because of borders, land pressure, and government settlement policies.",
+  "es": "Bedouin or Mongol herders moving with livestock",
+  "em": "Herders who move camels or sheep across dry lands are practicing pastoral nomadism.",
+  "el": "Bedouin herders moving camels and sheep across dry parts of North Africa and the Middle East are practicing pastoral nomadism. Their livelihood depends on animals and on moving to seasonal pasture. Crop farming would be hard in those arid environments."
+ },
+ {
+  "t": "Plantation agriculture",
+  "ds": "Large commercial farms, often in the tropics, that grow one cash crop for export.",
+  "dm": "Large commercial farms, often in tropical or subtropical areas, that specialize in one cash crop for export, such as coffee, sugar, or bananas.",
+  "dl": "Plantation agriculture is a commercial system of large farms, often in tropical or subtropical regions, that specialize in one or two cash crops for export. Historically many plantations used coerced or cheap labor. Coffee, sugar, bananas, rubber, and cotton have all been major plantation crops.",
+  "es": "A large tropical sugar or banana plantation",
+  "em": "A large tropical estate growing sugar or bananas for export is plantation agriculture.",
+  "el": "A large estate in the tropics that grows sugar, bananas, or coffee mainly for export is a plantation. The farm usually specializes in one crop and is organized as a commercial business. This system has deep roots in colonialism and still shapes some rural economies."
+ },
+ {
+  "t": "Ranching",
+  "ds": "The commercial grazing of livestock over large areas.",
+  "dm": "The commercial grazing of livestock over large areas, often in semi-arid regions too dry for crops.",
+  "dl": "Ranching is the commercial raising of livestock, usually cattle or sheep, on large areas of grassland. It is an extensive system, common in semi-arid regions such as the American West, parts of Australia, and the Pampas. In the von Thünen model, ranching is often placed in the farthest ring, where land is cheaper.",
+  "es": "Cattle ranches in the American West",
+  "em": "Cattle ranches on the dry lands of the American West are a form of ranching.",
+  "el": "Cattle ranches on the dry ranges of the American West or Australia's outback are examples of ranching. The animals graze over large areas, so the system is extensive. The meat is produced mainly for sale, not only for the herder's own use."
+ },
+ {
+  "t": "Salinization",
+  "ds": "The buildup of salts in the soil, often from irrigation, which can harm crops.",
+  "dm": "The buildup of salts in the soil, often caused by irrigation in dry areas, which can reduce fertility and harm crops.",
+  "dl": "Salinization is the accumulation of salts in soil, often when irrigation water evaporates and leaves minerals behind. It is a serious risk in dry farming regions with poor drainage. Over time, salinization can make land less productive or unusable for many crops.",
+  "es": "Irrigated desert fields becoming too salty",
+  "em": "Irrigated desert fields can become too salty for crops, a problem called salinization.",
+  "el": "In some irrigated desert valleys, evaporating water leaves salt in the soil until plants struggle to grow. That process is salinization. It is one of the main environmental costs of poorly managed irrigation."
+ },
+ {
+  "t": "Second Agricultural Revolution",
+  "ds": "The period, beginning in Britain, when new machines, better tools, and improved methods raised farm output before and during the Industrial Revolution.",
+  "dm": "The period, beginning in Britain around the 1600s-1800s, when new machines, enclosure, and improved methods sharply raised farm output and supported industrialization.",
+  "dl": "The Second Agricultural Revolution, associated with early modern Britain and then other parts of Europe, brought better plows, crop rotation, selective breeding, enclosure of fields, and eventually machines. It raised yields and reduced the need for farm labor, which helped feed growing cities during the Industrial Revolution. It came after the Neolithic First Agricultural Revolution and before the Green Revolution.",
+  "es": "British enclosure, seed drills, and better livestock",
+  "em": "Better crop rotation and farm machines in Britain were part of the Second Agricultural Revolution.",
+  "el": "In Britain, enclosure of fields, improved crop rotation, and later machines such as the seed drill raised productivity. That set of changes is the Second Agricultural Revolution. Fewer farmers could feed more people, which supported urban industrial growth."
+ },
+ {
+  "t": "Shifting cultivation",
+  "ds": "A farming system in which plots are cleared, cropped for a few years, then left fallow so the forest can grow back.",
+  "dm": "A farming system, often in tropical forests, in which plots are cleared, cropped for a few years, then left fallow so vegetation can recover.",
+  "dl": "Shifting cultivation is an extensive subsistence system in which farmers clear a plot, grow crops for a few years, then leave it fallow so vegetation can recover while they move to a new plot. It is often practiced in tropical forests. When fallow periods are long enough, the system can be sustainable, but population pressure can shorten fallow and degrade land.",
+  "es": "Amazon or tropical-forest plots used, then left fallow",
+  "em": "Tropical-forest farmers who crop a plot and then leave it fallow are using shifting cultivation.",
+  "el": "In parts of the Amazon and tropical Africa, families clear a small plot, grow cassava or other crops for a few years, then let the forest grow back. That rotation is shifting cultivation. It is extensive because a large area is used over time, even if each field is small."
+ },
+ {
+  "t": "Slash-and-burn agriculture",
+  "ds": "A method of clearing fields by cutting and burning vegetation, often used in shifting cultivation.",
+  "dm": "A method of clearing fields by cutting and burning vegetation, often used in shifting cultivation in tropical forests.",
+  "dl": "Slash-and-burn agriculture is a technique of cutting vegetation, burning it, and planting in the ash-enriched soil. It is often part of shifting cultivation in tropical forests. The burn releases nutrients quickly, but if used too often on the same land it can lead to erosion and fertility loss.",
+  "es": "Cutting and burning a forest plot to plant crops",
+  "em": "Cutting and burning a forest plot to plant crops is slash-and-burn agriculture.",
+  "el": "Farmers may cut trees and brush, burn them, and plant crops in the ash. That method is slash-and-burn agriculture and is often used in shifting cultivation. The ash provides a short-term nutrient boost to the soil."
+ },
+ {
+  "t": "Subsistence agriculture",
+  "ds": "Farming mainly to feed the farm family, with little left to sell.",
+  "dm": "Farming mainly to feed the farm family or local community, with little surplus sold in a market.",
+  "dl": "Subsistence agriculture is production mainly for the farmer's own household, with little surplus for sale. Pastoral nomadism, shifting cultivation, and some intensive wet-rice or mixed systems can be subsistence-oriented. It contrasts with commercial agriculture, though many farms mix the two.",
+  "es": "A family growing food mainly for itself",
+  "em": "A family that grows food mainly to feed itself is practicing subsistence agriculture.",
+  "el": "A family that grows cassava, vegetables, and some grain mainly to feed itself, selling only a little surplus, is practicing subsistence agriculture. The farm's first purpose is household survival, not profit in a distant market. This system is still common in many rural parts of the developing world."
+ },
+ {
+  "t": "Sustainability",
+  "ds": "Farming and resource use that can continue over the long term without ruining the land or environment.",
+  "dm": "Farming and resource use that meet present needs without destroying the land, water, or environment that future generations will need.",
+  "dl": "In agriculture, sustainability means producing food in ways that can continue over the long term without exhausting soil, water, or ecosystems. Practices include conservation tillage, careful irrigation, crop rotation, and protection of biodiversity. The term also includes social and economic fairness, not only environmental protection.",
+  "es": "Farming that keeps soil healthy for the future",
+  "em": "Farming that keeps soil and water healthy for the future is aiming at sustainability.",
+  "el": "A farm that rotates crops, protects soil, and uses water carefully so that the land will still be productive decades later is aiming at sustainability. The goal is to meet today's food needs without ruining the resource base. Organic methods and conservation programs are often part of that effort."
+ },
+ {
+  "t": "Terraces",
+  "ds": "Stepped fields built into a hillside to create flat land and reduce erosion.",
+  "dm": "Stepped fields built into a hillside to create flat planting surfaces and reduce soil erosion.",
+  "dl": "Terraces are step-like fields cut or built into slopes so that farmers can plant on flat surfaces and slow erosion and runoff. They are a cultural landscape of intensive agriculture in hilly regions, including parts of East and Southeast Asia, the Andes, and the Mediterranean. Building and maintaining terraces takes a great deal of labor.",
+  "es": "Rice terraces in the Philippines or Andes",
+  "em": "Rice terraces on steep slopes in the Philippines are a famous example of terraces.",
+  "el": "The rice terraces of the Philippine Cordillera, and similar steps in the Andes and parts of China, let people farm steep land. The flat benches hold soil and water. Terraces are both an intensive farming technique and a striking cultural landscape."
+ },
+ {
+  "t": "Township and range",
+  "ds": "A U.S. grid survey system that divides land into square townships and sections.",
+  "dm": "A U.S. grid survey system, from the Land Ordinance of 1785, that divides land into square townships and sections.",
+  "dl": "The township-and-range system is a rectangular survey created by the Land Ordinance of 1785. Land is divided into six-mile-square townships and one-mile sections, producing a checkerboard pattern across much of the Midwest and West. It contrasts with metes and bounds and with long lots.",
+  "es": "The grid of square fields in the Midwest",
+  "em": "The grid of square fields across much of the Midwest comes from township and range.",
+  "el": "Flying over much of the Midwest, you can see a regular grid of square fields and roads. That pattern comes from the township-and-range survey system. It was designed to divide public land in a uniform way after the United States expanded westward."
+ },
+ {
+  "t": "Transhumance",
+  "ds": "The seasonal movement of livestock between mountain pastures and lowland areas.",
+  "dm": "The seasonal movement of livestock, and often herders, between highland pastures and lowland areas.",
+  "dl": "Transhumance is the seasonal movement of herds between mountain or upland pastures and lowland areas. It is a form of pastoralism, often cyclic rather than a one-way migration. The practice appears in the Alps, parts of Africa, and other highland-lowland regions.",
+  "es": "Sheep taken to mountain pastures in summer",
+  "em": "Herders who take sheep to mountain pastures in summer are practicing transhumance.",
+  "el": "In the Alps, herders have long taken cattle or sheep up to mountain meadows in summer and back to valleys in winter. That seasonal move is transhumance. It lets people use different elevations at the times of year when pasture is available."
+ },
+ {
+  "t": "Urban farming",
+  "ds": "The growing of food in cities, such as in gardens, vacant lots, or rooftops.",
+  "dm": "The growing of food in cities, such as in community gardens, vacant lots, or rooftops, often to improve local access to fresh food.",
+  "dl": "Urban farming is the production of food in or on the edge of cities, including community gardens, rooftop plots, and small livestock in some places. It can improve access to fresh food, teach skills, and reuse vacant land. It is usually small-scale and is often linked to local food movements and concerns about food deserts.",
+  "es": "Community gardens or rooftop vegetable plots",
+  "em": "Community gardens and rooftop vegetable plots are forms of urban farming.",
+  "el": "A community garden on a vacant city lot, or vegetables grown on a rooftop, is urban farming. The goal is often to provide fresher food close to where people live. It is one response to food deserts and long supply chains."
+ },
+ {
+  "t": "Value-added specialty crops",
+  "ds": "Farm products that have been processed or branded so they can be sold for a higher price.",
+  "dm": "Farm products that have been processed, packaged, or branded, such as cheese, jam, or organic specialties, so they can be sold for a higher price.",
+  "dl": "Value-added specialty crops are agricultural products that have been changed, packaged, or marketed in a way that raises their price, such as jam from fruit, cheese from milk, or certified organic or regional specialties. Farmers use them to earn more than they would from raw commodity sales. They are often part of small-farm and local-food strategies.",
+  "es": "Jam, cheese, or organic specialty labels",
+  "em": "Turning milk into cheese or fruit into jam creates a value-added specialty product.",
+  "el": "A dairy that turns milk into artisanal cheese, or a grower who makes jam and sells it under a regional label, is producing a value-added specialty crop. The extra processing or branding raises the selling price. That strategy can help smaller farms compete."
+ },
+ {
+  "t": "Von Thünen model",
+  "ds": "A model that explains why certain farm products are grown in rings around a market, based on land cost and transport.",
+  "dm": "A model, from Johann von Thünen, that explains why certain farm products are grown in rings around a market, based on land cost, perishability, and transport.",
+  "dl": "The von Thünen model, proposed in the nineteenth century, explains rural land use as rings around a central market. Perishable or intensive products such as dairy and vegetables are close in; timber may come next; grain and then livestock are farther out, where land is cheaper. The model assumes a flat, uniform plain and a single market, so real landscapes differ, but the logic of transport cost and bid-rent remains useful.",
+  "es": "Dairy near the city, ranching farther out",
+  "em": "In von Thünen's model, dairy sits near the city and ranching is farther out.",
+  "el": "In von Thünen's classic rings, perishable dairy and vegetables are produced close to the city, while extensive ranching is farther away on cheaper land. The pattern is driven by transport cost and land price. Real places have rivers, railways, and multiple markets, so the rings are a model, not a perfect map."
+ },
+ {
+  "t": "Women in agriculture",
+  "ds": "The major role women play in farm work, and the limits they often face in land, credit, and rights.",
+  "dm": "The major role women play in farm labor in many countries, and the limits they often face in land ownership, credit, and decision-making.",
+  "dl": "Women do a large share of agricultural work in many developing countries, especially in subsistence production and food processing. They often have less access to land titles, credit, tools, and education than men, which can lower productivity and income. AP Human Geography emphasizes these gender patterns as a key issue in rural development and food security.",
+  "es": "Women doing much of the farm labor with less land rights",
+  "em": "In many countries, women do much of the farm labor but have fewer land rights.",
+  "el": "In many parts of sub-Saharan Africa and South Asia, women do a large share of the planting, weeding, and harvesting, yet they may not officially own the land or easily get loans. That pattern is central to the study of women in agriculture. Greater access to resources for women can raise food production and household well-being."
+ }
+];
+
+function render(){
+  var dm=document.querySelector('input[name=d]:checked').value,em=document.querySelector('input[name=e]:checked').value,h='';
+  for(var i=0;i<V.length;i++){
+    var x=V[i], d=x['d'+dm], e=x['e'+em];
+    h+='<li><b>'+x.t+'</b><br><span class="d">'+d+'</span><br><span class="e">Example: '+e+'</span><br><br></li>';
+  }
+  document.getElementById('list').innerHTML=h;
+}
+render();
+</script>
+
+<hr>
+<h2>Unit 5 Quiz</h2>
+<p>Choose one answer for each question, then check your work. Questions are mixed: AP-style items, vocabulary, and situations.</p>
+<ol id="quiz"></ol>
+<p>
+<button type="button" onclick="checkQuiz()">Check answers</button>
+<button type="button" onclick="resetQuiz()">Reset</button>
+<span id="qscore"></span>
+</p>
+<script>
+var QBANK=[
+ {
+  "t": "exam",
+  "q": "Which statement best describes commercial agriculture?",
+  "c": [
+   "Food is grown mainly to feed the farm household.",
+   "Food is grown mainly to sell for profit in a market.",
+   "Only animals are raised, never crops.",
+   "It cannot be mechanized."
+  ],
+  "a": "Food is grown mainly to sell for profit in a market.",
+  "x": "Commercial agriculture produces goods primarily for sale, unlike subsistence farming, which is mainly for the household."
+ },
+ {
+  "t": "exam",
+  "q": "The First Agricultural Revolution is best described as",
+  "c": [
+   "the invention of the tractor in Britain",
+   "the mid-twentieth-century Green Revolution",
+   "the Neolithic shift to domesticating plants and animals",
+   "the start of fair-trade coffee"
+  ],
+  "a": "the Neolithic shift to domesticating plants and animals",
+  "x": "The First Agricultural Revolution, or Neolithic Revolution, was the beginning of farming through domestication."
+ },
+ {
+  "t": "exam",
+  "q": "In the von Thünen model, perishable products such as dairy and vegetables are generally produced",
+  "c": [
+   "in the ring farthest from the market, where land is cheapest",
+   "close to the market, because they are costly to transport and spoil quickly",
+   "only in deserts",
+   "in a random pattern unrelated to distance"
+  ],
+  "a": "close to the market, because they are costly to transport and spoil quickly",
+  "x": "Von Thünen placed intensive, perishable production near the market and more extensive uses farther out."
+ },
+ {
+  "t": "exam",
+  "q": "The mid-twentieth-century use of high-yield seeds, fertilizer, and irrigation to raise grain output is called the",
+  "c": [
+   "First Agricultural Revolution",
+   "Columbian Exchange",
+   "Green Revolution",
+   "long-lot system"
+  ],
+  "a": "Green Revolution",
+  "x": "The Green Revolution raised wheat and rice yields in many developing countries through new seeds, chemicals, and irrigation."
+ },
+ {
+  "t": "exam",
+  "q": "A land survey that divides the U.S. Midwest into a grid of square townships is the",
+  "c": [
+   "metes and bounds system",
+   "long-lot survey system",
+   "township-and-range system",
+   "von Thünen ring system"
+  ],
+  "a": "township-and-range system",
+  "x": "Township and range, from the Land Ordinance of 1785, created the checkerboard of square fields across much of the Midwest."
+ },
+ {
+  "t": "exam",
+  "q": "Which rural settlement pattern has houses grouped tightly together, with fields around the village?",
+  "c": [
+   "dispersed settlement",
+   "clustered settlement",
+   "linear settlement only along a highway interchange",
+   "a megalopolis"
+  ],
+  "a": "clustered settlement",
+  "x": "In a clustered, or nucleated, settlement, farmhouses are grouped in a village and fields surround it."
+ },
+ {
+  "t": "exam",
+  "q": "Ranching is best classified as",
+  "c": [
+   "intensive wet-rice farming",
+   "an extensive commercial livestock system",
+   "shifting cultivation",
+   "community-supported agriculture"
+  ],
+  "a": "an extensive commercial livestock system",
+  "x": "Ranching uses large areas of land and relatively little labor per acre to raise livestock for sale."
+ },
+ {
+  "t": "exam",
+  "q": "Bid-rent theory helps explain why",
+  "c": [
+   "all crops cost the same to grow everywhere",
+   "land near a market is more expensive, so only some uses can afford to locate there",
+   "oceans have no effect on trade",
+   "language families determine crop choice"
+  ],
+  "a": "land near a market is more expensive, so only some uses can afford to locate there",
+  "x": "Bid-rent theory says land price falls with distance from a center, so different uses outbid one another for location."
+ },
+ {
+  "t": "exam",
+  "q": "The transfer of potatoes and maize to Europe, and of wheat and horses to the Americas, after 1492 is part of the",
+  "c": [
+   "Green Revolution",
+   "Columbian Exchange",
+   "township-and-range survey",
+   "Second Agricultural Revolution only"
+  ],
+  "a": "Columbian Exchange",
+  "x": "The Columbian Exchange was the post-1492 transfer of plants, animals, people, and diseases between the Americas and the rest of the world."
+ },
+ {
+  "t": "exam",
+  "q": "Wet-rice farming that uses large amounts of labor and water on small plots is an example of",
+  "c": [
+   "extensive farming",
+   "intensive farming",
+   "pastoral nomadism",
+   "a food desert"
+  ],
+  "a": "intensive farming",
+  "x": "Intensive farming uses a lot of labor or capital on relatively little land to get high output per acre."
+ },
+ {
+  "t": "exam",
+  "q": "Which survey system uses irregular property lines described by distances and natural landmarks?",
+  "c": [
+   "township and range",
+   "metes and bounds",
+   "long lots only",
+   "von Thünen rings"
+  ],
+  "a": "metes and bounds",
+  "x": "Metes and bounds, used in the English colonies, describes land by distances, directions, and features such as streams or trees."
+ },
+ {
+  "t": "exam",
+  "q": "Plantation agriculture is typically",
+  "c": [
+   "small subsistence plots in polar regions",
+   "large commercial farms in tropical or subtropical areas that grow cash crops for export",
+   "urban community gardens only",
+   "the same as pastoral nomadism"
+  ],
+  "a": "large commercial farms in tropical or subtropical areas that grow cash crops for export",
+  "x": "Plantations are large, often tropical, commercial farms specialized in export crops such as sugar, coffee, or bananas."
+ },
+ {
+  "t": "exam",
+  "q": "A low agricultural density, as in the United States, usually indicates",
+  "c": [
+   "almost everyone in the country is a farmer",
+   "farming is highly mechanized, so few farmers work each unit of farmland",
+   "there is no arable land",
+   "only subsistence farming is practiced"
+  ],
+  "a": "farming is highly mechanized, so few farmers work each unit of farmland",
+  "x": "Agricultural density is farmers per unit of arable land; it is low where machines replace many farm workers."
+ },
+ {
+  "t": "exam",
+  "q": "Shifting cultivation usually involves",
+  "c": [
+   "planting the same field every year with heavy machines and no fallow",
+   "clearing a plot, cropping it for a few years, then leaving it fallow",
+   "only greenhouse flowers next to a CBD",
+   "fair-trade certification of coffee"
+  ],
+  "a": "clearing a plot, cropping it for a few years, then leaving it fallow",
+  "x": "Shifting cultivation rotates fields: a plot is used briefly, then left fallow so vegetation can recover."
+ },
+ {
+  "t": "exam",
+  "q": "The Second Agricultural Revolution is most closely associated with",
+  "c": [
+   "the first domestication of wheat in the Fertile Crescent",
+   "improvements in tools, methods, and machines in Britain that raised output before and during industrialization",
+   "GMOs invented in the 1990s",
+   "urban rooftop gardens"
+  ],
+  "a": "improvements in tools, methods, and machines in Britain that raised output before and during industrialization",
+  "x": "The Second Agricultural Revolution raised yields through better rotation, breeding, enclosure, and machines, supporting industrial cities."
+ },
+ {
+  "t": "exam",
+  "q": "Salinization is most often a problem when",
+  "c": [
+   "irrigation in dry areas leaves salts in the soil",
+   "forests are never cut",
+   "farms use only rain in a wet climate",
+   "no fertilizer is ever applied"
+  ],
+  "a": "irrigation in dry areas leaves salts in the soil",
+  "x": "Salinization is the buildup of salts in soil, often after irrigation water evaporates in dry regions."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following is a value-added specialty product?",
+  "c": [
+   "raw unprocessed commodity grain sold in bulk only",
+   "milk turned into artisanal cheese and sold under a regional label",
+   "an unharvested field left fallow",
+   "a tractor"
+  ],
+  "a": "milk turned into artisanal cheese and sold under a regional label",
+  "x": "Value-added specialty crops are processed or branded so they can be sold for a higher price than the raw commodity."
+ },
+ {
+  "t": "vocab",
+  "q": "The farming of fish, shellfish, or aquatic plants is called",
+  "c": [
+   "pastoral nomadism",
+   "aquaculture",
+   "desertification",
+   "metes and bounds"
+  ],
+  "a": "aquaculture",
+  "x": "Aquaculture is the cultivation of aquatic animals or plants for food."
+ },
+ {
+  "t": "vocab",
+  "q": "Large-scale commercial farming and the businesses that supply, process, and market farm products are known as",
+  "c": [
+   "subsistence agriculture",
+   "agribusiness",
+   "transhumance",
+   "sequent occupancy"
+  ],
+  "a": "agribusiness",
+  "x": "Agribusiness is industrialized food production plus the firms linked to it in a commodity chain."
+ },
+ {
+  "t": "vocab",
+  "q": "Growing two harvests on the same field in one year is",
+  "c": [
+   "ranching",
+   "double cropping",
+   "desertification",
+   "a food desert"
+  ],
+  "a": "double cropping",
+  "x": "Double cropping is an intensive practice of taking two crops from the same land in a single year."
+ },
+ {
+  "t": "vocab",
+  "q": "Areas where people have limited access to affordable, nutritious food are called",
+  "c": [
+   "agricultural hearths",
+   "food deserts",
+   "long lots",
+   "export processing zones"
+  ],
+  "a": "food deserts",
+  "x": "A food desert is a place, often low-income, with poor access to healthy, affordable food."
+ },
+ {
+  "t": "vocab",
+  "q": "The lack of reliable access to enough safe, nutritious food is",
+  "c": [
+   "food insecurity",
+   "a commodity chain",
+   "township and range",
+   "bid-rent"
+  ],
+  "a": "food insecurity",
+  "x": "Food insecurity means people cannot count on having sufficient, safe, and nutritious food."
+ },
+ {
+  "t": "vocab",
+  "q": "Plants or animals whose DNA has been altered in a lab to give them new traits are",
+  "c": [
+   "only heirloom varieties",
+   "genetically modified organisms",
+   "long-lot farms",
+   "metes and bounds parcels"
+  ],
+  "a": "genetically modified organisms",
+  "x": "GMOs have had their genetic material changed to introduce traits such as pest resistance."
+ },
+ {
+  "t": "vocab",
+  "q": "A system in which people pay a local farm in advance and receive a share of the harvest is",
+  "c": [
+   "plantation agriculture",
+   "community-supported agriculture",
+   "pastoral nomadism",
+   "von Thünen's outer ring"
+  ],
+  "a": "community-supported agriculture",
+  "x": "In a CSA, members buy shares of a farm's harvest in advance and receive regular produce."
+ },
+ {
+  "t": "vocab",
+  "q": "The use of machines such as tractors and combines to do farm work is",
+  "c": [
+   "salinization",
+   "mechanization",
+   "creolization",
+   "hierarchical diffusion"
+  ],
+  "a": "mechanization",
+  "x": "Mechanization replaces human or animal labor with machines and raises output per worker."
+ },
+ {
+  "t": "vocab",
+  "q": "A land system of long, narrow lots stretching back from a river, used in some French-settled areas, is the",
+  "c": [
+   "township-and-range system",
+   "long-lot survey system",
+   "metes and bounds system",
+   "Green Revolution"
+  ],
+  "a": "long-lot survey system",
+  "x": "Long lots, as along the St. Lawrence, gave each farm access to a river or road."
+ },
+ {
+  "t": "vocab",
+  "q": "Herders who move with their animals across dry or cold lands in a subsistence system are practicing",
+  "c": [
+   "market gardening",
+   "pastoral nomadism",
+   "plantation agriculture",
+   "urban farming"
+  ],
+  "a": "pastoral nomadism",
+  "x": "Pastoral nomadism is subsistence herding that depends on moving livestock to pasture."
+ },
+ {
+  "t": "vocab",
+  "q": "The planned planting of different crops on the same field in successive seasons is",
+  "c": [
+   "monocropping",
+   "crop rotation",
+   "desertification",
+   "a food desert"
+  ],
+  "a": "crop rotation",
+  "x": "Crop rotation changes what is grown on a field over time to protect soil and manage pests."
+ },
+ {
+  "t": "vocab",
+  "q": "The buildup of salts in soil, often from irrigation, is",
+  "c": [
+   "deforestation",
+   "salinization",
+   "aquaculture",
+   "a clustered settlement"
+  ],
+  "a": "salinization",
+  "x": "Salinization is salt accumulation in soil, a common risk of irrigation in dry lands."
+ },
+ {
+  "t": "vocab",
+  "q": "Growing the same single crop on the same land year after year is",
+  "c": [
+   "crop rotation",
+   "monocropping",
+   "transhumance",
+   "fair trade"
+  ],
+  "a": "monocropping",
+  "x": "Monocropping is the repeated planting of one crop on the same land without rotation."
+ },
+ {
+  "t": "vocab",
+  "q": "Stepped fields built into a hillside to create flat land and reduce erosion are",
+  "c": [
+   "food deserts",
+   "terraces",
+   "export commodities",
+   "bid-rent rings only"
+  ],
+  "a": "terraces",
+  "x": "Terraces are step-like fields on slopes, a labor-intensive way to farm hillsides and hold soil."
+ },
+ {
+  "t": "vocab",
+  "q": "The seasonal movement of livestock between mountain pastures and lowland areas is",
+  "c": [
+   "monoculture",
+   "transhumance",
+   "agribusiness",
+   "a CSA"
+  ],
+  "a": "transhumance",
+  "x": "Transhumance is seasonal herding between highland and lowland pastures."
+ },
+ {
+  "t": "vocab",
+  "q": "Farming that avoids most synthetic fertilizers, pesticides, and GMOs and follows certified rules is",
+  "c": [
+   "plantation agriculture",
+   "organic farming",
+   "slash-and-burn only",
+   "township farming"
+  ],
+  "a": "organic farming",
+  "x": "Organic farming follows certification rules that restrict most synthetic chemicals and GMOs."
+ },
+ {
+  "t": "vocab",
+  "q": "The cost savings that come from producing on a larger scale, so cost per unit falls, are",
+  "c": [
+   "food deserts",
+   "economies of scale",
+   "intervening obstacles",
+   "cultural hearths"
+  ],
+  "a": "economies of scale",
+  "x": "Economies of scale occur when larger production lowers the cost of each unit, a reason large farms can have an advantage."
+ },
+ {
+  "t": "scenario",
+  "q": "A Kansas wheat farm sells nearly its entire harvest to grain companies instead of keeping it for the household. This is",
+  "c": [
+   "subsistence agriculture",
+   "commercial agriculture",
+   "pastoral nomadism",
+   "a food desert"
+  ],
+  "a": "commercial agriculture",
+  "x": "The farm produces mainly for sale in a market, which is commercial agriculture."
+ },
+ {
+  "t": "scenario",
+  "q": "Families pay a nearby farm at the start of the season and receive a box of vegetables each week. This arrangement is",
+  "c": [
+   "a plantation",
+   "community-supported agriculture",
+   "shifting cultivation",
+   "township and range"
+  ],
+  "a": "community-supported agriculture",
+  "x": "Paying a local farm in advance for a share of the harvest is a CSA."
+ },
+ {
+  "t": "scenario",
+  "q": "Amazon rainforest is cleared to make cattle pasture and soy fields. This land-cover change is",
+  "c": [
+   "salinization",
+   "deforestation",
+   "terrace farming",
+   "organic certification"
+  ],
+  "a": "deforestation",
+  "x": "Clearing forest over a wide area for farming or ranching is deforestation."
+ },
+ {
+  "t": "scenario",
+  "q": "Overgrazing and drought in the Sahel leave soil more barren and less able to support crops or herds. This process is",
+  "c": [
+   "aquaculture",
+   "desertification",
+   "the Green Revolution",
+   "a long-lot survey"
+  ],
+  "a": "desertification",
+  "x": "Desertification is the degradation of dry land so that it becomes more desert-like."
+ },
+ {
+  "t": "scenario",
+  "q": "Along the St. Lawrence River, farms are laid out as long, thin lots with a short side on the water. This is the",
+  "c": [
+   "township-and-range system",
+   "long-lot survey system",
+   "metes and bounds system",
+   "von Thünen forest ring only"
+  ],
+  "a": "long-lot survey system",
+  "x": "French long lots stretch back from a river or road so each farm has access to it."
+ },
+ {
+  "t": "scenario",
+  "q": "In the eastern United States, an old deed describes a property as running from a creek to a stone wall to a particular tree. The survey system is",
+  "c": [
+   "township and range",
+   "metes and bounds",
+   "a CSA share",
+   "bid-rent theory"
+  ],
+  "a": "metes and bounds",
+  "x": "Metes and bounds describes land by distances, directions, and natural landmarks."
+ },
+ {
+  "t": "scenario",
+  "q": "A Midwestern farm grows corn and soybeans and also raises hogs that eat much of the grain. This is a",
+  "c": [
+   "pastoral nomadism system",
+   "mixed crop and livestock system",
+   "plantation only",
+   "food desert"
+  ],
+  "a": "mixed crop and livestock system",
+  "x": "Mixed systems combine crops and animals, often using the crops as feed."
+ },
+ {
+  "t": "scenario",
+  "q": "Bedouin herders move camels and sheep across dry lands to find pasture and depend on the animals for a living. This is",
+  "c": [
+   "market gardening",
+   "pastoral nomadism",
+   "urban farming",
+   "monocropping"
+  ],
+  "a": "pastoral nomadism",
+  "x": "Pastoral nomadism is subsistence herding with movement to pasture in dry or cold regions."
+ },
+ {
+  "t": "scenario",
+  "q": "A family grows cassava and vegetables mainly to feed itself and sells only a small surplus. This is",
+  "c": [
+   "commercial agribusiness",
+   "subsistence agriculture",
+   "fair-trade plantation farming",
+   "a von Thünen urban ring"
+  ],
+  "a": "subsistence agriculture",
+  "x": "Subsistence agriculture is farming mainly for the household rather than for a commercial market."
+ },
+ {
+  "t": "scenario",
+  "q": "From the air, much of the U.S. Midwest appears as a regular checkerboard of square fields and roads. The pattern comes from",
+  "c": [
+   "long lots",
+   "metes and bounds",
+   "township and range",
+   "shifting cultivation"
+  ],
+  "a": "township and range",
+  "x": "The rectangular township-and-range survey produced the Midwest's grid of square parcels."
+ },
+ {
+  "t": "scenario",
+  "q": "A dairy turns milk into artisanal cheese and sells it under a regional label for a higher price than raw milk. This is a",
+  "c": [
+   "food desert product",
+   "value-added specialty product",
+   "slash-and-burn crop",
+   "GMO seed only"
+  ],
+  "a": "value-added specialty product",
+  "x": "Processing or branding a farm product to raise its price creates a value-added specialty good."
+ },
+ {
+  "t": "scenario",
+  "q": "In many parts of sub-Saharan Africa, women do a large share of planting and harvesting but often lack official land titles or easy credit. This pattern is a key issue of",
+  "c": [
+   "men and only mechanized agribusiness",
+   "women in agriculture",
+   "the Columbian Exchange's animal transfers",
+   "township surveys"
+  ],
+  "a": "women in agriculture",
+  "x": "Women's large role in farm labor, and their unequal access to land and credit, is a core Unit 5 topic."
+ },
+ {
+  "t": "scenario",
+  "q": "High-yield wheat, fertilizer, and irrigation greatly increased harvests in India and Mexico in the 1960s and after. This change was the",
+  "c": [
+   "First Agricultural Revolution",
+   "Columbian Exchange",
+   "Green Revolution",
+   "metes and bounds reform"
+  ],
+  "a": "Green Revolution",
+  "x": "The Green Revolution raised grain yields in those countries through new seeds and industrial inputs."
+ },
+ {
+  "t": "scenario",
+  "q": "A low-income neighborhood has only convenience stores nearby, and the nearest supermarket is miles away, making fresh food hard to buy. The area may be called a",
+  "c": [
+   "hearth",
+   "food desert",
+   "plantation",
+   "clustered settlement"
+  ],
+  "a": "food desert",
+  "x": "A food desert is an area with limited access to affordable, nutritious food."
+ },
+ {
+  "t": "scenario",
+  "q": "Farmers cut trees, burn them, and plant crops in the ash, then later move to a new plot. The clearing method is",
+  "c": [
+   "organic hydroponics",
+   "slash-and-burn agriculture",
+   "township surveying",
+   "fair trade"
+  ],
+  "a": "slash-and-burn agriculture",
+  "x": "Slash-and-burn is clearing vegetation by cutting and burning, often as part of shifting cultivation."
+ },
+ {
+  "t": "scenario",
+  "q": "Coffee grown in Ethiopia is shipped, roasted, and sold in a café thousands of miles away. The linked steps form a",
+  "c": [
+   "township plat",
+   "commodity chain",
+   "population pyramid",
+   "formal region of language"
+  ],
+  "a": "commodity chain",
+  "x": "A commodity chain is the sequence of steps from production through processing and sale to the consumer."
+ }
+];
+var QCUR=[];
+
+function qesc(s){
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function qshuffle(a){
+  for(var i=a.length-1;i>0;i--){
+    var j=Math.floor(Math.random()*(i+1));
+    var t=a[i]; a[i]=a[j]; a[j]=t;
+  }
+  return a;
+}
+function showQuiz(){
+  QCUR=QBANK.map(function(x){return {q:x.q,c:x.c.slice(),a:x.a,x:x.x};});
+  qshuffle(QCUR);
+  for(var i=0;i<QCUR.length;i++) qshuffle(QCUR[i].c);
+  var h="";
+  for(var i=0;i<QCUR.length;i++){
+    h+="<li><div>"+qesc(QCUR[i].q)+"</div>";
+    for(var j=0;j<QCUR[i].c.length;j++){
+      h+="<label><input type=\"radio\" name=\"qz"+i+"\" value=\""+j+"\"> "+qesc(QCUR[i].c[j])+"</label><br>";
+    }
+    h+="<div id=\"qx"+i+"\"></div><br></li>";
+  }
+  document.getElementById("quiz").innerHTML=h;
+  document.getElementById("qscore").textContent="";
+}
+function checkQuiz(){
+  var right=0;
+  for(var i=0;i<QCUR.length;i++){
+    var sel=document.querySelector("input[name=qz"+i+"]:checked");
+    var box=document.getElementById("qx"+i);
+    var ok=sel && QCUR[i].c[Number(sel.value)]===QCUR[i].a;
+    if(ok) right++;
+    box.className=ok?"right":"wrong";
+    box.textContent=(ok?"Correct. ":"Incorrect. The correct answer is "+QCUR[i].a+". ")+QCUR[i].x;
+  }
+  document.getElementById("qscore").textContent=" Score: "+right+" / "+QCUR.length;
+}
+function resetQuiz(){
+  showQuiz();
+}
+showQuiz();
+
+</script>
+</body>
+</html>

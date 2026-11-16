@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AP Human Geography Unit 7 Vocab</title>
+<style>body{max-width:800px;margin:auto;font-family:sans-serif}.d{color:red}.e{color:blue}.right{color:green}.wrong{color:maroon}#warn{position:fixed;top:0;left:0;right:0;bottom:0;background:#00000080}#warn .box{background:#fff;max-width:32em;margin:4em auto;padding:1em;border:1px solid #000}</style>
+</head>
+<body>
+<div id="warn"><div class="box"><p>Warning: This unit is experimental. The term list might not be the real one from class. The terms, definitions, examples, and quiz may not match your class exactly. Double-check with your teacher's materials.</p><p><button type="button" onclick="document.getElementById('warn').style.display='none'">Close</button></p></div></div>
+<p><a href="index.html">Back to all units</a></p>
+<h1>AP Human Geography</h1>
+<h2>Unit 7: Industrial and Economic Development Patterns and Processes Vocabulary</h2>
+<p>This unit is experimental. The term list might not be the real one from class.</p>
+<p>Term list is a best guess, not the official handout.</p>
+<p>Definitions:
+<label><input type="radio" name="d" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="d" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="d" value="s" onchange="render()"> Short</label></p>
+<p>Examples:
+<label><input type="radio" name="e" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="e" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="e" value="s" onchange="render()"> Short</label></p>
+<ol id="list"></ol>
+<script>
+var V=[
+ {
+  "t": "Agglomeration",
+  "ds": "The clustering of firms or activities in one place to share labor, suppliers, or knowledge.",
+  "dm": "The clustering of firms or related activities in one place so they can share labor, suppliers, infrastructure, or ideas and lower some costs.",
+  "dl": "Agglomeration is the spatial clustering of businesses or industries. Firms may gain shared labor pools, suppliers, infrastructure, and knowledge spillovers, often called agglomeration economies. Too much clustering can also bring congestion and higher land costs.",
+  "es": "Tech firms clustering in Silicon Valley",
+  "em": "Tech firms clustering in Silicon Valley is a classic case of agglomeration.",
+  "el": "Software and hardware firms packed into Silicon Valley benefit from a shared skilled labor pool and nearby suppliers. That clustering is agglomeration. The same pattern appears in fashion districts and auto-supplier regions."
+ },
+ {
+  "t": "Break-of-bulk point",
+  "ds": "A place where goods are transferred from one mode of transport to another.",
+  "dm": "A place, such as a port, airport, or rail yard, where cargo is transferred from one mode of transport to another.",
+  "dl": "A break-of-bulk point is a location where goods are unloaded and switched from one transportation mode to another, for example from ship to truck or rail. Ports and major rail terminals are classic examples. Industry sometimes locates there to avoid extra handling costs farther inland.",
+  "es": "A seaport where cargo moves from ships to trucks",
+  "em": "A seaport where cargo moves from ships onto trucks is a break-of-bulk point.",
+  "el": "At the Port of Rotterdam, containers come off ocean ships and are loaded onto trains, barges, or trucks. That transfer makes the port a break-of-bulk point. Warehouses and processing plants often cluster nearby."
+ },
+ {
+  "t": "Bulk-gaining industry",
+  "ds": "An industry whose finished product is heavier or larger than its inputs, so it often locates near the market.",
+  "dm": "An industry whose finished product is heavier or bulkier than its inputs, which usually favors a location close to the market rather than to the raw materials.",
+  "dl": "A bulk-gaining industry produces a finished good that is heavier or larger than the inputs used to make it. Because shipping the product is costly, these firms often locate near consumers. Beverage bottling, which adds water to concentrate, is a standard example.",
+  "es": "Soft-drink bottling near the customers",
+  "em": "Soft-drink bottling near customers is a bulk-gaining industry, because water is added.",
+  "el": "A soda company often ships concentrated syrup and then bottles the drink near the market, adding water that makes the product much heavier. That is a bulk-gaining industry. Locating near consumers cuts the cost of hauling the heavy finished drinks."
+ },
+ {
+  "t": "Bulk-reducing industry",
+  "ds": "An industry whose raw materials are heavier than the finished product, so it often locates near the inputs.",
+  "dm": "An industry whose raw materials weigh more than the finished product, which usually favors a location close to the source of those inputs.",
+  "dl": "A bulk-reducing industry uses inputs that are heavier or bulkier than the finished good. To save on transport, production often locates near the raw material. Copper smelting and many lumber mills are typical examples.",
+  "es": "A copper smelter built near the mine",
+  "em": "A copper smelter built near the mine is a bulk-reducing industry.",
+  "el": "Copper ore is heavy and mostly waste, so smelters are often built close to the mine rather than to distant markets. That is a bulk-reducing industry. Once the metal is refined, it is cheaper to ship."
+ },
+ {
+  "t": "Commodity dependence",
+  "ds": "Heavy reliance on the export of one or a few raw materials or farm products.",
+  "dm": "A situation in which a country's economy relies heavily on the export of one or a few primary commodities, such as oil, copper, or coffee.",
+  "dl": "Commodity dependence exists when a large share of a country's export earnings comes from a small number of primary products. Prices for those goods can swing sharply, so income and government revenue may be unstable. Many countries in the periphery face this pattern.",
+  "es": "An oil exporter relying on petroleum for most earnings",
+  "em": "A country that earns most of its export income from oil shows commodity dependence.",
+  "el": "If petroleum accounts for most of a country's export earnings, a drop in oil prices can shake the whole economy. That is commodity dependence. Diversifying into manufacturing or services is often proposed as a way to reduce the risk."
+ },
+ {
+  "t": "Comparative advantage",
+  "ds": "The ability to produce a good at a lower opportunity cost than another place.",
+  "dm": "The ability of a country or region to produce a good or service at a lower opportunity cost than another place, which can encourage trade.",
+  "dl": "Comparative advantage is the idea that places should specialize in goods they can produce at a lower opportunity cost than others. Even if one country is more efficient at everything, both can still gain from trade by specializing. The concept is a foundation of arguments for free trade.",
+  "es": "A country specializing in what it produces at lower cost",
+  "em": "A country specializing in goods it makes at lower opportunity cost uses comparative advantage.",
+  "el": "If Chile can produce copper at a lower opportunity cost than many manufactures, and another country has the reverse pattern, both may gain by trading. That is comparative advantage. It helps explain why countries specialize instead of making everything at home."
+ },
+ {
+  "t": "Complementarity",
+  "ds": "A trade relationship in which one place has a surplus that another place wants.",
+  "dm": "A situation in which one region has a surplus of a good that another region demands, so trade between them makes sense.",
+  "dl": "Complementarity exists when one place can supply something another place needs. It is one reason trade flows develop between particular partners. Without complementarity, even nearby places may exchange little.",
+  "es": "Oil exporters selling to countries that lack petroleum",
+  "em": "Oil exporters selling to industrial countries that lack petroleum show complementarity.",
+  "el": "Saudi Arabia has a surplus of oil, and Japan has a high demand for energy it does not produce at home. That match is complementarity. It helps explain a strong trade link between them."
+ },
+ {
+  "t": "Core",
+  "ds": "The wealthy, dominant countries in the world economy, in world-systems theory.",
+  "dm": "In Wallerstein's world-systems theory, the wealthy, industrialized countries that dominate global trade, finance, and high-value production.",
+  "dl": "The core consists of the most developed, powerful countries in the world-systems model. These places tend to specialize in high-value goods, finance, and command functions and to benefit from unequal exchange with the periphery. The United States, much of Western Europe, and Japan are often cited as core.",
+  "es": "The United States, Western Europe, and Japan",
+  "em": "The United States, much of Western Europe, and Japan are often described as the core.",
+  "el": "Countries such as the United States, Germany, and Japan host major banks, advanced industry, and corporate headquarters. In world-systems theory they are the core. They tend to gain more from global trade than peripheral exporters of raw materials."
+ },
+ {
+  "t": "Deindustrialization",
+  "ds": "The decline of manufacturing employment and factory activity in a region.",
+  "dm": "The decline of manufacturing jobs and factory activity in a region, often as plants close, automate, or move elsewhere.",
+  "dl": "Deindustrialization is the loss of industrial employment and production in a place that once had a strong manufacturing base. It may result from automation, cheaper production overseas, or shifting demand. The U.S. Rust Belt is a frequently cited case.",
+  "es": "Factory closures in the U.S. Rust Belt",
+  "em": "Factory closures across the U.S. Rust Belt are a well-known case of deindustrialization.",
+  "el": "Cities such as Detroit and Youngstown lost large numbers of factory jobs as plants closed or moved. That decline is deindustrialization. Service work and some new industries have not always replaced the lost wages evenly."
+ },
+ {
+  "t": "Dependency theory",
+  "ds": "The idea that poorer countries stay dependent because resources and profits flow to richer ones.",
+  "dm": "The idea that resources and profits flow from poorer countries to richer ones, which helps keep the poorer countries dependent rather than developing in the same way.",
+  "dl": "Dependency theory argues that the global economy is structured so that wealth is extracted from poorer countries and accumulated in richer ones. It challenges modernization models such as Rostow's, which treat development as a path every country can follow in isolation. The theory is closely related to world-systems thinking.",
+  "es": "A critique of the idea that every poor country can simply follow Rostow's path",
+  "em": "Dependency theory challenges the idea that every poor country can simply follow Rostow's path.",
+  "el": "Critics of Rostow argue that former colonies cannot just repeat Britain's path because the world economy already favors core countries. That view is dependency theory. It stresses unequal exchange rather than a single ladder of stages."
+ },
+ {
+  "t": "Economies of scale",
+  "ds": "The drop in cost per unit as production increases.",
+  "dm": "The decline in average cost per unit as a firm or industry produces on a larger scale.",
+  "dl": "Economies of scale occur when producing more of a good lowers the cost of each unit, often because fixed costs are spread out or because production becomes more efficient. Large factories and big retailers often rely on this advantage. It helps explain why some firms grow very large.",
+  "es": "A large auto plant lowering the cost of each car",
+  "em": "A large auto plant that lowers the cost of each car is using economies of scale.",
+  "el": "An automaker that produces hundreds of thousands of cars in one plant can spread the cost of machinery and design over many units. That is economies of scale. A tiny workshop usually cannot match that unit cost."
+ },
+ {
+  "t": "Ecotourism",
+  "ds": "Tourism that focuses on nature and is meant to be low-impact and to support conservation.",
+  "dm": "Tourism based on experiencing natural environments, usually intended to be relatively low-impact and to support conservation or local communities.",
+  "dl": "Ecotourism is travel centered on relatively undisturbed natural areas, with an emphasis on conservation, education, and benefits for local people. It is often promoted as a form of sustainable development. Poorly managed visitor traffic can still damage the places it is meant to protect.",
+  "es": "Guided visits to a rainforest reserve",
+  "em": "Guided visits to a rainforest reserve, with fees supporting conservation, are ecotourism.",
+  "el": "Costa Rica has developed a large ecotourism sector around rainforests, volcanoes, and wildlife reserves. Visitor spending can support parks and local jobs. The model only works if the tourism itself does not harm the environment it advertises."
+ },
+ {
+  "t": "Export processing zones (EPZs)",
+  "ds": "Special industrial areas that offer incentives for factories that produce goods mainly for export.",
+  "dm": "Special industrial areas, often with tax breaks and easier trade rules, set up so factories will produce goods mainly for export.",
+  "dl": "Export processing zones are designated areas where firms receive incentives such as lower tariffs, taxes, or looser regulations in return for producing goods for export. They are used to attract foreign investment and manufacturing jobs. Maquiladoras and many SEZ factory parks are related examples.",
+  "es": "A tax-break factory park making goods for export",
+  "em": "A factory park with tax breaks for goods made only for export is an EPZ.",
+  "el": "A government may fence off an industrial park, cut tariffs on imported parts, and require that most output be shipped abroad. That arrangement is an export processing zone. Countries use EPZs to attract assembly plants and foreign investment."
+ },
+ {
+  "t": "Footloose industry",
+  "ds": "An industry that is not strongly tied to a particular location by raw materials or markets.",
+  "dm": "An industry that is not strongly tied to raw-material sources or to a single market, so it can locate in a wider range of places.",
+  "dl": "A footloose industry has relatively low transport costs for inputs and products, or relies on lightweight, high-value goods, so location is more flexible. Software, some electronics assembly, and call centers are often described this way. Labor costs, skills, and amenities may matter more than proximity to mines or ports.",
+  "es": "A software firm that can locate in many cities",
+  "em": "A software firm that can locate in many cities is a footloose industry.",
+  "el": "A software company can often set up in many cities because it does not ship heavy raw materials or bulky products. That flexibility is what 'footloose' means. Cheap, skilled labor or a pleasant location may decide the site."
+ },
+ {
+  "t": "Fordism",
+  "ds": "A system of mass production using assembly lines, standardized products, and specialized workers.",
+  "dm": "A system of mass production, associated with early auto plants, that uses assembly lines, standardized products, large inventories, and specialized workers.",
+  "dl": "Fordism is a form of industrial organization based on mass production, the assembly line, standardized goods, and a detailed division of labor. It was closely associated with early-to-mid twentieth-century automobile manufacturing. Later, more flexible post-Fordist methods reduced some of this rigidity.",
+  "es": "Early Ford plants making one standardized car on an assembly line",
+  "em": "Early Ford plants making one standardized car on an assembly line are Fordism.",
+  "el": "Henry Ford's factories produced large numbers of similar cars with workers repeating specialized tasks on a moving line. That system is Fordism. It raised output but was less flexible than later just-in-time, small-batch methods."
+ },
+ {
+  "t": "Foreign direct investment (FDI)",
+  "ds": "Investment by a company or government in business operations in another country.",
+  "dm": "Investment by a firm or government in productive assets or businesses in another country, such as building a factory or buying a controlling stake.",
+  "dl": "Foreign direct investment is the flow of capital from a company or government into business operations in another country, typically involving ownership or lasting control. Building a factory abroad or buying a large share of a foreign firm are examples. FDI is a major way manufacturing and services spread internationally.",
+  "es": "An automaker building a factory in another country",
+  "em": "An automaker building a factory in another country is engaging in foreign direct investment.",
+  "el": "When Toyota builds an assembly plant in the United States, that spending is foreign direct investment. The firm owns and controls operations abroad, not just a short-term stock trade. Many countries compete to attract this kind of investment."
+ },
+ {
+  "t": "Free trade agreements",
+  "ds": "Pacts among countries that reduce tariffs and other barriers to trade.",
+  "dm": "Pacts among countries that lower or remove tariffs and other barriers so goods and services can move more freely among the members.",
+  "dl": "Free trade agreements are treaties that reduce tariffs, quotas, and other obstacles to trade among participating countries. Examples include USMCA in North America and many regional deals around the world. Supporters emphasize efficiency and lower prices; critics worry about job losses and uneven gains.",
+  "es": "USMCA lowering trade barriers in North America",
+  "em": "USMCA is a free trade agreement that lowers trade barriers in North America.",
+  "el": "The United States, Mexico, and Canada reduced many tariffs under USMCA, the successor to NAFTA. That is a free trade agreement. It makes it easier for goods, and some services, to move among the three countries."
+ },
+ {
+  "t": "Gender Inequality Index (GII)",
+  "ds": "A UN measure of inequality between women and men in health, empowerment, and work.",
+  "dm": "A United Nations measure of gender inequality that combines reproductive health, empowerment, and labor-market participation.",
+  "dl": "The Gender Inequality Index, published by the United Nations Development Programme, measures inequality between women and men. It uses indicators of reproductive health, empowerment such as education and political representation, and labor-force participation. Lower GII values mean less inequality.",
+  "es": "A UN score of gaps in health, power, and jobs by gender",
+  "em": "The GII scores gaps in health, power, and work between women and men.",
+  "el": "A country with high maternal mortality, few women in parliament, and a large gap in labor-force participation will have a higher GII. That signals greater gender inequality. The index is often read alongside HDI when measuring development."
+ },
+ {
+  "t": "Gross domestic product (GDP)",
+  "ds": "The total value of goods and services produced inside a country's borders.",
+  "dm": "The total market value of all final goods and services produced within a country's borders in a given period.",
+  "dl": "Gross domestic product measures the value of final goods and services produced inside a country's territory, regardless of who owns the firms. It is a common indicator of the size of an economy. GDP per capita is often used, with caveats, as a rough measure of average economic output.",
+  "es": "The value of everything produced inside France in a year",
+  "em": "The value of all final goods and services produced inside France in a year is GDP.",
+  "el": "If a Japanese-owned factory in the United States makes cars, that output counts in U.S. GDP because it was produced on U.S. soil. GDP is about location of production, not nationality of the owner. Economists often divide GDP by population to compare countries."
+ },
+ {
+  "t": "Gross national income (GNI)",
+  "ds": "The total income earned by a country's residents, including income from abroad.",
+  "dm": "The total income earned by a country's residents and businesses, including net income received from other countries.",
+  "dl": "Gross national income measures the income earned by a country's residents, including wages and profits from abroad, minus income earned by foreigners domestically. The World Bank often uses GNI, and GNI per capita appears in the Human Development Index. It is similar in idea to GNP but is an income measure.",
+  "es": "Residents' income, including profits earned overseas",
+  "em": "Residents' total income, including profits earned overseas, is gross national income.",
+  "el": "If a U.S. company earns profits from a plant in Ireland, that income can count toward U.S. GNI. Production inside the United States by a foreign firm would not all stay in U.S. GNI. The World Bank commonly ranks countries by GNI per capita."
+ },
+ {
+  "t": "Gross national product (GNP)",
+  "ds": "The total value of goods and services produced by a country's residents, including production abroad.",
+  "dm": "The total value of final goods and services produced by a country's residents and firms, including output abroad and excluding output by foreigners at home.",
+  "dl": "Gross national product measures production by a country's residents and companies, wherever they are located. It includes output of domestic firms overseas and excludes output of foreign firms inside the country. GNI has largely replaced GNP in many official comparisons, but the two ideas are closely related.",
+  "es": "Output of a country's firms at home and overseas",
+  "em": "Output of a country's own firms at home and overseas is gross national product.",
+  "el": "A German automaker's factory in Mexico would count toward Germany's GNP, not Mexico's, because the producer is German. GNP follows nationality of the producer more than the location of the plant. Many agencies now report GNI instead."
+ },
+ {
+  "t": "Growth poles",
+  "ds": "Centers of economic activity meant to stimulate growth in the surrounding region.",
+  "dm": "Concentrated centers of economic activity, planned or spontaneous, that are expected to generate jobs and investment in the surrounding region.",
+  "dl": "A growth pole is a cluster of economic activity that is intended to, or does, spread growth into a wider area through jobs, suppliers, and the multiplier effect. Governments sometimes plan technopoles or industrial complexes as growth poles. The surrounding region may or may not actually receive the hoped-for spillover.",
+  "es": "A planned high-tech park meant to lift a wider region",
+  "em": "A planned high-tech park meant to lift a wider region is a growth pole.",
+  "el": "France's planned new towns and industrial complexes, and later high-tech parks, were sometimes designed as growth poles. The idea is that a strong center will pull investment and jobs into nearby areas. Results have been mixed depending on the place."
+ },
+ {
+  "t": "Human Development Index (HDI)",
+  "ds": "A composite measure of development based on health, education, and income.",
+  "dm": "A composite United Nations measure of development that combines life expectancy, education, and GNI per capita.",
+  "dl": "The Human Development Index is a composite score published by the United Nations Development Programme. It combines life expectancy, education indicators, and GNI per capita to give a broader picture than income alone. Scores closer to 1.0 indicate higher human development.",
+  "es": "A UN score combining health, schooling, and income",
+  "em": "The HDI is a UN score that combines health, schooling, and income per person.",
+  "el": "Norway and Switzerland usually rank near the top of the HDI because of long life expectancy, high education levels, and high income. A country with rising GDP but poor health or schooling will not score as high. The index was designed to look beyond income alone."
+ },
+ {
+  "t": "Industrial Revolution",
+  "ds": "The period, beginning in Britain, when mechanized industry and factories transformed economies and societies.",
+  "dm": "The historical shift, beginning in eighteenth-century Britain, to mechanized production, factories, and new energy sources, which transformed economies and societies.",
+  "dl": "The Industrial Revolution began in Britain in the eighteenth century and spread to other parts of Europe, North America, and later the world. It introduced mechanized production, factories, new energy sources such as coal and steam, and major changes in work, cities, and trade. It is a starting point for modern industrial and economic geography.",
+  "es": "Britain's early factories, coal, and steam-powered industry",
+  "em": "Britain's early factories, coal use, and steam-powered industry mark the Industrial Revolution.",
+  "el": "Textile mills, coal mining, and steam engines in eighteenth- and nineteenth-century Britain launched the Industrial Revolution. Cities grew, and manufacturing overtook older craft and farm work in importance. The pattern later spread to other countries."
+ },
+ {
+  "t": "Informal economy",
+  "ds": "Work and trade that are not officially regulated, taxed, or recorded.",
+  "dm": "Economic activity that is not officially regulated, taxed, or fully recorded, such as unregistered street vending or casual labor.",
+  "dl": "The informal economy includes jobs and businesses that operate outside official regulation, tax systems, and often labor protections. It is a large share of employment in many developing countries and also exists in richer ones. Informal work can provide livelihoods but usually offers less security and fewer benefits.",
+  "es": "Unregistered street vendors or casual day labor",
+  "em": "Unregistered street vendors and casual day labor are part of the informal economy.",
+  "el": "In many large cities, street vendors, unregistered taxi drivers, and casual construction workers earn a living outside official payrolls. That work is the informal economy. It may be the main option when formal jobs are scarce."
+ },
+ {
+  "t": "International division of labor",
+  "ds": "The global split of work in which some places do low-wage production and others keep high-skill or control functions.",
+  "dm": "The global arrangement of work in which low-wage manufacturing often locates in developing countries while core countries keep design, finance, and other high-skill functions.",
+  "dl": "The international, or new international, division of labor is the geographic split of production across countries. Labor-intensive manufacturing has often moved to lower-wage countries, while research, design, and corporate control remain concentrated in core economies. Outsourcing and offshoring are mechanisms that have reinforced this pattern.",
+  "es": "Assembly in lower-wage countries and design in core cities",
+  "em": "Assembly in lower-wage countries and design in core cities show an international division of labor.",
+  "el": "A phone may be designed in California, assembled in China or Vietnam, and financed from a world city. That geographic split is an international division of labor. Wage differences and global transport make the pattern possible."
+ },
+ {
+  "t": "International Monetary Fund (IMF)",
+  "ds": "An international organization that lends to countries in financial trouble, often with policy conditions.",
+  "dm": "An international organization that provides loans and policy advice to countries facing balance-of-payments or financial crises, often with conditions attached.",
+  "dl": "The International Monetary Fund is an organization of member countries that works to stabilize the global financial system. It lends to countries in crisis and often requires policy changes, sometimes called conditionality or structural adjustment. Supporters see it as a stabilizer; critics argue that its conditions can be harsh.",
+  "es": "Emergency loans to a country in a currency crisis",
+  "em": "Emergency loans to a country in a currency crisis often come from the IMF.",
+  "el": "A country that cannot pay its international bills may turn to the IMF for a loan. The fund typically asks for budget or policy changes in return. That role makes the IMF a major, and sometimes controversial, actor in development."
+ },
+ {
+  "t": "Just-in-time delivery",
+  "ds": "A system that brings inputs to a factory only as they are needed, rather than storing large inventories.",
+  "dm": "A system in which parts and supplies arrive at a factory only as they are needed, reducing storage costs but requiring very reliable transport.",
+  "dl": "Just-in-time delivery is a logistics method that keeps inventories very low by delivering parts as they are needed on the production line. It can cut warehouse costs and is associated with post-Fordist, flexible production. Disruptions in transport or supply chains can quickly halt output.",
+  "es": "Auto parts arriving at a plant the day they are used",
+  "em": "Auto parts that arrive at a plant the day they are used show just-in-time delivery.",
+  "el": "An auto plant may receive seats or electronics only hours before they are installed, instead of warehousing weeks of parts. That is just-in-time delivery. A traffic delay or port shutdown can stop the line."
+ },
+ {
+  "t": "Least cost theory",
+  "ds": "Weber's idea that a factory locates where transport, labor, and agglomeration costs are minimized.",
+  "dm": "Alfred Weber's idea that industry locates at the site that minimizes the combined costs of transportation, labor, and agglomeration.",
+  "dl": "Least cost theory, associated with Alfred Weber, says a firm will choose a location that minimizes total costs, especially transport of inputs and outputs, labor, and the benefits or costs of clustering. Bulk-gaining and bulk-reducing industries are often explained with this model. Real firms also consider taxes, politics, and markets.",
+  "es": "A factory sited to cut shipping and labor costs",
+  "em": "A factory sited mainly to cut shipping and labor costs follows least cost theory.",
+  "el": "Weber's model might place a copper smelter near the mine to avoid hauling heavy ore, or a bottling plant near the market. Those choices follow least cost theory. The model is a starting point, not a complete picture of every firm."
+ },
+ {
+  "t": "Literacy rate",
+  "ds": "The share of people, usually adults, who can read and write.",
+  "dm": "The percentage of a population, usually adults, who can read and write at a basic level, often used as a development indicator.",
+  "dl": "Literacy rate is the proportion of people, typically those above a certain age, who can read and write. It is a widely used social indicator of development and is related to education and economic opportunity. Gender gaps in literacy remain large in some countries.",
+  "es": "The percent of adults who can read and write",
+  "em": "The percent of adults who can read and write is the literacy rate.",
+  "el": "A country in which nearly all adults can read will have a high literacy rate, which supports a skilled workforce. Places with large gaps between men's and women's literacy face an added development challenge. The measure is simple but widely reported."
+ },
+ {
+  "t": "Maquiladoras",
+  "ds": "Export-oriented assembly plants in Mexico, often near the U.S. border, that use imported parts.",
+  "dm": "Export-oriented factories in Mexico, many of them near the U.S. border, that import parts, assemble goods, and ship the products abroad.",
+  "dl": "Maquiladoras are manufacturing plants in Mexico that import materials and equipment, often duty-free, assemble or process goods, and export the finished products, frequently to the United States. They grew with border industrialization programs and later with NAFTA and USMCA. They are a regional form of export-oriented production.",
+  "es": "Border assembly plants in Mexico shipping goods to the United States",
+  "em": "Border assembly plants in Mexico that ship goods to the United States are maquiladoras.",
+  "el": "Many electronics and auto-parts plants in cities such as Ciudad Juárez or Tijuana import components, assemble them, and send finished goods north. Those plants are maquiladoras. They illustrate export processing and the international division of labor."
+ },
+ {
+  "t": "Microloans",
+  "ds": "Small loans, often to people with little access to regular banks, meant to support small businesses.",
+  "dm": "Very small loans, often given to people, especially women, in developing countries who lack access to ordinary bank credit.",
+  "dl": "Microloans, or microfinance, are small amounts of credit offered to people who usually cannot get traditional bank loans. They are often targeted at women and at tiny businesses in developing countries. Evidence on how much they reduce poverty is mixed, but they remain a common development tool.",
+  "es": "A small loan to a woman starting a market stall",
+  "em": "A small loan to a woman starting a market stall is a microloan.",
+  "el": "A lender such as a microfinance group might give a small sum to a woman to buy inventory for a market stall when a commercial bank would not. That is a microloan. Programs of this kind became widely known through work in Bangladesh and elsewhere."
+ },
+ {
+  "t": "Multiplier effect",
+  "ds": "The extra economic activity that occurs as new income is spent and respent in a local economy.",
+  "dm": "The additional jobs and spending generated as income from a new industry or employer is spent and respent in a local economy.",
+  "dl": "The multiplier effect is the idea that an initial injection of spending or jobs creates further economic activity as workers and firms spend their income locally. A new factory may support nearby shops, housing, and services. The size of the multiplier depends on how much money stays in the area.",
+  "es": "A new factory supporting nearby shops and housing",
+  "em": "A new factory that supports nearby shops and housing shows the multiplier effect.",
+  "el": "If an auto plant hires hundreds of workers who then spend wages at local stores and apartments, those businesses may hire more staff. That chain is the multiplier effect. If most goods are imported, more of the money leaks away and the local multiplier is smaller."
+ },
+ {
+  "t": "Neoliberal policies",
+  "ds": "Policies that favor free markets, privatization, deregulation, and lower trade barriers.",
+  "dm": "Economic policies that emphasize free markets, privatization, deregulation, and reduced trade barriers, often promoted from the late twentieth century onward.",
+  "dl": "Neoliberal policies favor market-oriented reforms such as cutting tariffs, privatizing state firms, deregulating business, and limiting some government spending. International institutions sometimes encouraged these reforms in developing countries. Supporters credit them with growth and efficiency; critics point to inequality and reduced public services.",
+  "es": "Privatization and tariff cuts promoted as market reforms",
+  "em": "Privatization and tariff cuts promoted as market reforms are neoliberal policies.",
+  "el": "In the 1980s and 1990s, some countries sold state-owned companies, opened markets, and cut trade barriers under programs often labeled neoliberal. Chile and various structural-adjustment cases are frequently discussed in this context. The results for growth and inequality have been debated."
+ },
+ {
+  "t": "Newly industrialized countries",
+  "ds": "Countries that have recently shifted into significant industrial and export-oriented growth.",
+  "dm": "Countries that have recently moved from mainly primary production into significant manufacturing and export-oriented growth.",
+  "dl": "Newly industrialized countries are states that have undergone rapid industrial growth and a shift toward manufacturing and exports in recent decades. South Korea, Taiwan, and, in many discussions, countries such as Mexico or Thailand have been placed in this group at various times. They often occupy a semiperipheral position in the world economy.",
+  "es": "South Korea's rapid shift into export manufacturing",
+  "em": "South Korea's rapid shift into export manufacturing made it a newly industrialized country.",
+  "el": "South Korea moved from a largely agricultural economy to a major exporter of cars, ships, and electronics in a few decades. That path is the classic newly industrialized country story. Other countries have followed similar, though not identical, routes."
+ },
+ {
+  "t": "Offshoring",
+  "ds": "The move of production or services to another country.",
+  "dm": "The relocation of production, or of some service work, from one country to another, often to reduce costs.",
+  "dl": "Offshoring is the movement of business activity to another country. A firm may open its own plant abroad or send work to a foreign contractor. It is related to, but not the same as, outsourcing, which means contracting work to another firm whether at home or abroad.",
+  "es": "A company moving its factory from the United States to Vietnam",
+  "em": "A company moving its factory from the United States to Vietnam is offshoring.",
+  "el": "If a U.S. apparel firm closes a domestic plant and opens production in Vietnam, that move is offshoring. The work has crossed a national border. The foreign plant might be company-owned or run by a contractor."
+ },
+ {
+  "t": "Outsourcing",
+  "ds": "The hiring of an outside firm to do work that a company might otherwise do itself.",
+  "dm": "The practice of hiring an outside company to perform work that a firm might otherwise do in-house, whether at home or abroad.",
+  "dl": "Outsourcing means contracting a task or service to another firm instead of doing it internally. The contractor may be in the same country or in another one. Offshoring, by contrast, is specifically about moving work across a national border and may or may not involve an outside firm.",
+  "es": "A company hiring another firm to run its call center",
+  "em": "A company that hires another firm to run its call center is outsourcing.",
+  "el": "A bank might hire a separate company to handle customer-service calls or payroll. That is outsourcing. If the contractor is overseas, the arrangement is also a form of offshoring, but outsourcing can happen entirely inside one country."
+ },
+ {
+  "t": "Periphery",
+  "ds": "The poorer countries in the world economy that mainly supply raw materials and cheap labor.",
+  "dm": "In world-systems theory, the poorer, less powerful countries that mainly export raw materials or cheap labor and depend on the core.",
+  "dl": "The periphery consists of the least powerful, least developed countries in Wallerstein's world-systems model. These places often specialize in primary goods or low-wage assembly and have less control over global trade and finance. Unequal exchange with the core is said to help keep them in a dependent position.",
+  "es": "Poorer commodity-exporting countries in the world-systems model",
+  "em": "Poorer commodity-exporting countries are often placed in the periphery of the world-systems model.",
+  "el": "A low-income country that exports unprocessed coffee or minerals and imports expensive manufactures is a typical peripheral case. In world-systems theory it sits at the edge of the global economy. Wealth and decision-making are more concentrated in the core."
+ },
+ {
+  "t": "Post-Fordism",
+  "ds": "A more flexible system of production that uses smaller batches, just-in-time delivery, and less rigid factory work.",
+  "dm": "A more flexible system of production, following classic mass production, that uses smaller batches, just-in-time delivery, and more adaptable labor.",
+  "dl": "Post-Fordism refers to more flexible production methods that became common as classic Fordist mass production changed. Firms may produce smaller, more varied batches, rely on just-in-time delivery, and use workers who can shift among tasks. It is associated with late-twentieth-century industry and global supply chains.",
+  "es": "Flexible, small-batch production instead of one rigid assembly line",
+  "em": "Flexible, small-batch production with just-in-time parts is a hallmark of post-Fordism.",
+  "el": "A modern auto plant may build several models on one line and receive parts only as needed, instead of making one standardized car in huge inventories. That flexibility is post-Fordism. It contrasts with early Fordist mass production."
+ },
+ {
+  "t": "Primary sector",
+  "ds": "The part of the economy that extracts natural resources, such as farming, mining, fishing, and forestry.",
+  "dm": "The part of the economy that extracts or harvests natural resources, including agriculture, mining, fishing, and forestry.",
+  "dl": "The primary sector includes activities that take resources directly from the earth, such as farming, mining, fishing, and logging. It is a large share of employment in many less developed countries. As economies develop, the share of jobs in the primary sector usually falls.",
+  "es": "Farming, mining, fishing, or logging",
+  "em": "Farming, mining, fishing, and logging are all part of the primary sector.",
+  "el": "A copper mine in Chile or a wheat farm on the U.S. Great Plains is primary-sector work. The activity takes a resource from the land. Later processing of that copper or grain would be secondary."
+ },
+ {
+  "t": "Quaternary sector",
+  "ds": "The part of the economy based on knowledge, information, and advanced services such as finance and research.",
+  "dm": "The part of the economy that handles knowledge, information, and advanced services such as finance, insurance, research, and data processing.",
+  "dl": "The quaternary sector is a later division of services that covers information, knowledge, and highly skilled activities such as finance, insurance, real estate, research, and data processing. It is especially important in core economies and world cities. Not all classifications split it from the tertiary sector.",
+  "es": "Finance, research, and data-processing jobs",
+  "em": "Finance, research, and data-processing jobs are often classed in the quaternary sector.",
+  "el": "A software researcher, a stock analyst, and a data-center worker are often placed in the quaternary sector. Their work is about information and knowledge more than routine retail or transport. Such jobs cluster in major cities of the core."
+ },
+ {
+  "t": "Quinary sector",
+  "ds": "The highest-level decision-making part of the economy, including top executives and government leaders.",
+  "dm": "The highest-level decision-making slice of the economy, including top executives, senior government officials, and research directors.",
+  "dl": "The quinary sector is sometimes used for the very top of the service hierarchy: high-level decision makers in government, corporations, education, and research. It is a narrower idea than the quaternary sector. Like other service splits, not every model uses the term.",
+  "es": "Cabinet officials and chief executives making top decisions",
+  "em": "Cabinet officials and chief executives who make top decisions are in the quinary sector.",
+  "el": "A president, a cabinet minister, or the CEO of a global firm is doing quinary-sector work when they set national or corporate direction. These roles are few and highly concentrated in capital and world cities. The category sits at the top of some five-sector models."
+ },
+ {
+  "t": "Rostow's Stages of Economic Growth",
+  "ds": "A modernization model that says countries move through five stages from a traditional society to high mass consumption.",
+  "dm": "A modernization model, from W.W. Rostow, that describes five stages of growth from a traditional society to an age of high mass consumption.",
+  "dl": "Rostow's Stages of Economic Growth is a modernization theory that claims countries pass through five stages: traditional society, preconditions for takeoff, takeoff, drive to maturity, and the age of high mass consumption. It was influential in mid-twentieth-century development thinking. Dependency and world-systems theorists criticize it for ignoring history, colonialism, and unequal global structures.",
+  "es": "A five-stage path from traditional society to mass consumption",
+  "em": "Rostow's model describes a five-stage path from a traditional society to high mass consumption.",
+  "el": "Rostow pointed to Britain's industrial takeoff as a pattern other countries might follow, ending in high mass consumption like that of the United States. The model treats development as a national ladder of stages. Critics say it overlooks how the core-periphery system shapes what is possible."
+ },
+ {
+  "t": "Secondary sector",
+  "ds": "The part of the economy that processes raw materials into manufactured goods.",
+  "dm": "The part of the economy that processes raw materials into finished or semi-finished goods, including manufacturing and construction.",
+  "dl": "The secondary sector includes manufacturing, processing, and often construction, turning primary resources into products. Factory work, steelmaking, and auto assembly are typical examples. Industrialization is largely a shift toward a larger secondary sector, at least for a period of development.",
+  "es": "Factories that turn ore or cotton into finished goods",
+  "em": "Factories that turn ore or cotton into finished goods are in the secondary sector.",
+  "el": "A steel mill that turns iron ore into beams, or a plant that sews cloth into clothing, is secondary-sector activity. Manufacturing is the heart of this sector. In many countries it grew during industrialization and later shrank as a share of jobs."
+ },
+ {
+  "t": "Semiperiphery",
+  "ds": "Countries in between the core and the periphery, with mixed features of both.",
+  "dm": "In world-systems theory, countries that sit between the core and the periphery and have mixed industrial, export, and political features of both.",
+  "dl": "The semiperiphery includes countries that are neither fully core nor fully peripheral. They often have significant industry and some regional influence but still depend on the core in important ways. Brazil, India, China, Mexico, and South Africa are frequently cited examples, though placements can change.",
+  "es": "Mid-level countries such as Brazil or Mexico in the world-systems model",
+  "em": "Brazil, Mexico, and similar mid-level economies are often classed as semiperiphery.",
+  "el": "Brazil and Mexico have large industries and regional influence, yet they still occupy a middle position in many world-systems accounts. That middle category is the semiperiphery. It can include newly industrialized countries and large emerging economies."
+ },
+ {
+  "t": "Special economic zones (SEZs)",
+  "ds": "Areas with special, usually more open, economic rules designed to attract investment.",
+  "dm": "Designated areas where a country applies different, usually more liberal, economic rules in order to attract investment and trade.",
+  "dl": "Special economic zones are regions in which a government offers distinct tax, tariff, or regulatory rules to attract firms and trade. China's early SEZs, such as Shenzhen, are the best-known examples. Export processing zones are a related, often narrower, type of special zone.",
+  "es": "Shenzhen's special rules that attracted factories and investment",
+  "em": "Shenzhen's special rules that attracted factories and foreign investment made it a famous SEZ.",
+  "el": "China created special economic zones such as Shenzhen, with looser trade and investment rules than the rest of the country at the time. The city grew rapidly as factories and foreign capital arrived. Many other countries have since set up their own SEZs."
+ },
+ {
+  "t": "Sustainable development",
+  "ds": "Development that meets present needs without undermining the ability of future generations to meet theirs.",
+  "dm": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs, balancing economy, society, and environment.",
+  "dl": "Sustainable development is commonly defined as meeting present needs without compromising future generations' ability to meet theirs. It tries to balance economic growth, social well-being, and environmental protection. The idea underpins the UN Sustainable Development Goals and many national plans.",
+  "es": "Growth that protects resources for the future",
+  "em": "Growth that protects resources so future generations can meet their needs is sustainable development.",
+  "el": "A country that expands electricity while shifting toward cleaner sources, or that protects forests while still creating jobs, is aiming at sustainable development. The standard definition stresses not undermining future needs. In practice, the balance among growth, equity, and the environment is often contested."
+ },
+ {
+  "t": "Tariffs",
+  "ds": "Taxes placed on imported goods.",
+  "dm": "Taxes that a government places on imported goods, often to raise revenue or to protect domestic producers.",
+  "dl": "A tariff is a tax on imports. Governments use tariffs to raise revenue, to protect domestic industries from foreign competition, or as a tool in trade disputes. Free trade agreements try to lower or remove many tariffs among member countries.",
+  "es": "A tax added to imported steel or cars",
+  "em": "A tax added to imported steel or cars is a tariff.",
+  "el": "If a country puts a 25 percent tax on imported steel, that tax is a tariff. Domestic steelmakers may gain protection, but buyers of steel may pay more. Tariff cuts are a central goal of many free trade agreements."
+ },
+ {
+  "t": "Technopoles",
+  "ds": "Planned or clustered centers of high-technology research and industry.",
+  "dm": "Centers, often planned, that concentrate high-technology research, universities, and related industry in one place.",
+  "dl": "A technopole is a center of high-tech research and production, often linking universities, government labs, and private firms. Silicon Valley, North Carolina's Research Triangle, and Tsukuba in Japan are frequently cited. Technopoles can act as growth poles for a region.",
+  "es": "Silicon Valley or Research Triangle Park",
+  "em": "Silicon Valley and Research Triangle Park are well-known technopoles.",
+  "el": "Silicon Valley in California and Research Triangle Park in North Carolina concentrate universities, labs, and high-tech firms. Those clusters are technopoles. They attract skilled workers and can spread growth into the surrounding region."
+ },
+ {
+  "t": "Tertiary sector",
+  "ds": "The part of the economy that provides services rather than extracting resources or manufacturing goods.",
+  "dm": "The part of the economy that provides services, such as retail, transportation, education, health care, and entertainment.",
+  "dl": "The tertiary sector is the service sector: selling, transporting, teaching, caring for people, entertaining, and similar work. In most developed countries it is now the largest share of employment. Some models further split advanced services into quaternary and quinary sectors.",
+  "es": "Retail, teaching, nursing, and transportation jobs",
+  "em": "Retail, teaching, nursing, and transportation jobs are part of the tertiary sector.",
+  "el": "A store clerk, a nurse, a teacher, and a bus driver all work in the tertiary sector. They provide services rather than mining or factory output. In the United States and similar economies, most jobs are now in services."
+ },
+ {
+  "t": "UN Sustainable Development Goals",
+  "ds": "A set of 17 global goals adopted by the United Nations to guide development through 2030.",
+  "dm": "A set of 17 global goals, adopted by the United Nations in 2015, that aim to reduce poverty and inequality and to protect the planet by 2030.",
+  "dl": "The UN Sustainable Development Goals, or SDGs, are 17 goals adopted in 2015 as part of the 2030 Agenda. They cover poverty, health, education, gender equality, climate, and other social and environmental targets. Countries and organizations use them as a shared development framework.",
+  "es": "The UN's 17 goals for poverty, equality, and the environment",
+  "em": "The UN's 17 goals for poverty, equality, and the environment are the Sustainable Development Goals.",
+  "el": "Goal 1 aims to end poverty, and Goal 13 calls for climate action, among 15 other targets in the SDG list. The United Nations adopted the set in 2015 to guide policy through 2030. They are a global reference for sustainable development."
+ },
+ {
+  "t": "Wallerstein's world-systems theory",
+  "ds": "The theory that the world economy is divided into a core, semiperiphery, and periphery linked by unequal exchange.",
+  "dm": "Immanuel Wallerstein's theory that a single world economy is divided into core, semiperiphery, and periphery regions linked by unequal exchange.",
+  "dl": "World-systems theory, associated with Immanuel Wallerstein, treats the modern world as one capitalist system rather than a set of isolated national economies. It divides places into core, semiperiphery, and periphery, bound together by trade and unequal exchange. The model is often contrasted with Rostow's stage theory of development.",
+  "es": "A core-semiperiphery-periphery model of the global economy",
+  "em": "Wallerstein's theory divides the global economy into a core, a semiperiphery, and a periphery.",
+  "el": "In Wallerstein's account, core countries take in high-value activity, peripheral countries supply cheap labor and commodities, and semiperipheral countries sit in between. The whole system is one world economy. This view challenges the idea that every country simply climbs Rostow's stages on its own."
+ },
+ {
+  "t": "World Trade Organization (WTO)",
+  "ds": "An international organization that sets and oversees global trade rules and works to reduce trade barriers.",
+  "dm": "An international organization that oversees global trade rules, works to reduce barriers, and helps settle trade disputes among member countries.",
+  "dl": "The World Trade Organization is the main global body that administers trade agreements, promotes the reduction of tariffs and other barriers, and provides a forum for settling disputes. It succeeded the GATT system and includes most of the world's trading countries. Its rules and rulings are often debated by free-trade supporters and critics.",
+  "es": "The global body that oversees trade rules and disputes",
+  "em": "The WTO is the global body that oversees trade rules and settles many trade disputes.",
+  "el": "When two member countries clash over tariffs or subsidies, they may bring the case to the World Trade Organization. The WTO also hosts negotiations aimed at lowering trade barriers. It is a central institution of the current trading system."
+ }
+];
+
+function render(){
+  var dm=document.querySelector('input[name=d]:checked').value,em=document.querySelector('input[name=e]:checked').value,h='';
+  for(var i=0;i<V.length;i++){
+    var x=V[i], d=x['d'+dm], e=x['e'+em];
+    h+='<li><b>'+x.t+'</b><br><span class="d">'+d+'</span><br><span class="e">Example: '+e+'</span><br><br></li>';
+  }
+  document.getElementById('list').innerHTML=h;
+}
+render();
+</script>
+
+<hr>
+<h2>Unit 7 Quiz</h2>
+<p>Choose one answer for each question, then check your work. Questions are mixed: AP-style items, vocabulary, and situations.</p>
+<ol id="quiz"></ol>
+<p>
+<button type="button" onclick="checkQuiz()">Check answers</button>
+<button type="button" onclick="resetQuiz()">Reset</button>
+<span id="qscore"></span>
+</p>
+<script>
+var QBANK=[
+ {
+  "t": "exam",
+  "q": "Gross domestic product (GDP) measures the value of final goods and services",
+  "c": [
+   "produced within a country's borders, regardless of who owns the firms",
+   "produced by a country's residents, including all output abroad",
+   "earned only from informal street vending",
+   "exported, but never goods sold at home"
+  ],
+  "a": "produced within a country's borders, regardless of who owns the firms",
+  "x": "GDP is about the location of production inside a country's territory, not the nationality of the firm that owns the plant."
+ },
+ {
+  "t": "exam",
+  "q": "The Human Development Index combines which three kinds of indicators?",
+  "c": [
+   "Life expectancy, education, and GNI per capita",
+   "Tariffs, military spending, and oil reserves only",
+   "Population density, climate, and language",
+   "The number of factories, ports, and mines"
+  ],
+  "a": "Life expectancy, education, and GNI per capita",
+  "x": "HDI is a composite of health (life expectancy), education, and income (GNI per capita), so it looks beyond output alone."
+ },
+ {
+  "t": "exam",
+  "q": "A major criticism of Rostow's Stages of Economic Growth is that the model",
+  "c": [
+   "ignores colonialism and unequal global structures that may block a simple national path",
+   "says no country can ever reach high mass consumption",
+   "rejects any role for industry or trade",
+   "is identical to Wallerstein's world-systems theory"
+  ],
+  "a": "ignores colonialism and unequal global structures that may block a simple national path",
+  "x": "Dependency and world-systems theorists argue that Rostow treats development as a ladder every country can climb, overlooking core-periphery inequality."
+ },
+ {
+  "t": "exam",
+  "q": "According to least cost theory, a bulk-reducing industry such as copper smelting is most likely to locate",
+  "c": [
+   "near the source of the heavy raw material",
+   "as far as possible from any input",
+   "only in a country's primate city, regardless of inputs",
+   "wherever tariffs are highest"
+  ],
+  "a": "near the source of the heavy raw material",
+  "x": "When inputs weigh more than the finished product, Weber's logic favors a site close to the raw material in order to cut transport costs."
+ },
+ {
+  "t": "exam",
+  "q": "A bulk-gaining industry such as soft-drink bottling usually locates near the market because",
+  "c": [
+   "the finished product is heavier or bulkier than the inputs, so shipping it far is costly",
+   "the raw materials always weigh more than the drinks",
+   "bottling can occur only at a copper mine",
+   "governments forbid production near consumers"
+  ],
+  "a": "the finished product is heavier or bulkier than the inputs, so shipping it far is costly",
+  "x": "Adding water or otherwise increasing bulk makes the product expensive to ship, so bottlers often locate close to customers."
+ },
+ {
+  "t": "exam",
+  "q": "Which list correctly orders economic activities by sector?",
+  "c": [
+   "Primary is extraction; secondary is manufacturing; tertiary is services",
+   "Primary is banking; secondary is farming; tertiary is mining",
+   "Primary is only tourism; secondary is only government; tertiary is only mining",
+   "All three sectors mean the same thing"
+  ],
+  "a": "Primary is extraction; secondary is manufacturing; tertiary is services",
+  "x": "The primary sector takes resources from the earth, the secondary sector processes them, and the tertiary sector provides services."
+ },
+ {
+  "t": "exam",
+  "q": "Compared with Fordism, post-Fordist production is generally more associated with",
+  "c": [
+   "flexible, smaller-batch production and just-in-time delivery",
+   "one rigid product, huge inventories, and unchanging assembly tasks only",
+   "the complete end of all factory work",
+   "farming as the only economic activity"
+  ],
+  "a": "flexible, smaller-batch production and just-in-time delivery",
+  "x": "Post-Fordism is characterized by more flexible production, varied batches, and just-in-time logistics, in contrast to classic mass-production Fordism."
+ },
+ {
+  "t": "exam",
+  "q": "Which statement correctly distinguishes outsourcing from offshoring?",
+  "c": [
+   "Outsourcing is hiring another firm to do the work; offshoring is moving the work to another country",
+   "The two terms always mean exactly the same action",
+   "Offshoring can occur only inside one city",
+   "Outsourcing is a tax on imports"
+  ],
+  "a": "Outsourcing is hiring another firm to do the work; offshoring is moving the work to another country",
+  "x": "Outsourcing is a contract with an outside company, which may be domestic or foreign, while offshoring specifically crosses a national border."
+ },
+ {
+  "t": "exam",
+  "q": "In Wallerstein's world-systems theory, core countries are those that",
+  "c": [
+   "dominate high-value production, finance, and command functions in the world economy",
+   "only export unprocessed raw materials and cheap labor",
+   "have no cities and no trade",
+   "are defined solely by having a tropical climate"
+  ],
+  "a": "dominate high-value production, finance, and command functions in the world economy",
+  "x": "The core consists of the wealthy, powerful countries that concentrate advanced production, finance, and corporate control and benefit from unequal exchange."
+ },
+ {
+  "t": "exam",
+  "q": "Comparative advantage is the idea that a place should specialize in goods it can produce",
+  "c": [
+   "at a lower opportunity cost than another place",
+   "only if it is more efficient at every single product",
+   "only when it has no trading partners",
+   "only in the informal economy"
+  ],
+  "a": "at a lower opportunity cost than another place",
+  "x": "Comparative advantage is about lower opportunity cost, which can make specialization and trade beneficial even if one country is more efficient at many goods."
+ },
+ {
+  "t": "exam",
+  "q": "A just-in-time delivery system is most vulnerable to",
+  "c": [
+   "transport or supply-chain disruptions, because inventories are kept very low",
+   "having too many weeks of parts already in a warehouse",
+   "the complete absence of any factories",
+   "high literacy rates"
+  ],
+  "a": "transport or supply-chain disruptions, because inventories are kept very low",
+  "x": "Just-in-time systems cut storage costs by delivering parts as they are needed, so a delay can quickly stop production."
+ },
+ {
+  "t": "exam",
+  "q": "Commodity dependence is a development concern mainly because",
+  "c": [
+   "export income can swing sharply when the price of one or two primary products changes",
+   "countries never export oil, copper, or coffee",
+   "it guarantees a high HDI score",
+   "it is the same as having a large tertiary sector"
+  ],
+  "a": "export income can swing sharply when the price of one or two primary products changes",
+  "x": "When a country relies on a few commodities for most export earnings, price swings can destabilize income and government revenue."
+ },
+ {
+  "t": "exam",
+  "q": "The Gender Inequality Index (GII) is designed to measure gaps between women and men in",
+  "c": [
+   "reproductive health, empowerment, and labor-market participation",
+   "only the number of factories a country has",
+   "only official GDP, with no social indicators",
+   "climate and elevation only"
+  ],
+  "a": "reproductive health, empowerment, and labor-market participation",
+  "x": "The GII combines reproductive-health, empowerment, and labor-force indicators; lower scores mean less gender inequality."
+ },
+ {
+  "t": "exam",
+  "q": "The Industrial Revolution began in",
+  "c": [
+   "eighteenth-century Britain, with mechanized industry, factories, and new uses of coal and steam",
+   "twentieth-century Antarctica, with no factories",
+   "ancient pastoral societies that rejected machines",
+   "the WTO headquarters in the 1990s"
+  ],
+  "a": "eighteenth-century Britain, with mechanized industry, factories, and new uses of coal and steam",
+  "x": "The Industrial Revolution started in Britain in the 1700s and then spread, transforming production, energy use, and cities."
+ },
+ {
+  "t": "exam",
+  "q": "Neoliberal policies are best described as reforms that favor",
+  "c": [
+   "free markets, privatization, deregulation, and lower trade barriers",
+   "higher tariffs and the expansion of all state-owned firms",
+   "the abolition of all international trade",
+   "a return to only primary-sector work"
+  ],
+  "a": "free markets, privatization, deregulation, and lower trade barriers",
+  "x": "Neoliberal programs emphasize market-oriented reforms such as privatization, deregulation, and reduced barriers to trade."
+ },
+ {
+  "t": "exam",
+  "q": "The World Trade Organization's main role is to",
+  "c": [
+   "oversee global trade rules, work to reduce barriers, and help settle trade disputes",
+   "replace all national governments",
+   "set a single world currency and run every central bank",
+   "measure HDI and GII each year"
+  ],
+  "a": "oversee global trade rules, work to reduce barriers, and help settle trade disputes",
+  "x": "The WTO administers trade agreements, promotes lower barriers, and provides a forum for dispute settlement among members."
+ },
+ {
+  "t": "exam",
+  "q": "Economies of scale occur when",
+  "c": [
+   "the cost per unit falls as production increases",
+   "the cost per unit always rises as a firm grows",
+   "a country has no factories",
+   "literacy rates fall"
+  ],
+  "a": "the cost per unit falls as production increases",
+  "x": "Economies of scale mean average cost per unit declines as output grows, often because fixed costs are spread over more units."
+ },
+ {
+  "t": "vocab",
+  "q": "A place where goods are transferred from one mode of transport to another is a",
+  "c": [
+   "break-of-bulk point",
+   "tariff",
+   "microloan",
+   "quinary sector"
+  ],
+  "a": "break-of-bulk point",
+  "x": "A break-of-bulk point is a port, airport, or rail yard where cargo is shifted from one transportation mode to another."
+ },
+ {
+  "t": "vocab",
+  "q": "The clustering of firms in one place to share labor, suppliers, or knowledge is called",
+  "c": [
+   "agglomeration",
+   "a tariff",
+   "commodity dependence",
+   "deindustrialization"
+  ],
+  "a": "agglomeration",
+  "x": "Agglomeration is the spatial clustering of businesses that can share labor, infrastructure, suppliers, or ideas."
+ },
+ {
+  "t": "vocab",
+  "q": "An industry that is not strongly tied to raw-material sources or to a single market is described as",
+  "c": [
+   "footloose",
+   "bulk-reducing only",
+   "a primary-sector mine",
+   "a tariff wall"
+  ],
+  "a": "footloose",
+  "x": "A footloose industry can locate in a wider range of places because transport of inputs and products is less of a constraint."
+ },
+ {
+  "t": "vocab",
+  "q": "Tourism that focuses on nature and is meant to be low-impact and to support conservation is called",
+  "c": [
+   "ecotourism",
+   "Fordism",
+   "offshoring",
+   "a break-of-bulk point"
+  ],
+  "a": "ecotourism",
+  "x": "Ecotourism is travel centered on natural environments, usually with conservation and local-benefit goals."
+ },
+ {
+  "t": "vocab",
+  "q": "Work and trade that are not officially regulated, taxed, or recorded make up the",
+  "c": [
+   "informal economy",
+   "core of the WTO",
+   "quinary sector only",
+   "Industrial Revolution's formal factories"
+  ],
+  "a": "informal economy",
+  "x": "The informal economy includes unregistered or unregulated work such as some street vending and casual labor."
+ },
+ {
+  "t": "vocab",
+  "q": "Very small loans, often to people who lack access to ordinary bank credit, are called",
+  "c": [
+   "microloans",
+   "tariffs",
+   "gross domestic product",
+   "growth poles"
+  ],
+  "a": "microloans",
+  "x": "Microloans are tiny amounts of credit, frequently aimed at people, especially women, who cannot get traditional bank loans."
+ },
+ {
+  "t": "vocab",
+  "q": "Taxes that a government places on imported goods are",
+  "c": [
+   "tariffs",
+   "microloans",
+   "literacy rates",
+   "technopoles"
+  ],
+  "a": "tariffs",
+  "x": "A tariff is a tax on imports, used to raise revenue or to protect domestic producers."
+ },
+ {
+  "t": "vocab",
+  "q": "Planned or clustered centers of high-technology research and industry are called",
+  "c": [
+   "technopoles",
+   "maquiladoras only",
+   "primary-sector mines",
+   "commodity cartels"
+  ],
+  "a": "technopoles",
+  "x": "Technopoles are concentrations of high-tech research, universities, and related firms, such as Silicon Valley or Research Triangle Park."
+ },
+ {
+  "t": "vocab",
+  "q": "Investment by a company in a factory or business it will own in another country is",
+  "c": [
+   "foreign direct investment",
+   "a tariff",
+   "literacy",
+   "just-in-time delivery"
+  ],
+  "a": "foreign direct investment",
+  "x": "FDI is capital invested in productive assets or firms abroad, typically with ownership or lasting control, such as building a foreign plant."
+ },
+ {
+  "t": "vocab",
+  "q": "The share of adults who can read and write is the",
+  "c": [
+   "literacy rate",
+   "Gini of factories",
+   "break-of-bulk ratio",
+   "tariff schedule"
+  ],
+  "a": "literacy rate",
+  "x": "Literacy rate is the percentage of people, usually adults, who can read and write, and it is a common development indicator."
+ },
+ {
+  "t": "vocab",
+  "q": "Export-oriented assembly plants in Mexico, often near the U.S. border, that use imported parts are called",
+  "c": [
+   "maquiladoras",
+   "technopoles only",
+   "growth poles in Britain",
+   "Rostow's fifth stage"
+  ],
+  "a": "maquiladoras",
+  "x": "Maquiladoras import components, assemble goods in Mexico, and export the products, frequently to the United States."
+ },
+ {
+  "t": "vocab",
+  "q": "The highest-level decision-making slice of the economy, including top executives and senior officials, is the",
+  "c": [
+   "quinary sector",
+   "primary sector",
+   "informal mine sector",
+   "bulk-reducing sector"
+  ],
+  "a": "quinary sector",
+  "x": "The quinary sector is sometimes used for top decision makers in government, corporations, and research."
+ },
+ {
+  "t": "vocab",
+  "q": "A situation in which one region has a surplus of a good that another region demands is called",
+  "c": [
+   "complementarity",
+   "deindustrialization",
+   "a literacy gap",
+   "just-in-time failure"
+  ],
+  "a": "complementarity",
+  "x": "Complementarity exists when one place can supply something another place needs, which helps trade develop between them."
+ },
+ {
+  "t": "vocab",
+  "q": "Centers of economic activity meant to stimulate jobs and investment in the surrounding region are",
+  "c": [
+   "growth poles",
+   "tariffs",
+   "microloans",
+   "informal stalls only"
+  ],
+  "a": "growth poles",
+  "x": "A growth pole is a concentrated economic center intended to, or able to, spread growth into a wider area."
+ },
+ {
+  "t": "vocab",
+  "q": "The decline of manufacturing employment and factory activity in a region is called",
+  "c": [
+   "deindustrialization",
+   "agglomeration",
+   "an Industrial Revolution takeoff",
+   "commodity dependence"
+  ],
+  "a": "deindustrialization",
+  "x": "Deindustrialization is the loss of factory jobs and industrial production in a place that once had a strong manufacturing base."
+ },
+ {
+  "t": "vocab",
+  "q": "Knowledge, information, and advanced services such as finance and research are often classed in the",
+  "c": [
+   "quaternary sector",
+   "primary sector",
+   "bulk-gaining mine sector",
+   "informal farm sector only"
+  ],
+  "a": "quaternary sector",
+  "x": "The quaternary sector covers information and knowledge work such as finance, research, and data processing."
+ },
+ {
+  "t": "vocab",
+  "q": "Special industrial areas that offer incentives for factories that produce goods mainly for export are",
+  "c": [
+   "export processing zones",
+   "literacy campaigns",
+   "quinary cabinets",
+   "break-of-bulk canals only"
+  ],
+  "a": "export processing zones",
+  "x": "EPZs are designated areas with tax or tariff incentives meant to attract export-oriented manufacturing."
+ },
+ {
+  "t": "scenario",
+  "q": "At the Port of Rotterdam, containers come off ocean ships and are loaded onto trains and trucks. The port is acting as a",
+  "c": [
+   "break-of-bulk point",
+   "microfinance bank",
+   "gender inequality index",
+   "primary-sector mine"
+  ],
+  "a": "break-of-bulk point",
+  "x": "Cargo is being transferred from one mode of transport to another, which is the definition of a break-of-bulk point."
+ },
+ {
+  "t": "scenario",
+  "q": "A soda company ships concentrated syrup and bottles the drink near consumers after adding water. This is a",
+  "c": [
+   "bulk-gaining industry",
+   "bulk-reducing industry",
+   "primary-sector mine",
+   "literacy program"
+  ],
+  "a": "bulk-gaining industry",
+  "x": "The finished drinks are heavier than the syrup, so the firm locates bottling near the market to avoid shipping the added water far."
+ },
+ {
+  "t": "scenario",
+  "q": "A copper smelter is built next to the mine because the ore is heavy and mostly waste. This is a",
+  "c": [
+   "bulk-reducing industry",
+   "bulk-gaining industry",
+   "quinary service",
+   "free trade agreement"
+  ],
+  "a": "bulk-reducing industry",
+  "x": "When raw materials weigh more than the finished metal, processing often locates near the input, which is a bulk-reducing pattern."
+ },
+ {
+  "t": "scenario",
+  "q": "Toyota builds an assembly plant that it will own and operate in the United States. This spending is",
+  "c": [
+   "foreign direct investment",
+   "a tariff on U.S. cars",
+   "a microloan to households",
+   "deindustrialization of Japan only"
+  ],
+  "a": "foreign direct investment",
+  "x": "Building and controlling a factory in another country is foreign direct investment, not a short-term portfolio trade."
+ },
+ {
+  "t": "scenario",
+  "q": "A U.S. apparel firm closes a domestic plant and opens production in Vietnam. This move is",
+  "c": [
+   "offshoring",
+   "a tariff increase at home",
+   "ecotourism",
+   "a rise in literacy only"
+  ],
+  "a": "offshoring",
+  "x": "The work has been relocated across a national border, which is offshoring whether the new plant is company-owned or contracted."
+ },
+ {
+  "t": "scenario",
+  "q": "A bank hires a separate company in the same country to run its payroll and call center. This is",
+  "c": [
+   "outsourcing",
+   "offshoring only, because it must cross a border",
+   "a special economic zone",
+   "commodity dependence"
+  ],
+  "a": "outsourcing",
+  "x": "Hiring an outside firm to do work the bank might have done in-house is outsourcing, even when both firms are in the same country."
+ },
+ {
+  "t": "scenario",
+  "q": "Petroleum accounts for most of a country's export earnings, so a drop in oil prices shakes the whole economy. This is",
+  "c": [
+   "commodity dependence",
+   "a high HDI guarantee",
+   "post-Fordist flexibility only",
+   "a technopole"
+  ],
+  "a": "commodity dependence",
+  "x": "Heavy reliance on one or a few primary exports makes income and government revenue vulnerable to price swings."
+ },
+ {
+  "t": "scenario",
+  "q": "Costa Rica develops tourism around rainforests and wildlife reserves, with fees meant to support conservation and local jobs. This is an example of",
+  "c": [
+   "ecotourism",
+   "Fordist mass production",
+   "a tariff war",
+   "bulk-reducing mining"
+  ],
+  "a": "ecotourism",
+  "x": "Nature-focused travel intended to be relatively low-impact and to support conservation is ecotourism."
+ },
+ {
+  "t": "scenario",
+  "q": "China applies looser trade and investment rules in Shenzhen than in much of the rest of the country at the time, and factories pour in. Shenzhen is functioning as a",
+  "c": [
+   "special economic zone",
+   "primary-sector mine only",
+   "world-systems periphery with no industry",
+   "literacy census tract"
+  ],
+  "a": "special economic zone",
+  "x": "An SEZ is an area with special, usually more open, economic rules designed to attract investment, as in early Shenzhen."
+ },
+ {
+  "t": "scenario",
+  "q": "Factory jobs disappear across Detroit and other Rust Belt cities as plants close or move. This regional change is",
+  "c": [
+   "deindustrialization",
+   "the start of Rostow's traditional society",
+   "a new Industrial Revolution in those same plants",
+   "commodity dependence on oil only"
+  ],
+  "a": "deindustrialization",
+  "x": "The decline of manufacturing employment and factory activity in a formerly industrial region is deindustrialization."
+ },
+ {
+  "t": "scenario",
+  "q": "An auto plant receives seats and electronics only hours before they are installed, instead of warehousing weeks of parts. This system is",
+  "c": [
+   "just-in-time delivery",
+   "a tariff",
+   "Rostow's first stage",
+   "a microloan program"
+  ],
+  "a": "just-in-time delivery",
+  "x": "Just-in-time logistics delivers inputs as they are needed, cutting inventory but raising the risk if a shipment is late."
+ },
+ {
+  "t": "scenario",
+  "q": "A new auto plant hires hundreds of workers, who then spend wages at local stores and apartments, and those businesses hire more staff. This chain is the",
+  "c": [
+   "multiplier effect",
+   "Gender Inequality Index",
+   "break-of-bulk point",
+   "informal tariff"
+  ],
+  "a": "multiplier effect",
+  "x": "The multiplier effect is the extra local activity generated as new income is spent and respent in the area."
+ },
+ {
+  "t": "scenario",
+  "q": "A country cannot pay its international bills and receives an emergency loan that comes with required budget changes. The lender is most likely the",
+  "c": [
+   "International Monetary Fund",
+   "World Trade Organization",
+   "a local technopole",
+   "a city's zoning board"
+  ],
+  "a": "International Monetary Fund",
+  "x": "The IMF lends to countries in financial or balance-of-payments trouble and often attaches policy conditions to the loan."
+ },
+ {
+  "t": "scenario",
+  "q": "Two member countries clash over tariffs and take the case to a global body that oversees trade rules. That body is the",
+  "c": [
+   "World Trade Organization",
+   "International Monetary Fund",
+   "a maquiladora union only",
+   "Rostow's planning office"
+  ],
+  "a": "World Trade Organization",
+  "x": "The WTO oversees global trade rules and provides a forum for settling trade disputes among members."
+ },
+ {
+  "t": "scenario",
+  "q": "South Korea moves in a few decades from a largely agricultural economy to a major exporter of cars, ships, and electronics. In AP terms it became a",
+  "c": [
+   "newly industrialized country",
+   "country stuck only in Rostow's traditional stage",
+   "purely peripheral commodity exporter with no factories",
+   "footloose farm only"
+  ],
+  "a": "newly industrialized country",
+  "x": "Rapid industrial and export-oriented growth of that kind is the classic newly industrialized country pattern."
+ },
+ {
+  "t": "scenario",
+  "q": "A software researcher, a stock analyst, and a data-center worker are employed in information and knowledge work rather than in a factory or a mine. Their jobs are often placed in the",
+  "c": [
+   "quaternary sector",
+   "primary sector",
+   "bulk-reducing sector",
+   "informal mining sector"
+  ],
+  "a": "quaternary sector",
+  "x": "Finance, research, and data processing are commonly classified in the quaternary, or knowledge, sector."
+ }
+];
+var QCUR=[];
+
+function qesc(s){
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function qshuffle(a){
+  for(var i=a.length-1;i>0;i--){
+    var j=Math.floor(Math.random()*(i+1));
+    var t=a[i]; a[i]=a[j]; a[j]=t;
+  }
+  return a;
+}
+function showQuiz(){
+  QCUR=QBANK.map(function(x){return {q:x.q,c:x.c.slice(),a:x.a,x:x.x};});
+  qshuffle(QCUR);
+  for(var i=0;i<QCUR.length;i++) qshuffle(QCUR[i].c);
+  var h="";
+  for(var i=0;i<QCUR.length;i++){
+    h+="<li><div>"+qesc(QCUR[i].q)+"</div>";
+    for(var j=0;j<QCUR[i].c.length;j++){
+      h+="<label><input type=\"radio\" name=\"qz"+i+"\" value=\""+j+"\"> "+qesc(QCUR[i].c[j])+"</label><br>";
+    }
+    h+="<div id=\"qx"+i+"\"></div><br></li>";
+  }
+  document.getElementById("quiz").innerHTML=h;
+  document.getElementById("qscore").textContent="";
+}
+function checkQuiz(){
+  var right=0;
+  for(var i=0;i<QCUR.length;i++){
+    var sel=document.querySelector("input[name=qz"+i+"]:checked");
+    var box=document.getElementById("qx"+i);
+    var ok=sel && QCUR[i].c[Number(sel.value)]===QCUR[i].a;
+    if(ok) right++;
+    box.className=ok?"right":"wrong";
+    box.textContent=(ok?"Correct. ":"Incorrect. The correct answer is "+QCUR[i].a+". ")+QCUR[i].x;
+  }
+  document.getElementById("qscore").textContent=" Score: "+right+" / "+QCUR.length;
+}
+function resetQuiz(){
+  showQuiz();
+}
+showQuiz();
+
+</script>
+</body>
+</html>

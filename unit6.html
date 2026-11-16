@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AP Human Geography Unit 6 Vocab</title>
+<style>body{max-width:800px;margin:auto;font-family:sans-serif}.d{color:red}.e{color:blue}.right{color:green}.wrong{color:maroon}#warn{position:fixed;top:0;left:0;right:0;bottom:0;background:#00000080}#warn .box{background:#fff;max-width:32em;margin:4em auto;padding:1em;border:1px solid #000}</style>
+</head>
+<body>
+<div id="warn"><div class="box"><p>Warning: This unit is experimental. The term list might not be the real one from class. The terms, definitions, examples, and quiz may not match your class exactly. Double-check with your teacher's materials.</p><p><button type="button" onclick="document.getElementById('warn').style.display='none'">Close</button></p></div></div>
+<p><a href="index.html">Back to all units</a></p>
+<h1>AP Human Geography</h1>
+<h2>Unit 6: Cities and Urban Land-Use Patterns and Processes Vocabulary</h2>
+<p>This unit is experimental. The term list might not be the real one from class.</p>
+<p>Term list is a best guess, not the official handout.</p>
+<p>Definitions:
+<label><input type="radio" name="d" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="d" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="d" value="s" onchange="render()"> Short</label></p>
+<p>Examples:
+<label><input type="radio" name="e" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="e" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="e" value="s" onchange="render()"> Short</label></p>
+<ol id="list"></ol>
+<script>
+var V=[
+ {
+  "t": "African city model",
+  "ds": "A model of some sub-Saharan cities with more than one CBD, including colonial and traditional centers.",
+  "dm": "A model of some sub-Saharan African cities with more than one CBD, often including colonial, traditional, and sometimes market or informal centers.",
+  "dl": "The African city model, associated with writers such as de Blij, describes many sub-Saharan cities as having more than one center, including a colonial CBD and a traditional or informal business area. Markets and informal housing are often important parts of the pattern. The model reflects colonial history as well as rapid later growth.",
+  "es": "Colonial and traditional centers in one city",
+  "em": "Some sub-Saharan cities have both a colonial CBD and a traditional market center.",
+  "el": "Nairobi or other large sub-Saharan cities may have a colonial-era business district plus traditional markets and informal areas. That arrangement is what the African city model tries to describe. It is not a single-core Burgess ring pattern."
+ },
+ {
+  "t": "Bid-rent theory",
+  "ds": "The idea that land costs more closer to the city center, so land use changes with distance.",
+  "dm": "The idea that land costs more closer to the CBD, so different urban uses outbid each other as distance increases.",
+  "dl": "Bid-rent theory says the price people will pay for land falls as distance from the central business district increases. Retail and offices can often bid more for the most central land; residences and industry may locate farther out. The idea helps explain density and land-use rings or sectors in cities.",
+  "es": "Offices paying top rent downtown",
+  "em": "Offices and big retail often pay the highest rent for land in the CBD.",
+  "el": "A department store or bank may pay very high rent to be in the CBD, while housing locates farther out where land is cheaper. That bidding for location is bid-rent theory. It is one reason central land is used so intensively."
+ },
+ {
+  "t": "Blockbusting",
+  "ds": "A practice in which real estate agents scare homeowners into selling cheaply by suggesting that another racial group is moving in.",
+  "dm": "A practice in which real estate agents persuade white homeowners to sell cheaply by suggesting that Black or other minority families are moving in, then resell at a profit.",
+  "dl": "Blockbusting was a discriminatory real estate practice in which agents stoked racial fear so that white owners would sell at low prices, after which the homes were resold, often to Black families, at a markup. It helped drive rapid racial turnover in U.S. neighborhoods in the mid-twentieth century. The practice is now illegal, but its effects on segregation and wealth lasted.",
+  "es": "Agents spreading fear to force quick sales",
+  "em": "Agents once used racial scare tactics to buy homes cheaply, a practice called blockbusting.",
+  "el": "In some U.S. cities after World War II, agents warned white owners that a neighborhood was 'changing' and bought houses cheaply, then sold them at higher prices. That was blockbusting. It increased segregation and distrust."
+ },
+ {
+  "t": "Boomburbs",
+  "ds": "Fast-growing suburban cities that remain suburban in character even after they become large.",
+  "dm": "Fast-growing suburban cities that often pass 100,000 people but still look and function more like suburbs than like old downtowns.",
+  "dl": "Boomburbs are rapidly growing suburban municipalities that can reach large populations while staying suburban in form, with office parks, malls, and housing rather than a traditional downtown core. Many are found in the U.S. Sun Belt. They show how urban growth has spread beyond the old central city.",
+  "es": "Mesa, Arizona, or similar Sun Belt suburbs",
+  "em": "Mesa, Arizona, is often cited as a boomburb: large, fast-growing, and suburban in form.",
+  "el": "Places such as Mesa, Arizona, grew very quickly and became large cities without developing a classic downtown like a nineteenth-century industrial city. That is a boomburb. Growth is suburban in look but urban in population size."
+ },
+ {
+  "t": "Brownfields",
+  "ds": "Abandoned or underused industrial sites that may be polluted and need cleanup before reuse.",
+  "dm": "Abandoned or underused industrial or commercial sites that may be polluted and need cleanup before they can be redeveloped.",
+  "dl": "Brownfields are previously used industrial or commercial sites that may contain contamination and are therefore costly or complicated to reuse. Cleaning and redeveloping them is a common urban-renewal and sustainability goal. They are often found in older industrial inner cities.",
+  "es": "An old factory lot reused after cleanup",
+  "em": "An old, possibly polluted factory lot is a brownfield until it is cleaned and reused.",
+  "el": "A closed steel mill sitting empty in an inner city, with soil that may be contaminated, is a brownfield. Cities may offer help to clean the site and turn it into housing or a park. Redevelopment can restore land that would otherwise stay vacant."
+ },
+ {
+  "t": "Census tract",
+  "ds": "A small census area, often about the size of a neighborhood, used to report population data.",
+  "dm": "A small geographic area used by the census, often roughly the size of a neighborhood, for reporting population and housing data.",
+  "dl": "A census tract is a small, relatively permanent statistical area used by the U.S. Census Bureau, typically with a few thousand residents and often approximating a neighborhood. Urban researchers use tract data to study income, race, housing, and change. Tract maps are a basic tool in urban geography.",
+  "es": "Neighborhood-level census maps of income or race",
+  "em": "Census tracts let researchers map income or race at a neighborhood scale.",
+  "el": "A map of poverty or racial composition by census tract can show differences between neighborhoods inside one city. The tract is small enough to reveal local patterns that a citywide average would hide. Planners and geographers use these units constantly."
+ },
+ {
+  "t": "Central business district (CBD)",
+  "ds": "The downtown core of a city, where offices, retail, and major transport links are concentrated.",
+  "dm": "The downtown core of a city, where offices, major retail, and transportation are concentrated and land values are usually highest.",
+  "dl": "The central business district, or CBD, is the downtown heart of a city, with a concentration of offices, retail, and transport terminals. Land values and building density are usually highest there. In classic urban models, the CBD is the center around which other land uses are arranged.",
+  "es": "Downtown offices and department stores",
+  "em": "Downtown skyscrapers and department stores mark a city's CBD.",
+  "el": "The cluster of skyscrapers, banks, and department stores in downtown Chicago is that city's CBD. Land there is expensive, so buildings go up rather than out. Many people commute into the CBD for work."
+ },
+ {
+  "t": "Central place theory",
+  "ds": "A theory that explains the size and spacing of towns as market centers for surrounding areas.",
+  "dm": "A theory, from Walter Christaller, that explains the size, number, and spacing of towns as market centers with different thresholds and ranges.",
+  "dl": "Central place theory, developed by Walter Christaller, argues that settlements serve as market centers, or central places, for surrounding hinterlands. Larger places are fewer and farther apart and offer higher-order goods; smaller places are more numerous and closer together. The model uses ideas of threshold and range and is often shown with hexagons.",
+  "es": "Larger cities farther apart than small towns",
+  "em": "Larger cities are fewer and farther apart than small towns in central place theory.",
+  "el": "In a farming region, tiny towns with a gas station may be close together, while a city with a hospital or theater is farther from the next city of that size. Central place theory tries to explain that spacing. Threshold and range determine which services each place can support."
+ },
+ {
+  "t": "Concentric zone model",
+  "ds": "A city model of rings of land use around a CBD, proposed by Ernest Burgess.",
+  "dm": "A city model, from Ernest Burgess, in which social groups and land uses are arranged in rings around the CBD.",
+  "dl": "The concentric zone model, proposed by Ernest Burgess for Chicago, describes a city as a set of rings: a CBD, a zone of transition, working-class housing, middle-class residences, and a commuter zone. It emphasizes invasion and succession as the city grows outward. Real cities are more complex, but the model is a foundation of urban geography.",
+  "es": "Rings of housing around a downtown",
+  "em": "Burgess pictured Chicago as rings of different housing around the downtown CBD.",
+  "el": "Burgess's model placed factories and poor housing in a ring around downtown, with wealthier housing farther out. That ring pattern is the concentric zone model. Later models added sectors and multiple centers to capture other patterns."
+ },
+ {
+  "t": "Counterurbanization",
+  "ds": "Net movement of people from large cities toward smaller towns or rural areas.",
+  "dm": "Net movement of people out of large cities toward smaller towns or rural areas, the opposite of urbanization in that flow.",
+  "dl": "Counterurbanization is net migration from urban areas to smaller towns or rural areas. It has appeared in some more developed countries when people seek lower costs, space, or a different lifestyle. It is the reverse of the usual rural-to-urban flow, though many regions continue to urbanize.",
+  "es": "Households leaving a big city for a small town",
+  "em": "Households leaving a big city for a small town or rural area are part of counterurbanization.",
+  "el": "If more people leave a large metro area for small towns than move the other way, the region is seeing counterurbanization. The pull may be cheaper housing or a quieter life. It is the opposite direction from classic urbanization."
+ },
+ {
+  "t": "De facto segregation",
+  "ds": "Segregation that happens in practice, without a formal law requiring it.",
+  "dm": "Racial or social segregation that happens in practice, through housing markets, income, or custom, without a formal law requiring it.",
+  "dl": "De facto segregation is separation of groups that occurs in practice even when it is not required by law. In U.S. cities it has often resulted from income differences, discrimination in lending and real estate, and past policies such as redlining. It contrasts with de jure segregation, which is written into law.",
+  "es": "Neighborhoods that remain racially separate without a law",
+  "em": "Neighborhoods that remain racially separate without a segregation law show de facto segregation.",
+  "el": "Many U.S. metro areas remain racially and economically divided even after legal segregation was banned. That pattern is de facto segregation. Housing discrimination and unequal wealth have helped keep it in place."
+ },
+ {
+  "t": "Disamenity zones",
+  "ds": "The poorest parts of a city, often lacking services and sometimes controlled by gangs or informal groups.",
+  "dm": "The most disadvantaged parts of a city, often with poor housing and few services, a feature of some Latin American city models.",
+  "dl": "Disamenity zones are the most poorly served, often extremely poor areas of a city, a term used especially in the Latin American city model. They may include informal settlements on leftover or unstable land. They show sharp inequality inside the urban area.",
+  "es": "Very poor, underserved districts in some Latin American cities",
+  "em": "Very poor, underserved districts in the Latin American city model are disamenity zones.",
+  "el": "In the Griffin-Ford model of some Latin American cities, the worst-off areas, with little infrastructure and very poor housing, are called disamenity zones. They may lie on steep slopes or other leftover land. The term highlights extreme urban inequality."
+ },
+ {
+  "t": "Edge cities",
+  "ds": "Suburban centers of offices, shopping, and jobs that grow outside the old downtown.",
+  "dm": "Suburban centers of offices, shopping, and jobs that grow on the edge of a metro area, often near highways, outside the old downtown.",
+  "dl": "An edge city, a term popularized by Joel Garreau, is a concentration of business, shopping, and entertainment outside the traditional CBD, often near beltways or suburban highway interchanges. Tysons in Virginia, outside Washington, D.C., is a frequently cited example. Edge cities show how work and retail have decentralized.",
+  "es": "Tysons, Virginia, outside Washington, D.C.",
+  "em": "Tysons, Virginia, outside Washington, D.C., is a frequently cited edge city.",
+  "el": "Tysons, Virginia, has a huge amount of office space and retail west of Washington, D.C., away from the old downtown. That kind of suburban job-and-shopping node is an edge city. Many commuters travel suburb to suburb rather than only into the CBD."
+ },
+ {
+  "t": "Exurbs",
+  "ds": "Communities beyond the suburbs, often with lower density and longer commutes.",
+  "dm": "Communities that lie beyond the suburbs, often with lower density, larger lots, and long commutes to the metro area.",
+  "dl": "Exurbs are settlements on the far fringe of a metropolitan area, beyond the continuous suburbs. They often have a more rural look but remain tied to the metro economy through commuting. Exurban growth is part of sprawling metropolitan expansion.",
+  "es": "Low-density towns beyond the suburbs",
+  "em": "Low-density towns just beyond the continuous suburbs are exurbs.",
+  "el": "A low-density community past the last continuous suburb, from which people still commute into the metro area, is an exurb. Lots may be larger and services fewer than in the inner suburbs. Exurbs extend the urban region's reach into formerly rural land."
+ },
+ {
+  "t": "Galactic city model",
+  "ds": "A model of a metro area in which a central city is surrounded by suburbs, edge cities, and a beltway.",
+  "dm": "A model, also called the peripheral model, in which a central city is surrounded by suburbs, edge cities, and highway corridors rather than a single tight ring.",
+  "dl": "The galactic city model, or peripheral model, describes a metropolitan area in which the old central city is surrounded by a ring of suburbs, shopping and office nodes, and a beltway. Growth is spread around the edge rather than only piled on the CBD. It fits many late-twentieth-century U.S. metro areas.",
+  "es": "A beltway lined with malls and office parks",
+  "em": "A beltway of malls and office parks around an older downtown fits the galactic city model.",
+  "el": "A metro area with an older downtown, a beltway, and office parks and malls at the interchanges looks like the galactic, or peripheral, city model. Jobs and shopping are spread around the edge. The pattern is sometimes compared to a galaxy of nodes rather than one core only."
+ },
+ {
+  "t": "Gentrification",
+  "ds": "The process in which higher-income people move into a lower-income urban neighborhood and change its character, often raising rents.",
+  "dm": "The process in which higher-income people move into a lower-income urban neighborhood, renovating housing and often raising rents so some longtime residents leave.",
+  "dl": "Gentrification is the arrival of higher-income residents and investment in a previously lower-income urban neighborhood, usually with renovated housing and new businesses. Property values and rents often rise, which can displace longtime residents. Cities debate how to gain investment without pushing out existing communities.",
+  "es": "Renovated downtown row houses and rising rents",
+  "em": "Renovated downtown row houses and rising rents are common signs of gentrification.",
+  "el": "When wealthier professionals move into a worn inner-city neighborhood, fix up houses, and new cafes appear, rents often climb. That process is gentrification. Some longtime residents may be priced out of the area."
+ },
+ {
+  "t": "Gravity model",
+  "ds": "A model that says interaction between two places increases with their size and decreases with distance.",
+  "dm": "A model that predicts that interaction between two places increases with their population size and decreases with the distance between them.",
+  "dl": "The gravity model says that the interaction between two places is proportional to their size and inversely related to the distance between them. Larger, closer cities are expected to have more travel, trade, or migration between them. It is used in urban, economic, and migration studies.",
+  "es": "More travel between two big, nearby cities",
+  "em": "Two big, nearby cities usually have more travel between them, as the gravity model predicts.",
+  "el": "New York and Philadelphia, both large and not far apart, have heavy travel and business ties, which the gravity model would predict. Two small towns far apart would have much less interaction. Size pulls; distance weakens the link."
+ },
+ {
+  "t": "Greenbelts",
+  "ds": "Rings or belts of protected open land around a city, meant to limit sprawl.",
+  "dm": "Rings or belts of protected open or park land around a city, meant to limit sprawl and keep countryside nearby.",
+  "dl": "A greenbelt is a zone of protected countryside or parkland around a city, used to contain urban sprawl and preserve open space. London's greenbelt is a famous example. Greenbelts are a planning tool, though they can also push development farther out beyond the belt.",
+  "es": "London's protected ring of countryside",
+  "em": "London's protected ring of countryside is a well-known greenbelt.",
+  "el": "London has long used a greenbelt of protected land to keep a ring of countryside around the built-up city. The aim is to limit sprawl and keep open space close. Some development has jumped over the belt, which is a common criticism of the tool."
+ },
+ {
+  "t": "Housing discrimination",
+  "ds": "Unfair treatment in the housing market based on race, ethnicity, or another protected trait.",
+  "dm": "Unfair treatment in renting, selling, or lending for housing, based on race, ethnicity, or another protected trait.",
+  "dl": "Housing discrimination is unequal treatment in the sale, rental, or financing of housing because of race, ethnicity, religion, family status, or similar traits. Practices such as redlining, racial steering, and refusal to rent have shaped segregated cities. Fair-housing laws ban much of this discrimination, but unequal outcomes continue.",
+  "es": "Refusing to rent to someone because of race",
+  "em": "Refusing to rent to someone because of race is housing discrimination.",
+  "el": "A landlord who will not rent to a qualified tenant because of race, or a lender who offers worse terms for the same reason, is practicing housing discrimination. Such practices helped create segregated neighborhoods. They are illegal under fair-housing law in the United States but have not disappeared."
+ },
+ {
+  "t": "Infilling",
+  "ds": "The building of new housing or other uses on vacant lots inside an already built-up urban area.",
+  "dm": "The building of new housing or other uses on vacant or underused lots inside an already built-up urban area, rather than on the edge.",
+  "dl": "Infilling, or infill development, is the construction of new buildings on vacant or underused parcels within an existing urban area. It can raise density, use infrastructure already in place, and reduce some sprawl. Neighbors sometimes debate whether infill fits the existing character of a place.",
+  "es": "New apartments on a vacant downtown lot",
+  "em": "New apartments built on a vacant downtown lot are infilling.",
+  "el": "A developer who puts apartments on a long-empty lot between older buildings is doing infill development. The city grows inward instead of only at the fringe. Planners often encourage infill as an alternative to sprawl."
+ },
+ {
+  "t": "Infrastructure",
+  "ds": "The basic systems a city needs, such as roads, water, power, and sewers.",
+  "dm": "The basic physical systems a city needs in order to function, such as roads, transit, water, power, sewers, and communications.",
+  "dl": "Urban infrastructure is the set of physical systems that support a city, including transportation, water, sanitation, energy, and communications. Quality and access to infrastructure shape growth, health, and inequality. In rapidly growing cities, infrastructure often lags behind population.",
+  "es": "Roads, transit, water, and power networks",
+  "em": "Roads, transit, water pipes, and power lines are parts of a city's infrastructure.",
+  "el": "A city's roads, subway, water pipes, and power grid are its infrastructure. If those systems are weak or uneven, some neighborhoods suffer more than others. Building and maintaining infrastructure is one of the biggest tasks of urban government."
+ },
+ {
+  "t": "Latin American city model",
+  "ds": "A model, often called the Griffin-Ford model, of a city with a CBD, a wealthy spine, and poorer areas toward the edge.",
+  "dm": "A model of many Latin American cities with a CBD, a commercial spine of wealthy housing, and poorer or informal settlements toward the periphery.",
+  "dl": "The Latin American city model, associated with Griffin and Ford, places a CBD and a commercial spine of elite housing at the center, with quality of housing generally declining toward the outskirts. Squatter or informal settlements and disamenity zones often lie on the periphery. The pattern reflects colonial cores and later rapid urban growth.",
+  "es": "A wealthy spine and poorer edge in some Latin American cities",
+  "em": "A CBD with a wealthy commercial spine and poorer edges is the Latin American city model.",
+  "el": "In cities such as Mexico City or Lima, a strong downtown and a corridor of better housing and shops may contrast with informal settlements on the edge. The Griffin-Ford model tries to capture that pattern. It is a generalization, so not every city matches it exactly."
+ },
+ {
+  "t": "Megacities",
+  "ds": "Urban areas with roughly 10 million people or more.",
+  "dm": "Very large urban areas, commonly defined as having 10 million people or more.",
+  "dl": "A megacity is a very large urban agglomeration, commonly defined as having 10 million or more residents. Tokyo, Delhi, Shanghai, São Paulo, and Mexico City are among the world's megacities. Many of the fastest-growing megacities are in developing countries and face housing and infrastructure challenges.",
+  "es": "Tokyo, Delhi, or São Paulo",
+  "em": "Tokyo, Delhi, and São Paulo are megacities, each with more than 10 million people.",
+  "el": "Tokyo, Delhi, and São Paulo each have well over 10 million people, so they are megacities. The term is about size, not necessarily about global economic command. Many megacities have large informal settlements as well as modern business districts."
+ },
+ {
+  "t": "Megalopolis",
+  "ds": "A huge urban region formed when several metropolitan areas grow together.",
+  "dm": "A huge, nearly continuous urban region formed when several metropolitan areas grow together, such as Boswash in the northeastern United States.",
+  "dl": "A megalopolis is a chain of metropolitan areas that have grown until they form a nearly continuous urban region. Jean Gottmann used the term for the U.S. corridor from Boston to Washington, sometimes called Boswash. It is a larger idea than a single metro area or even a single megacity.",
+  "es": "The Boston-to-Washington urban corridor",
+  "em": "The nearly continuous Boston-to-Washington corridor is a classic megalopolis.",
+  "el": "The urban corridor from Boston through New York and Philadelphia to Washington, D.C., is a classic megalopolis. The metros have grown until they almost run together. Travel and economic ties along the corridor are very dense."
+ },
+ {
+  "t": "Metacities",
+  "ds": "Enormous urban areas, often defined as having 20 million people or more.",
+  "dm": "Enormous urban agglomerations, often defined as having 20 million people or more, larger than ordinary megacities.",
+  "dl": "A metacity, in UN usage, is an urban agglomeration of 20 million or more people, a step above the usual 10-million megacity threshold. Tokyo and a few other giant urban regions meet this mark. The term highlights a new scale of urban growth.",
+  "es": "Tokyo as a metacity of 20 million or more",
+  "em": "Tokyo, with well over 20 million people in its urban region, is a metacity.",
+  "el": "Tokyo's wider urban region has far more than 20 million people, so it is often called a metacity. The label marks a scale even larger than a 10-million megacity. Only a small number of urban regions in the world reach this size."
+ },
+ {
+  "t": "Metropolitan area",
+  "ds": "A city and the surrounding suburbs and communities that are economically tied to it.",
+  "dm": "A city plus the surrounding suburbs and communities that are economically and socially tied to it, often used as a labor-market region.",
+  "dl": "A metropolitan area is a large urban region that includes a central city and the surrounding suburbs and outlying communities linked to it by commuting and economic ties. In the United States, official metro areas are defined with counties and commuting data. It is a more useful unit than the legal city limits alone.",
+  "es": "New York City plus its surrounding suburbs",
+  "em": "New York City plus its surrounding suburbs make up a metropolitan area.",
+  "el": "The New York metropolitan area includes the city itself and large parts of neighboring states from which people commute. The legal city line does not capture the whole urban region. Geographers and official statistics usually use the metro area for that reason."
+ },
+ {
+  "t": "Mixed land use",
+  "ds": "A pattern in which housing, shops, and sometimes workplaces are located close together.",
+  "dm": "A pattern in which housing, shops, and sometimes workplaces are located close together, rather than strictly separated by zoning.",
+  "dl": "Mixed land use places residences, retail, and sometimes offices or other work in the same area or even the same building. It is a goal of new urbanism and smart growth because it can support walking and shorter trips. Traditional zoning often separated these uses, which encouraged driving.",
+  "es": "Apartments over shops on a walkable street",
+  "em": "Apartments over shops on a walkable street are mixed land use.",
+  "el": "A street with apartments above ground-floor shops, and maybe offices nearby, is mixed land use. People can walk for some daily needs instead of driving between single-use zones. New urbanist designs often try to recreate this mix."
+ },
+ {
+  "t": "Multiple-nuclei model",
+  "ds": "A city model in which growth is organized around several centers, not just one CBD.",
+  "dm": "A city model, from Harris and Ullman, in which urban land uses grow around several nodes, not around one CBD alone.",
+  "dl": "The multiple-nuclei model, proposed by Chauncy Harris and Edward Ullman, argues that cities develop around several nodes of activity, such as a CBD, airports, universities, or industrial parks. Different activities cluster around the nodes that suit them. It was a response to the idea that every city has only one center.",
+  "es": "A city with a downtown plus airport and campus nodes",
+  "em": "A city with a downtown plus separate airport and university nodes fits the multiple-nuclei model.",
+  "el": "A metro area may have a downtown, an airport industrial zone, a medical center, and a university district, each acting as a nucleus. That is the multiple-nuclei model. Land uses group around more than one center."
+ },
+ {
+  "t": "New urbanism",
+  "ds": "A planning movement that favors walkable, mixed-use neighborhoods that look more like traditional towns.",
+  "dm": "A planning movement that favors walkable, mixed-use, higher-density neighborhoods with a traditional street pattern, as an alternative to sprawl.",
+  "dl": "New urbanism is a design and planning movement that promotes compact, walkable, mixed-use neighborhoods, often with a street grid, front porches, and shops near housing. It developed as a critique of auto-oriented suburban sprawl. Seaside, Florida, and similar projects are often cited as examples, though critics debate affordability and authenticity.",
+  "es": "Walkable neighborhoods with shops near housing",
+  "em": "Walkable neighborhoods with shops near housing are a goal of new urbanism.",
+  "el": "A new neighborhood designed with a tight street grid, mixed shops and housing, and an emphasis on walking is an example of new urbanism. The movement tries to offer an alternative to sprawling, car-dependent suburbs. Density and mixed uses are key ideas."
+ },
+ {
+  "t": "Primate city",
+  "ds": "A city that is far larger and more influential than any other city in its country.",
+  "dm": "A city that is disproportionately larger and more influential than the next cities in its country, often dominating politics and the economy.",
+  "dl": "A primate city is much larger and more dominant than any other city in its country, often more than twice the size of the second city. It typically concentrates political power, culture, and economic activity. Paris, Mexico City, and Bangkok are commonly cited examples; the pattern is the opposite of a rank-size distribution.",
+  "es": "Paris or Mexico City in their countries",
+  "em": "Paris and Mexico City are often cited as primate cities in their countries.",
+  "el": "Paris is far larger than any other French city and dominates government, culture, and much of the economy, so it is a primate city. Mexico City plays a similar role in Mexico. Countries with rank-size patterns, such as the United States, do not have a single primate city."
+ },
+ {
+  "t": "Range",
+  "ds": "The maximum distance people are willing to travel for a good or service.",
+  "dm": "The maximum distance people are generally willing to travel to obtain a good or service, a key idea in central place theory.",
+  "dl": "Range is the maximum distance consumers will travel for a good or service. Everyday items have a short range; specialized services have a longer range and are found in larger central places. Together with threshold, range helps explain why some services are common and others are rare.",
+  "es": "Traveling farther for a hospital than for bread",
+  "em": "People travel farther for a hospital than for bread, a difference in range.",
+  "el": "A person might walk a few blocks for a loaf of bread but travel many miles for a specialized hospital. The hospital has a larger range. Central place theory uses that idea to explain why big cities have rare services that small towns do not."
+ },
+ {
+  "t": "Rank-size rule",
+  "ds": "A pattern in which the nth-largest city is about 1/n the size of the largest city.",
+  "dm": "A pattern in which a country's second-largest city is about half the size of the largest, the third about one-third, and so on.",
+  "dl": "The rank-size rule says that if cities are ranked by population, the nth city will have about 1/n the population of the largest city. The United States and Germany are often cited as approximate examples. Countries with a primate city deviate from this regular pattern.",
+  "es": "U.S. cities following a fairly regular size drop-off",
+  "em": "U.S. cities follow a fairly regular size drop-off, close to the rank-size rule.",
+  "el": "In the United States, the largest cities form a fairly regular size sequence rather than one city towering over all others. That pattern is close to the rank-size rule. It contrasts with a primate-city pattern like that of France or Mexico."
+ },
+ {
+  "t": "Redlining",
+  "ds": "The practice of refusing loans or insurance in certain neighborhoods, often because of race.",
+  "dm": "The practice, once used by banks and insurers, of refusing loans or insurance in certain neighborhoods, often minority areas outlined on maps.",
+  "dl": "Redlining was the practice of outlining neighborhoods, often those with Black or immigrant residents, as high risk and refusing mortgages or insurance there. It was used in the United States in the twentieth century and is now illegal. It limited wealth-building and helped lock in segregated, underinvested neighborhoods.",
+  "es": "Maps that marked minority neighborhoods as high risk",
+  "em": "Twentieth-century maps that marked minority neighborhoods as high risk were used for redlining.",
+  "el": "In the mid-1900s, lenders shaded some U.S. neighborhoods in red and denied mortgages there, especially in Black communities. That practice is redlining. It reduced investment and homeownership and had long-term effects on wealth and segregation."
+ },
+ {
+  "t": "Sector model",
+  "ds": "A city model, from Homer Hoyt, in which land uses grow in wedge-shaped sectors along transport routes.",
+  "dm": "A city model, from Homer Hoyt, in which housing and other uses grow outward in wedge-shaped sectors, often along roads or rail lines.",
+  "dl": "The sector model, proposed by Homer Hoyt, describes urban growth in wedges or sectors rather than complete rings. High-income housing, industry, and other uses extend outward along transportation lines. It keeps a CBD at the center but allows pie-shaped patterns of similar land use.",
+  "es": "Wealthy housing extending out along a rail line",
+  "em": "Wealthy housing extending outward along a rail line fits Hoyt's sector model.",
+  "el": "If a corridor of wealthy housing or of factories stretches out from downtown along a rail line or boulevard, the pattern looks like Hoyt's sector model. Similar uses occupy a wedge, not a complete ring. Transport routes help shape the wedges."
+ },
+ {
+  "t": "Site",
+  "ds": "The physical characteristics of a city's location, such as a harbor, river, or hill.",
+  "dm": "The physical characteristics of a city's location, such as a harbor, river, hill, or climate, as opposed to its connections to other places.",
+  "dl": "Site refers to the physical setting of a city, including landforms, water, climate, and resources. A good site might be a sheltered harbor or a defensive hill. Site is often contrasted with situation, which is the city's relative location and connections.",
+  "es": "New York's harbor as a physical site",
+  "em": "New York's deep harbor is part of the city's physical site.",
+  "el": "New York's site includes a deep, sheltered harbor and islands at the mouth of the Hudson. Those physical features helped it become a port. Its later success also depended on situation, such as ties to the interior and to Europe."
+ },
+ {
+  "t": "Situation",
+  "ds": "A city's location relative to other places, routes, and resources.",
+  "dm": "A city's location relative to other places, trade routes, and resources, which can change as connections change.",
+  "dl": "Situation is a city's position relative to other places, transportation routes, and resources. A favorable situation might include access to a hinterland, a canal, or a rail network. Situation can improve or decline even if the physical site stays the same.",
+  "es": "Chicago's location between the Great Lakes and the interior",
+  "em": "Chicago's location between the Great Lakes and the U.S. interior is a favorable situation.",
+  "el": "Chicago's situation at a link between the Great Lakes and the American interior, later reinforced by railroads, helped it grow as a trade and industrial center. That relative position is situation, not just the physical lakeshore site. New routes can change a city's situation over time."
+ },
+ {
+  "t": "Slow-growth cities",
+  "ds": "Cities that use policies to limit rapid outward growth and encourage more compact development.",
+  "dm": "Cities that adopt policies, such as growth boundaries, to limit rapid outward sprawl and encourage more compact, planned development.",
+  "dl": "Slow-growth cities try to manage or limit rapid suburban expansion through tools such as urban growth boundaries, tighter zoning, or incentives for infill. Portland, Oregon, is often cited for its urban growth boundary. The goal is to reduce sprawl, protect open land, and make infrastructure more efficient.",
+  "es": "Portland's urban growth boundary",
+  "em": "Portland's urban growth boundary is a well-known slow-growth policy.",
+  "el": "Portland, Oregon, has used an urban growth boundary to limit how far the city can sprawl and to encourage denser development inside the line. That is a slow-growth strategy. It is meant to protect farmland and make transit more workable."
+ },
+ {
+  "t": "Smart-growth policies",
+  "ds": "Planning policies that encourage compact, mixed-use, transit-friendly development and limit sprawl.",
+  "dm": "Planning policies that encourage compact, mixed-use, walkable, and transit-friendly development in order to limit sprawl and protect open space.",
+  "dl": "Smart-growth policies are planning approaches that promote compact development, mixed land use, infill, and transit instead of low-density sprawl. Tools include growth boundaries, zoning reform, and investment in public transportation. The aim is more efficient land use and often a smaller environmental footprint.",
+  "es": "Infill and transit instead of new sprawl",
+  "em": "Policies that favor infill and transit instead of new low-density sprawl are smart-growth policies.",
+  "el": "A region that rezones for mixed use, invests in light rail, and limits new subdivisions on farmland is following smart-growth policies. The idea is to grow in a more compact, less car-dependent way. New urbanism often overlaps with this agenda."
+ },
+ {
+  "t": "Southeast Asian city model",
+  "ds": "A model of some Southeast Asian colonial port cities, often organized around a port rather than a single strong CBD.",
+  "dm": "A model, associated with T.G. McGee, of some Southeast Asian cities organized around a port, with colonial and later commercial zones rather than one Western-style CBD.",
+  "dl": "The Southeast Asian city model, associated with T.G. McGee, describes many colonial-era port cities in the region as focused on a port zone, with nearby government, Western commercial, and later alien commercial districts, rather than a single dominant CBD. Squatter areas and newer suburbs have grown with rapid urbanization. The model reflects colonial trade and later growth.",
+  "es": "A port-centered colonial city such as Singapore's early pattern",
+  "em": "Port-centered Southeast Asian cities, rather than one inland CBD, fit McGee's model.",
+  "el": "Cities such as Singapore or Jakarta grew as colonial ports, with commercial zones tied to the waterfront rather than one inland core like a U.S. CBD. McGee's Southeast Asian city model describes that pattern. Later growth has added large informal and suburban areas."
+ },
+ {
+  "t": "Squatter settlements",
+  "ds": "Residential areas, often on the edge of cities, where people build housing on land they do not formally own.",
+  "dm": "Residential areas, often on the urban edge or leftover land, where people build housing without formal legal title, often with limited services.",
+  "dl": "Squatter settlements, also called informal settlements or slums in some contexts, are areas where people occupy land or buildings without formal legal right and often without full services. They are common on the edges or leftover land of rapidly growing cities in developing countries. Names such as favelas or barrios are used in particular countries.",
+  "es": "Favelas or informal housing on a city's edge",
+  "em": "Favelas and other informal housing on a city's edge are squatter settlements.",
+  "el": "Favelas in Rio de Janeiro, or similar informal settlements around many fast-growing cities, are squatter settlements when people build homes without official title. Services such as water and sewers may be limited at first. They are a major feature of urbanization in the developing world."
+ },
+ {
+  "t": "Suburban sprawl",
+  "ds": "The spread of low-density, car-dependent development outward from a city.",
+  "dm": "The spread of low-density, often car-dependent housing and commercial development outward from a city into surrounding land.",
+  "dl": "Suburban sprawl is the outward expansion of low-density urban development, usually dependent on cars and separated land uses. It consumes open land, can raise infrastructure costs, and lengthens commutes. Smart growth and greenbelts are among the responses planners use to limit it.",
+  "es": "Low-density subdivisions spreading into farmland",
+  "em": "Low-density subdivisions spreading into farmland are a common form of suburban sprawl.",
+  "el": "When new subdivisions and strip malls spread farther into farmland, with little public transit and a need for cars, the pattern is suburban sprawl. The metro area uses more land per person. Infrastructure such as roads and sewers must be extended over long distances."
+ },
+ {
+  "t": "Suburbanization",
+  "ds": "The growth of suburbs as people and activities move outward from the central city.",
+  "dm": "The process of people, housing, and often jobs moving from the central city into surrounding suburban areas.",
+  "dl": "Suburbanization is the growth of residential and often commercial areas outside the central city. In the United States it sped up after World War II with highways, cars, and housing policy. It can bring homeownership and space, but also sprawl, segregation, and weaker downtowns.",
+  "es": "Postwar U.S. growth of bedroom suburbs",
+  "em": "The postwar U.S. boom in bedroom suburbs is a classic case of suburbanization.",
+  "el": "After World War II, millions of American households moved from central cities into new suburban housing, often reached by car and highway. That shift is suburbanization. Jobs and shopping later followed many of those residents outward."
+ },
+ {
+  "t": "Threshold",
+  "ds": "The minimum number of customers needed to support a good or service.",
+  "dm": "The minimum market size, or number of customers, needed to support a particular good or service, a key idea in central place theory.",
+  "dl": "Threshold is the minimum demand needed to make a business or service viable. A small convenience store has a low threshold; a specialized hospital or opera house has a high threshold and will locate only in a large central place. Together with range, threshold helps explain the urban hierarchy.",
+  "es": "A specialized hospital needing a large market",
+  "em": "A specialized hospital needs a large market, so it has a high threshold.",
+  "el": "A small town can support a gas station, which has a low threshold, but not a heart-surgery center, which needs many potential patients. That minimum market size is the threshold. Central place theory uses it to explain which services appear where."
+ },
+ {
+  "t": "Transit-oriented development",
+  "ds": "Compact, mixed-use development built close to a transit station so people can walk to trains or buses.",
+  "dm": "Compact, mixed-use development built around a transit station so that more people can walk or ride rather than drive.",
+  "dl": "Transit-oriented development, or TOD, concentrates housing, shops, and jobs within walking distance of a rail or bus station. It is a smart-growth tool meant to reduce car dependence and support public transit. Many cities have rezoned station areas to allow this kind of density.",
+  "es": "Apartments and shops around a rail station",
+  "em": "Apartments and shops clustered around a rail station are transit-oriented development.",
+  "el": "A cluster of apartments, offices, and stores within a short walk of a subway or light-rail station is transit-oriented development. The design encourages riding transit instead of driving for every trip. It is a common smart-growth strategy."
+ },
+ {
+  "t": "Urban hierarchy",
+  "ds": "The ranking of settlements by size and by the services they offer, from hamlets up to world cities.",
+  "dm": "The ranking of settlements by size and by the number and type of services they offer, from small places up to megacities or world cities.",
+  "dl": "An urban hierarchy is the ranking of cities and towns according to size and the functions they provide. Small places offer everyday services; larger places offer more specialized goods and sit higher in the hierarchy. Central place theory and ideas about world cities both deal with this ranking.",
+  "es": "Hamlet, town, city, and world city ranks",
+  "em": "Hamlets, towns, cities, and world cities form an urban hierarchy of size and services.",
+  "el": "A hamlet may have a gas station, a town a grocery and school, a city a hospital and university, and a world city global banks and airports. That ranking is an urban hierarchy. Higher-order places are fewer and serve larger areas."
+ },
+ {
+  "t": "Urban renewal",
+  "ds": "Public programs to rebuild or clear parts of a city, often older inner-city areas.",
+  "dm": "Public programs to rebuild, clear, or reinvest in parts of a city, especially older inner-city areas that were seen as declining.",
+  "dl": "Urban renewal refers to government-backed efforts to redevelop parts of a city, often by clearing slums or aging districts and building new housing, roads, or commercial space. Mid-twentieth-century U.S. urban renewal sometimes destroyed neighborhoods and displaced residents. Later efforts have tried to combine investment with more attention to existing communities.",
+  "es": "Government rebuilding of an inner-city district",
+  "em": "A government program that clears and rebuilds an inner-city district is urban renewal.",
+  "el": "In the 1950s and 1960s, some U.S. cities tore down older neighborhoods and built highways or new housing under urban renewal programs. Supporters wanted modernization; critics pointed to displacement, especially of minority residents. The term still refers to large public redevelopment of urban land."
+ },
+ {
+  "t": "Urban sprawl",
+  "ds": "The uncontrolled or poorly planned spread of low-density urban development over a wide area.",
+  "dm": "The outward, often poorly planned spread of low-density, car-dependent urban development over a wide area of land.",
+  "dl": "Urban sprawl is the spread of a city and its suburbs over a large land area at relatively low density, usually with separated uses and heavy car use. It is closely related to suburban sprawl. Costs can include lost farmland, longer commutes, and higher spending on roads and utilities.",
+  "es": "A metro area spreading thinly over former farmland",
+  "em": "A metro area spreading thinly over former farmland is showing urban sprawl.",
+  "el": "If a metropolitan area spreads thinly across former farms, with long, car-based commutes and separated subdivisions and malls, that is urban sprawl. Growth uses a lot of land per person. Planners may respond with smart growth or greenbelts."
+ },
+ {
+  "t": "Urbanization",
+  "ds": "The process of an increasing share of a population living in cities.",
+  "dm": "The process of an increasing share of a population living in cities, or the growth of urban areas.",
+  "dl": "Urbanization is the increase in the proportion of people living in urban areas, and it also refers to the growth of cities themselves. It has been driven by rural-to-urban migration, natural increase, and the reclassification of places as urban. Most of the world's population now lives in urban areas.",
+  "es": "A country shifting from mostly rural to mostly urban",
+  "em": "A country shifting from mostly rural to mostly urban is experiencing urbanization.",
+  "el": "As a country goes from mostly rural to mostly urban, through migration to cities and city growth, it is urbanizing. China and many other countries have urbanized rapidly in recent decades. Urbanization changes work, land use, and daily life."
+ },
+ {
+  "t": "Walkability",
+  "ds": "How easy and safe it is to walk to daily needs in a neighborhood.",
+  "dm": "How easy, safe, and convenient it is for people to walk to daily needs, depending on sidewalks, density, and nearby shops.",
+  "dl": "Walkability is the degree to which a place supports travel on foot, through sidewalks, safe crossings, short distances, and a mix of nearby uses. High walkability is a goal of new urbanism and transit-oriented development. Many postwar suburbs score low on walkability because uses are spread out and streets favor cars.",
+  "es": "A neighborhood where shops are a short, safe walk",
+  "em": "A neighborhood where shops are a short, safe walk away has high walkability.",
+  "el": "If people can walk safely to a store, school, or transit stop in a few minutes, the neighborhood has high walkability. A subdivision with no sidewalks and shops only reachable by car has low walkability. Design and land use both matter."
+ },
+ {
+  "t": "World cities",
+  "ds": "Cities that sit at the top of the global urban hierarchy and command international finance, media, and decision-making.",
+  "dm": "Cities at the top of the global urban hierarchy, such as New York, London, and Tokyo, that command international finance, media, and corporate decision-making.",
+  "dl": "World cities, or global cities, are urban centers that play a leading role in the world economy through finance, corporate headquarters, media, and advanced services. New York, London, and Tokyo are the most often cited first-tier world cities. They stand at the top of a global urban hierarchy, not only a national one.",
+  "es": "New York, London, and Tokyo",
+  "em": "New York, London, and Tokyo are commonly listed as top-tier world cities.",
+  "el": "New York, London, and Tokyo host global banks, major markets, and corporate headquarters, so they are world cities. Decisions made there affect economies far beyond their own countries. Other cities, such as Paris, Hong Kong, or Singapore, also rank high in this global hierarchy."
+ },
+ {
+  "t": "Zoning",
+  "ds": "Local laws that say what kinds of buildings and uses are allowed in each part of a city.",
+  "dm": "Local laws that divide a city into districts and say what kinds of buildings and land uses are allowed in each district.",
+  "dl": "Zoning is the legal practice of dividing a municipality into districts and regulating land use, building height, and density in each one. It can separate industry from housing or, if reformed, allow mixed uses. Zoning has shaped suburban sprawl and has sometimes been used in ways that exclude certain housing types or groups.",
+  "es": "Rules that keep factories out of a housing district",
+  "em": "Rules that keep factories out of a housing district are a form of zoning.",
+  "el": "A city ordinance that allows only single-family houses in one district and factories in another is zoning. The rules shape the urban pattern for decades. Critics argue that some zoning has encouraged sprawl or kept out apartments and lower-income residents."
+ }
+];
+
+function render(){
+  var dm=document.querySelector('input[name=d]:checked').value,em=document.querySelector('input[name=e]:checked').value,h='';
+  for(var i=0;i<V.length;i++){
+    var x=V[i], d=x['d'+dm], e=x['e'+em];
+    h+='<li><b>'+x.t+'</b><br><span class="d">'+d+'</span><br><span class="e">Example: '+e+'</span><br><br></li>';
+  }
+  document.getElementById('list').innerHTML=h;
+}
+render();
+</script>
+
+<hr>
+<h2>Unit 6 Quiz</h2>
+<p>Choose one answer for each question, then check your work. Questions are mixed: AP-style items, vocabulary, and situations.</p>
+<ol id="quiz"></ol>
+<p>
+<button type="button" onclick="checkQuiz()">Check answers</button>
+<button type="button" onclick="resetQuiz()">Reset</button>
+<span id="qscore"></span>
+</p>
+<script>
+var QBANK=[
+ {
+  "t": "exam",
+  "q": "Which urban model describes a city as a set of rings of land use around a central business district?",
+  "c": [
+   "The concentric zone model",
+   "The sector model",
+   "The multiple-nuclei model",
+   "The galactic city model"
+  ],
+  "a": "The concentric zone model",
+  "x": "Ernest Burgess's concentric zone model organizes urban land use in rings around a CBD."
+ },
+ {
+  "t": "exam",
+  "q": "The sector model, associated with Homer Hoyt, describes urban growth mainly as",
+  "c": [
+   "complete rings of the same land use around a CBD",
+   "wedge-shaped corridors along transportation routes",
+   "a port zone with no commercial districts",
+   "random scatter with no pattern at all"
+  ],
+  "a": "wedge-shaped corridors along transportation routes",
+  "x": "Hoyt's sector model says housing and other uses often extend outward in wedges along roads or rail lines."
+ },
+ {
+  "t": "exam",
+  "q": "Harris and Ullman's multiple-nuclei model emphasizes that",
+  "c": [
+   "a city has only one center of activity",
+   "land uses develop around several nodes, not just one CBD",
+   "all housing forms a single ring",
+   "cities cannot have industrial parks"
+  ],
+  "a": "land uses develop around several nodes, not just one CBD",
+  "x": "The multiple-nuclei model argues that cities grow around several centers, such as a CBD, an airport, or a university."
+ },
+ {
+  "t": "exam",
+  "q": "In the Latin American city model, a common feature is",
+  "c": [
+   "a commercial spine of elite housing leading out from the CBD",
+   "the complete absence of a downtown",
+   "wealthy housing only on the far periphery",
+   "a single ring of identical income"
+  ],
+  "a": "a commercial spine of elite housing leading out from the CBD",
+  "x": "The Griffin-Ford model typically includes a CBD and a spine of higher-end commercial and residential land, with poorer areas more often toward the edge."
+ },
+ {
+  "t": "exam",
+  "q": "The Southeast Asian city model is often organized around",
+  "c": [
+   "a colonial-era port rather than a single strong inland CBD",
+   "a rectangular grid required by Roman law",
+   "one Burgess-style ring and nothing else",
+   "a greenbelt that forbids any port"
+  ],
+  "a": "a colonial-era port rather than a single strong inland CBD",
+  "x": "T.G. McGee's model describes many Southeast Asian cities as growing around a port, with commercial zones tied to the waterfront rather than one Western-style CBD."
+ },
+ {
+  "t": "exam",
+  "q": "According to bid-rent theory, land values typically",
+  "c": [
+   "rise steadily with distance from the CBD",
+   "are highest near the CBD and fall with distance",
+   "are the same at every distance from downtown",
+   "are unrelated to accessibility"
+  ],
+  "a": "are highest near the CBD and fall with distance",
+  "x": "Bid-rent theory says users bid more for accessible central land, so prices generally decline with distance from the CBD and land use changes with that gradient."
+ },
+ {
+  "t": "exam",
+  "q": "In central place theory, threshold refers to",
+  "c": [
+   "the maximum distance people will travel for a service",
+   "the minimum market needed to support a service",
+   "the height limit on downtown buildings",
+   "the legal boundary of a city"
+  ],
+  "a": "the minimum market needed to support a service",
+  "x": "Threshold is the minimum number of customers, or market size, required for a good or service to be viable."
+ },
+ {
+  "t": "exam",
+  "q": "A country whose largest city is far bigger than the second and dominates economic and political life is showing",
+  "c": [
+   "the rank-size rule",
+   "a primate-city pattern",
+   "counterurbanization only",
+   "a greenbelt policy"
+  ],
+  "a": "a primate-city pattern",
+  "x": "A primate city is disproportionately larger and more influential than other cities in its country, unlike a rank-size pattern."
+ },
+ {
+  "t": "exam",
+  "q": "In common AP Human Geography usage, a megacity is an urban area with at least",
+  "c": [
+   "1 million people",
+   "5 million people",
+   "10 million people",
+   "50 million people"
+  ],
+  "a": "10 million people",
+  "x": "A megacity is commonly defined as an urban agglomeration of 10 million residents or more."
+ },
+ {
+  "t": "exam",
+  "q": "A metacity is typically defined as an urban agglomeration of at least",
+  "c": [
+   "5 million people",
+   "10 million people",
+   "20 million people",
+   "100 million people"
+  ],
+  "a": "20 million people",
+  "x": "In UN usage, a metacity is an urban agglomeration of 20 million or more people, a step above the usual megacity threshold."
+ },
+ {
+  "t": "exam",
+  "q": "New urbanism and smart-growth policies generally support",
+  "c": [
+   "low-density, car-dependent subdivisions on the fringe",
+   "compact, mixed-use, walkable development and less sprawl",
+   "the removal of all public transit",
+   "strict separation of shops from all housing"
+  ],
+  "a": "compact, mixed-use, walkable development and less sprawl",
+  "x": "Both approaches favor compact, mixed-use, walkable or transit-friendly development as an alternative to sprawl."
+ },
+ {
+  "t": "exam",
+  "q": "Redlining in the twentieth-century United States was",
+  "c": [
+   "a practice of denying mortgages or insurance in certain, often minority, neighborhoods",
+   "a law requiring mixed-use zoning downtown",
+   "a UN program to fund world cities",
+   "a type of greenbelt around London"
+  ],
+  "a": "a practice of denying mortgages or insurance in certain, often minority, neighborhoods",
+  "x": "Redlining marked some neighborhoods, often those with Black or immigrant residents, as high risk and denied loans or insurance there."
+ },
+ {
+  "t": "exam",
+  "q": "Which pair correctly contrasts site and situation?",
+  "c": [
+   "Site is a city's physical setting; situation is its relative location and connections.",
+   "Site is population size; situation is climate only.",
+   "Site is commuting; situation is zoning.",
+   "Both terms mean the legal city limits."
+  ],
+  "a": "Site is a city's physical setting; situation is its relative location and connections.",
+  "x": "Site refers to physical characteristics of the location, while situation is the city's position relative to other places, routes, and resources."
+ },
+ {
+  "t": "exam",
+  "q": "World cities such as New York, London, and Tokyo are distinguished mainly by",
+  "c": [
+   "having no suburbs",
+   "their command of international finance, media, and corporate decision-making",
+   "being the only cities over 1 million people",
+   "lacking a central business district"
+  ],
+  "a": "their command of international finance, media, and corporate decision-making",
+  "x": "World cities sit at the top of the global urban hierarchy because of their role in finance, media, and corporate command, not merely because they are large."
+ },
+ {
+  "t": "exam",
+  "q": "Gentrification most often results in",
+  "c": [
+   "falling housing costs for long-term low-income residents",
+   "rising rents and property values that can displace lower-income residents",
+   "the legal return of redlining",
+   "the immediate creation of a primate city"
+  ],
+  "a": "rising rents and property values that can displace lower-income residents",
+  "x": "When higher-income residents move into a lower-income neighborhood, values and rents often rise and earlier residents may be priced out."
+ },
+ {
+  "t": "exam",
+  "q": "The gravity model predicts that interaction between two cities will be greater when",
+  "c": [
+   "the cities are smaller and farther apart",
+   "the cities are larger and closer together",
+   "one city has no population",
+   "they have identical climates only"
+  ],
+  "a": "the cities are larger and closer together",
+  "x": "The gravity model says interaction increases with the size of the places and decreases with the distance between them."
+ },
+ {
+  "t": "exam",
+  "q": "A megalopolis is best described as",
+  "c": [
+   "a single legal city under 50,000 people",
+   "a nearly continuous urban region formed when several metropolitan areas grow together",
+   "a farm village with no urban ties",
+   "any CBD that has a subway"
+  ],
+  "a": "a nearly continuous urban region formed when several metropolitan areas grow together",
+  "x": "A megalopolis, such as the Boston-to-Washington corridor, is a chain of metros that have grown until they almost run together."
+ },
+ {
+  "t": "vocab",
+  "q": "The maximum distance people are willing to travel for a good or service is called",
+  "c": [
+   "threshold",
+   "range",
+   "site",
+   "zoning"
+  ],
+  "a": "range",
+  "x": "Range is the farthest distance consumers will generally travel to obtain a good or service."
+ },
+ {
+  "t": "vocab",
+  "q": "Fast-growing suburban cities that stay suburban in character even after they become large are called",
+  "c": [
+   "edge cities",
+   "boomburbs",
+   "metacities",
+   "brownfields"
+  ],
+  "a": "boomburbs",
+  "x": "Boomburbs are rapidly growing incorporated suburbs that reach city-scale populations but keep a suburban character."
+ },
+ {
+  "t": "vocab",
+  "q": "Abandoned or underused industrial sites that may be polluted are called",
+  "c": [
+   "greenbelts",
+   "brownfields",
+   "exurbs",
+   "census tracts"
+  ],
+  "a": "brownfields",
+  "x": "Brownfields are leftover industrial or commercial sites that often need cleanup before they can be reused."
+ },
+ {
+  "t": "vocab",
+  "q": "The practice in which real estate agents scare owners into selling cheaply by suggesting another racial group is moving in is called",
+  "c": [
+   "gentrification",
+   "blockbusting",
+   "infilling",
+   "new urbanism"
+  ],
+  "a": "blockbusting",
+  "x": "Blockbusting used racial fear to push sales at low prices, after which homes were often resold at a markup."
+ },
+ {
+  "t": "vocab",
+  "q": "Suburban centers of offices, shopping, and jobs that grow outside the old downtown are",
+  "c": [
+   "edge cities",
+   "squatter settlements",
+   "greenbelts",
+   "primate cities"
+  ],
+  "a": "edge cities",
+  "x": "Edge cities are suburban nodes of retail and employment, often near highway interchanges, outside the historic CBD."
+ },
+ {
+  "t": "vocab",
+  "q": "Communities beyond the suburbs, often with lower density and longer commutes, are",
+  "c": [
+   "edge cities",
+   "exurbs",
+   "central business districts",
+   "squatter settlements"
+  ],
+  "a": "exurbs",
+  "x": "Exurbs lie beyond the main suburban ring and are typically lower-density communities with longer trips to the core."
+ },
+ {
+  "t": "vocab",
+  "q": "Rings or belts of protected open land around a city, meant to limit sprawl, are",
+  "c": [
+   "brownfields",
+   "greenbelts",
+   "disamenity zones",
+   "boomburbs"
+  ],
+  "a": "greenbelts",
+  "x": "A greenbelt is protected open land kept around a city to contain outward growth, as in the classic London example."
+ },
+ {
+  "t": "vocab",
+  "q": "Net movement of people from large cities toward smaller towns or rural areas is",
+  "c": [
+   "urbanization",
+   "counterurbanization",
+   "gentrification",
+   "blockbusting"
+  ],
+  "a": "counterurbanization",
+  "x": "Counterurbanization is a net shift of population out of large urban areas toward smaller or rural places."
+ },
+ {
+  "t": "vocab",
+  "q": "Compact, mixed-use development built around a rail or bus station is called",
+  "c": [
+   "redlining",
+   "transit-oriented development",
+   "the rank-size rule",
+   "disamenity zoning"
+  ],
+  "a": "transit-oriented development",
+  "x": "Transit-oriented development concentrates housing, shops, and jobs within walking distance of a transit stop."
+ },
+ {
+  "t": "vocab",
+  "q": "The ranking of settlements by size and by the services they offer is an",
+  "c": [
+   "urban hierarchy",
+   "census tract",
+   "brownfield",
+   "edge city"
+  ],
+  "a": "urban hierarchy",
+  "x": "An urban hierarchy ranks places from small settlements with everyday services up to large cities with specialized functions."
+ },
+ {
+  "t": "vocab",
+  "q": "Public programs to rebuild or clear older inner-city areas are often called",
+  "c": [
+   "suburban sprawl",
+   "urban renewal",
+   "bid-rent theory",
+   "threshold"
+  ],
+  "a": "urban renewal",
+  "x": "Urban renewal refers to government-backed redevelopment of parts of a city, often older inner-city districts."
+ },
+ {
+  "t": "vocab",
+  "q": "Local laws that divide a city into districts and regulate land use in each one are",
+  "c": [
+   "zoning",
+   "range",
+   "site",
+   "gentrification"
+  ],
+  "a": "zoning",
+  "x": "Zoning is the legal division of a municipality into districts with rules about allowed uses, height, and density."
+ },
+ {
+  "t": "vocab",
+  "q": "Building new housing on vacant lots inside an already built-up area is called",
+  "c": [
+   "suburban sprawl",
+   "infilling",
+   "redlining",
+   "counterurbanization"
+  ],
+  "a": "infilling",
+  "x": "Infilling, or infill development, puts new buildings on vacant or underused parcels within the existing urban area."
+ },
+ {
+  "t": "vocab",
+  "q": "Informal residential areas where people build housing without formal legal title are",
+  "c": [
+   "squatter settlements",
+   "edge cities",
+   "greenbelts",
+   "world cities"
+  ],
+  "a": "squatter settlements",
+  "x": "Squatter settlements are informal housing areas, often on a city's edge, where residents lack formal title and often full services."
+ },
+ {
+  "t": "vocab",
+  "q": "A city plus the surrounding suburbs economically tied to it is a",
+  "c": [
+   "census tract",
+   "metropolitan area",
+   "brownfield",
+   "sector"
+  ],
+  "a": "metropolitan area",
+  "x": "A metropolitan area includes the central city and the surrounding communities linked to it by commuting and economic ties."
+ },
+ {
+  "t": "vocab",
+  "q": "Segregation that happens in practice without a formal law requiring it is",
+  "c": [
+   "de facto segregation",
+   "a greenbelt",
+   "central place theory",
+   "bid-rent"
+  ],
+  "a": "de facto segregation",
+  "x": "De facto segregation is separation that occurs in practice, even when no law formally requires it."
+ },
+ {
+  "t": "vocab",
+  "q": "The poorest parts of a city, often lacking services and sometimes noted in the Latin American model, are",
+  "c": [
+   "disamenity zones",
+   "world cities",
+   "greenbelts",
+   "edge cities"
+  ],
+  "a": "disamenity zones",
+  "x": "Disamenity zones are the most disadvantaged urban areas, often with poor services and sometimes informal control."
+ },
+ {
+  "t": "scenario",
+  "q": "A developer puts apartments on a long-empty lot between older downtown buildings rather than on farmland at the edge. This is",
+  "c": [
+   "infilling",
+   "suburban sprawl",
+   "redlining",
+   "counterurbanization"
+  ],
+  "a": "infilling",
+  "x": "Building on a vacant parcel inside the already built-up area is infill development, not outward sprawl."
+ },
+ {
+  "t": "scenario",
+  "q": "Portland, Oregon, uses an urban growth boundary to limit how far the city can spread and to encourage denser development inside the line. This is an example of",
+  "c": [
+   "a slow-growth or smart-growth policy",
+   "blockbusting",
+   "the rank-size rule",
+   "a primate-city pattern"
+  ],
+  "a": "a slow-growth or smart-growth policy",
+  "x": "An urban growth boundary is a classic slow-growth or smart-growth tool meant to limit sprawl and promote compact development."
+ },
+ {
+  "t": "scenario",
+  "q": "After World War II, millions of U.S. households moved from central cities into new car-oriented housing outside the city. This process is",
+  "c": [
+   "suburbanization",
+   "the growth of squatter settlements",
+   "a change in site only",
+   "the rise of metacities"
+  ],
+  "a": "suburbanization",
+  "x": "The postwar shift of people and housing from central cities into surrounding suburbs is suburbanization."
+ },
+ {
+  "t": "scenario",
+  "q": "Lenders in the mid-1900s shaded some U.S. neighborhoods in red on maps and denied mortgages there, especially in Black communities. This practice is",
+  "c": [
+   "redlining",
+   "new urbanism",
+   "gravity modeling",
+   "mixed land use"
+  ],
+  "a": "redlining",
+  "x": "Marking neighborhoods as high risk and refusing loans there, often along racial lines, is redlining."
+ },
+ {
+  "t": "scenario",
+  "q": "Paris is far larger than any other French city and dominates government, culture, and much of the economy. Paris is",
+  "c": [
+   "a primate city",
+   "evidence of the rank-size rule",
+   "a census tract",
+   "an exurb of Lyon"
+  ],
+  "a": "a primate city",
+  "x": "Paris's outsized size and national dominance make it a classic primate city, not a rank-size case."
+ },
+ {
+  "t": "scenario",
+  "q": "A person will walk a few blocks for bread but travel many miles for a specialized hospital. Compared with the bakery, the hospital has a larger",
+  "c": [
+   "range",
+   "greenbelt",
+   "boomburb",
+   "block"
+  ],
+  "a": "range",
+  "x": "Range is the distance people will travel for a service, and specialized hospitals have a much larger range than everyday shops."
+ },
+ {
+  "t": "scenario",
+  "q": "A specialized heart-surgery center can exist only in a large city because it needs many potential patients. That minimum market size is the",
+  "c": [
+   "range",
+   "threshold",
+   "site",
+   "sprawl"
+  ],
+  "a": "threshold",
+  "x": "Threshold is the minimum demand, or market size, needed to support a good or service."
+ },
+ {
+  "t": "scenario",
+  "q": "The urban corridor from Boston through New York and Philadelphia to Washington has grown until the metros almost run together. This region is a",
+  "c": [
+   "megalopolis",
+   "single census tract",
+   "squatter settlement",
+   "greenbelt"
+  ],
+  "a": "megalopolis",
+  "x": "Boswash is a classic megalopolis: several metropolitan areas that have grown into a nearly continuous urban region."
+ },
+ {
+  "t": "scenario",
+  "q": "Higher-income residents move into a formerly lower-income urban neighborhood, new cafes open, and rents rise until some long-term residents must leave. This process is",
+  "c": [
+   "gentrification",
+   "counterurbanization",
+   "central place theory",
+   "redlining"
+  ],
+  "a": "gentrification",
+  "x": "Gentrification is the arrival of higher-income residents and investment that can raise values and displace earlier, lower-income residents."
+ },
+ {
+  "t": "scenario",
+  "q": "A beltway is lined with malls and office parks, while the older downtown is no longer the only major center. This pattern best fits the",
+  "c": [
+   "galactic city model",
+   "rank-size rule",
+   "definition of a megacity",
+   "layout of a farm village"
+  ],
+  "a": "galactic city model",
+  "x": "The galactic, or peripheral, city model describes a metro with a beltway, suburban nuclei, and an older central city that is no longer the only focus."
+ },
+ {
+  "t": "scenario",
+  "q": "Chicago's position as a link between the Great Lakes and the American interior, later reinforced by railroads, is an example of the city's",
+  "c": [
+   "situation",
+   "site",
+   "zoning",
+   "threshold"
+  ],
+  "a": "situation",
+  "x": "Situation is a city's location relative to other places, routes, and resources, which in Chicago's case includes its ties to the lakes and the interior."
+ },
+ {
+  "t": "scenario",
+  "q": "New York's deep, sheltered harbor is part of the city's",
+  "c": [
+   "situation",
+   "site",
+   "range",
+   "rank-size rule"
+  ],
+  "a": "site",
+  "x": "Site refers to the physical characteristics of a location, such as New York's harbor and islands."
+ },
+ {
+  "t": "scenario",
+  "q": "A street has apartments above ground-floor shops, so daily needs are a short walk. This pattern is",
+  "c": [
+   "mixed land use",
+   "redlining",
+   "a disamenity zone",
+   "a primate city"
+  ],
+  "a": "mixed land use",
+  "x": "Housing and retail in the same area, often in the same buildings, is mixed land use, which can support walking."
+ },
+ {
+  "t": "scenario",
+  "q": "A cluster of apartments, offices, and stores is built within a short walk of a light-rail station. This is",
+  "c": [
+   "transit-oriented development",
+   "blockbusting",
+   "an exurb with no transit",
+   "the rank-size rule"
+  ],
+  "a": "transit-oriented development",
+  "x": "Transit-oriented development concentrates mixed uses within walking distance of a transit station so more trips can be made without a car."
+ },
+ {
+  "t": "scenario",
+  "q": "Low-density subdivisions and strip malls spread farther into farmland, with little transit and a need for cars. This pattern is",
+  "c": [
+   "suburban sprawl",
+   "infilling",
+   "a greenbelt",
+   "new urbanism"
+  ],
+  "a": "suburban sprawl",
+  "x": "Low-density, car-dependent outward growth into surrounding land is suburban sprawl."
+ },
+ {
+  "t": "scenario",
+  "q": "Tokyo, Delhi, and São Paulo each have well over 10 million people. They are",
+  "c": [
+   "megacities",
+   "census tracts",
+   "edge cities only",
+   "greenbelts"
+  ],
+  "a": "megacities",
+  "x": "Urban areas of 10 million or more people are commonly classified as megacities."
+ }
+];
+var QCUR=[];
+
+function qesc(s){
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function qshuffle(a){
+  for(var i=a.length-1;i>0;i--){
+    var j=Math.floor(Math.random()*(i+1));
+    var t=a[i]; a[i]=a[j]; a[j]=t;
+  }
+  return a;
+}
+function showQuiz(){
+  QCUR=QBANK.map(function(x){return {q:x.q,c:x.c.slice(),a:x.a,x:x.x};});
+  qshuffle(QCUR);
+  for(var i=0;i<QCUR.length;i++) qshuffle(QCUR[i].c);
+  var h="";
+  for(var i=0;i<QCUR.length;i++){
+    h+="<li><div>"+qesc(QCUR[i].q)+"</div>";
+    for(var j=0;j<QCUR[i].c.length;j++){
+      h+="<label><input type=\"radio\" name=\"qz"+i+"\" value=\""+j+"\"> "+qesc(QCUR[i].c[j])+"</label><br>";
+    }
+    h+="<div id=\"qx"+i+"\"></div><br></li>";
+  }
+  document.getElementById("quiz").innerHTML=h;
+  document.getElementById("qscore").textContent="";
+}
+function checkQuiz(){
+  var right=0;
+  for(var i=0;i<QCUR.length;i++){
+    var sel=document.querySelector("input[name=qz"+i+"]:checked");
+    var box=document.getElementById("qx"+i);
+    var ok=sel && QCUR[i].c[Number(sel.value)]===QCUR[i].a;
+    if(ok) right++;
+    box.className=ok?"right":"wrong";
+    box.textContent=(ok?"Correct. ":"Incorrect. The correct answer is "+QCUR[i].a+". ")+QCUR[i].x;
+  }
+  document.getElementById("qscore").textContent=" Score: "+right+" / "+QCUR.length;
+}
+function resetQuiz(){
+  showQuiz();
+}
+showQuiz();
+
+</script>
+</body>
+</html>
