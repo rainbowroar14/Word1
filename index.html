@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AP Human Geography Unit 4 Vocab</title>
+<style>body{max-width:800px;margin:auto;font-family:sans-serif}.d{color:red}.e{color:blue}.right{color:green}.wrong{color:maroon}</style>
+</head>
+<body>
+<h1>AP Human Geography</h1>
+<h2>Unit 4: Political Patterns and Processes Vocabulary</h2>
+<p>Definitions:
+<label><input type="radio" name="d" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="d" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="d" value="s" onchange="render()"> Short</label></p>
+<p>Examples:
+<label><input type="radio" name="e" value="l" checked onchange="render()"> Long</label>
+<label><input type="radio" name="e" value="m" onchange="render()"> Medium</label>
+<label><input type="radio" name="e" value="s" onchange="render()"> Short</label></p>
+<ol id="list"></ol>
+<script>
+var V=[
+ {
+  "t": "Administered boundaries",
+  "dl": "Administered boundaries are borders that a government actively maintains and enforces. Officials control the movement of people and goods and may use patrols, checkpoints, or barriers to do so. Without administration, a legally defined line may exist on paper but have little effect on the ground.",
+  "dm": "When a boundary is actively enforced by a government, which controls who and what can cross it.",
+  "el": "The U.S.-Mexico border is administered with checkpoints, customs officers, and Border Patrol agents who regulate who and what may cross. This is an administered boundary because the line is not just drawn on a map but is actively enforced every day.",
+  "em": "The U.S.-Mexico border has checkpoints and customs officers.",
+  "ds": "When a boundary is actively enforced by a government.",
+  "es": "Checkpoints, customs at US-Mexico border"
+ },
+ {
+  "t": "African Union",
+  "dl": "The African Union is a supranational organization of 55 African states. It works to promote unity, peace, economic development, and political cooperation across the continent. Member states give up some decision-making power so they can act together on shared problems.",
+  "dm": "When African countries join together to cooperate on peace, trade, and development.",
+  "el": "The African Union has sent peacekeeping troops to Somalia and is building the African Continental Free Trade Area. These projects fit the term because African states are cooperating through a continent-wide organization instead of acting only on their own.",
+  "em": "The AU sent peacekeepers to Somalia and backs a continental free trade area.",
+  "ds": "When African countries join together to cooperate.",
+  "es": "Peacekeepers, continent free trade"
+ },
+ {
+  "t": "Antecedent boundaries",
+  "dl": "Antecedent boundaries are lines drawn before an area was heavily settled or culturally developed. Because few people lived there yet, the boundary usually follows a geometric line or a physical feature rather than existing cultural patterns. Later settlement often grows up on both sides of a line that was already in place.",
+  "dm": "When a boundary is drawn before people settle an area, so it is not based on existing cultural patterns.",
+  "el": "The U.S.-Canada border along the 49th parallel was set by treaties in 1818 and 1846, before most of the western interior was settled. It is an antecedent boundary because the line was established first and settlement came later, rather than being drawn around communities already on the ground.",
+  "em": "The U.S.-Canada border was drawn along the 49th parallel before the West was settled.",
+  "ds": "When a boundary is drawn before people settle the area.",
+  "es": "US-Canada 49th parallel"
+ },
+ {
+  "t": "Arctic Council",
+  "dl": "The Arctic Council is an intergovernmental forum of the eight countries with territory in the Arctic: Canada, Denmark, Finland, Iceland, Norway, Russia, Sweden, and the United States. It focuses on environmental protection, sustainable development, and the concerns of Arctic indigenous peoples. It is not a military alliance and does not make binding laws.",
+  "dm": "When Arctic countries work together on the region's environment, development, and indigenous issues.",
+  "el": "Members coordinate on oil-spill response and search-and-rescue as melting ice opens new shipping routes. This is a good example because the eight Arctic states are cooperating on shared regional problems through the Council rather than acting alone.",
+  "em": "Arctic states cooperate on oil spills as melting ice opens new shipping routes.",
+  "ds": "When Arctic countries work together on the region's issues.",
+  "es": "Oil spills, new shipping routes"
+ },
+ {
+  "t": "Association of Southeast Asian Nations (ASEAN)",
+  "dl": "The Association of Southeast Asian Nations, or ASEAN, is a regional organization of eleven Southeast Asian countries. It promotes economic growth, free trade, and political stability among its members. Founded in 1967 by five states, it later expanded, and Timor-Leste became the eleventh member in 2025.",
+  "dm": "When Southeast Asian countries team up to promote trade, growth, and political stability.",
+  "el": "Through the ASEAN Free Trade Area, members such as Indonesia, Thailand, Vietnam, and the Philippines have reduced tariffs on goods traded among themselves. This shows ASEAN at work because the group is using regional cooperation to increase trade and economic ties.",
+  "em": "ASEAN members lower tariffs through their regional free trade area.",
+  "ds": "When Southeast Asian countries team up for trade and stability.",
+  "es": "Free trade area, lower tariffs"
+ },
+ {
+  "t": "Autonomous region",
+  "dl": "An autonomous region is an area inside a country that has a high degree of self-government, especially over cultural, local, and sometimes economic matters. It is still under the sovereignty of the national government and is not an independent state. Autonomy is often granted to reduce conflict with a distinct ethnic or national group.",
+  "dm": "When part of a country mostly governs itself, especially on local and cultural matters.",
+  "el": "Greenland elects its own parliament and runs most local affairs, but it remains part of the Kingdom of Denmark, which still handles defense and foreign policy. This fits because Greenland has a high level of self-rule without being a fully independent country.",
+  "em": "Greenland runs most of its own affairs but remains part of Denmark.",
+  "ds": "When part of a country mostly governs itself.",
+  "es": "Greenland runs itself, part of Denmark"
+ },
+ {
+  "t": "Centrifugal force",
+  "dl": "A centrifugal force is anything that divides people and weakens a state's unity. Common examples include ethnic or religious conflict, language differences, uneven development, and political disagreement. If these forces become strong enough, they can lead to devolution, separatism, or even the breakup of a state.",
+  "dm": "When something divides people and pulls a state apart, such as language, religion, or unequal wealth.",
+  "el": "Language and identity differences between French-speaking Quebec and the rest of Canada have led to independence referendums. These differences are centrifugal because they pull people apart and challenge Canada's national unity.",
+  "em": "Quebec's language divide has led to independence referendums in Canada.",
+  "ds": "When something divides people and pulls a state apart.",
+  "es": "Quebec language split, referendums"
+ },
+ {
+  "t": "Centripetal force",
+  "dl": "A centripetal force is anything that unifies people and holds a state together. Shared language, religion, national symbols, a fair legal system, and a strong sense of national identity can all act as centripetal forces. Governments often promote these symbols and institutions to build cohesion.",
+  "dm": "When something unites people and holds a state together, such as a shared language or national identity.",
+  "el": "In Japan, a shared language, flag, holidays, and a strong common identity help hold the state together. These features are centripetal because they give people a sense of belonging to one nation.",
+  "em": "A shared language, flag, and holidays help hold a country together.",
+  "ds": "When something unites people and holds a state together.",
+  "es": "Shared language, flag, holidays"
+ },
+ {
+  "t": "Choke points",
+  "dl": "Choke points are narrow, strategic passages on land or sea that are easy to block and hard to go around. Because so much trade or military movement depends on them, control of a choke point can give a country major economic or military power. Common maritime examples include the Strait of Hormuz, the Strait of Malacca, and the Suez Canal.",
+  "dm": "When a narrow land or sea passage is important for trade and easy to block.",
+  "el": "About one-fifth of the world's oil passes through the Strait of Hormuz between Iran and the Arabian Peninsula. It is a choke point because a blockade or conflict there could quickly disrupt global oil supplies and raise prices.",
+  "em": "Much of the world's oil must pass through the Strait of Hormuz.",
+  "ds": "When a narrow passage is important and easy to block.",
+  "es": "Strait of Hormuz, oil flow"
+ },
+ {
+  "t": "Colonialism",
+  "dl": "Colonialism is the policy of one country taking political control of another territory, settling it, and exploiting its people and resources. Colonies are usually established to extract wealth, spread the colonizer's culture or religion, and expand strategic power. It is closely related to imperialism, but colonialism emphasizes actual settlement and direct rule.",
+  "dm": "When a country takes over, settles, and exploits another land and its people.",
+  "el": "Britain colonized India, controlling its government and economy until independence in 1947. This is colonialism because a foreign power took over the territory, ruled it directly, and used its resources for the colonizer's benefit.",
+  "em": "Britain ruled India as a colony until independence in 1947.",
+  "ds": "When a country takes over and settles another land.",
+  "es": "Britain ruling India until 1947"
+ },
+ {
+  "t": "Consequent boundaries",
+  "dl": "Consequent boundaries, also called ethnographic boundaries, are drawn to follow existing cultural differences such as language, religion, or ethnicity. They are a type of subsequent boundary because they are created after people have already settled the area. The goal is usually to reduce conflict by putting similar groups on the same side of the line.",
+  "dm": "When a boundary is drawn to match cultural differences, such as language, religion, or ethnicity.",
+  "el": "The 1947 border between India and Pakistan was drawn so that mostly Hindu areas went to India and mostly Muslim areas went to Pakistan. It is a consequent boundary because the line was meant to match cultural and religious patterns already on the ground.",
+  "em": "The India-Pakistan border was drawn to separate mostly Hindu and Muslim areas.",
+  "ds": "When a boundary is drawn to match cultural differences.",
+  "es": "India-Pakistan, Hindu vs Muslim"
+ },
+ {
+  "t": "Cultural cohesion",
+  "dl": "Cultural cohesion is the sense of unity that comes from a shared culture, including language, religion, values, and traditions. It often acts as a centripetal force that holds a state together. When cultural cohesion is weak, centrifugal forces such as ethnic or linguistic divisions are more likely to pull a country apart.",
+  "dm": "When people are united by a shared culture, such as language, religion, or traditions.",
+  "el": "Most South Koreans share the Korean language and many of the same traditions, which strengthens national unity. This is cultural cohesion because a common culture binds people together as one society.",
+  "em": "A shared Korean language and traditions help unify South Korea.",
+  "ds": "When people are united by a shared culture.",
+  "es": "Korean language, traditions"
+ },
+ {
+  "t": "Defined boundaries",
+  "dl": "A defined boundary is one established in a legal document, such as a treaty, that describes the line in words. The description may use latitude and longitude, rivers, mountain crests, or other reference points. Definition is the first of the usual steps in creating a boundary, followed by delimitation on a map and sometimes demarcation on the ground.",
+  "dm": "When a boundary is written out in a legal document, such as a treaty.",
+  "el": "The 1848 Treaty of Guadalupe Hidalgo legally described much of the boundary between the United States and Mexico after the Mexican-American War. It is a defined boundary because the line was written into a formal agreement, not just assumed or marked later.",
+  "em": "The Treaty of Guadalupe Hidalgo legally described the U.S.-Mexico border.",
+  "ds": "When a boundary is written out in a legal document.",
+  "es": "Treaty of Guadalupe Hidalgo"
+ },
+ {
+  "t": "Delimited boundaries",
+  "dl": "A delimited boundary is one that has been drawn on a map to show the exact location of a legally defined line. Delimitation usually happens after a treaty or other legal document defines the boundary in words. The line may or may not later be physically marked on the landscape.",
+  "dm": "When a boundary is drawn on a map to show where the legal line is.",
+  "el": "After many African border treaties, official maps were drawn to show the agreed lines across deserts and other areas where few physical markers existed. These are delimited boundaries because the borders appear on maps even if they are hard to see on the ground.",
+  "em": "After a treaty, mapmakers draw the agreed border on official maps.",
+  "ds": "When a boundary is drawn on a map.",
+  "es": "Official map line after treaty"
+ },
+ {
+  "t": "Demarcated boundaries",
+  "dl": "A demarcated boundary is one that is physically marked on the landscape. Markers can include walls, fences, stone pillars, signs, or checkpoints. Not every legally defined and mapped boundary is demarcated, especially in remote or lightly populated areas.",
+  "dm": "When a boundary is physically marked on the ground with walls, fences, posts, or signs.",
+  "el": "The Berlin Wall once marked the border between East and West Berlin, and fences and posts today mark much of the U.S.-Mexico boundary. These are demarcated boundaries because you can see the line itself on the ground.",
+  "em": "Walls, fences, and border posts mark where a boundary actually is.",
+  "ds": "When a boundary is physically marked on the ground.",
+  "es": "Walls, fences, posts"
+ },
+ {
+  "t": "Demilitarized zones",
+  "dl": "A demilitarized zone, or DMZ, is an area where military forces, weapons, and fortifications are prohibited, often by a treaty. It usually serves as a buffer between rival states to reduce the chance of conflict. Even when troops are not supposed to enter the zone, the areas next to it are often heavily guarded.",
+  "dm": "When an area between rivals has no military forces or weapons allowed.",
+  "el": "The Korean Demilitarized Zone is a roughly 2.5-mile-wide strip that has separated North and South Korea since the 1953 armistice. It is a DMZ because both sides agreed to keep military forces out of that buffer even though they remain hostile.",
+  "em": "The Korean DMZ is a 2.5-mile-wide strip with no military allowed.",
+  "ds": "When an area between rivals has no military allowed.",
+  "es": "Korean DMZ, 2.5 mi wide"
+ },
+ {
+  "t": "Devolution",
+  "dl": "Devolution is the transfer of political power from a central government to regional or local governments. It is often a response to centrifugal forces such as ethnic, cultural, or economic differences. Devolution can help keep a country together by giving regions more self-rule, but it can also encourage further demands for independence.",
+  "dm": "When a central government gives some of its power to regional governments.",
+  "el": "The United Kingdom created a Scottish Parliament in 1999 and gave it control over areas such as education and health. This is devolution because power moved from the central government in London to a regional government in Scotland, while Scotland remained part of the UK.",
+  "em": "The UK gave Scotland its own parliament to handle local issues.",
+  "ds": "When a central government gives power to regions.",
+  "es": "Scotland gets own parliament"
+ },
+ {
+  "t": "Ethnic cleansing",
+  "dl": "Ethnic cleansing is the forced removal or killing of an ethnic or religious group from an area by a more powerful group. The goal is to create an ethnically homogeneous territory. It is a serious human rights crime and has often occurred during wars or the breakup of multiethnic states.",
+  "dm": "When a more powerful group forces out or kills people because of their ethnicity.",
+  "el": "During the Bosnian War in the 1990s, Bosnian Serb forces expelled and killed Bosniak Muslims in order to create ethnically Serb areas. The later expulsion of Rohingya Muslims from Myanmar is another case. Both are ethnic cleansing because a group was forced out or killed because of its ethnicity.",
+  "em": "Bosniak Muslims were expelled and killed in Bosnia in the 1990s.",
+  "ds": "When a group is forced out or killed because of ethnicity.",
+  "es": "Bosnia 1990s, Rohingya"
+ },
+ {
+  "t": "Ethnic separatism",
+  "dl": "Ethnic separatism is the desire of an ethnic group to break away from an existing state, either to become independent or to gain substantial autonomy. It often develops when a group feels politically, culturally, or economically marginalized. Separatism can be peaceful or violent and is a major centrifugal force in many countries.",
+  "dm": "When an ethnic group wants to break away from a state to form its own country or gain autonomy.",
+  "el": "Many Basques in northern Spain and southwestern France have sought greater autonomy or independence, and the group ETA used violence for decades in that cause. This is ethnic separatism because a distinct ethnic group has tried to break away from the state that rules it.",
+  "em": "Many Basques in Spain have pushed for independence from the state.",
+  "ds": "When an ethnic group wants to break away from a state.",
+  "es": "Basques, ETA in Spain"
+ },
+ {
+  "t": "Ethno-nationalism",
+  "dl": "Ethno-nationalism is a form of nationalism in which loyalty is based on ethnicity rather than on civic membership in a state. It often includes the belief that an ethnic group should have its own independent country. This idea can unify a group, but it can also create conflict in multinational states.",
+  "dm": "When loyalty to an ethnic group leads people to believe they should have their own state.",
+  "el": "Kurdish nationalism supports the idea of a Kurdistan for Kurds living in Turkey, Iraq, Iran, and Syria. This is ethno-nationalism because political loyalty is tied to Kurdish ethnic identity and to the goal of a state for that group.",
+  "em": "Kurdish nationalism drives the push for an independent Kurdistan.",
+  "ds": "When an ethnic group believes it should have its own state.",
+  "es": "Kurdistan push"
+ },
+ {
+  "t": "European Union (EU)",
+  "dl": "The European Union is a supranational organization of 27 European countries that share economic, political, and legal policies. Many members use a common currency, the euro, and citizens can live and work in other member states. Member countries give up some sovereignty so that EU institutions can make rules that apply to all of them.",
+  "dm": "When European countries share economic and political rules and give up some sovereignty to do so.",
+  "el": "Most EU members use the euro, and citizens can live and work in any other member country. This shows supranational cooperation because national governments have accepted shared rules and a common market in exchange for closer economic and political ties.",
+  "em": "Most EU countries use the euro, and citizens can work in any member state.",
+  "ds": "When European countries share economic and political rules.",
+  "es": "Euro, live/work anywhere"
+ },
+ {
+  "t": "Exclusive Economic Zones (EEZs)",
+  "dl": "An Exclusive Economic Zone, or EEZ, is a sea area extending up to 200 nautical miles from a country's coastline. Within its EEZ, a state has exclusive rights to fish and to explore and use resources such as oil and natural gas. Other countries may still travel and fly through the zone, because it is not the same as full territorial sovereignty.",
+  "dm": "When a country controls fishing and ocean resources up to 200 nautical miles from its coast.",
+  "el": "Norway extracts oil and gas from the North Sea inside its Exclusive Economic Zone. This fits the term because Norway, not other countries, has the legal right to those offshore resources out to 200 nautical miles.",
+  "em": "Norway drills for oil in the North Sea within its EEZ.",
+  "ds": "When a country controls ocean resources 200 nautical miles out.",
+  "es": "Norway North Sea oil"
+ },
+ {
+  "t": "Federal states",
+  "dl": "A federal state divides power between a central government and regional governments such as states, provinces, or cantons. Regional governments usually have authority over local matters, while the national government handles issues like defense, currency, and foreign policy. Federal systems are often used in large or culturally diverse countries so that different regions can keep some self-rule.",
+  "dm": "When power is split between a national government and regional governments, such as states or provinces.",
+  "el": "In the United States, states can set their own laws on issues such as driving ages, while the federal government handles national defense and foreign policy. This is a federal system because power is constitutionally shared rather than held only by the center.",
+  "em": "U.S. states can set their own laws while the federal government handles defense.",
+  "ds": "When power is split between national and regional governments.",
+  "es": "US states set own laws"
+ },
+ {
+  "t": "Geometric boundaries",
+  "dl": "Geometric boundaries are lines drawn as straight lines or arcs, often following parallels of latitude or meridians of longitude. They usually ignore physical features and cultural patterns on the ground. Many were created by colonial powers or by treaties that used simple map lines in sparsely settled areas.",
+  "dm": "When a boundary is a straight line or arc, often following latitude or longitude.",
+  "el": "The nearly rectangular borders of Colorado and Wyoming, and many straight borders in North Africa, follow lines of latitude and longitude. They are geometric boundaries because they were drawn as map lines rather than along rivers, mountains, or cultural divides.",
+  "em": "Colorado's borders and many in North Africa follow straight lines of latitude.",
+  "ds": "When a boundary is a straight line, often latitude or longitude.",
+  "es": "Colorado's borders, N. Africa"
+ },
+ {
+  "t": "Gerrymandering",
+  "dl": "Gerrymandering is the redrawing of voting district boundaries to give one political party or group an unfair advantage. Common methods include packing opponents into a few districts or cracking them across many districts so they cannot win. It often produces oddly shaped districts and can weaken the idea of equal representation.",
+  "dm": "When voting districts are drawn to help one political party or group win elections.",
+  "el": "A state legislature might draw a twisted district that packs opposing voters into one area or splits them apart so they lose influence. That is gerrymandering because the map is designed to help one party, not just to balance population after a census.",
+  "em": "Oddly shaped districts can pack or split voters to favor one party.",
+  "ds": "When districts are drawn to help one party win.",
+  "es": "Packing/splitting voters, odd shapes"
+ },
+ {
+  "t": "Imperialism",
+  "dl": "Imperialism is the process of a state extending its power and influence over other territories through political, economic, or military means. Unlike colonialism, imperialism does not always involve large-scale settlement; it can also work through indirect control. In the late 1800s, European imperialism reshaped much of Africa and Asia.",
+  "dm": "When a state extends its political, economic, or military power over other lands, not always by settling them.",
+  "el": "During the Scramble for Africa in the late nineteenth century, European powers divided almost the entire continent among themselves, often with little settlement. This is imperialism because states extended their political and economic control over foreign lands to increase their own power.",
+  "em": "European powers divided nearly all of Africa during the Scramble for Africa.",
+  "ds": "When a state extends its power over other lands.",
+  "es": "Scramble for Africa"
+ },
+ {
+  "t": "Independence movements",
+  "dl": "Independence movements are organized efforts by a people to gain self-rule and break free from another country's control. They are often based on the idea of self-determination and may use protest, negotiation, or sometimes violence. Many modern states, especially former colonies, were created through such movements in the twentieth century.",
+  "dm": "When a people organize to gain self-rule and break away from another country's control.",
+  "el": "India's independence movement, led in part by Mohandas Gandhi, used mass protest and civil disobedience to end British rule in 1947. It is a classic example because a colonized people organized to win their own sovereign state.",
+  "em": "Gandhi led India's movement for independence from Britain in 1947.",
+  "ds": "When a people organize to gain self-rule.",
+  "es": "Gandhi, India 1947"
+ },
+ {
+  "t": "Independent state",
+  "dl": "An independent state is a political unit with a permanent population, a defined territory, a government, and sovereignty, meaning it can rule itself without outside control. Other states usually recognize it through diplomacy or membership in organizations such as the United Nations. In political geography, \"state\" in this sense means a country, not a unit like California.",
+  "dm": "When a place has a permanent population, defined territory, government, and sovereignty recognized by others.",
+  "el": "France has a permanent population, defined borders, a government that makes its own laws, and United Nations recognition. It is an independent state because it meets the usual criteria of statehood and is accepted as sovereign by other countries.",
+  "em": "France has its own territory and government and is recognized by the UN.",
+  "ds": "When a place has its own territory, people, government, and sovereignty.",
+  "es": "France, UN recognized"
+ },
+ {
+  "t": "Irredentism",
+  "dl": "Irredentism is a policy of claiming and trying to annex territory that a state believes historically, culturally, or ethnically belongs to it. The claimed land is usually part of another country and may be home to people who share the claimant's language or identity. Irredentism often leads to international conflict because it challenges existing borders and sovereignty.",
+  "dm": "When a state tries to take back land it claims belongs to it because of history, culture, or ethnicity.",
+  "el": "In 2014, Russia annexed Crimea from Ukraine, arguing that the peninsula was historically Russian and that many residents were Russian-speaking. This is irredentism because one state took land from another on the claim that the territory rightfully belonged to it.",
+  "em": "Russia annexed Crimea in 2014, claiming the land and people were its own.",
+  "ds": "When a state tries to take back land it claims is its own.",
+  "es": "Russia takes Crimea 2014"
+ },
+ {
+  "t": "Maritime boundaries",
+  "dl": "Maritime boundaries are the lines that divide ocean space among countries. Under international law they include a territorial sea, usually 12 nautical miles from the coast, and an Exclusive Economic Zone that can extend to 200 nautical miles. These boundaries matter because they determine who controls shipping, fishing, and offshore oil and gas.",
+  "dm": "When countries divide ocean areas between them, including territorial seas and exclusive economic zones.",
+  "el": "China, Vietnam, the Philippines, and other countries have overlapping maritime claims in the South China Sea, including around islands and resource-rich waters. These disputes show why maritime boundaries matter: they decide who has legal rights to parts of the ocean.",
+  "em": "Overlapping claims in the South China Sea have caused disputes among nearby countries.",
+  "ds": "When countries divide up the ocean between them.",
+  "es": "South China Sea claims"
+ },
+ {
+  "t": "Military alliances",
+  "dl": "A military alliance is an agreement among states to support one another with armed force, usually for collective defense. Members may share bases, weapons, intelligence, and a promise to treat an attack on one as an attack on all. Alliances are a way for states to increase security, but they can also pull members into conflicts they did not start.",
+  "dm": "When countries agree to support each other militarily, often for collective defense.",
+  "el": "NATO members have agreed that an attack on one is an attack on all, a promise written into Article 5 of the treaty. This is a military alliance because the countries have formally pledged to defend one another.",
+  "em": "NATO members treat an attack on one country as an attack on all.",
+  "ds": "When countries agree to defend each other.",
+  "es": "NATO, attack on one = all"
+ },
+ {
+  "t": "Multinational state",
+  "dl": "A multinational state is a country that contains two or more nations, meaning groups with distinct identities, cultures, or histories. Many of the world's states are multinational, especially large or historically imperial countries. Managing these differences can require federalism, devolution, or other arrangements, or it can lead to tension and separatism.",
+  "dm": "When one state contains two or more nations with their own identities.",
+  "el": "The United Kingdom includes the English, Scottish, Welsh, and Northern Irish, each with a distinct national identity. It is a multinational state because several nations live under one sovereign government.",
+  "em": "The UK includes the English, Scottish, Welsh, and Northern Irish nations.",
+  "ds": "When one state contains several nations.",
+  "es": "UK: English, Scots, Welsh, N. Irish"
+ },
+ {
+  "t": "Multistate nation",
+  "dl": "A multistate nation is a national group whose people live in more than one country. The nation may be the majority in some of those states and a minority in others. This pattern can lead to irredentism or to close cultural and political ties across borders.",
+  "dm": "When one nation is spread across two or more states.",
+  "el": "Koreans form a shared nation but live in two countries, North Korea and South Korea, divided since the mid-twentieth century. They are a multistate nation because one people is spread across more than one state.",
+  "em": "Koreans live as one nation in both North Korea and South Korea.",
+  "ds": "When one nation is spread across several states.",
+  "es": "Koreans in N + S Korea"
+ },
+ {
+  "t": "Nation",
+  "dl": "A nation is a group of people who share a common culture, history, language, or ethnicity and who see themselves as a single people. A nation is a cultural and political identity, not necessarily a country. Some nations have their own states, while others, called stateless nations, do not.",
+  "dm": "When a group of people share a culture, history, and identity and see themselves as one people.",
+  "el": "The Kurds share a language and a sense of common identity, even though they have no fully independent country of their own. They are a nation because the bond is based on people and culture, not on having a state.",
+  "em": "The Kurds share a language and identity but have no country of their own.",
+  "ds": "When a group of people share a culture and identity.",
+  "es": "Kurds, shared language"
+ },
+ {
+  "t": "Nation-state",
+  "dl": "A nation-state is a country whose territory largely corresponds to the area occupied by one nation. In an ideal nation-state, most people share a common culture, language, and identity, and few members of that nation live outside the state. Few countries are perfect nation-states, but some, such as Japan and Iceland, come close.",
+  "dm": "When a state's borders mostly match the area where one nation lives.",
+  "el": "Japan is overwhelmingly ethnically Japanese and has a shared language and culture that match its national borders fairly closely. It is often cited as a nation-state because the state and the nation occupy roughly the same territory.",
+  "em": "Japan is mostly ethnically Japanese and has a shared language and culture.",
+  "ds": "When a state's borders mostly match one nation.",
+  "es": "Japan"
+ },
+ {
+  "t": "Neocolonialism",
+  "dl": "Neocolonialism is the indirect control of less developed countries by more powerful countries or corporations. Instead of formal colonies, the dominant power uses economic pressure, loans, trade terms, or cultural influence to shape another country's policies. Critics argue that this can keep former colonies dependent even after they become legally independent.",
+  "dm": "When a powerful country or company controls another place through money and pressure, not direct rule.",
+  "el": "Some countries in Africa still rely heavily on loans, aid, and corporations from wealthy states, which can influence their economic policies. This is often described as neocolonialism because control is exercised through money and pressure rather than official colonial rule.",
+  "em": "Some African countries still depend on loans and firms from wealthy states.",
+  "ds": "When a powerful country controls another through money, not rule.",
+  "es": "Loans, corporations in Africa"
+ },
+ {
+  "t": "North Atlantic Treaty Organization (NATO)",
+  "dl": "The North Atlantic Treaty Organization, or NATO, is a military alliance of North American and European countries created in 1949 for collective defense. Its key rule, Article 5, says that an attack on one member is considered an attack on all. NATO was first meant to deter the Soviet Union and later expanded as new members joined after the Cold War.",
+  "dm": "When North American and European countries form a military alliance for collective defense.",
+  "el": "After the September 11, 2001, attacks, NATO invoked Article 5 for the first time and supported the United States. This shows what NATO is for: members treat an attack on one country as an attack on the whole alliance.",
+  "em": "NATO invoked Article 5 for the first time after the 9/11 attacks.",
+  "ds": "When North American and European countries form a defense alliance.",
+  "es": "Article 5 after 9/11"
+ },
+ {
+  "t": "Redistricting",
+  "dl": "Redistricting is the process of redrawing the boundaries of voting districts, usually after a census, so that each district has about the same population. In the United States, this is tied to reapportionment, which assigns seats in the House of Representatives among the states. Redistricting can be done fairly, but it can also be abused through gerrymandering.",
+  "dm": "When voting districts are redrawn, usually after a census, to reflect population changes.",
+  "el": "After the 2020 census, Texas gained two congressional seats because its population had grown, so the state had to draw a new district map. This is redistricting because the voting boundaries were redrawn to match updated population counts.",
+  "em": "After the 2020 census, Texas gained two seats and redrew its district map.",
+  "ds": "When voting districts are redrawn, usually after a census.",
+  "es": "Texas +2 seats 2020"
+ },
+ {
+  "t": "Relic boundaries",
+  "dl": "A relic boundary is a former border that no longer functions as a political boundary but can still be seen on the cultural landscape. Old walls, infrastructure, or even differences in language, architecture, or development may remain. Relic boundaries help geographers see how past political divisions still shape places today.",
+  "dm": "When an old boundary no longer functions as a border but can still be seen on the landscape.",
+  "el": "Pieces of the Berlin Wall and lasting differences between the former East and West Germany still mark a border that no longer exists. They are relic boundaries because the political line is gone, but evidence of it remains on the landscape. The Great Wall of China is another often-cited example of a former frontier that can still be seen.",
+  "em": "Remains of the Berlin Wall still show where a former border once stood.",
+  "ds": "When an old boundary no longer works but can still be seen.",
+  "es": "Berlin Wall remains, Great Wall"
+ },
+ {
+  "t": "Self-determination",
+  "dl": "Self-determination is the right of a people to choose their own government and political status, including independence. It was a major principle after World War I and during decolonization in the twentieth century. In practice, not every group that claims this right is able to form its own state.",
+  "dm": "When a people have the right to choose their own government and political status.",
+  "el": "In 2011, the people of South Sudan voted in a referendum to separate from Sudan and become an independent country. This is self-determination because a people chose their own political future rather than remaining under another government's rule.",
+  "em": "South Sudan became independent in 2011 after its people voted to separate.",
+  "ds": "When a people choose their own government.",
+  "es": "South Sudan vote 2011"
+ },
+ {
+  "t": "Semiautonomous region",
+  "dl": "A semiautonomous region is an area within a state that has some degree of self-government, but less independence than a fully autonomous region. It may control certain local laws or cultural affairs while the national government keeps power over defense, foreign policy, or other key matters. The exact amount of self-rule can change over time.",
+  "dm": "When part of a country has some self-rule, but less independence than a fully autonomous region.",
+  "el": "Hong Kong has had its own legal and economic system under China's \"one country, two systems\" policy, though Beijing's control has increased in recent years. It is a semiautonomous region because it has some self-rule but remains part of China and is not fully independent. Native American reservations in the United States are another common example.",
+  "em": "Hong Kong has had its own legal system under \"one country, two systems.\"",
+  "ds": "When part of a country has some self-rule, but limited.",
+  "es": "Hong Kong, one country two systems"
+ },
+ {
+  "t": "Shatterbelts",
+  "dl": "A shatterbelt is a region that is caught between competing outside powers and is also divided by internal conflicts, making it politically unstable. Outside states often back opposing sides, which can deepen local tensions and lead to repeated wars. Classic examples include Eastern Europe during the Cold War and parts of the Middle East and Southeast Asia.",
+  "dm": "When a region is unstable because it is pulled between outside powers and divided by conflict inside.",
+  "el": "During the Cold War, Eastern Europe was a shatterbelt because it lay between the United States and its NATO allies on one side and the Soviet Union on the other, while also being divided internally. The modern Middle East is often described the same way, as global powers support different states and groups in an already conflicted region.",
+  "em": "Cold War Eastern Europe was caught between the U.S. and the Soviet Union.",
+  "ds": "When a region is unstable and pulled between outside powers.",
+  "es": "Cold War E. Europe, Middle East"
+ },
+ {
+  "t": "Sovereignty",
+  "dl": "Sovereignty is a state's full legal authority to govern its own territory and people without interference from other states. It includes the power to make laws, control borders, and conduct foreign policy. Recognition by other countries helps a state exercise sovereignty in practice, but conflicts arise when that authority is challenged.",
+  "dm": "When a state has full authority to govern its own territory without outside interference.",
+  "el": "Canada writes its own laws, controls its borders, and makes foreign policy decisions without needing approval from another country. This is sovereignty because the government has independent authority over its territory.",
+  "em": "Canada makes its own laws and controls its borders without answering to another country.",
+  "ds": "When a state has full control over its own territory.",
+  "es": "Canada makes own laws"
+ },
+ {
+  "t": "Stateless nation",
+  "dl": "A stateless nation is a national group that does not have its own independent state. Its people may live as minorities in several countries and often seek autonomy or independence. Stateless nations are an important source of ethnic conflict and independence movements around the world.",
+  "dm": "When a nation does not have its own independent country.",
+  "el": "The Kurds, who live mainly in Turkey, Iraq, Iran, and Syria, and the Palestinians are often cited as stateless nations. They are nations with a shared identity, but they do not have a fully recognized independent country of their own.",
+  "em": "The Kurds and Palestinians lack a fully recognized country of their own.",
+  "ds": "When a nation does not have its own state.",
+  "es": "Kurds, Palestinians"
+ },
+ {
+  "t": "Subsequent boundaries",
+  "dl": "Subsequent boundaries are drawn after an area has already been settled and developed. Many are also consequent, meaning they try to follow existing cultural or ethnic patterns, but a subsequent boundary can also cut across groups. They contrast with antecedent boundaries, which are established before significant settlement.",
+  "dm": "When a boundary is drawn after people settle an area, often to fit the cultures already there.",
+  "el": "The border between Ireland and Northern Ireland was drawn in 1921, long after the island had been settled and after political and religious divisions had formed. It is a subsequent boundary because the line was created after people were already living there, rather than before settlement.",
+  "em": "The border between Ireland and Northern Ireland was drawn in 1921 after long settlement.",
+  "ds": "When a boundary is drawn after people settle the area.",
+  "es": "Ireland-N. Ireland 1921"
+ },
+ {
+  "t": "Superimposed boundaries",
+  "dl": "Superimposed boundaries are borders forced onto a region by outside powers, with little regard for existing cultural, ethnic, or linguistic patterns. They are often a product of colonialism. Such lines can split nations among several states or put rival groups in the same country, which may later cause conflict or calls for new borders.",
+  "dm": "When outside powers force a boundary onto an area, ignoring the cultural patterns already there.",
+  "el": "At the Berlin Conference of 1884-1885, European powers drew borders across Africa without input from African peoples, splitting some ethnic groups and grouping rivals together. Those lines are superimposed boundaries because outsiders imposed them on a cultural landscape that was already there.",
+  "em": "Europeans drew African borders at the Berlin Conference, splitting ethnic groups.",
+  "ds": "When outside powers force a boundary onto an area.",
+  "es": "Berlin Conference Africa"
+ },
+ {
+  "t": "Supranationalism",
+  "dl": "Supranationalism is cooperation among three or more countries that give up some degree of sovereignty to a higher organization in order to pursue shared goals. Those goals may include trade, security, environmental protection, or human rights. The European Union is the strongest example, but the United Nations, NATO, ASEAN, and the African Union also show forms of supranational cooperation.",
+  "dm": "When three or more countries give up some sovereignty to work together on shared goals.",
+  "el": "European Union countries accept shared trade rules and must follow decisions of EU institutions such as the European Court of Justice. This is supranationalism because member states have transferred some of their own authority to a regional body.",
+  "em": "EU countries follow shared trade rules and rulings from the European Court.",
+  "ds": "When several countries give up some power to work together.",
+  "es": "EU trade rules, EU court"
+ },
+ {
+  "t": "Territoriality",
+  "dl": "Territoriality is the attempt by an individual or group to affect, influence, or control people, phenomena, and relationships by delimiting and asserting control over a geographic area. In political geography, states express territoriality by claiming land, defending borders, and regulating who may enter. The idea also appears at smaller scales, such as neighborhoods or gang turf.",
+  "dm": "When a person or group tries to control an area and the people or resources in it.",
+  "el": "Countries post border guards and claim ocean areas to show control over their territory, and even gangs may mark neighborhood turf with graffiti. These actions are territoriality because a group is trying to control a defined space and what happens inside it.",
+  "em": "Countries post border guards, and even gangs may mark their turf.",
+  "ds": "When people try to control an area.",
+  "es": "Border guards, gang turf"
+ },
+ {
+  "t": "Terrorism",
+  "dl": "Terrorism is the use of violence and intimidation, especially against civilians, in order to achieve political aims. It is meant to create fear and to pressure governments or societies into changing policies. Terrorist acts can be carried out by independent groups or, in some cases, with support from a state.",
+  "dm": "When a group uses violence and fear against civilians to reach political goals.",
+  "el": "The September 11, 2001, attacks by al-Qaeda killed nearly 3,000 people in the United States and were intended to influence U.S. policy. They are an example of terrorism because the violence targeted civilians in order to create fear and reach a political goal.",
+  "em": "Al-Qaeda's 9/11 attacks used violence against civilians to influence U.S. policy.",
+  "ds": "When violence against civilians is used for political goals.",
+  "es": "9/11, al-Qaeda"
+ },
+ {
+  "t": "Trade agreements",
+  "dl": "Trade agreements are deals between countries to reduce barriers such as tariffs, quotas, and other limits on the movement of goods and services. They can be bilateral, between two countries, or multilateral, among several. These agreements are a major form of economic cooperation and can increase trade, but they may also be politically controversial.",
+  "dm": "When countries agree to reduce barriers such as tariffs so that trade is easier.",
+  "el": "The United States-Mexico-Canada Agreement, or USMCA, replaced NAFTA and sets the rules for trade among the three countries. It is a trade agreement because the members have formally agreed to lower barriers and regulate commerce among themselves.",
+  "em": "The USMCA, which replaced NAFTA, governs trade among the U.S., Mexico, and Canada.",
+  "ds": "When countries agree to make trade easier.",
+  "es": "USMCA, ex-NAFTA"
+ },
+ {
+  "t": "Uneven development",
+  "dl": "Uneven development is the unequal distribution of economic growth, wealth, and investment among regions or countries. It can occur within a single state, such as a rich core and a poorer periphery, or at the global scale between more and less developed countries. The gap often becomes a centrifugal force when people in poorer areas feel left behind.",
+  "dm": "When economic growth and wealth are spread unequally between regions or countries.",
+  "el": "Northern Italy is generally wealthy and industrial, while southern Italy is poorer, and that gap has caused political and economic tension. This is uneven development because prosperity is concentrated in one region of the same country rather than spread evenly.",
+  "em": "Northern Italy is rich and industrial, while southern Italy is much poorer.",
+  "ds": "When some places grow richer than others.",
+  "es": "Rich N. Italy, poorer S."
+ },
+ {
+  "t": "Unitary states",
+  "dl": "A unitary state is a country in which most political power is held by the central government. Regional or local governments, if they exist, mainly carry out decisions made at the national level and have little independent authority. Unitary systems are common in smaller or more culturally unified countries, though some, like France and Japan, also use them.",
+  "dm": "When the central government holds most of the power and regions have little authority of their own.",
+  "el": "In France, the national government in Paris makes most major policy decisions, and regional governments have relatively limited power. France is a unitary state because authority is concentrated at the center rather than shared with states or provinces as in a federation.",
+  "em": "In France, the national government in Paris makes most decisions for the regions.",
+  "ds": "When the central government holds most of the power.",
+  "es": "France, Paris decides"
+ },
+ {
+  "t": "United Nations (UN)",
+  "dl": "The United Nations is a global intergovernmental organization founded in 1945 and now made up of 193 member states. It works to maintain international peace and security, promote human rights, and encourage cooperation on issues such as development and humanitarian aid. The UN can send peacekeepers and pass resolutions, but its power is limited because it depends on members' support and because the Security Council's permanent members have vetoes.",
+  "dm": "When almost all the world's countries work together for peace, security, and cooperation.",
+  "el": "UN peacekeepers have been deployed to conflict areas such as Lebanon and South Sudan to help maintain ceasefires and protect civilians. These missions show the UN's role as a worldwide organization through which states try to manage conflict and cooperate, even though the UN cannot force every member to act.",
+  "em": "UN peacekeepers have been sent to conflict areas such as Lebanon.",
+  "ds": "When almost all countries work together for peace.",
+  "es": "Peacekeepers, Lebanon"
+ },
+ {
+  "t": "United Nations Conference on the Law of the Sea (UNCLOS)",
+  "dl": "UNCLOS is the international agreement, produced by United Nations conferences on the law of the sea, that sets legal rules for the use of the world's oceans. It defines a 12-nautical-mile territorial sea, a 200-nautical-mile Exclusive Economic Zone, and rights to the continental shelf, as well as rules for navigation and resource use. Most countries have ratified the convention, and it is the main legal framework for maritime boundaries.",
+  "dm": "When countries agree on international rules for using the ocean, including territorial seas and EEZs.",
+  "el": "In 2016, an international tribunal cited UNCLOS in a case brought by the Philippines and ruled against many of China's broad claims in the South China Sea. The case shows how UNCLOS is used: it provides the legal rules countries turn to when they dispute ocean boundaries and resource rights. China rejected the ruling, which also shows the limits of enforcement.",
+  "em": "A 2016 tribunal used UNCLOS to reject some of China's sea claims.",
+  "ds": "When countries agree on rules for using the ocean.",
+  "es": "2016 ruling vs China"
+ },
+ {
+  "t": "Voting districts",
+  "dl": "Voting districts are geographic areas whose residents elect a representative to a legislature or other body. In the United States, congressional districts should have roughly equal population so that each person's vote has similar weight. The boundaries of these districts are periodically redrawn, and that process can become political through gerrymandering.",
+  "dm": "When a geographic area is set up so its residents elect a representative.",
+  "el": "Each U.S. congressional district elects one member to the House of Representatives, and districts are drawn so that they have about the same number of people. These are voting districts because they are the geographic units used to choose representatives.",
+  "em": "Each U.S. congressional district elects one member to the House.",
+  "ds": "When an area elects its own representative.",
+  "es": "US congressional districts"
+ }
+];
+function render(){
+  var dm=document.querySelector('input[name=d]:checked').value,em=document.querySelector('input[name=e]:checked').value,h='';
+  for(var i=0;i<V.length;i++){
+    var x=V[i], d=x['d'+dm], e=x['e'+em];
+    h+='<li><b>'+x.t+'</b><br><span class="d">'+d+'</span><br><span class="e">Example: '+e+'</span><br><br></li>';
+  }
+  document.getElementById('list').innerHTML=h;
+}
+render();
+</script>
+
+<hr>
+<h2>Unit 4 Quiz</h2>
+<p>Choose one answer for each question, then check your work. Questions are mixed: AP-style items, vocabulary, and situations.</p>
+<ol id="quiz"></ol>
+<p>
+<button type="button" onclick="checkQuiz()">Check answers</button>
+<button type="button" onclick="resetQuiz()">Reset</button>
+<span id="qscore"></span>
+</p>
+<script>
+
+var QBANK=[
+ {
+  "t": "exam",
+  "q": "Many political boundaries in Africa are described as superimposed mainly because",
+  "c": [
+   "they follow rivers and mountain ranges already used as borders by local groups",
+   "they were drawn by European colonial powers with little regard for existing ethnic or cultural patterns",
+   "they were created after independence when African states voted on each line",
+   "they match the territories of precolonial kingdoms almost exactly"
+  ],
+  "a": "they were drawn by European colonial powers with little regard for existing ethnic or cultural patterns",
+  "x": "Superimposed boundaries, including many drawn at the Berlin Conference, were imposed by outside powers and often ignored existing cultural patterns."
+ },
+ {
+  "t": "vocab",
+  "q": "Which term refers to a state's full legal authority to govern its own territory without outside interference?",
+  "c": [
+   "Territoriality",
+   "Self-determination",
+   "Sovereignty",
+   "Devolution"
+  ],
+  "a": "Sovereignty",
+  "x": "Sovereignty is a state's independent authority over its territory, while self-determination is a people's right to choose their government."
+ },
+ {
+  "t": "scenario",
+  "q": "After a census, a state legislature draws oddly shaped voting districts that pack opposing voters into a few districts so the majority party can win more seats. This is an example of",
+  "c": [
+   "redistricting done only to equalize population",
+   "gerrymandering",
+   "devolution",
+   "irredentism"
+  ],
+  "a": "gerrymandering",
+  "x": "Gerrymandering is the redrawing of voting districts to give one political party or group an unfair advantage."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following is the best example of a nation-state?",
+  "c": [
+   "the United Kingdom",
+   "Japan",
+   "Russia",
+   "Nigeria"
+  ],
+  "a": "Japan",
+  "x": "Japan is often cited as a nation-state because its territory largely matches one nation with a shared language and culture."
+ },
+ {
+  "t": "vocab",
+  "q": "A nation that does not have its own independent country is called a",
+  "c": [
+   "multinational state",
+   "multistate nation",
+   "nation-state",
+   "stateless nation"
+  ],
+  "a": "stateless nation",
+  "x": "A stateless nation, such as the Kurds or the Palestinians, is a national group without its own fully independent state."
+ },
+ {
+  "t": "scenario",
+  "q": "In 2014, Russia annexed Crimea from Ukraine, arguing that the area was historically Russian and that many residents were Russian-speaking. This is an example of",
+  "c": [
+   "devolution",
+   "irredentism",
+   "supranationalism",
+   "gerrymandering"
+  ],
+  "a": "irredentism",
+  "x": "Irredentism is a policy of claiming or taking land that a state says historically, culturally, or ethnically belongs to it."
+ },
+ {
+  "t": "exam",
+  "q": "Under UNCLOS, a coastal state's Exclusive Economic Zone generally extends",
+  "c": [
+   "3 nautical miles from the coast",
+   "12 nautical miles from the coast",
+   "200 nautical miles from the coast",
+   "500 nautical miles from the coast"
+  ],
+  "a": "200 nautical miles from the coast",
+  "x": "UNCLOS gives a coastal state resource rights in an Exclusive Economic Zone that can extend up to 200 nautical miles, while the territorial sea is usually 12 nautical miles."
+ },
+ {
+  "t": "vocab",
+  "q": "Which of the following best defines a choke point?",
+  "c": [
+   "a region caught between rival outside powers and divided by internal conflict",
+   "a narrow strategic passage that is important for trade and easy to block",
+   "a former border that no longer functions but can still be seen",
+   "a buffer area where military forces are not allowed"
+  ],
+  "a": "a narrow strategic passage that is important for trade and easy to block",
+  "x": "A choke point is a narrow, hard-to-avoid passage, such as the Strait of Hormuz, whose blockage would disrupt trade or military movement."
+ },
+ {
+  "t": "scenario",
+  "q": "Language and identity differences between French-speaking Quebec and the rest of Canada have led to independence referendums. Those differences are acting as",
+  "c": [
+   "a centripetal force",
+   "a centrifugal force",
+   "a relic boundary",
+   "a geometric boundary"
+  ],
+  "a": "a centrifugal force",
+  "x": "Centrifugal forces divide people and pull a state apart, as Quebec's language and identity differences have challenged Canadian unity."
+ },
+ {
+  "t": "exam",
+  "q": "Which statement best describes a federal state?",
+  "c": [
+   "Almost all political power is held by the central government.",
+   "Power is divided between a central government and regional governments.",
+   "There is no national government, only local governments.",
+   "Regional governments may legally secede at any time."
+  ],
+  "a": "Power is divided between a central government and regional governments.",
+  "x": "In a federal system, such as the United States, power is shared between the national government and regional governments like states or provinces."
+ },
+ {
+  "t": "vocab",
+  "q": "The transfer of political power from a central government to regional governments is called",
+  "c": [
+   "imperialism",
+   "irredentism",
+   "devolution",
+   "colonialism"
+  ],
+  "a": "devolution",
+  "x": "Devolution is the shift of power from the center to regional governments, such as the United Kingdom giving Scotland its own parliament."
+ },
+ {
+  "t": "scenario",
+  "q": "Greenland runs most of its local affairs and has its own parliament, but Denmark still handles defense and foreign policy, and Greenland is not an independent country. Greenland is best described as",
+  "c": [
+   "a nation-state",
+   "a stateless nation",
+   "an autonomous region",
+   "a shatterbelt"
+  ],
+  "a": "an autonomous region",
+  "x": "An autonomous region has a high degree of self-government but remains under the sovereignty of another state."
+ },
+ {
+  "t": "exam",
+  "q": "NATO's Article 5, which treats an attack on one member as an attack on all, is the best example of",
+  "c": [
+   "a trade agreement",
+   "a military alliance's collective-defense promise",
+   "an Exclusive Economic Zone",
+   "a superimposed boundary"
+  ],
+  "a": "a military alliance's collective-defense promise",
+  "x": "Article 5 is the core collective-defense rule of NATO, a military alliance of North American and European states."
+ },
+ {
+  "t": "vocab",
+  "q": "A boundary that is physically marked on the landscape with walls, fences, or posts is a",
+  "c": [
+   "defined boundary",
+   "delimited boundary",
+   "demarcated boundary",
+   "relic boundary"
+  ],
+  "a": "demarcated boundary",
+  "x": "A demarcated boundary is marked on the ground, while a defined boundary is written in a legal document and a delimited boundary is drawn on a map."
+ },
+ {
+  "t": "scenario",
+  "q": "At the Berlin Conference of 1884-1885, European powers drew borders across Africa with little input from African peoples, splitting some ethnic groups and grouping rivals together. Those borders are best classified as",
+  "c": [
+   "antecedent boundaries",
+   "consequent boundaries",
+   "superimposed boundaries",
+   "relic boundaries"
+  ],
+  "a": "superimposed boundaries",
+  "x": "Superimposed boundaries are forced onto a region by outside powers and often ignore existing cultural patterns."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following is the best example of a multistate nation?",
+  "c": [
+   "the Japanese, who live mostly in one country",
+   "Koreans, who live in both North Korea and South Korea",
+   "the United Kingdom, which contains several nations",
+   "France, a sovereign independent state"
+  ],
+  "a": "Koreans, who live in both North Korea and South Korea",
+  "x": "A multistate nation is one national group living in more than one country, such as Koreans in North and South Korea; the United Kingdom is a multinational state."
+ },
+ {
+  "t": "vocab",
+  "q": "A shared national language, flag, and holidays that help hold a state together are examples of",
+  "c": [
+   "centrifugal forces",
+   "centripetal forces",
+   "shatterbelts",
+   "choke points"
+  ],
+  "a": "centripetal forces",
+  "x": "Centripetal forces unify people and strengthen a state's cohesion."
+ },
+ {
+  "t": "scenario",
+  "q": "The Kurds share a language and identity and live mainly in Turkey, Iraq, Iran, and Syria, but they do not have a fully recognized independent country of their own. They are an example of",
+  "c": [
+   "a nation-state",
+   "a stateless nation",
+   "a federal state",
+   "a unitary state"
+  ],
+  "a": "a stateless nation",
+  "x": "A stateless nation is a people with a shared identity who lack their own independent state."
+ },
+ {
+  "t": "exam",
+  "q": "France, where the national government in Paris holds most political power and regional governments have limited authority, is best classified as a",
+  "c": [
+   "federal state",
+   "unitary state",
+   "multistate nation",
+   "stateless nation"
+  ],
+  "a": "unitary state",
+  "x": "In a unitary state, most authority is concentrated in the central government rather than shared with regional governments."
+ },
+ {
+  "t": "vocab",
+  "q": "A former political boundary that no longer functions but can still be seen on the landscape is a",
+  "c": [
+   "subsequent boundary",
+   "antecedent boundary",
+   "relic boundary",
+   "geometric boundary"
+  ],
+  "a": "relic boundary",
+  "x": "Relic boundaries, such as remains of the Berlin Wall, no longer act as political borders but are still visible."
+ },
+ {
+  "t": "scenario",
+  "q": "About one-fifth of the world's oil passes through the narrow Strait of Hormuz, so a blockade there could quickly disrupt global supplies. The strait is an example of",
+  "c": [
+   "a shatterbelt",
+   "a choke point",
+   "an Exclusive Economic Zone",
+   "a demilitarized zone"
+  ],
+  "a": "a choke point",
+  "x": "The Strait of Hormuz is a choke point because it is a narrow, strategic passage that is hard to avoid and easy to block."
+ },
+ {
+  "t": "exam",
+  "q": "Which of the following best explains a major purpose of the European Union?",
+  "c": [
+   "to replace all national armies with a single EU military command",
+   "to promote economic and political cooperation, including a common market and, for many members, a shared currency",
+   "to draw new superimposed boundaries across Eastern Europe",
+   "to assign each member a 200-nautical-mile Exclusive Economic Zone inside Europe"
+  ],
+  "a": "to promote economic and political cooperation, including a common market and, for many members, a shared currency",
+  "x": "The EU is a supranational organization that deepens economic and political cooperation among member states, including free movement and, for many, the euro."
+ },
+ {
+  "t": "vocab",
+  "q": "Which process involves redrawing the boundaries of voting districts, usually after a census, to reflect population changes?",
+  "c": [
+   "gerrymandering",
+   "redistricting",
+   "devolution",
+   "irredentism"
+  ],
+  "a": "redistricting",
+  "x": "Redistricting is the regular redrawing of voting districts after population counts; gerrymandering is doing that in a way that unfairly helps one group."
+ },
+ {
+  "t": "scenario",
+  "q": "A politically unstable region that is pulled between competing outside powers and divided by conflict inside, such as Eastern Europe during the Cold War, is called a",
+  "c": [
+   "choke point",
+   "demilitarized zone",
+   "shatterbelt",
+   "Exclusive Economic Zone"
+  ],
+  "a": "shatterbelt",
+  "x": "A shatterbelt is a conflicted region caught between larger outside powers, which often back opposing sides."
+ },
+ {
+  "t": "exam",
+  "q": "The U.S.-Canada border along the 49th parallel was established before most of the western interior was settled. This is the best example of",
+  "c": [
+   "an antecedent boundary",
+   "a consequent boundary",
+   "a superimposed boundary",
+   "a relic boundary"
+  ],
+  "a": "an antecedent boundary",
+  "x": "Antecedent boundaries are drawn before an area is heavily settled, as the 49th parallel was in the nineteenth century."
+ },
+ {
+  "t": "vocab",
+  "q": "Which of the following best defines neocolonialism?",
+  "c": [
+   "direct settlement and formal political rule of a territory by a foreign power",
+   "indirect control of a less developed country through economic pressure, loans, or corporations rather than official colonial rule",
+   "the right of a people to choose their own government",
+   "a promise that an attack on one ally is an attack on all"
+  ],
+  "a": "indirect control of a less developed country through economic pressure, loans, or corporations rather than official colonial rule",
+  "x": "Neocolonialism is indirect economic or political control, unlike colonialism, which involves direct rule and often settlement."
+ },
+ {
+  "t": "scenario",
+  "q": "The border between Ireland and Northern Ireland was drawn in 1921, long after the island had been settled and after political and religious divisions had formed. This border is best described as",
+  "c": [
+   "antecedent",
+   "subsequent",
+   "relic",
+   "geometric"
+  ],
+  "a": "subsequent",
+  "x": "Subsequent boundaries are drawn after an area has already been settled, unlike antecedent boundaries, which are set before settlement."
+ },
+ {
+  "t": "exam",
+  "q": "Which organization is a supranational body of African states that works on peace, political cooperation, and economic integration, including a continental free trade area?",
+  "c": [
+   "NATO",
+   "ASEAN",
+   "the African Union",
+   "the Arctic Council"
+  ],
+  "a": "the African Union",
+  "x": "The African Union is the continent-wide organization of African states that promotes peace, cooperation, and economic integration."
+ },
+ {
+  "t": "vocab",
+  "q": "Straight political borders that follow lines of latitude or longitude, such as many borders of Colorado or in North Africa, are called",
+  "c": [
+   "consequent boundaries",
+   "geometric boundaries",
+   "demarcated boundaries",
+   "maritime boundaries"
+  ],
+  "a": "geometric boundaries",
+  "x": "Geometric boundaries are straight lines or arcs, often based on latitude or longitude, rather than cultural or physical features."
+ },
+ {
+  "t": "scenario",
+  "q": "EU countries follow shared trade rules and accept rulings from EU institutions, even though that means giving up some of their own decision-making power. This is an example of",
+  "c": [
+   "irredentism",
+   "gerrymandering",
+   "supranationalism",
+   "ethnic cleansing"
+  ],
+  "a": "supranationalism",
+  "x": "Supranationalism occurs when three or more states transfer some sovereignty to a higher organization in order to pursue shared goals."
+ }
+];
+var QCUR=[];
+function qesc(s){
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function qshuffle(a){
+  for(var i=a.length-1;i>0;i--){
+    var j=Math.floor(Math.random()*(i+1));
+    var t=a[i]; a[i]=a[j]; a[j]=t;
+  }
+  return a;
+}
+function showQuiz(){
+  QCUR=QBANK.map(function(x){return {q:x.q,c:x.c.slice(),a:x.a,x:x.x};});
+  qshuffle(QCUR);
+  for(var i=0;i<QCUR.length;i++) qshuffle(QCUR[i].c);
+  var h="";
+  for(var i=0;i<QCUR.length;i++){
+    h+="<li><div>"+qesc(QCUR[i].q)+"</div>";
+    for(var j=0;j<QCUR[i].c.length;j++){
+      h+="<label><input type=\"radio\" name=\"qz"+i+"\" value=\""+j+"\"> "+qesc(QCUR[i].c[j])+"</label><br>";
+    }
+    h+="<div id=\"qx"+i+"\"></div><br></li>";
+  }
+  document.getElementById("quiz").innerHTML=h;
+  document.getElementById("qscore").textContent="";
+}
+function checkQuiz(){
+  var right=0;
+  for(var i=0;i<QCUR.length;i++){
+    var sel=document.querySelector("input[name=qz"+i+"]:checked");
+    var box=document.getElementById("qx"+i);
+    var ok=sel && QCUR[i].c[Number(sel.value)]===QCUR[i].a;
+    if(ok) right++;
+    box.className=ok?"right":"wrong";
+    box.textContent=(ok?"Correct. ":"Incorrect. The correct answer is "+QCUR[i].a+". ")+QCUR[i].x;
+  }
+  document.getElementById("qscore").textContent=" Score: "+right+" / "+QCUR.length;
+}
+function resetQuiz(){
+  showQuiz();
+}
+showQuiz();
+
+</script>
+</body>
+</html>
